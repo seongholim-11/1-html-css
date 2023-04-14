@@ -1,0 +1,12 @@
+[DEFAULT]
+BASEURL=http://www.google.com/fonts/
+[DOC_webfonts]
+BASEURL=http://www.google.com/fonts/
+ORIGURL=javascript:""
+[{000214A0-0000-0000-C000-000000000046}]
+Prop3=19,2
+[InternetShortcut]
+URL=http://www.google.com/fonts/
+IDList=
+IconFile=http://www.google.com/fonts/fonts-64.png
+IconIndex=1

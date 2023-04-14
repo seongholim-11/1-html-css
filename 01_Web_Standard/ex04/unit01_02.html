@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title>테이블 편집하기</title>
+	<meta charset="UTF-8" />
+	<style>
+		table{width: 500px; height: 500px; border: 1px solid black; border-collapse: collapse; margin: auto auto;}
+		th, td{border: 1px solid black;}
+		th{text-align: center;}
+		td{padding-left: 10px;}
+		h1{text-align: center;}
+	</style>
+</head>
+
+<body>
+	<h1>테이블 삽입하기</h1>
+	<hr />
+	<!-- 테이블을 속성을 이용하여 편집합니다. -->
+	<table >
+		<tr>
+			<th scope="col">순위</th>
+			<th scope="col">제목</th>
+			<th scope="col">장르</th>
+			<th scope="col">지난주 순위</th>
+		</tr>
+		<tr>
+			<th scope="row">1</th>
+			<td>캐러비안의 해적</td>
+			<td>판타지</td>
+			<td rowspan="3">없음(New)</td>
+		</tr>
+		<tr>
+			<th scope="row">2</th>
+			<td>트랜스포머</td>
+			<td>SF</td>
+		</tr>
+		<tr>
+			<th scope="row">3</th>
+			<td>카2</td>
+			<td>애니메이션</td>
+		</tr>
+		<tr>
+			<th scope="row">4</th>
+			<td>엑스맨</td>
+			<td>SF</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<th scope="row">5</th>
+			<td>노팅힐</td>
+			<td>드라마</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td colspan="4" style="text-align: center;">2011년 5월 다운로드 순위</tㅇ>
+		</tr>
+	</table>
+</body>
+</html>

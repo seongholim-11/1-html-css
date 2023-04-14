@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title>주문 폼 만들기</title>
+	<meta charset="UTF-8">
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<form id="orderForm">
+			<h1><span>주문자 정보 입력</span></h1>
+			<p>
+				<label for="userId">이름</label>
+				<input type="text" id="userId" />
+			</p>
+			<p>
+				<label>휴대폰</label>
+				<span class="cellStyle">
+					<select id="userPhone1">
+						<option value="010">010</option>
+						<option value="010">011</option>
+						<option value="010">016</option>
+						<option value="010">017</option>
+						<option value="010">019</option>
+					</select>
+					-
+					<input type="text" id="userPhone2" />
+					-
+					<input type="text" id="userPhone3" />
+				</span>
+			</p>
+			<p>
+				<label for="userEmail1">이메일</label>
+				<span class="cellStyle">
+					<input type="text" id="userEmail1" />
+					@
+					<input type="text" id="userEmail2" />
+				</span>
+			</p>
+			<p>
+				<label>배송 주소</label>
+				<span class="cellStyle">
+					<input type="text" id="userAdd1" />
+					<input type="button" id="userAddBtn" value="우편번호 찾기" />
+					<input type="text" id="userAdd2" />
+					<input type="text" id="userAdd3" />
+				</span>
+			</p>
+			<p class="btnRow">
+				<input type="submit" id="btnSubmit" value="제품 주문 신청 완료 " />
+			</p>
+		</form>
+	</div>
+</body>
+</html>
