@@ -1,0 +1,214 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <title>css 네이밍 규칙</title>
+   <style type="text/css">
+      h1, h2{text-align: center; font-size: 20px}
+      h3{font-weight: normal; font-size: 18px; color: #00698c}
+      hr{border-color: #fff}
+      .box{width: 1200px; padding: 20px; background: #dfbfff; box-sizing: border-box; margin: 20px auto;}
+      table{width: 1200px;  margin: 0 auto 20px auto; border:3px solid #d24cff;}
+      th, td{border:2px solid #dfbfff; padding: 1px; }
+   </style>
+</head>
+<body>
+   <h1>css네이밍</h1>
+   <div class="box">
+      <h3>1. 네이밍의 조합 '형태_의미_순서_상태' 기본 순서로 정한다.</h3>
+      <p>exe) btn_cancle_01_off</p>
+      <br/>
+      <hr/>
+      <h3>
+         2. 네이밍 규칙의 하이픈(-) 조합은 css네이밍에서 사용하는 것을 권장한다. <br/>
+         HTML문서 안에서 언더스코어(_)의 조합은 form, input 엘리먼트등의 name 어트리뷰트의 값을 사용하는 것을 권장
+      </h3>
+      <p>exe) hidden-obj</p>
+      <br/>
+      <hr/>
+      <h3>
+         3. 숫자 1,2와 같은 한자리 정수를 사용하는것 보다 01,02와 같이 사용하는 것을 권장 <br/>
+         대부분의 파일관리 유틸리티 프로그램들을 사용하여 파일의 이름으로 정렬할 때에 정렬의 순서를 보장하기 위함
+      </h3>
+      <p>exe) btn_cancle_01</p>   
+   </div>
+   <h2>파일 및 폴더 네이밍</h2>
+   <table>
+      <tr>
+         <th>분류</th>
+         <th>예시</th>
+         <th>설명</th>
+      </tr>
+      <tr>
+         <th rowspan="5">Folder</th>
+         <th>html</th>
+         <td>업무별 폴더 생성 00.service, 01.customer, 02.account</td>
+      </tr>
+      <tr>
+         <th>html_guid</th>
+         <td>마크업 가이드, 접근성 가이드, 화면 목록등의 파일 및 폴더 생성 가능</td>
+      </tr>
+      <tr>
+         <th>js</th>
+         <td>라이브러리별 폴더 생성 가능</td>
+      </tr>
+      <tr>
+         <th>css</th>
+         <td>디렉토리별 폴더 생성 가능</td>
+      </tr>
+      <tr>
+         <th>img</th>
+         <td>네이밍별 폴더 생성 가능</td>
+      </tr>
+      <tr>
+         <th rowspan="5">HTML</th>
+         <th>0101.html</th>
+         <td>화면 코드 사용(별도의 정의된 네이밍 롤이 없는 경우 사용)</td>
+      </tr>
+      <tr>
+         <th>00_customer_service_list.html</th>
+         <td>화면 코드, 메뉴명, 상태의 조합</td>
+      </tr>
+      <tr>
+         <th>00_pop_*.html</th>
+         <td>팝업 파일 사용</td>
+      </tr>
+      <tr>
+         <th>00_aj_*.html</th>
+         <td>ajax 이용하여 페이지를 동적으로 사용하는 파일</td>
+      </tr>
+      <tr>
+         <th>00_if_*.html</th>
+         <td>iframe 파일 사용</td>
+      </tr>
+      <tr>
+         <th rowspan="4">css</th>
+         <th>00.service.css</th>
+         <td>폴더명을 사용</td>
+      </tr>
+      <tr>
+         <th>default.css</th>
+         <td>브라우저 호환성을 위하여 기본 css속성을 정의하며 common.css를 @import한다.</td>
+      </tr>
+      <tr>
+         <th>layout.css</th>
+         <td>화면의 레이아웃 구조의 표현을 정의한 파일</td>
+      </tr>
+      <tr>
+         <th>common.css</th>
+         <td>전역에 쓰이는 요소의 표현을 정의하며 html의 업무별, 디렉토리별 구분하여 작성한 css파일을 @import한다.</td>
+      </tr>
+   </table>
+   
+   
+   
+   <h2>이미지 예약어</h2>
+   <table>
+      <tr>
+         <th>분류</th>
+         <th>예약어</th>
+         <th>사용 예</th>
+         <th>설명</th>
+      </tr>
+      <tr>
+         <th rowspan="3">텍스트</th>
+         <td>h[1-6]_*, h_*</td>
+         <td>h_logo.gif, h2_header.gif</td>
+         <td>heading 요소에 사용</td>
+      </tr>
+      <tr>
+         <td>tit_*</td>
+         <td>tit_table_id.gif, tit_definition_list</td>
+         <td>heading 요소에 사용되지 않고 문단의 강조를 나타ㅐ는 형식의 텍스트</td>
+      </tr>
+      <tr>
+         <td>txt_*</td>
+         <td>txt_msg.gif</td>
+         <td>문단의 이미지로된 텍스트 사용</td>
+      </tr>
+      <tr>
+         <th rowspan="3">링크요소</th>
+         <td>nav_*</td>
+         <td>nav_gnb_ko.gif, nav_lnb_about.gif</td>
+         <td>lnb, gnb, snb 등의 네비게이션 요소에 사용</td>
+      </tr>
+      <tr>
+         <td>tab_*</td>
+         <td>tab_style_01.gif</td>
+         <td>네비게이션을 제외한 탭 메뉴 형태에 사용</td>
+      </tr>
+      <tr>
+         <td>btn_*</td>
+         <td>btn_ok.gif</td>
+         <td>버튼 형식의 a 엘리먼트, button엘리먼트, input[type=image]엘리먼트 요소에 사용, 버튼의 이미지가 배경으로 사용하여도 btn_*예약어 사용</td>
+      </tr>
+      <tr>
+         <th>박스</th>
+         <td>box_*</td>
+         <td>btn_ok.gif</td>
+         <td>grouping목적으로 사용되는 div 엘리먼트에 주로 사용</td>
+      </tr>
+      <tr>
+         <th>블릿</th>
+         <td>bul_*</td>
+         <td>bul_arrow.gif</td>
+         <td>의미가 없는 요소로 사용할수 있는 이미지 사용</td>
+      </tr>
+      <tr>
+         <th>아이콘</th>
+         <td>icon_*</td>
+         <td>icon_search.gif, icon_download.gif</td>
+         <td>의미가 있는 요소로 설명에 대한 텍스트가 명확한 경우</td>
+      </tr>
+      <tr>
+         <th>상태</th>
+         <td>*_on,*_off, *_over, *_out, *_active</td>
+         <td>tab_type_01_on.gif</td>
+         <td>활성화, 비활성화. 오버/ 포커스 상태에 대한 표현에 사용</td>
+      </tr>
+   </table>
+   <h2>기본적인 클래스 예약어</h2>
+   <table>
+      <tr>
+         <th>예약어</th>
+         <th>설명</th>
+      </tr>
+      <tr>
+         <th>.aside-*</th>
+         <td>보통 #container 또는 #content에 종속 되며 곁가지 영역으로 불리기도 한다.</td>
+      </tr>
+      <tr>
+         <th>.gnb</th>
+         <td>최상위 공통 네비게이션(Global Navigation Bar) 을 지정. 보통 수평형태로 표현되며 #header에 종속된다. 수직으로 표현되는 경우는 거의 드물지만 그러한 경우 #header에 종속되지 않을 수도 있다 </td>
+      </tr>
+      <tr>
+         <th>.lnb</th>
+         <td>현재 서비스의 지역(Local Navigation Bar)네비게이션을 지정. 보통 수평형태로 표현되며 #header에 종속된다. 수직으로 표현되는 경우는 거의 드물지만 그러한 경우 #header에 종속되지 않을 수도 있다 </td>
+      </tr>
+      <tr>
+         <th>.snb</th>
+         <td>.gnb, .lnb를 제외한 측면(Side Navigation Bar)네비게이션 영역을 지정 </td>
+      </tr>
+      <tr>
+         <th>.nav-*</th>
+         <td>gnb, lnb, snb 이외의 네비게이션을 지정</td>
+      </tr>
+      <tr>
+         <th>.section-*</th>
+         <td>콘텐츠를 분할하거나 그룹핑하는 블럭. 보통#container 또는 #content 내부에 배치하나 다음 heading 태그 h1~h6와 함께 사용하는 것을 권장한다. </td>
+      </tr>
+   </table>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
