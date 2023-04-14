@@ -8,6 +8,74 @@
 <body>
 	<h1>예약 문의</h1>
 	<!-- 내용을 입력합니다. -->
-	
+	<form action="#" method="get" name="form1">
+		<!-- input은 인라인이면서 블록요소 -->
+		<p>작성자 
+			<!-- autofocus: 자동선택, 
+				required: 필수요소로 지정
+				value: 값을 지정함 
+				autocomplete: 자동완성 기능
+				disabled: 기능 비활성화 ex) 입력이 다 안된 회원가입 완료버튼
+			-->
+			<input type="text" name="userName" autofocus="autofocus" required value="예시: 홍길동">
+		</p>
+		<p>비밀번호 
+			<input type="password" placeholder="비밀번호를 입력해주세요" name="userpw">
+		</p>
+		<p>이메일
+			<input type="email" placeholder="이메일을 입력해주세요" name="email" autocomplete="on">
+		</p>
+		<p>연락처 
+			<input type="tel" placeholder="연락처를 입력해주세요" name="phone" autocomplete="off">
+		</p>
+		<p>투숙 날짜 
+			<input type="date" name="date">
+		</p>
+		<p>투숙 날찌 시 분 
+			<input type="datetime" name="userDatetime">
+		</p>
+		<p>년과 월 
+			<input type="month" name="userMonth">
+		</p>
+		<p>주 
+			<input type="week" name="userWeek">
+		</p>
+		<p>시 분을 선택
+			<input type="time" name="userTime">
+		</p>
+		<p>color
+			<input type="color" name="userColor">
+		</p>
+		<p>투숙 인원
+			<input type="number" name="userNumder" value="1">
+		</p>
+		<p>제목
+			<input type="text" name="userTitle">
+		</p>
+		<p>range 숫자 범위를 슬라이드
+			<input type="range" name="userRange">		
+		</p>
+		<p>file
+			<input type="file" name="userFile">
+		</p>
+		<p>url
+			<input type="url" name="userUrl">
+		</p>
+		<p>disabled 속성, readonly 속성</p>
+		<ul>
+			<li>
+				<label for="serialNum">시리얼 번호 입력:</label>
+				<input type="text" id="serialNum">
+				<input type="button" value="이전">
+				<input type="button" value="다음" disabled>
+			</li>
+			<li>
+				<label for="book">선택한 책</label>
+				<input type="text" id="book" value="반응형 웹" readonly>
+				<label for="num">수량: </label>
+				<input type="number" id="num" value="1">
+			</li>
+		</ul>
+	</form>
 </body>
 </html>
