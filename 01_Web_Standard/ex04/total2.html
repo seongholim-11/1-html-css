@@ -5,7 +5,10 @@
 	<meta charset="UTF-8" />
 	<style>
 		h1{text-align: center;}
-		fieldset{width: 450px; padding: 10px; padding-bottom: 30px; margin: 0 auto;}
+		fieldset{width: 450px; padding: 30px; margin: 50px auto;}
+		input{padding: 5px 10px; vertical-align: middle;}
+		select{padding: 5px 10px; margin-left: 10px;}
+		label{vertical-align: middle;}
 	</style>
 </head>
 
@@ -18,10 +21,14 @@
 				<input type="text" value="아이디">
 				<select name="Select" id="Select" >
 					<option value="Select">-- Select --</option>
+					<option value="naver">@naver.com</option>
+					<option value="daum">@daum.net</option>
+					<option value="google">@gmail.com</option>
+
 				</select>
 			</p>
 			<p>
-				<input type="password" name="pw" value="1234567">
+				<input type="password" name="userPw" value="1234567">
 				<input type="image" name="login" src="./images/login.gif" alt="로그인 버튼">
 			</p>
 			<input name="idSave" type="checkbox" id="idSave">
