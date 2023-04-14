@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>일기장</title>
     <style>
-        html{width: 1500px; height: 1500px; margin: 0 auto;}
+        html{margin: 0 auto;}
         h1{text-align: center;}
         #left{width: 250px; height: 1500px; border: 1px solid black; float: left;}
         #right{width: 250px; height: 1500px; border: 1px solid black;}
+        #main{float: left; width: auto; height: auto;}
         li{white-space: normal;}
         section{width: 1000px; height: 1500px; border: 1px solid black; float: left;}
+        article{float: left;}
         summary{font-weight: bold;}
         details{padding: 10px;}
         table{width: 250px; height: 250px;border: 1px solid black;}
@@ -127,7 +129,11 @@
             <div id="js"></div>
         </aside>
         <div id="main">
-            <section><iframe src="./01_Web_Standard/ex02/unit02_01.html" width="700px" height="700px" name="frame"></iframe></section>
+            <section>
+                <article>
+                    <iframe src="./01_Web_Standard/ex02/unit02_01.html" width="700px" height="700px" name="frame"></iframe>
+                </article>
+            </section>
         </div>
         <aside id="right">
             <table>
