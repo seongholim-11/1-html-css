@@ -1,5 +1,5 @@
 h1{background: purple;}
 h2{background: red; font-size: 12px;}
 h1, h2{text-align: center; padding: 5px; color: #fff;}
-a{background: black; color: #fff; height: 100vh;}
+a{background: black; color: #fff;}
 .img, .link{text-align: center;}
