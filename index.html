@@ -5,25 +5,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>일기장</title>
-    <style>
-        html{margin: 0 auto;}
-        h1{text-align: center;}
-        #left{width: 200px; height: 1000px; border: 1px solid black; float: left;}
-        #right{width: 200px; height: 1000px; border: 1px solid black; float: left;}
-        #main{float: left; width: auto; height: auto; margin: 0 auto;}
-        li{white-space: normal;}
-        section{width: 700px; height: 1000px; border: 1px solid black;}
-        summary{font-weight: bold;}
-        details{padding: 10px;}
-        table{width: 190px; height: 200px;border: 1px solid black; margin: 5px;}
-        td{border: 1px solid black; text-align: center;}
-        thead{font-weight: bold;}
-    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 <div id="wrap">
         <head><h1>학습 일기</h1></head>
-        <aside id="left">
+        <div class="nav_menu">
+            <nav>
+                <div id="html">
+                    <details>
+                        <summary>ex02(23.04.11)</summary>
+                            <ol>
+                                <li><a href="./01_Web_Standard/ex02/unit02_01.html" target="frame">제목요소h1~6, 문단요소p, br</a></li>
+                                <li><a href="./01_Web_Standard/ex02/unit02_02.html" target="frame">엔티티코드</a></li>
+                                <li><a href="./01_Web_Standard/ex02/unit03_01.html" target="frame">abbr, address, strong, sub, blockquote</a></li>
+                                <li><a href="./01_Web_Standard/ex02/unit03_02.html" target="frame">mark, meter, progress, ruby, rt, details</a></li>
+                                <li><a href="./01_Web_Standard/ex02/unit04_01.html" target="frame">ul, li, ol</a></li>
+                                <li><a href="./01_Web_Standard/ex02/unit04_02.html" target="frame">dl, dt, dd</a></li>
+                                <li><a href="./01_Web_Standard/ex02/unit05_01.html" target="frame">header, nav, section, article, aside, footer</a></li>
+                                <li><a href="./01_Web_Standard/ex02/unit05_02.html" target="frame">header, nav, section, article, aside, footer</a></li>
+                                <li><a href="./01_Web_Standard/ex02/unit05_03.html" target="frame">header, nav, section, article, aside, footer</a></li>
+                                <li><a href="./01_Web_Standard/ex02/unit05_04.html" target="frame">header, nav, section, article, aside, footer</a></li>
+                                <li><a href="./01_Web_Standard/ex02/unit05_05.html" target="frame">header, nav, section, article, aside, footer</a></li>
+                                <li><a href="./01_Web_Standard/ex02/unit05_06.html" target="frame">float</a></li>
+                                <li><a href="./01_Web_Standard/ex02/total2.html" target="frame">최종실습1</a></li>
+                            </ol>
+                    </details>
+                    <details>
+                        <summary>ex03(23.04.12~13)</summary>
+                        <ol>
+                            <li><a href="./01_Web_Standard/ex03/unit01_01.html" target="frame">img</a></li>
+                            <li><a href="./01_Web_Standard/ex03/unit01_02.html" target="frame">caption</a></li>
+                            <li><a href="./01_Web_Standard/ex03/unit02_01.html" target="frame">audio</a></li>
+                            <li><a href="./01_Web_Standard/ex03/unit02_02.html" target="frame">video</a></li>
+                            <li><a href="./01_Web_Standard/ex03/unit03_01.html" target="frame">a(하이퍼링크)</a></li>
+                            <li><a href="./01_Web_Standard/ex03/unit03_02.html" target="frame">a(네임앵커)</a></li>
+                            <li><a href="./01_Web_Standard/ex03/unit03_03.html" target="frame">img, map</a></li>
+                            <li><a href="./01_Web_Standard/ex03/unit04_01.html" target="frame">iframe</a></li>
+                            <li><a href="./01_Web_Standard/ex03/unit04_02.html" target="frame">iframe</a></li>
+                            <li><a href="./01_Web_Standard/ex03/total1.html" target="frame">최종실습1</a></li>
+                            <li><a href="./01_Web_Standard/ex03/total2.html" target="frame">최종실습2</a></li>
+                        </ol>
+                    </details>
+                    <details>
+                        <summary>ex04(23.04.13~14)</summary>
+                        <ol>
+                            <li><a href="./01_Web_Standard/ex04/unit01_01.html" target="frame">table, tr, td, th</a></li>
+                            <li><a href="./01_Web_Standard/ex04/unit01_02.html" target="frame">rowspan, colspan</a></li>
+                            <li><a href="./01_Web_Standard/ex04/unit02_01.html" target="frame">colgroup</a></li>
+                            <li><a href="./01_Web_Standard/ex04/unit02_02.html" target="frame">thead, tbody, tfoot</a></li>
+                            <li><a href="./01_Web_Standard/ex04/unit02_03.html" target="frame">테이블 실습1</a></li>
+                            <li><a href="./01_Web_Standard/ex04/unit02_04.html" target="frame">테이블 실습2 (인적사항)</a></li>
+                            <li><a href="./01_Web_Standard/ex04/unit02_05.html" target="frame">테이블 실습3 (이력서)</a></li>
+                            <li><a href="./01_Web_Standard/ex04/total1.html" target="frame">최종실습1(래시피재료)</a></li>
+                            <li><a href="./01_Web_Standard/ex04/unit03_01.html" target="frame">form의 type</a></li>
+                            <li><a href="./01_Web_Standard/ex04/unit03_02.html" target="frame">checkbox, radio</a></li>
+                            <li><a href="./01_Web_Standard/ex04/unit03_03.html" target="frame">input(img)</a></li>
+                            <li><a href="./01_Web_Standard/ex04/unit04_01.html" target="frame">fieldset, legend</a></li>
+                            <li><a href="./01_Web_Standard/ex04/unit04_02.html" target="frame">textarea</a></li>
+                            <li><a href="./01_Web_Standard/ex04/unit04_03.html" target="frame">checkbox 꾸미기</a></li>
+                            <li><a href="./01_Web_Standard/ex04/total2.html" target="frame">최종실습2(로그인창)</a></li>
+                        </ol>
+                    </details>
+                    <details>
+                        <summary>ex05(23.04.14)</summary>
+                        <ol>
+                            <li><a href="./01_Web_Standard/ex05/unit01_01.html" target="frame">p요소에 css 적용</a></li>
+                            <li><a href="./01_Web_Standard/ex05/unit01_02.html" target="frame">인라인 요소 배경, 색</a></li>
+                            <li><a href="./01_Web_Standard/ex05/unit02_01.html" target="frame">전체배경</a></li>
+                            <li><a href="./01_Web_Standard/ex05/unit02_02.html" target="frame">블록요소 배경</a></li>
+                            <li><a href="./01_Web_Standard/ex05/unit03_01.html" target="frame">글 중앙에 배치</a></li>
+                            <li><a href="./01_Web_Standard/ex05/unit03_02.html" target="frame">@import로 CSS 문서 연결하기</a></li>
+                            <li><a href="./01_Web_Standard/ex05/unit04_01.html" target="frame">border-radius</a></li>
+                            <li><a href="./01_Web_Standard/ex05/unit04_02.html" target="frame">box-radius, text-radius</a></li>
+                            <li><a href="./01_Web_Standard/ex05/total2.html" target="frame">최종실습1(css 적용하기)</a></li>
+                        </ol>
+                    </details>
+                    <details>
+                        <summary>ex06</summary>
+                        <ol>
+                            
+                        </ol>
+                    </details>
+                    <details>
+                        <summary>ex07</summary>
+                        <ol>
+                            
+                        </ol>
+                    </details>
+                    <details>
+                        <summary>ex08</summary>
+                        <ol>
+                            
+                        </ol>
+                    </details>
+                    <details>
+                        <summary>ex09</summary>
+                        <ol>
+                            
+                        </ol>
+                    </details>
+                <div id="js"></div> 
+            </nav>
+        </div>
+        <!-- <aside id="left">
             <div id="html">
                 <details>
                     <summary>ex02(23.04.11)</summary>
@@ -127,7 +212,7 @@
                 <hr>
             </div>
             <div id="js"></div>
-        </aside>
+        </aside> -->
         <div id="main">
             <section>
                 <article>

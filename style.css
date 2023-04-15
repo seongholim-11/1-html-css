@@ -1,12 +1,46 @@
 html{margin: 0 auto;}
-        h1{text-align: center;}
-        #left{width: 200px; height: 1000px; border: 1px solid black; float: left;}
-        #right{width: 200px; height: 1000px; border: 1px solid black; float: left;}
-        #main{float: left; width: auto; height: auto; margin: 0 auto;}
-        li{white-space: normal;}
-        section{width: 700px; height: 1000px; border: 1px solid black;}
-        summary{font-weight: bold;}
-        details{padding: 10px;}
-        table{width: 190px; height: 200px;border: 1px solid black; margin: 5px;}
-        td{border: 1px solid black; text-align: center;}
-        thead{font-weight: bold;}
+h1{text-align: center;}
+/* #left{
+    width: 200px; 
+    height: 1000px; 
+    border: 1px solid black; 
+    float: left;} */
+#right{
+    width: 200px; 
+    height: 1000px; 
+    border: 1px solid black; 
+    float: left; 
+    margin: 50px 0px;}
+#main{
+    float: left;  
+    height: 1000px;
+    width: 750px; 
+    margin: 0px 0px;}
+li{
+    white-space: normal;}
+section{
+    width: 700px; 
+    height: 1000px; 
+    border: 1px solid black; 
+    margin: 50px auto;}
+summary{
+    font-weight: bold;}
+details{
+    padding: 10px;}
+table{
+    width: 190px; 
+    height: 200px;
+    border: 1px solid black; 
+    margin: 5px;}
+td{
+    border: 1px solid black;
+    text-align: center;}
+thead{
+    font-weight: bold;}
+.nav_menu{
+    width: 1200px;
+    margin: 0 auto;}
+details{
+    width: 250px; 
+    float: left; 
+    border: 2px solid black;}
