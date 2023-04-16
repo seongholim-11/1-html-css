@@ -1,46 +1,73 @@
-html{margin: 0 auto;}
+html{margin: 0 auto;
+    padding: 0px;}
 h1{text-align: center;}
-/* #left{
-    width: 200px; 
-    height: 1000px; 
-    border: 1px solid black; 
-    float: left;} */
-#right{
-    width: 200px; 
-    height: 1000px; 
-    border: 1px solid black; 
-    float: left;}
+#nav_menu{
+    width: 100%;
+    height: 100px;
+    clear: both;}
+#html{
+    width: 1300px;
+    margin: 0 auto;
+    clear: right;}
+#ul_center{text-align: center;}
+ul{
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    display: inline-block;
+}
+ul li{
+    float: left;
+    border: 1px solid #000;
+}
+ul li a{
+    padding: 0 3px;
+    display: block;
+    background-color: #ffdab9;
+    color: #000;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;}
+ul li a.current{
+    background-color: #ff6347;
+    color: #fff;}
+ul li a:hover:not(.current){
+    background-color: #CD853F;
+    color: #fff;
+}
+#ex_wrap{
+    background: rgb(234, 210, 255);
+    overflow:scroll; width:100%; height:300px}
+ol>li{font-size: 24px;}
 #main{
-    height: 1100px;
-    width: 1100px;
-    margin: 0 auto;}
-li{
-    white-space: normal;}
-section{
-    width: 700px; 
-    height: 1000px; 
-    border: 1px solid black;
-    float: left;}
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    clear: left;}
 .main_wrap{
     margin: 0 auto;}
-summary{
-    font-weight: bold;}
-details{
-    padding: 10px;}
+section{
+    width: 70%; 
+    height: 1000px; 
+    border: 1px solid black;
+    float: left;
+    margin: auto auto;}
+article iframe{width: 100%; height: 1000px;}
+#right{
+    width: 29.7%; 
+    height: 1000px; 
+    border: 1px solid black; 
+    float: left;}
 table{
     width: 190px; 
     height: 200px;
-    border: 1px solid black; 
-    margin: 5px;}
+    border: 1px solid black;
+    margin: 10px auto;}
 td{
     border: 1px solid black;
     text-align: center;}
 thead{
     font-weight: bold;}
-.nav_menu{
-    width: 1200px;
-    margin: 0 auto;}
-details{
-    width: 250px; 
-    float: left; 
-    border: 2px solid black;}
