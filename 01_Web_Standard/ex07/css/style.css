@@ -1,0 +1,25 @@
+table{
+    width: 590px;
+    margin: 50px auto;
+    border: 1px solid black;
+}
+
+table td div{
+    padding: 10px;
+    text-align: center;
+}
+
+.tbox01{border: 5px none #ccc;}
+.tbox02{border: 5px solid #ccc;}
+.tbox03{border: 5px dotted #ccc;}
+
+.tbox04{border: 5px dashed #ccc;}
+.tbox05{border: 5px double #ccc;}
+.tbox06{border: 5px groove #ccc;}
+
+.tbox07{border: 5px ridge #ccc;}
+.tbox08{border: 5px inset #ccc;}
+.tbox09{border: 5px outset #ccc;}
+
+
+
