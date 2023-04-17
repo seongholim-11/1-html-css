@@ -4,7 +4,16 @@
 		<title>목록 문단에 이미지, 위치, 스타일 제어하기</title>
 		<meta charset="UTF-8" />
 		<style type="text/css">
-					
+			*{margin: 0; padding: 0;}
+			#list1{border: 5px solid black;}
+			#list1 li{list-style-image: url(./images/arrow.gif); list-style-position: inside;}
+
+			#list2{list-style-type: upper-roman;padding: 50px;}
+			#list2 li:first-child{list-style: url(./images/num1_green.gif) inside;}
+			#list2 li:last-child{list-style: hiragana inside;}
+
+			#list3{padding: 30px; list-style: armenian;}
+
 		</style>
 	</head>
 
@@ -13,6 +22,14 @@
 		<hr>
 		<h2>테마별 명언 모음</h2> 
 		<ul id="list1">
+			<li>도전</li>
+			<li>사랑 </li>
+			<li>우정 </li>
+			<li>이별</li>
+			<li>인생</li>
+			<li>희망</li>
+		</ul>
+		<ul id="list3">
 			<li>도전</li>
 			<li>사랑 </li>
 			<li>우정 </li>
