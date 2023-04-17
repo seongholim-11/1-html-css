@@ -4,11 +4,15 @@
 		<title>첫 번째, 짝수 번째, 세 번째 li 요소 꾸미기 </title>
 		<meta charset="UTF-8" />
 		<style type="text/css">
-		/* 첫번째 li 태그  */
-			
-		/* 짝수번째 li 태그  */
-			
-		/* 세번째 li 태그  */
+		/* 형제 태그는 순번을 줄 수 있다 */
+			/* 첫번째 li 태그  */
+			li:first-child{background-color: beige; width: 500px; padding: 5px; color: rgb(0, 0, 0);}
+			/* 마지막 li 태그 */
+			li:last-child{background-color: rgb(110, 255, 231); width: 500px; padding: 5px; color: rgb(0, 0, 0);}
+			/* 짝수번째 li 태그  */
+			li:nth-child(even){color: brown; background-color: blue; width: 500px; padding: 5px;}
+			/* 세번째 li 태그  */
+			li:nth-child(odd){color: rgb(255, 99, 99); background-color: rgb(229, 255, 0); width: 500px; padding: 5px;}
 			
 		</style>
 
