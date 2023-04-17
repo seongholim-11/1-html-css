@@ -5,7 +5,30 @@
 		<meta charset="UTF-8" />
 		<style type="text/css">
 		/* 선택자 앞과 뒤에 내용을 추가합니다.  */
-
+			h1{position: relative; text-align: center;}
+			h1:hover::after{
+				width: 100%;
+				left: 0;
+			}
+			h1::after{
+				content: "";
+				width: 0%;
+				height: 1px;
+				background: #ccc;
+				position: absolute;
+				bottom: -10px;
+				left: 50%;
+				transition: all 1s;}
+			h2::before{
+				content: "몸에 좋은 ";
+				color: red;
+				font-weight: normal;
+			}
+			h2::after{
+				content: " 이야기";
+				color: red;
+				font-weight: normal;
+			}
 		</style>
 	</head>
 
