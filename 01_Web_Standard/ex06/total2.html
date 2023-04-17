@@ -7,32 +7,26 @@
 		*{margin: 0; padding: 0;}
 
 		body{margin: 50px;}
-
+		div{width: 180px;}
 		ul{padding: 5px 0 20px 20px; list-style: none;}
+		li{line-height: 2;}
+		a{text-decoration: none; color: gray;}
 
-		#categoryBox{
-			width: 180px;
-			border: 5px solid rgb(76, 76, 211);
-			margin-bottom: 50px;
-		}
+		#categoryBox{border: 5px solid rgb(58, 102, 153); margin-bottom: 50px;}
 
 		#categoryBox h1{border-bottom: 1px solid black; padding: 0 0 3px 20px;}
 
-		#categoryBox li:first-child a{text-decoration: none; color: rgb(0, 0, 0); font-weight: bold;}
-		#categoryBox li{line-height: 1.8;}
-		#categoryBox a{text-decoration: none; color: gray;}
+		#categoryBox li:first-child a{color: rgb(0, 0, 0); font-weight: bold;}
+		#categoryBox a:hover{color: black;}
 
-		#bbsBox{
-			width: 180px;
-			border: 5px solid rgb(211, 76, 132);}
+		#bbsBox{border: 5px solid rgb(211, 76, 132);}
 
-		#bbsBox h1{padding-left: 20px;}
+		#bbsBox h1{padding: 0 0 3px 20px;}
 
-		#bbsBox li{line-height: 1.5;}
-		#bbsBox a{text-decoration: none;}
-		#bbsBox a[title="자유게시판"]{background: red; color: #fff;}
-		#bbsBox a[title="회원장터"]{background: blue; color: #fff;}
-		#bbsBox a[title$="레시피"]{background: green; color: #fff;}
+		#bbsBox a{color: #fff; padding: 5px;}
+		#bbsBox a[title="자유게시판"]{background: red;}
+		#bbsBox a[title="회원장터"]{background: blue;}
+		#bbsBox a[title$="레시피"]{background: green;}
 		
 	</style>
 </head>
