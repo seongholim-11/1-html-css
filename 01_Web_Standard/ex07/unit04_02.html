@@ -1,27 +1,65 @@
 <!DOCTYPE HTML>
 <html lang="ko">
 	<head>
-		<title>다중 배경 이미지, 배경 이미지 크기, 배경 이미지 적용 속성 적용하기</title>
+		<title>이미지, 색상, 글자 투명도 조정하기</title>
 		<meta charset="UTF-8" />
 		<style type="text/css">
-				
+				*{margin: 0; padding: 0;}
+				/* body{background: #ccc url(./images/bg_gray.png) no-repeat;}
+				#box1{
+					background: url(./images/circle.png) no-repeat;
+					width: 530px; height: 424px;
+					padding-top: 150px;
+					padding-left: 20px;
+					margin: 0 auto;
+					opacity: 0.8;}
+				#box1 .text_box{
+					width: 25%;
+					margin: 0 auto;
+					padding: 15px;
+					background: hsla(90, 100%, 100%, 0.6);
+					border-radius: 20px;
+					
+				}
+				#box1 .people{
+					font: 3em "Arial Black";
+					padding-top: 130px;
+					color: rgba(255,255,255,0.7);
+				} */
+				body{background: #ccc url(./images/bg_gray.png) no-repeat;}
+				#box1{
+					width: 530px;
+					height: 424px;
+					margin: 0 auto;
+					padding-top: 150px;
+					padding-left: 20px;
+					background: url(./images/circle.png) no-repeat;
+					opacity: 0.8;}
+					
+				#box1 .text_box{
+					width: 30%;
+					margin: 0 auto;
+					padding: 10px;
+					background: hsla(90, 100%, 100%, 0.6);
+					border-radius: 10px;
+				}
+				#box1 .people{
+					font: 3em Arial black;
+					margin: 0 auto;
+					padding-top: 150px;
+					padding-left: 20px;
+					color: rgba(255,255,255,0.7);
+				}
+
 		</style>
 	</head>
 
 	<body>
 		<div id="box1">
-			<p>Only actions give life strength; only moderation gives it a charm. <br />
-						(Jean Paul Richter) <br />
-						행동만이 삶에 힘을 주고, 절제만이 삶에 매력을 준다. 
+			<p class="text_box">Only actions give life strength; only moderation gives it a charm. <br />
+						(Jean Paul Richter)
 			</p>
-		</div>
-		<div id="box2">
-			<p>Good teaching is one-fourth preparation and three-fourths theater. (Gail Godwin) <br />
-						훌륭한 가르침은 1/4이 준비 과정, 3/4은 현장에서 이루어진다.
-			</p>
-			<p>The endeavor to understand is the first and only basis of virtue. (Baruch Spinoza) <br />
-						이해하려고 노력하는 행동이 미덕의 첫 단계이자 유일한 기본이다. 
-			</p>
+			<p class= "people">Jean Paul Richter</p>
 		</div>
 	</body>
 </html>
