@@ -4,11 +4,19 @@
 		<title>인용부호, 특정 문자열과 같은 콘텐츠 생성하기</title>
 		<meta charset="UTF-8" />
 		<style type="text/css">
+			/* h1 앞에 여는 쌍따옴표 추가 */
 			h1::before{content: open-quote;}
+			/* h1 뒤에 닫는 쌍따옴표 추가 */
 			h1::after{content: "*****"close-quote;}
+			/* counter-increment: 특정 요소에 일련 번호 부여
+			p 전에 컨텐츠 추가, 대문자 로마숫자 추가
+			em과 rem은 둘 다 CCS의 font-size 속성값에 비례해서 결정되는 상대 단위
+			*/
 			p{white-space: pre; counter-increment: myindex;}
 			p::before{content:counter(myindex, upper-roman); font-size: 2em; color: red;}
+			/* 맨 바깥 인용문 <<>> , 그 다음 안쪽 [] */
 			q{quotes:"<<"">>""[""]";}
+			/* 인용문 // // */
 			.qStyle{quotes: "//""//"; color: green;}
 
 		</style>

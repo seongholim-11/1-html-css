@@ -3,17 +3,24 @@
 	<head>
 		<title> 글자와 관련된 속성 알아보기 </title>
 		<meta charset="UTF-8" />
+		<!-- 구글 폰트 링크 추가 -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
 		<style type="text/css">
+			/* 구글 폰트 임포트 */
   			@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&display=swap');
+			/* 구글 폰트 링크추가 또는 임포트 후 폰트 설정 */
 			#box1 h2{font-family:'Bebas Neue', cursive; font-size: 32px;}
 			#box1 p{font-family: 'Pacifico', cursive; font-weight: bold;}
 
 			#box2{width: 800px; box-shadow: -10px -10px 15px rgb(255, 0, 0); text-align: center; margin: 0 auto;}
+			/* 
+			font-style: 글자 스타일 설정
+			text-shadow: x좌표 y좌표 번짐 색상 */
 			#box2 h2{font-style: italic; color: red; text-shadow: 5px 5px 2px black;}
+			/* 소문자를 작은 대문자로 변경 */
 			#box2 p{font-variant: small-caps;}
 
 			#box3 h2{font:italic 3em Arial; color: blueviolet;}

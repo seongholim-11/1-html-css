@@ -4,8 +4,16 @@
 		<title> 글 문단의 흐름 방향, 공백 처리에 관련된 속성 알아보기 </title>
 		<meta charset="UTF-8" />
 		<style type="text/css">
+			/* 글자 방향지정 오른쪽 to 왼쪽, 왼쪽 to 오른쪽(ltr)*/
 			h1{direction:rtl}
+			/* white-space: 스페이스와 탭, 줄바꿈, 자동줄바꿈을 어떻게 처리할지 정하는 속성 
+			nowrap: 부모 요소 안의 가로폭을 넘어가더라도 줄바꿈하지 않음.
+			pre: 코드를 웹에서 효과적으로 보여줄 수 있음, 연속된 띄어쓰기와 들여쓰기, 줄바꿈이 있는 그대로 유지
+			overflow: hidden: 넘어가는건 숨김
+			text-overflow: ellipsis: 넘어가는건 ...으로 표시
+			*/
 			.nowrapP{white-space: nowrap; width: 500px; background: yellow; overflow: hidden; text-overflow: ellipsis;}
+			
 			.nowrapP1{width: 300px; background: yellowgreen; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
 			.preP{white-space: pre;}
 		</style>
