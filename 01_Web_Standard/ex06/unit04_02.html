@@ -4,15 +4,19 @@
 		<title>속성 선택자 사용하기</title>
 		<meta charset="UTF-8" />
 		<style type="text/css">
-		/* a 요소를 이용하여 선택자를 정의합니다. */
+			/* a 요소를 이용하여 선택자를 정의합니다. */
+			/* a 태그의 title 속성의 속성값이 "조리기능사"의 글자색 흰색, 뒷배경 빨강 */
 			a[title="조리기능사"]{color: #fff; background: #f00;}
 			/* ~으로 시작하는 속성 */
+			/* a 태그의 title 속성의 속성값이 "제과"로 시작하는, 글자색 흰색, 뒷배경 초록 글자 굵기 볼드*/
 			a[title^="제과"]{color: #fff; background: green; font-weight: bold;}
 			/* ~으로 끝나는 속성 */
+			/* a 태그의 title 속성의 속성값이 "기능사"로 끝나는, 글자색 흰색, 뒷배경 파랑 글자굵기 볼드 */
 			a[title$="기능장"]{color: #fff; background: blue; font-weight: bold;}
 			/* ~으로 끝나는 속성 */
+			/* a 태그의 title 속성의 속성값에 "산업기사"가 들어가는, 글자색 검정, 뒷배경 노랑 글자굵기 볼드 */
 			a[title*="산업기사"]{color: #000000; background: yellow; font-weight: bold;}
-			</style>
+		</style>
 	</head>
 
 	<body>

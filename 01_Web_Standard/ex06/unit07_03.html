@@ -5,11 +5,21 @@
 		<meta charset="UTF-8" />
 		<style type="text/css">
 		/* 선택자 앞과 뒤에 내용을 추가합니다.  */
+			/* pisition: 요소 자기자신을 기준으로 배치; 글자를 배열을 가운데로; */
 			h1{position: relative; text-align: center;}
+			/* h1에 마우스가 올려져있을 때, h1 끝에 새 컨텐츠 추가
+			가로 폭 100%
+			해당 태그 위치를 좌측 기준으로 어디쯤에 위치시킬건지 지정
+			*/
 			h1:hover::after{
 				width: 100%;
 				left: 0;
 			}
+			/* h1 오른쪽 끝에 위치
+			content: 선택한 요소의 앞이나 뒤에 텍스트, 이미지 등을 추가
+			position: absolute;: 부모(조상) 요소를 기준으로 배치
+			transition: 속성을 천천히 변화시키는 속성
+			*/
 			h1::after{
 				content: "";
 				width: 0%;
@@ -19,6 +29,7 @@
 				bottom: -10px;
 				left: 50%;
 				transition: all 1s;}
+			/* h2 앞에 컨텐츠 추가 */
 			h2::before{
 				content: "몸에 좋은 ";
 				color: red;
