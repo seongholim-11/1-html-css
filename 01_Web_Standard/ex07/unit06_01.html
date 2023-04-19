@@ -1,15 +1,25 @@
 <!DOCTYPE HTML>
 <html lang="ko">
 	<head>
-		<title>테이	블에 관련된 속성 알아보기 </title>
+		<title>테이블에 관련된 속성 알아보기 </title>
 		<meta charset="UTF-8" />
 		<style type="text/css">
+        #table1{border: 1px solid black; border-collapse: collapse; margin: 10px auto;}
+        #table1 th, #table1 td{border: 1px solid black; border-collapse: collapse; padding: 5px 10px; }
+        #table1>caption{background-color: rgb(35, 27, 43); color: #fff; padding: 5px 0;}
+        #table1 tr:first-child{background-color: rgb(182, 170, 194);}
+        .first{background-color: rgb(138, 120, 156);}
+        #table1 tr:last-child{background-color: rgb(35, 27, 43); color: #fff; text-align: center;}
 
+        
 		</style>
 	</head>
 
 	<body>
         <table id="table1">
+          <colgroup>
+            <col class="first">
+          </colgroup>
           <caption>렌터카 요금표</caption>
             <tr>
               <th>차종 </th>
