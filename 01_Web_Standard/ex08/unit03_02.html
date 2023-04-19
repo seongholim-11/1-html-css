@@ -4,7 +4,7 @@
 		<title>목록 요소를 가로로 배치하기</title>
 		<meta charset="UTF-8">
 		<style type="text/css">
-			body { 
+			/* body { 
 				margin:50px 0px;
 				}
 			a {
@@ -15,18 +15,38 @@
 			a:hover {
 				color:#ff3;
 				}
-			/* ul, li Layout */			
+		
+			ul{background: #dcc8ff; list-style: none; text-align: center; padding: 10px;}
+			ul li{display: inline; padding: 0 25px;} */
 			
+			#topMenu1{background: palevioletred; text-align: center; padding: 10px 0;}
+			#topMenu1 li{display: inline; padding: 10px;}
+			#topMenu1 li a{text-decoration: none; color: white;}
+			
+			#menuWrap{background: red; height: 50px;}
+			#topMenu2{width: 410px; height: 50px; background: rgb(112, 216, 126); margin: 0 auto;}
+			#topMenu2 li{float: left; list-style: none; padding: 10px 15px; }
+			#topMenu2 li a{text-decoration: none; color: white;}
 		</style>
 	</head>
 
 	<body>
-		<ul id="topMenu">
+		<ul id="topMenu1">
 			<li><a href="#">Home</a></li>
 			<li><a href="#">About</a></li>
 			<li><a href="#">Sitemap</a></li>
 			<li><a href="#">BBS</a></li>
 			<li><a href="#">Help</a></li>
 		</ul>
+
+		<div id="menuWrap">
+			<ul id="topMenu2">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Sitemap</a></li>
+					<li><a href="#">BBS</a></li>
+					<li><a href="#">Help</a></li>
+			</ul>
+		</div>
 	</body>
 </html>
