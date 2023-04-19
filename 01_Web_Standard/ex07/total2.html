@@ -4,32 +4,54 @@
 		<title> FAQ </title>
 		<meta charset="UTF-8" />
 		<style type="text/css">
-			body {
-				background:url(images/pattern_gray.png);
-				margin:50px 0px 0px 0px;
-				}
-		
-			h1 {
-				background:#ffffff;
-				padding:5px;
-				text-align:center;
-				margin-bottom:30px;
-				border-top:1px solid #000000;
-				border-bottom:5px solid #000000;
-				}
+			*{margin: 0; padding: 0;}
+			body{background: url(./images/pattern_gray.png);}
+			h1{
+				background-color: white;
+				text-align: center;
+				margin-top: 50px; padding: 10px 0;
+				box-shadow: 0px 4px black;
+				border-top: 1px solid black;}
+			#faqBox{
+				width: 650px; height: 200px;
+				margin: 20px auto; padding: 20px 10px;
+				border: 1px solid white; border-radius: 20px;
+				background-color: gray;
+				box-shadow: 1px 1px 20px black;
+				color: white;
+			}
+			#faqBox h2{
+				padding-left: 20px; padding: 10px; 
+				border-bottom: 1px dashed white;}
+			#faqBox dl{}
+			#faqBox dl dt::before{
+				content: "Q... ";
+				color: rgb(217, 255, 47);
+				font-weight: bold;
+				font-size: 20px;
+			}
+			#faqBox dl dt{
+				height: 28px;
+				background-color: rgb(63, 62, 62);
+				border-radius: 10px;
+				margin: 15px 10px; padding: 5px 5px 5px 5px;
+				font-size: 15px;
+				
+			}
+			#faqBox dl dd::before{
+				content: "A... ";
+				color: rgb(217, 255, 47);
+				font-weight: bold;
+				font-size: 20px;
+			}
+			#faqBox dl dd{
+				width: 550px;
+				margin: 5px 0px 5px 40px;
+				line-height: 1.5;
+				font-size: 15px;
+			}
+			
 
-			#faqBox {
-				font:9pt "맑은 고딕", 돋움;
-				line-height:150%;
-				color:#efefef;
-				width:500px;
-				padding:10px;
-				margin:0px auto;
-				background:#666666;
-				border:2px solid #efefef;
-				border-radius:10px;
-				box-shadow:0px 0px 20px #000000;
-				}
 
 		</style>
 	</head>
