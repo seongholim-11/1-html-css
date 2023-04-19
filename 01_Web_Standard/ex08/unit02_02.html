@@ -4,7 +4,7 @@
 		<title> 상대 좌표 방식으로 배치하기 </title>
 		<meta charset="UTF-8" />
 		<style type="text/css">
-			body { 
+			/* body { 
 				font:12px "맑은 고딕",돋움,arial; 
 				margin:20px 0px; 
 				}
@@ -14,6 +14,7 @@
 				margin:0px; 
 				padding:5px 50px; 
 				background-color:#666; 
+				text-align: center;
 				}
 			h2 {
 				font-size:1.5em;
@@ -42,7 +43,7 @@
 			a:hover {
 				color:#093;
 				}
-			/* Layout */
+
 			section {
 				margin:0 auto;
 				width:750px;
@@ -79,8 +80,113 @@
 				border:none;
 				border-radius:5px;
 				}
-			/* nav Layout */
-			
+
+			nav{
+				width: 800px; height: 50px;
+				margin: 0 auto; }
+			nav figure{}
+			nav figure img{float: left; position: relative; top: 6px; left: -40px;}
+			nav #topMenu{float: right; position: relative; top: -30px;}
+			nav #topMenu li{float: left; list-style: none; }
+			nav #topMenu li.liStyle::after{
+				content: "   |   ";
+				white-space: pre;
+			}
+			nav #searchForm{position: relative; top: 8px; left: 10px;} */
+		
+		*{margin: 0; padding: 0;}
+		/* Arial 없으면 Helvetica 없으면 sans-serif */
+		body{font-family: Arial, Helvetica, sans-serif;}
+		nav{
+			width: 800px; height: 50px;
+			margin: 20px auto 0 auto;
+		}
+		nav figure img{float: left; position: relative; top: 6px;}
+		nav #topMenu{float: right; position: relative; top: -20px;}
+		nav #topMenu li{
+			list-style: none;
+			float: left;
+		}
+		/* nav #topMenu .liStyle::after{
+			content: "  |  ";
+			white-space: pre;
+		} */
+		/* 마지막 자식빼고 li 다음에 컨텐츠 추가 */
+		nav #topMenu li:not(:last-child)::after{
+			content: "  |  ";
+			white-space: pre;
+		}
+		nav a{
+			text-decoration: none;
+			color: black;
+			font-weight: bold;
+		}
+		nav #searchForm input{
+			height: 30px;
+			position: relative; top: 10px; left: 40px;
+			border: 2px solid black;
+		}
+		nav #searchForm input[type="search"]{
+			width: 220px;}
+		nav #searchForm input[type="submit"]{
+			width: 40px; height: 30px;
+			background-color: black;
+			color: white;
+			position: relative;
+			top: 11px;
+			border-radius: 3px;
+		}
+		header{clear: both;}
+		header h1{
+			background: black;
+			color: white;
+			text-align: center;
+		}
+		section{
+			width: 750px;
+			margin: 0 auto;
+		}
+		div{width: 342px; height: 150px;}
+		section .book1{
+			background: url(./images/bg_sm01.png) no-repeat;
+			position: relative;
+			top: 20px;
+			left: 25px;}
+		section .book2{
+			background: url(./images/bg_sm02.png) no-repeat;
+			position: relative;
+			top: -130px;
+			left: 377px;}
+		section .book3{
+			background: url(./images/bg_sm03.png) no-repeat;
+			position: relative;
+			top: -120px;
+			left: 25px;}
+		section .book4{
+			background: url(./images/bg_sm04.png) no-repeat;
+			position: relative;
+			top: -270px;
+			left: 377px;}
+		h2{
+			font-size: 16px;
+			position: absolute;
+			top: 40px;
+			left: 120px;
+			text-shadow: 1px 1px 20px purple;}
+		h3{font-size: 12px;
+			position: absolute;
+			top: 80px;
+			left: 120px;
+			color: gray;}
+		section a{
+			font-size: 12px;
+			position: absolute;
+			bottom: 20px;
+			right: 30px;
+			text-decoration: none;
+			color: black;
+			font-weight: bold;}
+
 		</style>
 	</head>
 
