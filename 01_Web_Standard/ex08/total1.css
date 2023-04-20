@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: black url(./images/bg_event.png) no-repeat center 60px;
+    background-size: 600px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: none;
+}
+
+/* header h1, h2, h3 {
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    text-indent: -99999em;
+} */
+
+nav {
+    width: 100%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    position: fixed;
+}
+
+nav ul {
+    background: red;
+    padding: 20px;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+}
+
+nav li a {
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav li a:hover {
+    background: black;
+    color: white;
+    border-radius: 30px;
+
+}
+
+section {
+    background: url(./images/event_goods.png) no-repeat;
+    background-position: 520px 500px;
+    width: 600px;
+    height: 551px;
+    margin: 0 auto;
+    padding-top: 65px;
+    color: white;
+    position: relative;
+}
+
+section p {
+    width: 250px;
+    position: absolute;
+    top: 390px;
+    left: 270px;
+
+}
+
+section dt {
+    padding: 5px;
+    background: black;
+    color: white;
+    border-radius: 10px;
+}
+
+section dt:first-child {
+    position: absolute;
+    top: 490px;
+    left: 270px;
+}
+
+section dt:nth-child(3) {
+    position: absolute;
+    top: 630px;
+    left: 270px;
+}
+
+section dd {
+    padding: 1px;
+    display: inline;
+    background: gray;
+    color: black;
+}
+
+section .style1 {
+    width: 250px;
+    background: transparent;
+    color: white;
+    position: absolute;
+    top: 530px;
+    left: 270px;
+}
+
+section .style2 {
+    width: 250px;
+    background: transparent;
+    color: white;
+    position: absolute;
+    top: 670px;
+    left: 270px;
+}
+
+footer {
+    width: 100%;
+    padding-top: 20px;
+    position: absolute;
+    bottom: 0;
+    border-top: 2px solid red;
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    color: blue;
+    text-decoration: none;
+}
