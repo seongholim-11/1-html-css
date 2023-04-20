@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Animation</title>
+	<style>
+		.ball{
+			width: 100px;
+			height: 100px;
+			background: #f0f;
+			/* 넓이의 50% 이상하면 원 모양 */
+			border-radius: 50px;
+			position: relative;
+			animation-name: ain;
+			animation-duration: 3s;
+			/* 몇 번 실행할 것인지 */
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+			left: 0;
+		}
+		/* @keyframes ain {
+			0%{left: 0;}
+			100%{left: 800px;}
+		} */
+		@keyframes ain {
+			from{left: 0;}
+			50%{top: 400px;}
+			60%{top: 0;}
+			to{left: 800px;}
+		}
+
+		.box{
+			width: 60px;
+			height: 60px;
+			background: yellowgreen;
+			margin: 300px;
+			animation: rotate 1.5s ease-in-out 3s infinite, background 1.5s ease-in-out infinite alternate;
+		}
+		@keyframes rotate{
+			from{transform: perspective(120px) rotateX(0deg) rotateY(0deg)}
+			50%{transform: perspective(120px) rotateX(-180deg) rotateY(0deg)}
+			to{transform: perspective(120px) rotateX(-180deg) rotateY(-180deg)}
+		}
+
+		@keyframes background{
+			0%{background: red;}
+			50%{background: green;}
+			100%{background: yellow;}
+		}
+	</style>
+</head>
+<body>
+	<div class="ball"></div>
+	<div class="box"></div>
+</body>
+</html>
