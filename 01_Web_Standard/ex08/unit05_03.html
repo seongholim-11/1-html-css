@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+	<title> transform 속성으로 요소 변경하기 </title>
+	<meta charset="UTF-8" />
+	<style type="text/css">
+		.box{
+			width: 100px;
+			padding: 100px;
+			margin: 100px;
+			background: #a2b3ff;
+			transition: 2s ease-in;
+		}
+		.box:hover{
+			transform: scale(2) perspective(120px) rotateX(180deg);
+		}
+	</style>
+</head>
+
+<body>
+	<div class="box"></div>
+</body>
+
+</html>
