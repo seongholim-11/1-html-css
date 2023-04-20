@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework</title>
+    <style>
+        /* 0.5 초씩 바운스 효과 */
+        .bounce {
+            width: 50px; height: 50px;
+            margin: 100px;
+            background-color: red; border-radius: 25px;
+            position: relative;
+            /* 파폭 */
+            -moz-animation: bounce 0.5s infinite linear;
+            /* 크롬 */
+            -webkit-animation: bounce 0.5s infinite linear;
+            -o-animation: bounce 0.5s infinite linear;
+            animation: bounce 0.5s infinite linear;
+        }
+
+        /* 
+      바운스의 높이 
+      0% 일 때, 0px 
+      50%일 때, -5px 
+      70%일 때, -50px
+      100%일 때, 0px 
+      */
+        @-webkit-keyframes bounce {
+            0% {top: 0;}
+            50% {top: -5px;}
+            70% {top: -50px;}
+            100% {top: 0;}
+        }
+        @-moz-keyframes bounce {
+            0% {top: 0;}
+            50% {top: -5px;}
+            70% {top: -50px;}
+            100% {top: 0;}
+        }
+        @-o-keyframes bounce {
+            0% {top: 0;}
+            50% {top: -5px;}
+            70% {top: -50px;}
+            100% {top: 0;}
+        }
+        @-ms-keyframes bounce {
+            0% {top: 0;}
+            50% {top: -5px;}
+            70% {top: -50px;}
+            100% {top: 0;}
+        }
+        @keyframes bounce {
+            0% {top: 0;}
+            50% {top: -5px;}
+            70% {top: -50px;}
+            100% {top: 0;}
+        }
+    </style>
+</head>
+
+<body>
+    <!--  바운스할 요소 -->
+    <div class="bounce"></div>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework4</title>
+    <style>
+        #spinner {
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        border: 15px solid rgba(151, 198, 180, 0.2);
+        border-top: 15px solid rgb(198, 151, 195);
+        border-radius: 50%;
+        }
+        #spinner {
+        animation: spin 2s infinite;
+        }
+        #wrapper {
+            margin: 0 auto;
+            padding: 30px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+    }
+    
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="spinner"></div>
+    </div>
+</body>
+</html>
