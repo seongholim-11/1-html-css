@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow 속성</title>
+    <style>
+        body{
+            margin: 20px 0 0 150px;
+            padding: 0;
+            font-size: 0.7em;
+        }
+        div{
+            width: 200px;
+            border: 1px solid #ddd;
+            float: left;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        h2{
+            font-size: 1.2em;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 400px;
+            width: 200px;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: url(./images/css_design.png) no-repeat;
+        }
+        #box01{
+            background: paleturquoise;
+            height: 200px;
+            overflow: hidden;
+        }
+        #box02{
+            background: rgb(238, 232, 175);
+            height: 200px;
+            overflow: auto;
+        }
+        #box03{
+            background: rgb(175, 238, 201);
+            height: 200px;
+            overflow: scroll;
+        }
+        #box04{
+            position: relative;
+            height: 400px;
+            background: plum;
+            clear: both;
+        }
+        #box04 h2{
+            position: absolute;
+            /* 크기 자르기 */
+            clip: rect(0px, 200px, 150px, 0px);
+        }
+        #box05 h2{
+            position: absolute;
+            /* 크기 자르기 */
+            clip: rect(150px, 200px, 400px, 0px);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box01">
+        <h2>overflow:hidden</h2>
+    </div>
+    <div id="box02">
+        <h2>overflow:auto</h2>
+    </div>
+    <div id="box03">
+        <h2>overflow:scroll</h2>
+    </div>
+    <div id="box04">
+        <h2>clip:rect(y,x,y,x)</h2>
+    </div>
+    <div id="box05">
+        <h2>clip:rect(y,x,y,x)</h2>
+    </div>
+</body>
+</html>
