@@ -29,13 +29,15 @@ nav {
 }
 
 #listWrap {
-    background: blue;
+    /* li의 갯수와 넓이를 고려하여 크기 조정 */
     width: 530px;
+    /* nav 길이에 맞춰 중앙 정렬 */
     margin: 0 auto;
 }
 
 nav li {
     margin: 8px 10px;
+    /* 리스트들을 가로 정렬 */
     float: left;
     list-style: none;
 }

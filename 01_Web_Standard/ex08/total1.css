@@ -1,48 +1,66 @@
-* {margin: 0; padding: 0}
+* {
+    margin: 0;
+    padding: 0
+}
 
 body {
+    /* 배경: 검정, 이미지 추가, 반복 없이, x축 중앙, y축 60px */
     background: black url(./images/bg_event.png) no-repeat center 60px;
+    /* 백그라운드 이미지 크기 조정 */
     background-size: 600px;
-    font-family: Arial, Helvetica, sans-serif;}
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+/* 안 보이게 */
 header {
-    display: none;}
+    display: none;
+}
 
 /* header h1, h2, h3 {
     font-size: 0;
     line-height: 0;
     overflow: hidden;
+    들여쓰기-99999em(내어쓰기 99999em)
     text-indent: -99999em;
 } */
 
 nav {
     height: 40px;
     border-top: 1px solid white;
-    border-bottom: 1px solid white;}
+    border-bottom: 1px solid white;
+}
 
 nav ul {
     background: red;
     padding: 20px;
-    text-align: center;}
+    text-align: center;
+}
 
+/* 리스트를 인라인요소로 변경 */
 nav li {
-    display: inline;}
+    display: inline;
+}
 
 nav li a {
     padding: 10px;
     color: black;
     font-weight: bold;
-    text-decoration: none;}
+    text-decoration: none;
+}
 
-    nav li a:hover{
-        color: white;
-        background: black;
-        border-radius: 10px;
-    }
+/* a에 마우스 올리면 배경, 테두리 굴곡, 글자색 변환 */
+nav li a:hover {
+    color: white;
+    background: black;
+    border-radius: 10px;
+}
 
 section {
+    /* 백그라운드 이미지 추가, 반복 없이 */
     background: url(./images/event_goods.png) no-repeat;
+    /* 백그라운드 이미지 크기 설정 */
     background-size: 80px 140px;
+    /* 백그라운드 이미지 위치 조정 */
     background-position: 510px 470px;
     width: 600px;
     height: 600px;
@@ -54,10 +72,12 @@ section {
 
 section p {
     width: 300px;
+    /* section을 기준으로 위치 조정 */
     position: absolute;
     top: 350px;
     left: 270px;
     color: gray;
+    /* 텍스트를 좌우로 펼쳐서 정렬 */
     text-align: justify;
 }
 
@@ -69,12 +89,14 @@ section dt {
 }
 
 section dt:first-child {
+    /* section을 기준으로 위치 조정 */
     position: absolute;
     top: 450px;
     left: 270px;
 }
 
 section dt:nth-child(3) {
+    /* section을 기준으로 위치 조정 */
     position: absolute;
     top: 590px;
     left: 270px;
@@ -83,6 +105,7 @@ section dt:nth-child(3) {
 section .style1 {
     width: 230px;
     color: white;
+    /* section을 기준으로 위치 조정 */
     position: absolute;
     top: 490px;
     left: 270px;
@@ -92,6 +115,7 @@ section .style1 {
 section .style2 {
     width: 320px;
     color: white;
+    /* section을 기준으로 위치 조정 */
     position: absolute;
     top: 630px;
     left: 270px;
@@ -99,9 +123,12 @@ section .style2 {
 }
 
 footer {
+
     width: 100%;
     padding-top: 20px;
+    /* 설정된 위치로 고정 */
     position: fixed;
+    /* 아래에서 0 */
     bottom: 0;
     border-top: 3px solid orange;
     color: white;
@@ -109,6 +136,7 @@ footer {
 }
 
 footer a {
+    /* 백그라운드 이미지 추가, 반복 없이, x축 오른쪽끝, y축 3px */
     background: url(./images/logo_footer.png) no-repeat right 3px;
     padding-right: 70px;
     color: blue;
