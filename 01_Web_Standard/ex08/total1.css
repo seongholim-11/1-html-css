@@ -80,16 +80,8 @@ section dt:nth-child(3) {
     left: 270px;
 }
 
-section dd {
-    padding: 1px;
-    display: inline;
-    background: gray;
-    color: black;
-}
-
 section .style1 {
     width: 230px;
-    background: transparent;
     color: white;
     position: absolute;
     top: 530px;
@@ -98,7 +90,6 @@ section .style1 {
 
 section .style2 {
     width: 300px;
-    background: transparent;
     color: white;
     position: absolute;
     top: 670px;
@@ -116,8 +107,7 @@ footer {
 }
 
 footer a {
-    background: url(./images/logo_footer.png) no-repeat right 0;
-    padding-top: -9px;
+    background: url(./images/logo_footer.png) no-repeat right 3px;
     padding-right: 70px;
     color: blue;
     text-decoration: none;
