@@ -18,14 +18,29 @@
 				padding-top:20px;
 				line-height:200%;
 				}
-			/* h1 Design */			
-
+				/* h1 Design */		
+				/*높이값을 주지 않으면 보이지 않음  */
+				h1{
+					height: 350px;
+					background: url(./images/title_photoshop_design.PNG) no-repeat;}
+				/* 숨기기 */
+				h1 span{display: none;}
+				/*  css가 동작하지 않는 환경에서도 어떤 내용인지 파악이 가능해야 하기 때문에 백그라운드로 넣어주는 이미지라고 할지라도
+				텍스트를 써주는 것이 좋다. 
+				.ir_pm{
+					display: block;
+					overflow: hidden;
+					font-size: 0;
+					line-height: 0;
+					text-indent: -999px;
+				}*/
 		</style>
 	</head>
 
 	<body>
-		<h1><span>잘 팔리는 제품 디자인 포토샵으로 따라잡기</span></h1>
+		<h1><span class="ir_pm">잘 팔리는 제품 디자인 포토샵으로 따라잡기</span></h1>
 		<figure>
+			<!-- alt: 이미지가 보이지 않을 때 설명, 시각장애인용 설명 -->
 			<img src="images/book_photoshop.gif" width="135" height="168" alt="잘팔리는 제품 디자인" />
 		</figure>
 		<ul>
