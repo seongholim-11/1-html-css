@@ -17,6 +17,7 @@
 			animation-duration: 3s;
 			/* 몇 번 실행할 것인지 */
 			animation-iteration-count: infinite;
+			/* 왕볻 */
 			animation-direction: alternate;
 			left: 0;
 		}
@@ -24,6 +25,7 @@
 			0%{left: 0;}
 			100%{left: 800px;}
 		} */
+		/* animation-name을 동일하게 */
 		@keyframes ain {
 			from{left: 0;}
 			50%{top: 400px;}
@@ -36,6 +38,7 @@
 			height: 60px;
 			background: yellowgreen;
 			margin: 300px;
+			/* animation: name duration timing-function delay iteration-count direction fill-mode; */
 			animation: rotate 1.5s ease-in-out 3s infinite, background 1.5s ease-in-out infinite alternate;
 		}
 		@keyframes rotate{

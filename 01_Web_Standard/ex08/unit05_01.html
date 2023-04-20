@@ -58,6 +58,7 @@
 			width: 276px;
 			height: 193px;
 			background: url(./images/snow_book1.png) no-repeat;
+			/* 25도만큼 회전 */
 			transform: rotate(25deg);
 			/* 중심의 위치를 변경, 즉 회전축이 바뀜 */
 			transform-origin: 20% 40%;
@@ -88,12 +89,15 @@
 			height: 193px;
 			background: url(./images/snow_book2.png) no-repeat;
 			clear: both;
+			/* 0.5초동안 변화 */
 			transition: 0.5s;
+			/* 기본 크기 1 */
 			transform: scale(1);
 			float: left;
 		}
 
 		#book3:hover {
+			/* 마우스를 올리면 크기 1.5 */
 			transform: scale(1.5);
 		}
 
@@ -102,11 +106,13 @@
 			height: 193px;
 			background: url(./images/snow_book2.png) no-repeat;
 			transition: 0.5s;
+			/* 비틀어서 왜곡시키기 */
 			transform: skew(0deg, 0deg);
 			float: left;
 		}
 
 		#book4:hover {
+			/* 비틀어서 왜곡시키기 x축 25도 y축 25도*/
 			transform: skew(25deg, 25deg);
 		}
 	</style>

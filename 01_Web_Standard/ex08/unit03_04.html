@@ -37,12 +37,15 @@
 
 		/* Layout */
 		#bookInfo {
+			/* display: table 속성
+			@ ul을 table처럼 li를 셀처럼 */
 			display: table;
 			margin: 20px auto;
 			border-spacing: 3px;
 		}
 
 		#bookInfo li {
+			/* 리스트 li 테이블의 셀처럼 사용 */
 			display: table-cell;
 			width: 150px;
 			background: black;
@@ -52,12 +55,15 @@
 		}
 
 		#bookCon {
+			/* display: table 속성
+			@ dl을 table처럼 dt, dd를 셀처럼 */
 			display: table;
 			margin: 0 auto;
 			border: 1px solid black;
 		}
 
 		#bookCon dt {
+			/* dt 테이블의 셀처럼 사용 */
 			display: table-cell;
 			background: powderblue;
 			padding: 10px;
@@ -68,6 +74,7 @@
 		}
 
 		#bookCon dd {
+			/* dd 테이블의 셀처럼 사용 */
 			display: table-cell;
 			width: 200px;
 			padding: 10px;
