@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="ko">
 <head>
-	<title>로긴 폼 문서 만들기</title>
+	<title>로그인 폼 문서 만들기</title>
 	<meta charset="UTF-8" />
 	<style type="text/css">
 		body, h1, p, input, label { 
@@ -20,7 +20,23 @@
 			text-align:center;
 			}
 		/* Login Form Design */
-
+		#loginForm{border-top:50px solid #ff5e00;}
+		#loginForm h1{padding-top: 50px;}
+		#loginForm fieldset{width: 570px; height: 300px; margin: 10px auto; border: 5px solid rgb(224, 224, 224); border-radius: 30px; position: relative;}
+		#loginForm fieldset legend{display: none;}
+		#loginForm fieldset #login{width: 300px; height: 70px; float: left; position: absolute; top: 60px; left: 90px;}
+		#loginForm fieldset #login p .labelStyle{font-size: 1.3em; font-weight: bold;}
+		#loginForm fieldset #login p input{width: 190px; height: 30px; margin: 3px;}
+		#loginForm fieldset #login p #userId{margin-left: 20px;}
+		#loginForm fieldset #btnLogin{width: 120px; height: 75px; background: #ff5e00; color: white; border-radius: 10px; position: absolute; top: 60px; left: 370px; font-size: 1.6em;}
+		#loginForm fieldset #btn1{clear: both; position: absolute; top: 150px; left: 165px; font-weight: bold;}
+		#loginForm fieldset #btn1 input{width: 15px; height: 15px;}
+		#loginForm fieldset #btn1 label{font-size: 1.1em; position: relative; bottom: 1px;}
+		#loginForm fieldset #btn2{width: 300px; position: absolute; top: 180px; left: 165px;}
+		#loginForm fieldset #btn2 input{background: black; color: white; border-radius: 7px; font-size: 1.2em;} 
+		#loginForm fieldset #btn2 #btnJoin{width: 85px; height: 35px;}
+		#loginForm fieldset #btn2 #btnSearch{width: 170px; height: 35px; }
+		
 	</style>
 </head>
 <body>
