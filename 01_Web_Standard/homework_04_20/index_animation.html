@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework_animation</title>
+    <style>
+        /* 1. 바운스 */
+        .bounce {
+            width: 50px; height: 50px;
+            margin: 100px;
+            background-color: red; border-radius: 25px;
+            position: relative;
+            /* 파폭 */
+            -moz-animation: bounce 0.5s infinite linear;
+            /* 크롬 */
+            -webkit-animation: bounce 0.5s infinite linear;
+            -o-animation: bounce 0.5s infinite linear;
+            animation: bounce 0.5s infinite linear;
+        }
+
+        @-webkit-keyframes bounce {
+            0% {top: 0;}
+            50% {top: -5px;}
+            70% {top: -50px;}
+            100% {top: 0;}
+        }
+        @-moz-keyframes bounce {
+            0% {top: 0;}
+            50% {top: -5px;}
+            70% {top: -50px;}
+            100% {top: 0;}
+        }
+        @-o-keyframes bounce {
+            0% {top: 0;}
+            50% {top: -5px;}
+            70% {top: -50px;}
+            100% {top: 0;}
+        }
+        @-ms-keyframes bounce {
+            0% {top: 0;}
+            50% {top: -5px;}
+            70% {top: -50px;}
+            100% {top: 0;}
+        }
+        @keyframes bounce {
+            0% {top: 0;}
+            50% {top: -5px;}
+            70% {top: -50px;}
+            100% {top: 0;}
+        }
+        /*--------------------------------------------*/
+
+        /* 2. 크기가 달라지는 사각형 */
+        .rec{
+        width: 100px; height: 100px;
+        margin: 200px;
+        background-color: black;
+        border-radius: 50px;
+        animation: tongtong 1.9s ease-in-out infinite;
+        }
+
+        @keyframes tongtong {
+            0% {transform: none;}
+            25% {transform: scale(2);}
+            50% {transform: scale(1.7);}
+            75% {transform: scale(2.1);}
+            100% {transform: none;}
+        }
+        @-webkit-keyframes tongtong {
+            0% {transform: none;}
+            25% {transform: scale(2);}
+            50% {transform: scale(1.7);}
+            75% {transform: scale(2.1);}
+            100% {transform: none;}
+        }
+        @-moz-keyframes tongtong {
+            0% {transform: none;}
+            25% {transform: scale(2);}
+            50% {transform: scale(1.7);}
+            75% {transform: scale(2.1);}
+            100% {transform: none;}
+        }
+        @-o-keyframes tongtong {
+            0% {transform: none;}
+            25% {transform: scale(2);}
+            50% {transform: scale(1.7);}
+            75% {transform: scale(2.1);}
+            100% {transform: none;}
+        }
+        @-ms-keyframes tongtong {
+            0% {transform: none;}
+            25% {transform: scale(2);}
+            50% {transform: scale(1.7);}
+            75% {transform: scale(2.1);}
+            100% {transform: none;}
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 1. 바운스 -->
+
+    <div class="bounce"></div>
+
+    <!-------------------------------------------->
+
+    <!-- 2. 크기가 달라지는 사각형 -->
+
+    <div class="rec"></div>
+
+    <!-------------------------------------------->
+</body>
+</html>

@@ -4,7 +4,7 @@
 		<title> 그라데이션 메뉴바 만들기 </title>
 		<meta charset="UTF-8" />
 		<style type="text/css">
-			body {
+			/* body {
 				font:0.95em Arial,sans-serif;
 				margin:50px 0px;
 				}
@@ -16,7 +16,7 @@
 				color:#d81b21;
 				text-transform:uppercase;
 				}
-			/* Gradient Menu Bar */
+
 			nav{
 				padding: 5px;
 				border-top: 1px solid #d81b21;
@@ -55,26 +55,77 @@
 				background: -o-linear-gradient(0deg, rgba(57,57,57,1) 0%, rgba(180,180,180,1) 100%);
 				background: linear-gradient(0deg, rgba(57,57,57,1) 0%, rgba(180,180,180,1) 100%);
 				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#393939",endColorstr="#b4b4b4",GradientType=1);
+			} */
+			*{margin: 0; padding: 0;}
+			body{font-family: Arial, Helvetica, sans-serif;}
+			h1{
+				text-align: center;
+				font-size: 4em;
+				letter-spacing: 5px;
+				color: rgb(223, 0, 0);
+				text-shadow: 0 0 5px black;
+				padding-top: 80px;
+				padding-bottom: 40px;
+
 			}
-		
+			nav{
+				width: 100%; height: 80px;
+				border-top: 1px solid rgb(223, 0, 0);
+				border-bottom: 1px solid rgb(223, 0, 0);
+				background: rgb(159,0,0);
+				background: -moz-linear-gradient(0deg, rgba(159,0,0,1) 0%, rgba(255,0,0,1) 100%);
+				background: -webkit-linear-gradient(0deg, rgba(159,0,0,1) 0%, rgba(255,0,0,1) 100%);
+				background: linear-gradient(0deg, rgba(159,0,0,1) 0%, rgba(255,0,0,1) 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9f0000",endColorstr="#ff0000",GradientType=1);
+			}
+			nav ul{
+				width: 1165px; height: 50px;
+				margin: 0 auto;
+			}
+			nav ul li{
+				float: left;
+				list-style: none;
+				padding: 22px 0;
+			}
+			nav ul li a{
+				text-shadow: 0 0 5px black;
+				text-decoration: none;
+				color: rgb(255, 255, 255);
+				font-size: 1.8em;
+				padding: 22px 33px 26px 20px;
+				position: relative;
+				font-weight: bold;
+			}
+			nav ul li a::after{
+				content: "/";
+				position: absolute;
+				font-size: 1.3em;
+				top: 21px;
+			}
+			nav ul li a:hover{
+				background: rgb(0,0,0);
+				background: -moz-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(147,147,147,1) 100%);
+				background: -webkit-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(147,147,147,1) 100%);
+				background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(147,147,147,1) 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#939393",GradientType=1);
+			}
+				
 		</style>
 	</head>
 
 	<body>
-		<header>
-			<h1>C/S/S/   s/h/o/e/s -  s/h/o/p</h1>
-		</header>
+		<header><h1>C/S/S/ S/H/O/E/S - S/H/O/P</h1></header>
 		<nav>
-			<ul id="topNav">
-				<li><a href="">best 50</a></li> 
-				<li><a href="">high heel</a></li>  
-				<li><a href="">casual</a></li> 
-				<li><a href="">flat</a></li> 
-				<li><a href="">boots</a></li> 
-				<li><a href="">sandal</a></li> 
-				<li><a href="">bag</a></li> 
-				<li><a href="">acc</a></li> 
-				<li><a href="">sale</a></li> 
+			<ul>
+				<li><a href="#">best 50</a></li>
+				<li><a href="#">high heel</a></li>
+				<li><a href="#">casual</a></li>
+				<li><a href="#">flat</a></li>
+				<li><a href="#">boots</a></li>
+				<li><a href="#">sandal</a></li>
+				<li><a href="#">bag</a></li>
+				<li><a href="#">acc</a></li>
+				<li><a href="#">sale</a></li>
 			</ul>
 		</nav>
 	</body>
