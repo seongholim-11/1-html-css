@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+	<head>
+		<title> 투명도를 이용한 롤오버 이미지 만들기 </title>
+		<meta charset="UTF-8" />
+		<style type="text/css">
+			h1{
+				text-align: center;
+				margin-top: 50px;
+				text-transform: uppercase;
+			}
+			nav ul{
+				width: 678px; height: 200px;
+				margin: 0 auto;
+			}
+			nav ul li{
+				width: 200px; height: 200px;
+				border: 3px solid #c9c9c9;
+				margin: 10px;
+				list-style: none;
+				float: left;
+				position: relative;
+				overflow: hidden;
+			}
+			nav ul li a img{
+				opacity: 0.3;
+				width: 100%; height: 200px;
+			}
+			nav ul li a img:hover{opacity: 1;}
+			nav ul li:hover a span{
+				position: absolute;
+				bottom: 0px;
+				transition: all 0.3s;
+				opacity: 0.9;
+			}
+			nav ul li a span{
+				display: block;
+				width: 100%; height: 50px;
+				line-height: 50px;
+				background: #c9c9c9;
+				text-align: center;
+				bottom: -50px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<h1>C/S/S/   s/h/o/e/s -  s/h/o/p</h1>
+		</header>
+		<nav>
+			<ul id="gallery">
+				<li href="#">
+					<a>
+						<img src="images/bag_hotpink.png" alt="hotPink" />
+						<span class="color">
+							<strong>Hot Pink</strong>
+						</span>
+					</a>
+				</li> 
+				<li href="#">
+					<a>
+						<img src="images/bag_navy.png" alt="Navy" />
+						<span class="color">
+							<strong>Navy</strong>
+						</span>
+					</a>
+				</li>
+				<li href="#">
+					<a>
+						<img src="images/bag_white.png" alt="white" />
+						<span class="color">
+							<strong>White</strong>
+						</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</body>
+</html>
