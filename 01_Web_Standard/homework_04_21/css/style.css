@@ -1,0 +1,16 @@
+*{margin: 0; padding: o;}
+body{}
+header h1{}
+main #loginForm{}
+main #loginForm fieldset{}
+main #loginForm fieldset #login{}
+main #loginForm fieldset #login p{}
+main #loginForm fieldset #login p .labelStyle{}
+main #loginForm fieldset #login p #userId{}
+main #loginForm fieldset #login p #userPWD{}
+main #loginForm fieldset #btn1{}
+main #loginForm fieldset #btn1 #saveLogin{}
+main #loginForm fieldset #btn1 #btnSearch{}
+main #loginForm fieldset #btn2 #btnLogin{}
+main #loginForm fieldset #btn2 #btnJoin{}
+footer p{}
