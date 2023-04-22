@@ -1,16 +1,20 @@
-*{margin: 0; padding: o;}
+*{margin: 0; padding: 0;}
 body{}
-header h1{}
-main #loginForm{}
-main #loginForm fieldset{}
-main #loginForm fieldset #login{}
-main #loginForm fieldset #login p{}
-main #loginForm fieldset #login p .labelStyle{}
+main #loginForm{width: 463px; height: 360px; margin: 0 auto;}
+main #loginForm h1{width: 460px; height: 94px; margin: 0 auto;}
+main #loginForm h1 a{width: 195px; height: 46px; display: block; margin: 0 auto;}
+main #loginForm h1 a img{width: 195px; height: 46px;}
+main #loginForm fieldset{border: 0 none;}
+main #loginForm fieldset #login{float: left;}
+main #loginForm fieldset #login p{width: 465px; height: 48px; border: 1px solid #ccc;}
+main #loginForm fieldset #login p label{display: inline-block; width: 45px; height: 48px; border-right: 1px solid #ccc;}
+main #loginForm fieldset #login p .labelStyle img{width: 20px; height: 16px;}
+main #loginForm fieldset #login p input{width: 413px; height: 48px; border: 0 none;}
 main #loginForm fieldset #login p #userId{}
 main #loginForm fieldset #login p #userPWD{}
-main #loginForm fieldset #btn1{}
+main #loginForm fieldset #btn1{clear: both;}
 main #loginForm fieldset #btn1 #saveLogin{}
-main #loginForm fieldset #btn1 #btnSearch{}
+main #loginForm fieldset #btn1 a{}
 main #loginForm fieldset #btn2 #btnLogin{}
 main #loginForm fieldset #btn2 #btnJoin{}
 footer p{}
