@@ -20,11 +20,23 @@ main #loginForm fieldset #login p .eyesbutton:focus{background: url(../free-icon
 main #loginForm fieldset #login p .eyesbutton img{width: 25px; height: 25px;}
 main #loginForm fieldset #btn1{clear: both; padding-top: 10px; position: relative;}
 
-main #loginForm fieldset #btn1 #saveLogin{width: 20px; height: 20px; background: white;}
+main #loginForm fieldset #btn1 #saveLogin{width: 20px; height: 20px;}
 
-main #loginForm fieldset #btn1 #saveLogin:checked{background: white url(../check.png) no-repeat center center; background-size: 19px 19px; display: inline-block;} */
+main #loginForm fieldset #btn1 #saveLogin:checked{position: relative; animation: bounce 0.3s linear;}
 
-main #loginForm fieldset #btn1 input[id="saveLogin"]:checked::after{content: "개인 정보 보호를 위해 본인 기기에서만 이용해 주세요."; width: 260px; height: 20px; float: left; font-size: 0.9em; position: relative; top: 20px; display: block; background: rgb(227, 227, 227); margin: 10px 0; color: rgb(92, 92, 92); padding: 6px 5px 3px 5px; border-radius: 3px;}
+@keyframes bounce {
+    0% {top: 0;}
+    30% {top: -1px;}
+    50% {top: -2px;}
+    60% {top: -3px;}
+    70% {top: -5px;}
+    80% {top: -3px;}
+    90% {top: -1px;}
+    100% {top: 0;}
+}
+
+main #loginForm fieldset #btn1 #saveLogin:checked::after{content: "개인 정보 보호를 위해 본인 기기에서만 이용해 주세요."; width: 260px; height: 20px; float: left; font-size: 0.9em; position: relative; top: 20px; display: block; background: rgb(227, 227, 227); margin: 10px 0; color: rgb(92, 92, 92); padding: 6px 5px 3px 5px; border-radius: 3px; }
+
 main #loginForm fieldset #btn1 label{position:  relative; bottom: 5px; color: rgb(117, 117, 117); cursor: pointer;}
 main #loginForm fieldset #btn1 a{float: right; text-decoration: none; color: #0074e9; position: absolute; right: 15px; top: 3px; margin: 10px 0; letter-spacing: 0.6px;}
 main #loginForm fieldset #btn2 #btnLogin{width: 450px; height: 52px; margin: 10px 0 18px 0; background: #0074e9; color: white; font-weight: bold; font-size: 1.2em; cursor: pointer;}
