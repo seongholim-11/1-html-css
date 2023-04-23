@@ -15,7 +15,7 @@ main #loginForm fieldset #login p .labelStyle img{width: 21px; height: 21px; pos
 main #loginForm fieldset #login p input{border: 0 none; position: relative; left: 60px;}
 main #loginForm fieldset #login p #userId{width: 388px; height: 48px; position: relative;}
 main #loginForm fieldset #login p #userPWD{width: 343px; height: 48px;}
-main #loginForm fieldset #login p .eyesbutton{display: block; width: 45px; height: 48px; float: right; border: none; border-left: 1px solid #ccc; background: white; background: url(../free-icon-eye-6423885.png) no-repeat center center; background-size: 25px 25px; cursor: pointer;}
+main #loginForm fieldset #login p .eyesbutton{display: block; width: 45px; height: 48px; float: right; border: none; background: white; background: url(../free-icon-eye-6423885.png) no-repeat center center; background-size: 25px 25px; cursor: pointer;}
 main #loginForm fieldset #login p .eyesbutton:focus{background: url(../free-icon-visibility-4264841.png) no-repeat center center; background-size: 25px 25px;}
 main #loginForm fieldset #login p .eyesbutton img{width: 25px; height: 25px;}
 main #loginForm fieldset #btn1{clear: both; padding-top: 10px; position: relative;}
@@ -39,7 +39,7 @@ main #loginForm fieldset #btn1 #saveLogin:checked::after{content: "개인 정보
 
 main #loginForm fieldset #btn1 label{position:  relative; bottom: 5px; color: rgb(117, 117, 117); cursor: pointer;}
 main #loginForm fieldset #btn1 a{float: right; text-decoration: none; color: #0074e9; position: absolute; right: 15px; top: 3px; margin: 10px 0; letter-spacing: 0.6px;}
-main #loginForm fieldset #btn2 #btnLogin{width: 450px; height: 52px; margin: 10px 0 18px 0; background: #0074e9; color: white; font-weight: bold; font-size: 1.2em; cursor: pointer;}
+main #loginForm fieldset #btn2 #btnLogin{width: 450px; height: 52px; margin: 10px 0 18px 0; background: #0074e9; color: white; font-weight: bold; font-size: 1.2em; cursor: pointer; border-bottom: 2px solid black;}
 main #loginForm fieldset hr{width: 450px; margin-bottom: 18px; border: none; border-top: 1px solid #ccc;}
-main #loginForm fieldset #btn3 #btnJoin{width: 450px; height: 52px; padding: 15px 0 20px 0; background: white; color: #0074e9; font-weight: bold; font-size: 1.2em; cursor: pointer;}
+main #loginForm fieldset #btn3 #btnJoin{width: 450px; height: 52px; padding: 15px 0 20px 0; background: white; color: #0074e9; font-weight: bold; font-size: 1.2em; cursor: pointer; border: 1px solid #ccc; border-bottom: 3px solid #ccc;}
 footer p{width: 460px; height: 20px; margin: 20px auto; text-align: center; font-size: 0.8em; color: rgb(117, 117, 117);}
