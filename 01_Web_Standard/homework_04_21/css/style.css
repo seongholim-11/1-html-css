@@ -11,18 +11,22 @@ main #loginForm fieldset #login #login_01 input:focus{outline: none;}
 main #loginForm fieldset #login #login_02 input:focus{outline: none;}
 main #loginForm fieldset #login #login_02{margin-top: 13px;}
 main #loginForm fieldset #login p label{display: inline-block; width: 45px; height: 48px; border-right: 1px solid #ccc; position: absolute; background: rgb(247, 247, 247); cursor: pointer;}
-main #loginForm fieldset #login p .labelStyle img{width: 25px; height: 25px; position: absolute; top: 10px; left: 10px; opacity: 0.5;}
+main #loginForm fieldset #login p .labelStyle img{width: 21px; height: 21px; position: absolute; top: 13px; left: 13px; opacity: 0.5;}
 main #loginForm fieldset #login p input{border: 0 none; position: relative; left: 60px;}
-main #loginForm fieldset #login p #userId{width: 388px; height: 48px;}
+main #loginForm fieldset #login p #userId{width: 388px; height: 48px; position: relative;}
 main #loginForm fieldset #login p #userPWD{width: 343px; height: 48px;}
-main #loginForm fieldset #login p .eyesbutton{display: block; width: 45px; height: 48px; float: right; border: none; border-left: 1px solid #ccc; background: white;}
-main #loginForm fieldset #login p .eyesbutton:active{}
+main #loginForm fieldset #login p .eyesbutton{display: block; width: 45px; height: 48px; float: right; border: none; border-left: 1px solid #ccc; background: white; background: url(../free-icon-eye-6423885.png) no-repeat center center; background-size: 25px 25px; cursor: pointer;}
+main #loginForm fieldset #login p .eyesbutton:focus{background: url(../free-icon-visibility-4264841.png) no-repeat center center; background-size: 25px 25px;}
 main #loginForm fieldset #login p .eyesbutton img{width: 25px; height: 25px;}
 main #loginForm fieldset #btn1{clear: both; padding-top: 10px; position: relative;}
-main #loginForm fieldset #btn1 #saveLogin{width: 20px; height: 20px; background-color: white; color: #0074e9;}
-main #loginForm fieldset #btn1 #saveLogin:checked::after{content: "개인 정보 보호를 위해 본인 기기에서만 이용해 주세요."; width: 260px; height: 20px; float: left; font-size: 0.9em; position: relative; top: 20px; display: block; background: rgb(227, 227, 227); margin: 10px 0; color: rgb(92, 92, 92); padding: 6px 5px 3px 5px; border-radius: 3px;}
+
+main #loginForm fieldset #btn1 #saveLogin{width: 20px; height: 20px; background: white;}
+
+main #loginForm fieldset #btn1 #saveLogin:checked{background: white url(../check.png) no-repeat center center; background-size: 19px 19px; display: inline-block;} */
+
+main #loginForm fieldset #btn1 input[id="saveLogin"]:checked::after{content: "개인 정보 보호를 위해 본인 기기에서만 이용해 주세요."; width: 260px; height: 20px; float: left; font-size: 0.9em; position: relative; top: 20px; display: block; background: rgb(227, 227, 227); margin: 10px 0; color: rgb(92, 92, 92); padding: 6px 5px 3px 5px; border-radius: 3px;}
 main #loginForm fieldset #btn1 label{position:  relative; bottom: 5px; color: rgb(117, 117, 117); cursor: pointer;}
-main #loginForm fieldset #btn1 a{float: right; text-decoration: none; color: #0074e9; position: absolute; right: 15px; top: 3px; margin: 10px 0;}
+main #loginForm fieldset #btn1 a{float: right; text-decoration: none; color: #0074e9; position: absolute; right: 15px; top: 3px; margin: 10px 0; letter-spacing: 0.6px;}
 main #loginForm fieldset #btn2 #btnLogin{width: 450px; height: 52px; margin: 10px 0 18px 0; background: #0074e9; color: white; font-weight: bold; font-size: 1.2em; cursor: pointer;}
 main #loginForm fieldset hr{width: 450px; margin-bottom: 18px; border: none; border-top: 1px solid #ccc;}
 main #loginForm fieldset #btn3 #btnJoin{width: 450px; height: 52px; padding: 15px 0 20px 0; background: white; color: #0074e9; font-weight: bold; font-size: 1.2em; cursor: pointer;}
