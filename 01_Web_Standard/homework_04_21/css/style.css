@@ -1,5 +1,5 @@
 *{margin: 0; padding: 0;}
-body{font-family: Arial, Helvetica, sans-serif;}
+body{font-family: Arial, Helvetica, sans-serif; font-size: 0.9em;}
 main #loginForm{width: 463px; height: 360px; margin: 47px auto 0 auto;}
 main #loginForm h1{width: 460px; height: 94px; margin: 0 auto;}
 main #loginForm h1 a{width: 195px; height: 46px; display: block; margin: 0 auto;}
@@ -7,14 +7,23 @@ main #loginForm h1 a img{width: 195px; height: 46px;}
 main #loginForm fieldset{border: 0 none; position: relative; top: -35px;}
 main #loginForm fieldset #login{float: left; position: relative;}
 main #loginForm fieldset #login p{width: 448px; height: 48px; border: 1px solid #ccc;}
+main #loginForm fieldset #login #login_01 input:focus{outline: none;}
+main #loginForm fieldset #login #login_02 input:focus{outline: none;}
+main #loginForm fieldset #login #login_02{margin-top: 13px;}
 main #loginForm fieldset #login p label{display: inline-block; width: 45px; height: 48px; border-right: 1px solid #ccc; position: absolute; background: rgb(247, 247, 247);}
 main #loginForm fieldset #login p .labelStyle img{width: 25px; height: 25px; position: absolute; top: 10px; left: 10px; opacity: 0.5;}
-main #loginForm fieldset #login p input{border: 0 none;}
-main #loginForm fieldset #login p #userId{width: 448px; height: 48px;}
-main #loginForm fieldset #login p #userPWD{width: 367px; height: 48px;}
-main #loginForm fieldset #btn1{clear: both; padding-top: 10px;}
-main #loginForm fieldset #btn1 #saveLogin{width: 13px; height: 13px;}
-main #loginForm fieldset #btn1 a{float: right; text-decoration: none; color: #0074e9;}
-main #loginForm fieldset #btn2 #btnLogin{width: 450px; height: 52px; margin: 10px 0 18px 0; background: #0074e9; color: white; font-weight: bold;}
-main #loginForm fieldset #btn3 #btnJoin{width: 450px; height: 52px; padding: 18px 0 20px 0; background: white; color: #0074e9; font-weight: bold;}
-footer p{width: 460px; height: 20px; margin: 20px auto; text-align: center;}
+main #loginForm fieldset #login p input{border: 0 none; position: relative; left: 60px;}
+main #loginForm fieldset #login p #userId{width: 388px; height: 48px;}
+main #loginForm fieldset #login p #userPWD{width: 343px; height: 48px;}
+main #loginForm fieldset #login p .eyesbutton{display: block; width: 45px; height: 48px; float: right; border: none; border-left: 1px solid #ccc; background: white;}
+main #loginForm fieldset #login p .eyesbutton:active{}
+main #loginForm fieldset #login p .eyesbutton img{width: 25px; height: 25px;}
+main #loginForm fieldset #btn1{clear: both; padding-top: 10px; position: relative;}
+main #loginForm fieldset #btn1 #saveLogin{width: 20px; height: 20px; background-color: white; color: #0074e9;}
+main #loginForm fieldset #btn1 #saveLogin:checked::after{content: "개인 정보 보호를 위해 본인 기기에서만 이용해 주세요."; width: 260px; height: 20px; float: left; font-size: 0.9em; position: relative; top: 20px; display: block; background: rgb(227, 227, 227); margin: 10px 0; color: rgb(92, 92, 92); padding: 6px 5px 3px 5px; border-radius: 3px;}
+main #loginForm fieldset #btn1 label{position:  relative; bottom: 5px; color: rgb(117, 117, 117);}
+main #loginForm fieldset #btn1 a{float: right; text-decoration: none; color: #0074e9; position: absolute; right: 15px; top: 3px; margin: 10px 0;}
+main #loginForm fieldset #btn2 #btnLogin{width: 450px; height: 52px; margin: 10px 0 18px 0; background: #0074e9; color: white; font-weight: bold; font-size: 1.2em;}
+main #loginForm fieldset hr{width: 450px; margin-bottom: 18px; border: none; border-top: 1px solid #ccc;}
+main #loginForm fieldset #btn3 #btnJoin{width: 450px; height: 52px; padding: 15px 0 20px 0; background: white; color: #0074e9; font-weight: bold; font-size: 1.2em;}
+footer p{width: 460px; height: 20px; margin: 20px auto; text-align: center; font-size: 0.8em; color: rgb(117, 117, 117);}
