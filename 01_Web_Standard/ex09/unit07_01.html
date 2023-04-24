@@ -4,7 +4,23 @@
 	<title>해상도 크기에 따라 디자인 다르게 설정하기 </title>
 	<meta charset="UTF-8" />
 	<style type="text/css">		
+		body{background: url(./images/pattern.png);}
+		h1 span{display: none;}
+		div{text-align: right;}
+		.btn{background: #000; color: #fff; border: none;}
 
+		@media screen and (min-width: 320px) and (max-width: 799px) {
+			h1{background: url(./images/mediaQuery1.png) no-repeat center top; height: 295px;}
+			.btn{padding: 5px 10px; font-size: 1.1em; border-radius: 5px;}
+		}
+		@media screen and (min-width: 800px) and (max-width: 1024px) {
+			h1{background: url(./images/mediaQuery2.png) no-repeat center top; height: 512px;}
+			.btn{padding: 10px 20px; font-size: 1.1em; border-radius: 5px;}
+		}
+		@media screen and (min-width: 1025px) {
+			h1{background: url(./images/mediaQuery3.png) no-repeat center top; height: 700px;}
+			.btn{padding: 20px 40px; font-size: 1.1em; border-radius: 5px;}
+		}
 	</style>
 </head>
 <body>
