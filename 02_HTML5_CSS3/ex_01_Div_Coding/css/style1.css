@@ -1,31 +1,74 @@
-/* #wrap{
+/* 1. 먼저 큰 틀 만들기 */
+
+/* 전체를 감싸고 있는 사각형 */
+body{font-size: 1.2em; text-align: center; line-height: 1;}
+#wrap{
     width: 700px;
     height: 550px;
     margin: 50px auto;
     border: 10px solid #000
 }
+
+/* ---------------------------------------------------------------- */
+
+/* 2. header, section, footer 3개로 중간 틀 만들기 */
+
+/* 넓이는 #wrap에 상속 */
+/* header 바텀에 border 라인 설정 */
 #header{width:100%; height:90px; background: #ddd; border-bottom: 10px solid #000;}
+/* header와 footer 사이 */
+/* 넓이는 #wrap에 상속 */
 #section{width:100%; height: 400px;}
+/* footer top에 border 라인 설정 */
+#footer{width:100%; height: 40px; background: #ddd; border-top: 10px solid #000;}
+
+/* ---------------------------------------------------------------- */
+
+/* 3. section을 left, center, right로 나누기 */
+
+/* 높이는 #section에 상속 */
+/* center를 오른쪽으로 붙이기 위해 float: left; */
 .left{width: 100px; height: 100%;  float: left;}
+/* right를 오른쪽으로 붙이기 위해 float: left; */
+/* 중앙 큰 사각형의 양 옆에 border 라인 설정 */
+.center{width: 480px; height: 100%;  float: left; border-left: 10px solid #000;border-right: 10px solid #000;}
+/* right가 center 밑으로 들어가는 것을 방지하기 위해 float: left; */
+.right{width: 100px; height: 100%; float: left;}
+
+/* ---------------------------------------------------------------- */
+
+/* 4. left, center, right에 들어가는 사각형을 클래스를 만들어 크기별로 정의 */
+
+/* left와 right에 들어가는 100*100 정의 */
 .box{width: 100px; height: 100px;}
+.bigbox{width: 100%; height: 195px;}
 .box_2{width: 100px; height: 200px;}
+
+/* ---------------------------------------------------------------- */
+
+/* 5. 색깔별로 클래스 만들어서 색 입히기 */
+.red{background: red;}
+.mint{background: rgb(46, 219, 231);}
+.blue{background: rgb(69, 86, 233);}
+.yellow{background: rgb(238, 255, 0);}
+
+/* ---------------------------------------------------------------- */
+
+/* 6. 내부 border 선을 주기 위해 클래스 추가하기 */
+ /* bl: bottom line, tl: top line */
+.bl{border-bottom: 5px solid #000;}
+.tl{border-top: 5px solid #000;}
+
+/* ---------------------------------------------------------------- */
+
+/* 7. border 선으로 인해 늘어난 높이를 조정 */
+/* border 선을 한 개 설정 했으면 95px, 195px */
+/* border 선을 두 개 설정 했으면 90px */
 .box95{height: 95px}
 .box90{height: 90px}
 .box195{height: 195px}
 
-.box1{background: red;}
-.box2{background: rgb(46, 219, 231);}
-.box3{background: rgb(69, 86, 233);}
-.box4{background: rgb(149, 232, 214);}
-.bl{border-bottom: 5px solid #000;}
-.tl{border-top: 5px solid #000;}
-.center{width: 480px; height: 100%;  float: left; border-left: 10px solid #000;border-right: 10px solid #000;}
-.bigbox{width: 100%; height: 195px;}
-.right{width: 100px; height: 100%; float: left;}
-
-#footer{width:100%; height: 40px; background: #ddd; border-top: 10px solid #000;} */
-
-@import url(/02_HTML5_CSS3/css/reset.css);
+/* @import url(/02_HTML5_CSS3/css/reset.css);
 *{box-sizing: border-box;}
 #wrap{width: 700px; height: 550px; margin: 50px auto; border: 10px solid #000;}
 
@@ -43,4 +86,4 @@
 
 .right{width: 100px; height: 100%; background: rgb(238, 255, 0); float: left;}
 
-#footer{width: 100%; height: 40px; background: #ccc; border-top: 10px solid black;}
+#footer{width: 100%; height: 40px; background: #ccc; border-top: 10px solid black;} */
