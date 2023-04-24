@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>position 속성</title>
+<style type="text/css">
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+body {
+	margin: 0;
+	color: #404040;
+	font: 13px/normal "Malgun Gothic", "맑은 고딕", Dotum, "돋움", Gulim, "굴림", Verdana, Arial, "Trebuchet MS";    margin: 0px; 
+	font-size-adjust: none; 
+	font-stretch: normal; 
+}
+a:link {
+	color: rgb(0,125,255);
+	text-decoration: none;
+	font-weight: bold;
+}
+a:hover {
+	color: rgb(255,0,0);
+	text-decoration: none;
+	font-weight: bold;
+}
+a:visited {
+	color: rgb(0,255,255);
+	text-decoration: none;
+	font-weight: bold;
+}
+a:active {
+	color: rgb(255,125,0);
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#wrap {
+	width: 640px;
+	margin: auto;
+}
+.box {
+	margin: 10px 0px; 
+	padding: 10px; 
+	border: 1px solid rgb(200, 202, 206); 
+	background-color: rgb(247, 247, 247);
+}
+.red {
+	color: #990000;
+	font-weight: bold;
+}
+.blue {
+	color: #009;
+	font-weight: bold;
+}
+</style>
+
+</head>
+
+<body>
+<DIV id="wrap">
+<div class="box">
+<h2>position 속성에 적용할 수 있는 키워드</h2>
+<table width="600" border="1" cellpadding="4">
+  <tr>
+    <td bgcolor="#6699FF">static</td>
+    <td>태그가 위에서 아래로 순서대로 배치</td>
+    </tr>
+  <tr>
+    <td bgcolor="#6699FF">relative</td>
+    <td>초기 위치 상태에서 상하좌우로 위치를 이동 <span class="red">(부모div에 사용)</span></td>
+    </tr>
+  <tr>
+    <td bgcolor="#6699FF">absolute</td>
+    <td>절대적 위치 좌표를 설정  <span class="red">(자식div에 사용)</span></td>
+    </tr>
+  <tr>
+    <td bgcolor="#6699FF">fixed</td>
+    <td>화면을 기준으로 절대적 위치 좌표를 설정</td>
+    </tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2>float 속성에 적용 가능한 태그</h2>
+<table width="600" border="1" cellpadding="4">
+  <tr>
+    <td bgcolor="#6699FF">left</td>
+    <td>태그를 왼쪽에 붙임</td>
+  </tr>
+  <tr>
+    <td bgcolor="#6699FF">right</td>
+    <td>태그를 오른쪽에 붙임</td>
+  </tr>
+  </table>
+<p>footer 태그의 clear 스타일 속성에 both 키워드를 적용해도 마찬가지 기능을 수행할 수 있지만 현대에서는 overflow 스타일 속성을 사용하는 방법을 더 많이 사용하며 <span class="red">이 방법도 완전한 웹접근성을 해결한 방법은 아니며 익스플로러 낮은 버젼에서도 작동하게 하려면 clearflx라는 방법을 사용</span></p>
+</div>
+</DIV>
+
+</body>
+</html>
