@@ -1,0 +1,12 @@
+@import url(./reset.css);
+
+body{
+    background: #ccc; margin-top: 30px;}
+h1{text-align: center; font-size: 2em; font-weight: bold; color: white; font-style: italic; text-shadow: 0 0 10px #666; padding-bottom: 20px;}
+#photoBox {width: 330px; margin: 0 auto;}
+#photoBox #tabNavi{padding-left: 100px;}
+#photoBox #tabNavi li{float: left; margin-left: 2px;}
+#photoBox #tabNavi li.activeS a{background: #ff9966; color: #fff;}
+#photoBox #tabNavi li a{background: white; padding: 5px 10px; display: block; border-top-right-radius: 10px; border-top-left-radius: 10px; width: 50px; text-align: center; text-decoration: none; color: #ff9966;}
+#photoBox #tabNavi li a:hover{background: #ff9966; color: #fff;}
+#photoBox #photo{border: 5px solid #f63; clear: both; background: #fff; border-radius: 10px; text-align: center;}

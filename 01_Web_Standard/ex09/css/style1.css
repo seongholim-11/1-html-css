@@ -1,0 +1,41 @@
+@import url(./reset.css);
+/* body{margin-top: 50px;}
+#wrapper{width: 500px; margin: 0 auto; padding: 20px; border: 5px solid #f39; border-radius: 15px;}
+#orderForm{margin: 10px auto; display: table; border-collapse: collapse;}
+#orderForm h1{margin-bottom: 10px; padding: 15px; font-size: 15px; display: table-caption;}
+#orderForm h1 span{text-align: center; display: block; background: #333; color: #fff; padding: 5px;}
+#orderForm p{display: table-row; padding: 5px; border-bottom: 1px solid #b6b6b6; }
+#orderForm p label{display: table-cell; padding-left: 20px;}
+#orderForm p #userId{margin-bottom: 5px; margin-left: 5px; background: #ddd; border: 1px solid #f39;}
+#orderForm p .cellStyle, #orderForm>p>#userId{display: table-cell;}
+#orderForm p .cellStyle{padding: 5px;}
+#orderForm p .cellStyle #userPhone1{background: #ddd; border: 1px solid #f39; padding: 2px; }
+#orderForm p .cellStyle #userPhone2{background: #ddd; border: 1px solid #f39; padding: 2px; width: 120px;}
+#orderForm p .cellStyle #userPhone3{background: #ddd; border: 1px solid #f39; padding: 2px; width: 120px;}
+#orderForm p .cellStyle #userEmail1, #orderForm p .cellStyle #userEmail2{width: 151.5px; padding: 2px; background: #ddd; border: 1px solid #f39;}
+#orderForm p .cellStyle #userAdd1{width: 150px; border: 1px solid #f39; background: #ddd;}
+#orderForm p .cellStyle #userAddBtn{border: 3px solid #f39; border-radius: 20px; margin-bottom: 5px; padding: 2px 10px; background: none;}
+#orderForm p .cellStyle #userAdd2, #orderForm p .cellStyle #userAdd3{width: 335px; padding: 2px; background: #ddd; border: 1px solid #f39;}
+#orderForm p:last-child{display: block; text-align: center;}
+#orderForm .btnRow{border-bottom: none; position: relative; left: 175px;}
+#orderForm .btnRow #btnSubmit{background: #f39; border: none; color: #fff; padding: 5px; border-radius: 5px;}
+ */
+ #wrapper{width: 500px; padding: 20px; border: 5px solid #f63;}
+ #orderForm{display: table; border-collapse: collapse;}
+ #orderForm h1{display: table-caption; background: black; color: #fff;  text-align: center; padding: 5px; margin-bottom: 20px;}
+ #orderForm h1 span{display: block; text-align: center;}
+ #orderForm p{display: table-row; border-bottom: 1px solid #ccc; padding: 10px;}
+ #orderForm p label{display: table-cell;}
+ #orderForm p #userId{}
+ #orderForm p .cellStyle, #orderForm>p>#userId{}
+ #orderForm p .cellStyle{}
+ #orderForm p .cellStyle #userPhone1{}
+ #orderForm p .cellStyle #userPhone2{}
+ #orderForm p .cellStyle #userPhone3{}
+ #orderForm p .cellStyle #userEmail1, #orderForm p .cellStyle #userEmail2{}
+ #orderForm p .cellStyle #userAdd1{}
+ #orderForm p .cellStyle #userAddBtn{}
+ #orderForm p .cellStyle #userAdd2, #orderForm p .cellStyle #userAdd3{}
+ #orderForm p:last-child{}
+ #orderForm .btnRow{}
+ #orderForm .btnRow #btnSubmit{}
