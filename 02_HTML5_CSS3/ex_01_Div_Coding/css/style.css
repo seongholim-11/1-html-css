@@ -1,22 +1,20 @@
 @import url(/02_HTML5_CSS3/css/reset.css);
-#wrap{width: 700px; height: 550px; border: 10px solid black; margin: 0 auto;}
-#wrap #header{width: 700px; height: 100px; border-bottom: 10px solid black;}
-#wrap #asideLeft_up{width: 100px; height: 200px; float: left; border-right: 10px solid black;}
+#wrap{width: 700px; height: 550px; border: 10px solid black; margin: 50px auto;}
+#wrap #header{width: 100%; height: 100px; border-bottom: 10px solid black;}
+#wrap #asideLeft_up{width: 100px; height: 200px; float: left; border-right: 11px solid black;}
 #wrap #asideLeft_up #asideLeft_up_up{width: 100px; height: 100px; }
 #wrap #asideLeft_up #asideLeft_up_down{width: 100px; height: 100px; }
-#wrap #center_up{width: 481px; height: 200px; position: relative; left: 110px;}
-#wrap #asideRight_up{width: 100px; height: 200px; float: right; position: relative; bottom: 200px; border-left: 10px solid black;}
+#wrap #center_up{width: 480px; height: 200px; float: left;}
+#wrap #asideRight_up{width: 100px; height: 200px; float: left; border-left: 10px solid black;}
 #wrap #asideRight_up #asideRight_up_up{width: 100px; height: 100px; }
 #wrap #asideRight_up #asideRight_up_down{width: 100px; height: 100px; }
-#wrap #asideLeft_down{width: 100px; height: 200px; float: left; border-right: 10px solid black;}
+#wrap #asideLeft_down{width: 100px; height: 200px; float: left; border-right: 11px solid black; clear: both;}
 #wrap #asideLeft_down #asideLeft_down_up{width: 100px; height: 100px; }
 #wrap #asideLeft_down #asideLeft_down_down{width: 100px; height: 100px; }
-#wrap #center_douw{width: 481px; height: 200px;position: relative; left: 110px;}
-#wrap #asideRight_down{width: 100px; height: 200px; float: right; position: relative; bottom: 200px; border-left: 10px solid black;}
-#wrap #asideRight_down #asideRight_down_up{width: 100px; height: 100px;}
-#wrap #asideRight_down #asideRight_down_down{width: 100px; height: 100px;}
-#footer{width: 700px; height: 32px;border-top: 10px solid black;}
-.gray{background: gray;}
+#wrap #center_douw{width: 480px; height: 200px; float: left;}
+#wrap #asideRight_down{width: 100px; height: 200px; float: left; border-left: 10px solid black;}
+#footer{width: 100%; height: 30px; border-top: 11px solid black; clear: both;}
+.gray{background: #ddd;}
 .red{background: red;}
 .green{background: rgb(0, 255, 0);}
 .blue{background: blue;}
