@@ -10,14 +10,32 @@
 			/* Basic */
 			@import url(./css/reset.css);
 			body{background: #363636; font-family: 'Lato', sans-serif; font-size: 1.2em;}
-			#wrapper{margin: 10px;}
-			#wrapper #mainNav li{float: left; list-style: none; padding: 40px;}
+			#wrapper{width: 755px; margin: 100px auto;}
+			#wrapper #mainNav li{ float: left; list-style: none; width: 150px; height: 150px; margin: 5px; border: 5px solid white; border-radius: 20px; text-align: center; padding: 10px;}
 			#wrapper #mainNav li:first-child{background: rgb(28,64,0);
-background: linear-gradient(0deg, rgba(28,64,0,1) 0%, rgba(104,231,6,1) 100%);}
+			background: linear-gradient(0deg, rgba(28,64,0,1) 0%, rgba(104,231,6,1) 100%);}
 			#wrapper #mainNav li:last-child{background: rgb(64,0,0);
-background: linear-gradient(0deg, rgba(64,0,0,1) 0%, rgba(231,6,6,1) 100%); opacity: 0.7;}
-			#wrapper #mainNav li a{background: none; color: rgb(197, 197, 197); text-decoration: none; font-weight: bold; letter-spacing: 1px; text-shadow: 0 2px 5px black;}
+			background: linear-gradient(0deg, rgba(64,0,0,1) 0%, rgba(231,6,6,1) 100%); opacity: 0.7;}
+			#wrapper #mainNav #shoes{background: white url(./images/sandal.png) no-repeat center center;}
+			#wrapper #mainNav #acc{background: white url(./images/neck.png) no-repeat center center;}
+			#wrapper #mainNav #bag{background: white url(./images/bag.png) no-repeat center center;}
+			#wrapper #mainNav #top{background: white url(./images/top.png) no-repeat center center;}
+			#wrapper #mainNav #dress{background: white url(./images/dress.png) no-repeat center center;}
+			#wrapper #mainNav #bottom{background: white url(./images/bottom.png) no-repeat center center;}
+			#wrapper #mainNav li a{background: none; color: rgb(243, 243, 243); text-decoration: none; font-size: 1.3em; font-weight: bold; letter-spacing: 1px; text-shadow: 0 2px 5px black; position: relative; top: 55px; opacity: 0.9;}
 			#wrapper #mainNav li a:hover{ color: white;}
+			
+			@media screen and (max-width: 800px) {
+				#wrapper{width: 385px; margin: 100px auto;}
+				#wrapper #mainNav li{width: 90px; height: 90px;}
+				#wrapper #mainNav #shoes{background: white url(./images/sandal2.png) no-repeat center center;}
+				#wrapper #mainNav #acc{background: white url(./images/neck2.png) no-repeat center center;}
+				#wrapper #mainNav #bag{background: white url(./images/bag2.png) no-repeat center center;}
+				#wrapper #mainNav #top{background: white url(./images/top2.png) no-repeat center center;}
+				#wrapper #mainNav #dress{background: white url(./images/dress2.png) no-repeat center center;}
+				#wrapper #mainNav #bottom{background: white url(./images/bottom2.png) no-repeat center center;}
+				#wrapper #mainNav li a{font-size: 1em; position: relative; top: 20px; opacity: 0.9;}
+			}
 		</style>
 	</head>
 
@@ -25,12 +43,12 @@ background: linear-gradient(0deg, rgba(64,0,0,1) 0%, rgba(231,6,6,1) 100%); opac
 		<div id="wrapper">
 			<ul id="mainNav">
 				<li><a href="#">NOTICE</a></li>
-				<li><a href="#">SHOES</a></li>
-				<li><a href="#">ACC</a></li>
-				<li><a href="#">BAG</a></li>
-				<li><a href="#">TOP</a></li>
-				<li><a href="#">DRESS</a></li>
-				<li><a href="#">BOTTOM</a></li>
+				<li id="shoes"><a href="#">SHOES</a></li>
+				<li id="acc"><a href="#">ACC</a></li>
+				<li id="bag"><a href="#">BAG</a></li>
+				<li id="top"><a href="#">TOP</a></li>
+				<li id="dress"><a href="#">DRESS</a></li>
+				<li id="bottom"><a href="#">BOTTOM</a></li>
 				<li><a href="#">CART</a></li>
 			</ul>
 		</div>
