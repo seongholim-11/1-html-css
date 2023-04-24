@@ -1,0 +1,6 @@
+@import url(./reset.css);
+
+body{background: rgb(0, 161, 8);}
+@media screen and (max-width: 1280px) {
+    body{background: rgb(0, 38, 161);}
+}
