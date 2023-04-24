@@ -1,6 +1,28 @@
 @import url(./reset.css);
 
-body{background: rgb(0, 161, 8);}
+body{background: rgb(255, 0, 0);}
+
+/* 화면 넓이가 0~1280px pc버전 */
 @media screen and (max-width: 1280px) {
-    body{background: rgb(0, 38, 161);}
+    body{background: rgb(255, 162, 0);}
+}
+
+/* 화면 넓이가 0~1024px pc버전 */
+@media screen and (max-width: 1024px) {
+    body{background: rgb(234, 255, 0);}
+}
+
+/* 화면 넓이가 0~960px 노트북버전 */
+@media screen and (max-width: 960px) {
+    body{background: rgb(0, 255, 13);}
+}
+
+/* 화면 넓이가 0~768px 태블릿버전 */
+@media screen and (max-width: 768px) {
+    body{background: rgb(0, 38, 255);}
+}
+
+/* 화면 넓이가 0~720px 태블릿버전 */
+@media screen and (max-width: 720px) {
+    body{background: rgb(195, 0, 255);}
 }
