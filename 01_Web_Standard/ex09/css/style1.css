@@ -1,26 +1,52 @@
+/* 
+table : <table> 요소처럼 표현합니다.
+table-caption : <caption> 요소처럼 표현합니다.
+table-column-group : <colgroup> 요소처럼 표현합니다.
+table-header-group : <thead> 요소처럼 표현합니다.
+table-footer-group : <tfoot> 요소처럼 표현합니다.
+table-row-group : <tbody> 요소처럼 표현합니다.
+table-cell : <td> 요소처럼 표현합니다.
+table-column : <col> 요소처럼 표현합니다.
+table-row : <tr> 요소처럼 표현합니다. 
+*/
+
 @import url(./reset.css);
-/* body{margin-top: 50px;}
+body{margin-top: 50px;}
 #wrapper{width: 500px; margin: 0 auto; padding: 20px; border: 5px solid #f39; border-radius: 15px;}
+
+/* table 요소처럼 표현하기 위해 display: table; 사용*/
 #orderForm{margin: 10px auto; display: table; border-collapse: collapse;}
+/* 제목요소(h1)를 table의 caption처럼 표현하기 위해 display: table-caption; 사용*/
 #orderForm h1{margin-bottom: 10px; padding: 15px; font-size: 15px; display: table-caption;}
 #orderForm h1 span{text-align: center; display: block; background: #333; color: #fff; padding: 5px;}
-#orderForm p{display: table-row; padding: 5px; border-bottom: 1px solid #b6b6b6; }
-#orderForm p label{display: table-cell; padding-left: 20px;}
-#orderForm p #userId{margin-bottom: 5px; margin-left: 5px; background: #ddd; border: 1px solid #f39;}
-#orderForm p .cellStyle, #orderForm>p>#userId{display: table-cell;}
-#orderForm p .cellStyle{padding: 5px;}
-#orderForm p .cellStyle #userPhone1{background: #ddd; border: 1px solid #f39; padding: 2px; }
-#orderForm p .cellStyle #userPhone2{background: #ddd; border: 1px solid #f39; padding: 2px; width: 120px;}
-#orderForm p .cellStyle #userPhone3{background: #ddd; border: 1px solid #f39; padding: 2px; width: 120px;}
-#orderForm p .cellStyle #userEmail1, #orderForm p .cellStyle #userEmail2{width: 151.5px; padding: 2px; background: #ddd; border: 1px solid #f39;}
-#orderForm p .cellStyle #userAdd1{width: 150px; border: 1px solid #f39; background: #ddd;}
-#orderForm p .cellStyle #userAddBtn{border: 3px solid #f39; border-radius: 20px; margin-bottom: 5px; padding: 2px 10px; background: none;}
-#orderForm p .cellStyle #userAdd2, #orderForm p .cellStyle #userAdd3{width: 335px; padding: 2px; background: #ddd; border: 1px solid #f39;}
+
+/* html코드에서 p태그가 table의 tr처럼 행 역할을 하기 때문에 p태그에 display: table-row; 사용 */
+#orderForm p{display: table-row; padding: 5px; border-bottom: 1px solid #b6b6b6;}
+
+/* 이름, 휴대폰, 이메일, 배송 주소는 첫 번째 열 */
+label{display: table-cell; padding-left: 20px;}
+#userId{margin-bottom: 5px; margin-left: 5px; background: #ddd; border: 1px solid #f39;}
+
+/* select와 input 요소 등은 두 번째 열 
+#userId는 클래스 cellStyle로 묶여 있지 않아 따로 써준 것*/
+.cellStyle, #orderForm>p>#userId{display: table-cell;}
+.cellStyle{padding: 5px;}
+
+#userPhone1, #userPhone2, #userPhone3{background: #ddd; border: 1px solid #f39; padding: 2px; }
+#userPhone2, #userPhone3{width: 120px;}
+
+#userEmail1, #userEmail2{width: 151.5px; padding: 2px; background: #ddd; border: 1px solid #f39;}
+
+#userAdd1{width: 150px; border: 1px solid #f39; background: #ddd;}
+#userAddBtn{border: 3px solid #f39; border-radius: 20px; margin-bottom: 5px; padding: 2px 10px; background: none;}
+#userAdd2, #userAdd3{width: 335px; padding: 2px; background: #ddd; border: 1px solid #f39;}
+
 #orderForm p:last-child{display: block; text-align: center;}
 #orderForm .btnRow{border-bottom: none; position: relative; left: 175px;}
 #orderForm .btnRow #btnSubmit{background: #f39; border: none; color: #fff; padding: 5px; border-radius: 5px;}
- */
- #wrapper{width: 500px; padding: 20px; border: 5px solid #f63;}
+
+/* 다시 해보기  
+#wrapper{width: 500px; padding: 20px; border: 5px solid #f63;}
  #orderForm{display: table; border-collapse: collapse;}
  #orderForm h1{display: table-caption; background: black; color: #fff;  text-align: center; padding: 5px; margin-bottom: 20px;}
  #orderForm h1 span{display: block; text-align: center;}
@@ -38,4 +64,4 @@
  #orderForm p .cellStyle #userAdd2, #orderForm p .cellStyle #userAdd3{}
  #orderForm p:last-child{}
  #orderForm .btnRow{}
- #orderForm .btnRow #btnSubmit{}
+ #orderForm .btnRow #btnSubmit{} */
