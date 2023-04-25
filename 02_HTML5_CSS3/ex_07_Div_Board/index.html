@@ -6,10 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tooltip</title>
     <style>
+        /* 문단 배경 설정하기 */
         .border_tip{width: 500px; height: auto; padding: 30px; background: rgb(219, 176, 219); position: relative; margin: 50px auto;}
-        .border_tip::before{content: ""; position: absolute; left: 50%; transform: translateX(-50%); top: -9px; border-bottom: 10px solid rgb(219, 176, 219); border-left: 10px solid transparent; border-right: 10px solid transparent;}
-        .border_tip .left{content: ""; position: absolute; top: 50%; transform: translateY(-50%); left: -9px; border-right: 10px solid rgb(219, 176, 219); border-top: 10px solid transparent; border-bottom: 10px solid transparent;}
+        
+        /* 넓이와 길이를 주지 않은 상태에서 보더를 주게 되면 종이 딱지 모양처럼 됨 */
+        /* 거기서 필요한 부분에만 색을 주고 */
+        /* 불필요한 부분은 투명하게 하여 뽀족한 툴팁을 만드는 원리 */
+
+        /* 위쪽에 툴팁만들기 */
+        /* 클래스에 before or after */
+        /* content는 무조건 빈칸 */
+        /* position: absolute; left: 50%; transform: translateX(-50%);으로 중앙 배치 */
+        /* border-bottom: 10px solid rgb(219, 176, 219);으로 위쪽에 툴팁 만들기 */
+        /* border-left: 10px solid transparent; border-right: 10px solid transparent;으로 보더 레프트, 라이트 가리기 */
+        /* top: -10px; 해서 툴팁올리기 */
+        .border_tip::before{content: ""; position: absolute; left: 50%; transform: translateX(-50%); top: -10px; border-bottom: 10px solid rgb(219, 176, 219); border-left: 10px solid transparent; border-right: 10px solid transparent;}
+        
+        /* 왼쪽에 툴팁만들기 */
+        /* 클래스에 before or after */
+        /* content는 무조건 빈칸 */
+        /* position: absolute; top: 50%; transform: translateY(-50%);으로 중앙 배치 */
+        /* border-right: 10px solid rgb(219, 176, 219);으로 왼쪽에 툴팁 만들기 */
+        /* border-top: 10px solid transparent; border-bottom: 10px solid transparent;으로 보더 탑, 바텀 가리기 */
+        /* left: -10; 해서 툴팁올리기 */
+        .border_tip .left{content: ""; position: absolute; top: 50%; transform: translateY(-50%); left: -10px; border-right: 10px solid rgb(219, 176, 219); border-top: 10px solid transparent; border-bottom: 10px solid transparent;}
+        
+        /* 오른쪽에 툴팁만들기 */
+        /* 클래스에 before or after */
+        /* content는 무조건 빈칸 */
+        /* position: absolute; top: 50%; transform: translateY(-50%);으로 중앙 배치 */
+        /* border-left: 10px solid rgb(219, 176, 219);으로 오른쪽에 툴팁 만들기 */
+        /* border-top: 10px solid transparent; border-bottom: 10px solid transparent;으로 보더 탑, 바텀 가리기 */
+        /* right: -10px; 해서 툴팁올리기 */
         .border_tip .right{content: ""; position: absolute; top: 50%; transform: translateY(-50%); right: -10px; border-left: 10px solid rgb(219, 176, 219); border-top: 10px solid transparent; border-bottom: 10px solid transparent;}
+        
+        /* 아래쪽에 툴팁만들기 */
+        /* 클래스에 before or after */
+        /* content는 무조건 빈칸 */
+        /* position: absolute; left: 50%; transform: translateX(-50%);으로 중앙 배치 */
+        /* border-top: 10px solid rgb(219, 176, 219);으로 위쪽에 툴팁 만들기 */
+        /* border-left: 10px solid transparent; border-right: 10px solid transparent;으로 보더 레프트, 라이트 가리기 */
+        /* bottom: -10px; 해서 툴팁올리기 */
         .border_tip::after{content: ""; position: absolute; left: 50%; transform: translateX(-50%); bottom: -10px; border-top: 10px solid rgb(219, 176, 219); border-left: 10px solid transparent; border-right: 10px solid transparent;}
     </style>
 </head>
