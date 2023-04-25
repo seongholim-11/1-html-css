@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip</title>
+    <style>
+        .border_tip{width: 500px; height: auto; padding: 30px; background: rgb(219, 176, 219); position: relative; margin: 50px auto;}
+        .border_tip::before{content: ""; position: absolute; left: 50%; transform: translateX(-50%); top: -9px; border-bottom: 10px solid rgb(219, 176, 219); border-left: 10px solid transparent; border-right: 10px solid transparent;}
+        .border_tip .left{content: ""; position: absolute; top: 50%; transform: translateY(-50%); left: -9px; border-right: 10px solid rgb(219, 176, 219); border-top: 10px solid transparent; border-bottom: 10px solid transparent;}
+        .border_tip .right{content: ""; position: absolute; top: 50%; transform: translateY(-50%); right: -10px; border-left: 10px solid rgb(219, 176, 219); border-top: 10px solid transparent; border-bottom: 10px solid transparent;}
+        .border_tip::after{content: ""; position: absolute; left: 50%; transform: translateX(-50%); bottom: -10px; border-top: 10px solid rgb(219, 176, 219); border-left: 10px solid transparent; border-right: 10px solid transparent;}
+    </style>
+</head>
+<body>
+    <div class="border_tip">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quisquam quae odio natus mollitia cum harum corporis. Ipsam cumque repellendus deleniti laboriosam temporibus animi non repellat doloribus perferendis, facilis nemo.
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>
