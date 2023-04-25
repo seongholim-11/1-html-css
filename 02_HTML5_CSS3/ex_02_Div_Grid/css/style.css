@@ -1,0 +1,26 @@
+/* 작은 네모 70*70 */
+body{background: url(../images2/grid_back_02.gif);}
+/* 가로 11개 세로 8개 */
+#wrap{width: 770px; height: 560px; margin-top: 140px; margin-left: 350px;}
+/* 가로 2개, 세로 3개 .box1_3을 옆으로 보내기 위해 float: left */
+.menu{width: 140px; height: 210px; background: #fffa; float: left;}
+/* 가로 1개, 세로 3개 .box3_3와 .box1_3을 옆으로 보내기 위해 float: left */
+.box1_3{width: 70px; height: 210px; float: left;}
+/* 가로 3개, 세로 3개 .box1_3을 옆으로 보내기 위해 float: left */
+.box3_3{width: 210px; height: 210px; float: left;}
+/* 가로 11개, 세로 1개 .box1_3 옆에 붙지 않게 clear: both */
+.box11_1{width: 770px; height: 70px; clear: both;}
+
+/* 가로 1개, 세로 1개 */
+.box1_1{width: 70px; height: 70px;}
+.color1{background: #ff9;}
+.color2{background: #fc0;}
+.color3{background: #f90;}
+
+/* 가로 3개, 세로 2개 */
+.box3_2{width: 210px; height: 140px;}
+
+.fl{float: left;}
+
+/* li 간격 줄이기 */
+li{line-height: 0;}

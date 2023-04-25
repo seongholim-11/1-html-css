@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image_padding</title>
+    <style>
+        
+        .container{width: 600px; border: 1px solid red;}
+
+        /* 이미지에 보더를 줄 때 생기는 여백 없애는 방법 */
+
+        /* 해결법 1 */
+        /* 이미지를 인라인 요소로 유지할 때 사용하는 방법 */
+        img{vertical-align: top;}
+
+        /* 해결법 2 */
+        /* 이미지를 블록요소로 바꾸어 여백 제거 */
+        img{display: block;}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://placehold.co/600x400" alt="">
+    </div>
+</body>
+</html>

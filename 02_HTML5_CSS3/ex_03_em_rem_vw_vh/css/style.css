@@ -1,0 +1,33 @@
+:root{font-size: 11px;}
+*{margin: 0; padding: 0;}
+html{height: 100%;}
+body{height: 100%;}
+
+
+.box{float: left; background: yellowgreen; color: #fff; margin-right: 20px; text-align: center;}
+
+.wrap{font-size: 12px;}
+
+.box_px{width: 160px; height: 160px;}
+
+/* 아무것도 설정하지 않으면 웹폰트에 따라 1em = 16px */
+/* em, rem을 사용하면 부모 또는 루트만 수정해도 하위 값들이 바뀌기 때문에 반응형 웹에 용이 */
+
+/* 부모에 따라 값이 달라짐 */
+.box_em{width: 10em; height: 10em;}
+
+/* 문서의 기본값(root)에 따라 값이 달라짐 */
+.box_rem{width: 10rem; height: 10rem;}
+
+/* 
+px-em 단위 변환 사이트
+http://pxtoem.com/
+*/
+
+/* vw: 브라우저 안쪽의 공간을 다 사용, 양옆에 기본 8px */
+/* 그래서 마진:0 패딩:0을 주면 스크롤이 없어짐 */
+
+/* %: 부모가 만들어준 공간에서의 너비 비율 */
+
+/* 1vw = 1%, 단 여백 포함의 유무 차이 */
+p{clear: both; font-size: 1.5rem; width: 100vw; height: 50%; background: red;}
