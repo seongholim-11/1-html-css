@@ -1,15 +1,13 @@
-/* body{background: url(../menu1.jpg) no-repeat 50% 50%/cover; font-family: Arial, Helvetica, sans-serif;}
-li{background: black; float: left; list-style: none; margin-right: 1px; text-align: center; padding: 6px 8px;}
-a{text-decoration: none; color: rgb(172, 172, 172); font-size: 0.7em; font-weight: bold;}
-
-li:hover{border-bottom: 5px solid orange; padding: -5px;}
-li:hover a{color: rgb(255, 255, 255); } */
-
 body{background: url(../menu1.jpg) no-repeat 50% 50%/cover;}
 
 #nav{}
+/* 리스트 점 없애기 */
 #nav ul{list-style: none;}
+/* 가로 배치 */
 #nav ul li{float: left; margin-right: 2px;}
+/* 대문자로 변경, 밑줄 제거, 볼드체 변경, 글자색 변경, 배경색 설정, 패딩을 주기 위해 블록, 아래만 5픽셀 패딩 더 주기 */
 #nav ul li a{ text-transform: uppercase; text-decoration: none; font-weight: bold; color: #888; background: #292929; display: block; padding: 10px 10px 15px 10px;}
 
+/* 마우스 올리면 */
+/* 보더바텀에 5픽셀 선 주는 대신 보더바텀 패딩 5픽셀 줄이기 */
 #nav ul li a:hover{border-bottom: 5px solid #f90; padding-bottom: 10px; color: #fff;}
