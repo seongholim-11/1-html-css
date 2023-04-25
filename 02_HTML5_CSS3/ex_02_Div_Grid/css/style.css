@@ -1,0 +1,17 @@
+/* 작은 네모 70*70 */
+body{background: url(../images2/grid_back_02.gif);}
+#wrap{width: 770px; height: 560px; margin-top: 140px; margin-left: 350px;}
+.menu{width: 140px; height: 210px; background: #fffa; float: left;}
+.box1_3{width: 70px; height: 210px; float: left;}
+.box3_3{width: 210px; height: 210px; float: left;}
+.box11_1{width: 770px; height: 70px; clear: both;}
+
+.box1_1{width: 70px; height: 70px;}
+.color1{background: #ff9;}
+.color2{background: #fc0;}
+.color3{background: #f90;}
+
+.box3_2{width: 210px; height: 140px;}
+.fl{float: left;}
+
+li{line-height: 0;}
