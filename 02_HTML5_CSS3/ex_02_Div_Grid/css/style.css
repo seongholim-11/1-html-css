@@ -1,5 +1,6 @@
 /* 작은 네모 70*70 */
 body{background: url(../images2/grid_back_02.gif);}
+/* 가로 11개 세로 8개 */
 #wrap{width: 770px; height: 560px; margin-top: 140px; margin-left: 350px;}
 .menu{width: 140px; height: 210px; background: #fffa; float: left;}
 .box1_3{width: 70px; height: 210px; float: left;}
