@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display 속성</title>
+    <style>
+        /* 인라인요소는 너비, 높이가 정의되지 않음 */
+        /* 인라인요소는 margin top, padding top이 정의되지 않음 */
+        /* 너비, 높이를 주고 싶지만 옆으로 붙이고 싶을 때는 inline-block */
+
+        span{background: aquamarine;}
+        #box{background: yellow; display: inline; width: 800px; height: 50px; margin: 100px;}
+    </style>
+</head>
+<body>
+    <span>인라인요소</span>
+    <div id="box">
+        <span>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum neque, odit atque, impedit incidunt officiis accusantium reprehenderit voluptas ex laudantium repellat nostrum sunt non nemo fuga, cumque aliquam vero eveniet?
+        </span>
+    </div>
+    <span>인라인요소</span>
+</body>
+</html>
