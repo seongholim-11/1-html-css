@@ -1,40 +1,39 @@
 *{margin: 0; padding: 0;}
 body{text-align: center; font-size: 30px; text-transform: uppercase; color: white;}
-
-    @media screen and (min-width: 801px) {
-        #wrap{width: 1000px; height: 100%; background: black; margin: 20px auto;}
-        header{width: 100%; height: 100px; background: green;}
-        section{width: 100%; height: 900px; background: greenyellow;}
-        aside{width: 300px; height: 100%; float: left;}
-        #contents1{width: 700px; height: 300px; background: rgb(124, 218, 0); float: right;}
-        #contents2{width: 700px; height: 300px; background: rgb(33, 0, 218); float: right;}
-        #contents3{width: 700px; height: 300px; background: rgb(218, 0, 127); float: right;}
-        #contents4{display: none;}
-        footer{width: 100%; height: 100px; background: rgb(109, 192, 0);}
+    @media screen and (min-width: 801px) and (max-width: 1000px) {
+        #wrap{width: 1000px; height: 100%; margin: 20px auto;}
+        header{width: 100%; height: 100px; background: rgb(0, 109, 128);}
+        section{width: 100%; height: 900px;}
+        aside{width: 30%; height: 100%; float: left; background: rgb(85, 178, 255);}
+        .contents1{width: 70%; height: 300px; background: rgb(0, 120, 218); float: right;}
+        .contents2{width: 70%; height: 300px; background: rgb(33, 0, 218); float: right;}
+        .contents3{width: 70%; height: 300px; background: rgb(76, 0, 218); float: right;}
+        .contents4{display: none;}
+        footer{width: 100%; height: 100px; background: rgb(122, 0, 192);}
     }
 
 /* width: 800 */
     @media screen and (min-width: 501px) and (max-width: 800px) {
-        #wrap{width: 800px; height: 100%; background: black; margin: 20px auto;}
-        header{width: 100%; height: 100px; background: green;}
-        section{width: 100%; height: 1200px; background: greenyellow;}
-        aside{width: 300px; height: 900px; float: left;}
-        #contents1{width: 500px; height: 450px; background: rgb(124, 218, 0); float: right;}
-        #contents2{width: 500px; height: 450px; background: rgb(33, 0, 218); float: right;}
-        #contents3{width: 800px; height: 300px; background: rgb(218, 0, 127); float: left;}
-        #contents4{display: none;}
-        footer{width: 100%; height: 100px; background: rgb(109, 192, 0);}
+        #wrap{width: 800px; height: 100%; margin: 20px auto;}
+        header{width: 100%; height: 100px; background: rgb(128, 0, 0);}
+        section{width: 100%; height: 900px;}
+        aside{width: 300px; height: 700px; float: left; background: rgb(218, 44, 0);}
+        .contents1{width: 500px; height: 350px; background: rgb(218, 80, 0); float: right;}
+        .contents2{width: 500px; height: 350px; background: rgb(218, 124, 0); float: right;}
+        .contents3{width: 100%; height: 200px; background: rgb(218, 149, 0); float: right;}
+        .contents4{display: none;}
+        footer{width: 100%; height: 100px; background: rgb(192, 0, 64);}
     }
 
 /* width: 500 */
-    @media screen and (min-width: 1px) and (max-width: 500px) {
-        #wrap{width: 500px; height: 100%; background: black; margin: 20px auto;}
-        header{width: 100%; height: 100px; background: green;}
-        section{width: 100%; height: 850px; background: greenyellow;}
+    @media screen and (min-width: 5px) and (max-width: 500px) {
+        #wrap{width: 500px; height: 100%; margin: 20px auto;}
+        header{width: 100%; height: 100px; background: rgb(251, 255, 0);}
+        section{width: 100%; height: 850px;}
         aside{display: none;}
-        #contents1{width: 500px; height: 250px; background: rgb(124, 218, 0); float: left;}
-        #contents2{width: 250px; height: 350px; background: rgb(33, 0, 218); float: left;}
-        #contents3{width: 250px; height: 350px; background: rgb(218, 0, 127); float: left;}
-        #contents4{width: 500px; height: 250px; background: rgb(203, 218, 0); float: left;}
-        footer{width: 100%; height: 100px; background: rgb(109, 192, 0);}
-}
+        .contents1{width: 100%; height: 250px; background: rgb(218, 167, 0); float: right;}
+        .contents2{width: 50%; height: 350px; background: rgb(214, 218, 0); float: right;}
+        .contents3{width: 50%; height: 350px; background: rgb(171, 218, 0); float: right;}
+        .contents4{width: 100%; height: 250px; background: rgb(153, 218, 0); float: right;}
+        footer{width: 100%; height: 100px; background: rgb(54, 192, 0);}
+    }
