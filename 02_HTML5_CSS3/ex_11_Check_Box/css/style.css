@@ -7,19 +7,24 @@ header nav ul li{display: inline; margin: 15px;}
 header nav ul li a{color: #fff; font-weight: bold; font-size: 20px;}
 header nav ul li a:hover{color: #c1c1c1}
 
-section{width: 100%; background: rgb(50, 205, 184); overflow: hidden;}
+section{width: 100%; overflow: hidden; margin-bottom: 10px;}
 section .left{width: 580px; float: left;}
 section .left h2{font-size: 1.8em; font-weight: bold; margin-top: 10px;}
-h3{display: inline; font-size: 1.2em; font-weight: bold;}
-p{margin-top: 20px;}
 article{width: 250px; height: 200px; float: left; margin: 5px; padding: 10px; border: 1px solid #ccc; overflow-y: scroll; transition-property: background, border; transition-duration: 2s;}
 .at1:hover{background: rgb(136, 255, 136); border: 1px solid green;}
 .at2:hover{background: rgb(136, 247, 255); border: 1px solid rgb(0, 128, 128);}
 .at3:hover{background: rgb(136, 144, 255); border: 1px solid rgb(2, 0, 128);}
 .at4:hover{background: rgb(255, 136, 215); border: 1px solid rgb(128, 0, 107);}
 
+input[type="checkbox"]:checked ~ div.check{height: 0;}
+/* transition때문에 애니메이션 가능 */
+.check{width: 230px; height: 220px; transition: 1s; overflow: hidden;}
 
-aside{width: 200px; float: right; text-align: center;}
+h3{display: inline; font-size: 1.2em; font-weight: bold;}
+p{margin-top: 20px;}
+
+
+aside{width: 200px; float: right; text-align: center; margin-top: 50px;}
 /* 이미지 밑에 여백 지우기 */
 aside img{vertical-align: bottom;}
 
