@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-sizing</title>
+    <style>
+        div{width: 200px; height: 200px; margin: 20px;}
+        .box1{background: yellow;}
+        /* width = 200+10+20+20+10 = 260px */
+        .box2{background: blue; border: 10px solid #ddd; padding: 20px;}
+        /* box-sizing: border-box -> 안쪽으로 보더와 패딩 등이 들어가서 최종크기가 변하지 않음 */
+        .box3{background: red; border: 10px solid #ddd; padding: 20px; box-sizing: border-box;}
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>
