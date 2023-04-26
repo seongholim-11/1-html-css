@@ -9,10 +9,16 @@
         /* 처음부터 없었던 것처럼, 공간 사용 X */
         /* #box>p{display: none;} */
 
-        /* 공간을 가지고 보이지 않게 하는 방법 */
+        /* 영역은 가지고 보이지 않게 하는 방법 */
         /* #box>p{opacity: 0;} */
         
-        /* 공간을 가지고 보이지 않게 하는 방법 */
+        /* 영역은 가지고 보이지 않게 하는 방법 */
+        /* visibility
+            visible: 보임
+            hidden: 숨김 (자신의 영역은 계속 차지)
+            collapse: 겹치도록 지정(테이블의 행과 열 요소만 지정할 수 있으며, 그 외 요소의 지정하면 hidden으로 해석)
+            inherit: 부모 요소의 값을 상속 
+        */
         #box>p{visibility: hidden;}
 
     </style>
