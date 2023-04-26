@@ -1,0 +1,29 @@
+*{margin: 0; padding: 0;}
+#wrap{width: 1000px; margin: 0 auto;}
+header{width: 100%; height: 100px; background: #c7e3f3;}
+section{width: 100%; height: 900px}
+aside{width: 30%; float: left; height: 900px; background: #5fb2dc;}
+article{width: 70%; float: left; height: 300px;}
+.at1{ background: #83bcd9;}
+.at2{ background: #3c85a9;}
+.at3{ background: #1b5c7c;}
+
+footer{width: 100%; height: 100px; background: #194e6d; clear: both;}
+
+
+
+@media screen and (max-width: 1000px) {
+    #wrap{width: 100%; }
+}
+
+
+@media screen and (max-width: 800px) {
+    article{ height: 450px;}
+    .at3{width: 100%; height: 300px}
+}
+@media screen and (max-width: 500px) {
+    section{width: 100%; height:auto}
+    aside{width: 100%; float: none; height: 300px; background: #5fb2dc;}
+    article{ height: 450px; float: left; width: 50%;}
+    .at3{clear: both;}
+}
