@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float에 아무런 대응도 하지 않는 상태</title>
+    <style>
+        *{margin: 0; padding: 0; font-family: "돋움", sans-serif; font-size: 1em;}
+        body{background: white; margin: 10px; font-size: 0.75em;}
+        #header{padding: 10px; margin: 0 0 10px 0; border: 10px solid #ccc; clear: both;}
+        /* 아무것도 하지 않으면 부모가 자식을 감쌀 수 없다. */
+        #container{padding: 10px; margin: 0 0 10px 0; border: 10px solid #ccc; float: none;}
+        #lnb{padding: 10px; margin: 0 0 10px 0; border: 10px solid #ccc; float: left; background: red;}
+        #content{padding: 10px; margin: 0 0 10px 0; border: 10px solid #ccc; float: right; background:  red;}
+        #footer{padding: 10px; margin: 0 0 10px 0; border: 10px solid #ccc; clear: both;}
+    </style>
+</head>
+<body>
+    <h1>float에 아무런 대응도 하지 않는 상태</h1>
+    <div id="header">
+        <p>
+            #header{clear:both;}
+        </p>
+    </div>
+    <div id="container">
+        <p>
+            #container{float: none;}
+        </p>
+        <div id="lnb">
+            <p>
+                #lnb{float: left;}
+            </p>
+        </div>
+        <div id="content">
+            <p>
+                #content{float: right;}
+            </p>
+        </div>
+    </div>
+    <div id="footer">
+        #footer{clear:both;}
+    </div>
+</body>
+</html>
