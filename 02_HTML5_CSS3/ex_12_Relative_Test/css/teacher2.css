@@ -1,3 +1,5 @@
+/* 최상위를 기준으로 미니메뉴를 top에서 내리고 메뉴마다 정당하게 오른쪽으로 이동 */
+
 #nav{ width:600px;  margin: 50px auto; position: relative;}
 #nav>ul{overflow: hidden;}
 #nav>ul>li{float: left;}
