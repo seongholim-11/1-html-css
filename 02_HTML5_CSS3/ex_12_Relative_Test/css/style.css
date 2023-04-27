@@ -1,0 +1,21 @@
+*{margin: 0; padding: 0;} 
+body{width: 1960px; height: auto; margin: 0 auto;}
+
+header{width: 100%; height: 500px; background: red;}
+
+.list_style{list-style: none; display: inline-block;}
+.font_blue{text-decoration: none; font-weight: bold; font-size: 40px;}
+
+header .language{width: 100%; height: 150px;}
+header .language ul{float: right; margin-top: 10px; margin-right: 10px;}
+header .language ul li{margin-left: 30px;}
+header .language ul li a{padding: 10px;}
+header .language ul li a img{position: relative; top: 3px;}
+.title{width: 100%; height: 250px; position: relative;}
+.title h1{position: absolute; top: 35%; left: 50%; transform: translate(-50%,-50%); font-size: 5em;}
+header .bnt{width: 100%; height: 100px;}
+header .bnt ul{text-align: center;}
+header .bnt ul li{margin: 0 20px; padding: 10px 40px;}
+header ul li:hover{background: #000;}
+header ul li:hover a{color: #fff;}
+
