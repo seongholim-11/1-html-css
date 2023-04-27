@@ -1,2 +1,20 @@
 @import url(./reset.css);
 
+.container{width: 1440px; height: inherit; margin: 0 auto; background: rgba(0, 0, 0, 0.4);}
+
+#wrap{width: 100%;}
+
+#header{width: 100%; height: 105px; position: fixed; top: 0; left: 0;}
+#banner{width: 100%; height: 590px; background: url(../image/bg.jpg) no-repeat center top/cover;}
+#content{width: 100%; height: 500px; background: rgb(212, 229, 247);}
+
+.logo{float: left;}
+.logo a{display: block;}
+.logo a img{padding: 25px;}
+
+#nav{float: left;}
+#nav .bg{width: 100%; height: 300px; background: blue; position: absolute; top: 105px; left: 0;}
+#nav .bg span{}
+
+#banner{}
+#content{}
