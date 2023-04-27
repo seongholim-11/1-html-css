@@ -20,7 +20,7 @@
 			text-align:center;
 			}
 		/* Login Form Design */
-		#loginForm{border-top:50px solid #ff5e00;}
+		/* #loginForm{border-top:50px solid #ff5e00;}
 		#loginForm h1{padding-top: 50px;}
 		#loginForm fieldset{width: 570px; height: 300px; margin: 10px auto; border: 5px solid rgb(224, 224, 224); border-radius: 30px; position: relative; padding: 25px 30px;}
 		#loginForm fieldset legend{display: none;}
@@ -35,9 +35,8 @@
 		#loginForm fieldset #btn2{width: 300px; position: absolute; top: 180px; left: 165px;}
 		#loginForm fieldset #btn2 input{background: black; color: white; border-radius: 7px; font-size: 1.2em;} 
 		#loginForm fieldset #btn2 #btnJoin{width: 85px; height: 35px;}
-		#loginForm fieldset #btn2 #btnSearch{width: 170px; height: 35px; }
-		
-		
+		#loginForm fieldset #btn2 #btnSearch{width: 170px; height: 35px; } */
+			
 		/*  
 		#loginForm{ 
          border-top: 50px solid #f63;
@@ -62,12 +61,27 @@
       	#loginForm fieldset #btn2{ margin-left: 60px;}
       	#loginForm fieldset #btn2 input{border: none; background: #666; color: #fff; padding: 5px 10px; border-radius: 5px;} */
 
-
+		  /* 230427 */
+		h1{border-top: 30px solid orange;}
+		fieldset{width: 500px; margin: 20px auto;}
+		#login{}
+		#login #login_input{float: left;}
+		#login #login_input p{}
+		#login #login_input p .labelid{}
+		#login #login_input label{}
+		#login #login_input #userId{margin-left: 13px;}
+		#login .loging{height: 40px; margin-left: 20px;} 
+		#checkbox{clear: both;}
+		#checkbox p{display: inline-block;}
+		#checkbox p input{}
+		#checkbox p label{}
+		#login .signup{}
+		#login .find{}
 
 	</style>
 </head>
 <body>
-	<form id="loginForm">
+	<!-- <form id="loginForm">
 		<h1>Member Login</h1>
 		<fieldset>	
 			<legend>Member Loin</legend>
@@ -93,6 +107,35 @@
 				<input type="button" value="아이디/비밀번호 찾기" id="btnSearch" />
 			</p>
 		</fieldset>
-	</form>
+	</form> -->
+	<!-- 230427 -->
+	<h1>Member Login</h1>
+	<fieldset>
+		<form id="login">
+			<div id="login_input">
+				<p>
+					<label class="labelid" for="userId">아이디</label>
+					<input type="text" id="userId">
+				</p>
+				<p>
+					<label for="userPw">비밀번호</label>
+					<input type="text" id="userPw">
+				</p>
+			</div>
+			<button class="loging">로그인하기</button>
+			<div id="checkbox">
+				<p>
+					<input type="checkbox" id="idSave">
+					<label for="idSave">아이디저장</label>
+				</p>
+				<p>
+					<input type="checkbox" id="safe">
+					<label for="safe">아이디 / 비밀번호 찾기</label>
+				</p>
+			</div>
+			<button class="signup">회원가입</button>
+			<button class="find">아이디/비밀번호 찾기</button>
+		</form>
+	</fieldset>
 </body>
 </html>
