@@ -2,12 +2,16 @@
 
 body{font-family: 'Noto Sans KR', sans-serif; margin: 50px;}
 
+/* 메뉴바 전체 */
 #nav{background: rgb(216, 90, 216); border-radius: 5px;}
+/* li가 float: left; 되어 넘치는 요소를 감싸기 위해 overflow: hidden; */
 #nav>ul{overflow: hidden;}
 #nav>ul>li{float: left; width: 200px; text-align: center;} 
 /* a를 li에 꽉 채우고 패딩을 주기 위해 display: block */
 #nav>ul>li>a{padding: 10px 0; display: block; transition: 0.3s;}
 #nav>ul>li:hover>a{color: #fff;}
+
+
 #nav>ul>li:hover>ul{display: block;}
 #nav>ul>li>ul{position: absolute; background: plum; display: none;}
 #nav>ul>li>ul li{width: 200px; text-align: center;}
