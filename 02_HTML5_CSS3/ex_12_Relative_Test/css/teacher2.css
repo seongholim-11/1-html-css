@@ -1,16 +1,24 @@
 /* 최상위를 기준으로 미니메뉴를 top에서 내리고 메뉴마다 정당하게 오른쪽으로 이동 */
 /* 바를 내리는 것이 아니라 아예 위치시키고 보였다가 안보이게 */
 
+/* 대략적인 너비를 주고 중앙 정렬 */
 #nav{ width:600px;  margin: 50px auto; position: relative;}
+/* li의 float: left;때문에 overflow: hidden; */
 #nav>ul{overflow: hidden;}
+/* 가로 정렬 */
 #nav>ul>li{float: left;}
 #nav>ul>li>a{font-size: 20px; display: block; padding: 10px 20px; color: #7eb9dd; text-shadow: 1px 1px 1px #ddd; font-weight: bold;}
 #nav>ul>li>a:hover{ color: #216b99; }
+
+/* 2depth 메뉴바를 1depth 메뉴바 밑으로 내리기 위해 position: absolute; 후 이동 */
+/* display: none 하고 마우스 올리면 block */
 #nav>ul>li>ul{position: absolute; top: 50px; left: 20px; background: #7db9bd; padding: 5px 10px; display: none;}
 #nav>ul>li:hover>ul{ display: block;}
+/* 2depth 메뉴 가로정렬 */
 #nav>ul>li>ul>li{float: left; margin: 5px 10px; }
 #nav>ul>li>ul>li>a{display: block; color: #f0eceb; }
 #nav>ul>li>ul>li>a:hover{ color: #3a75ad; }
+/* 위치에 맞게 이동 */
 #nav>ul>li:nth-child(2)>ul{left: 30px}
 #nav>ul>li:nth-child(3)>ul{left: 10px}
 #nav>ul>li:nth-child(5)>ul{left: 100px}
