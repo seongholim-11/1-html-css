@@ -1,0 +1,10 @@
+@import url(./reset.css);
+
+/* 공통속성 */
+.container{width: 1440px; height: inherit; margin: 0 auto; background: rgba(0, 0, 0, 0.4);}
+
+
+#wrap{width: 100%;}
+#header{width: 100%; height: 105px; background: rgba(255, 255, 255, 0.6); position: fixed; top: 0; left: 0;}
+#banner{width: 100%; height: 590px; background: url(../image/bg.jpg) no-repeat center top/cover;}
+#content{width: 100%; height: 500px; background: rgb(212, 229, 247);}
