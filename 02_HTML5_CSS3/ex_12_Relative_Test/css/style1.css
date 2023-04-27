@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+body{font-family: 'Noto Sans KR', sans-serif; margin: 50px;}
+
+#nav{background: rgb(216, 90, 216); border-radius: 5px;}
+#nav>ul{overflow: hidden;}
+#nav>ul>li{float: left; width: 200px; text-align: center;} 
+/* a를 li에 꽉 채우고 패딩을 주기 위해 display: block */
+#nav>ul>li>a{padding: 10px 0; display: block; transition: 0.3s;}
+#nav>ul>li:hover>a{color: #fff;}
+#nav>ul>li:hover>ul{display: block;}
+#nav>ul>li>ul{position: absolute; background: plum; display: none;}
+#nav>ul>li>ul li{width: 200px; text-align: center;}
+#nav>ul>li>ul li a{display: block; padding: 10px 0; color: #fff; transition: 0.3s;}
+#nav>ul>li>ul li:hover a{background: rgb(255, 0, 191); color: #fff;}
