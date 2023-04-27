@@ -1,6 +1,13 @@
 /* 최상위를 기준으로 미니메뉴를 top에서 내리고 메뉴마다 정당하게 오른쪽으로 이동 */
 /* 바를 내리는 것이 아니라 아예 위치시키고 보였다가 안보이게 */
 
+/* 1. 구조 짜기 */
+/* 2. 전체 메뉴바에 너비 주고 가운데 정렬 */
+/* 3. 1depth 메뉴바 꾸미기 */
+/* 4. 2depth 메뉴바 position으로 1depth 메뉴바 밑으로 이동하기 */
+/* 5. 2depth 메뉴바 꾸미기 */
+/* 5. hover 주기 */
+
 /* 대략적인 너비를 주고 중앙 정렬 */
 #nav{ width:600px;  margin: 50px auto; position: relative;}
 /* li의 float: left;때문에 overflow: hidden; */
