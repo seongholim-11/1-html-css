@@ -1,5 +1,9 @@
 @import url(./reset.css);
 
+/* 1. 큰 틀 만들기 */
+/* 1-1. 헤더 고정하기(position: fixed) */
+/* 2. HTML 파일에 1Depth, 2Depth 메뉴 작성하기 */
+
 /* 공통속성 */
 .container{width: 1440px; height: inherit; margin: 0 auto; background: rgba(0, 0, 0, 0.4);}
 
