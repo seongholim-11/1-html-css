@@ -1,0 +1,27 @@
+/* header{width: 100%;}
+header>ul{width: 685px; margin: 0 auto; overflow: hidden;}
+header>ul>li{float: left; margin: 0 20px;}
+header>ul>li>a{display: block; color: rgb(73, 194, 241); font-size: 20px; padding: 5px 10px; font-weight: bold; text-shadow: 0 1px 1px #999999;}
+header>ul>li:hover>ul{display: table;}
+header>ul>li>ul{overflow: hidden; display: none;}
+header>ul>li>ul>li{float: left; background: skyblue; padding: 10px;}
+header>ul>li>ul>li>a{color: white; font-weight: bold; clear: both;} */
+* {margin: 0; padding: 0;}
+  #wrapper{position: relative;}
+  
+  #nav{width: 100%; max-width: 1024px; margin: 0 auto;}
+  #menu__list {display: table; list-style-type: none; width: 100%; text-align: center;}
+  #menu__menu {position: relative; display: table-cell; vertical-align: middle; height: 50px;}
+  #menu__menu:hover {background-color: #ffffff;}
+  
+  #menu__menu:hover #subwrapper {display: block;}
+  #menu__menu:hover #submenu__list {display: table;}
+
+  #subwrapper {display: none; background-color: #abcede; position: absolute; top: 50px; left: 0;}
+  #subnav {width: 100%; max-width: 1024px; margin: 0 auto;}
+  #submenu__list {display: none; list-style-type: none; width: 100%; text-align: center;}
+  #submenu__menu {display: table-cell; vertical-align: middle; height: 50px; cursor: pointer; width: 600px;}
+  .submenu__menu_a{display: block; color: white;}
+  
+  #submenu__menu:hover {background-color: #ffffff;}
+  #submenu__menu:hover .submenu__menu_a{color: rgb(118, 212, 255);}
