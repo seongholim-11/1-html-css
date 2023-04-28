@@ -1,5 +1,5 @@
 
-.container{width: 1440px; margin: 0 auto; height: inherit; background: rgba(0, 0, 0, 0.5);}
+.container{width: 1440px; margin: 0 auto; height: inherit; /* background: rgba(0, 0, 0, 0.5); */}
 .logo img{width: 180px;}
 
 /* 레이아웃 */
@@ -9,15 +9,17 @@
 #footer{width: 100%; height: 200px; background: rgb(72, 75, 59);}
 
 /* header */
-.nav{}
 .nav h1{float: left;}
-.nav h1 a{}
-.nav>ul{float: left;}
-.nav>ul>li{}
-.nav>ul>li>a{}
-.nav>ul>li>ul{}
-.nav>ul>li>ul>li{}
-.nav>ul>li>ul>li>a{}
+.nav>ul{float: right;}
+.nav>ul>li{float: left;}
+.nav>ul>li>a{display: block; font-size: 24px; font-weight: bold; padding: 29px 50px; position: relative;}
+.nav>ul>li:not(:last-child)>a:after{position: absolute; top: 38px; right: 0; width: 1px; height: 20px; background: #b8b8b8; content: "";}
+
+.nav>ul>li>.width100{position: absolute; top: 94px; left: 0; width: 100%; height: 300px; background: orange; display: none;}
+.nav>ul>li:hover>.width100{position: absolute; top: 94px; left: 0; width: 100%; height: 300px; background: orange; display: block;}
+.nav>ul>li>.width100>ul{width: 1440px; margin: 0 auto;}
+.nav>ul>li>.width100>ul>li{float: left;}
+.nav>ul>li>.width100>ul>li>a{}
 
 
 
