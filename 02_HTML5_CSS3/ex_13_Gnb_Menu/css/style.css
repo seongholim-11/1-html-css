@@ -11,7 +11,7 @@
 
 *{margin: 0; padding: 0;}
 ul{list-style: none;}
-a{text-decoration: none;} 
+a{text-decoration: none; color: rgba(0, 0, 0, 0);} 
 
 #sideMenu{width: 155px; border-bottom: 1px solid #555; position: relative;}
 
