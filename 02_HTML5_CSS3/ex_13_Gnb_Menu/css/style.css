@@ -12,6 +12,7 @@
 *{margin: 0; padding: 0;}
 ul{list-style: none;}
 a{text-decoration: none; color: rgba(0, 0, 0, 0);} 
+div{color: rgba(0, 0, 0, 0);}
 
 #sideMenu{width: 155px; border-bottom: 1px solid #555; position: relative;}
 
@@ -39,7 +40,7 @@ a{text-decoration: none; color: rgba(0, 0, 0, 0);}
 #sideMenu .menu>ul>.menu9:hover{background-position: -155px -416px;}
 #sideMenu .menu>ul>li>a{display: block; width: 100%; height: 100%;}
 
-#sideMenu .menu>ul>li>.sub{visibility: hidden; position: absolute; top: 0; left: 155px; width: 126px; height: 805px; background: yellowgreen; }
+#sideMenu .menu>ul>li>.sub{visibility: hidden; position: absolute; top: 0; left: 155px; width: 126px; height: 805px;}
 #sideMenu .menu>ul>li:hover>.sub{visibility: visible;}
 #sideMenu .menu>ul>.menu1>.sub>li{visibility: visible;}
 #sideMenu .menu>ul>li>.sub>li{width: 126px; height: 115px;}
