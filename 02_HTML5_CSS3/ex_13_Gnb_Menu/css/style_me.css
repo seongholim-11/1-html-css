@@ -27,7 +27,6 @@ a{text-decoration: none;}
 #sideMenu>.menu>ul>.menu7:hover{background-position: -155px -312px;}
 #sideMenu>.menu>ul>.menu8:hover{background-position: -155px -364px;}
 #sideMenu>.menu>ul>.menu9:hover{background-position: -155px -416px;}
-#sideMenu>.menu>ul>li>a{}
 
 #sideMenu>.menu>ul>li>ul{visibility: hidden; position: absolute; top: 0; left: 155px; width: 126px; height: 805px;}
 #sideMenu>.menu>ul>li:hover>ul{visibility: visible;}
