@@ -15,9 +15,9 @@ a{text-decoration: none;}
 
 #sideMenu{width: 155px; border-bottom: 1px solid #555; position: relative;}
 
-#sideMenu .menu{}
+
 #sideMenu .menu>a{display: block; width: 155px; height: 188px; background: url(../images/logo.png) no-repeat; border-bottom: 1px solid #555;}
-#sideMenu .menu>ul{}
+
 #sideMenu .menu>ul>li{width: 155px; height: 52px; background: url(../images/snbLeft1.png) no-repeat;}
 #sideMenu .menu>ul>.menu1{background-position: 0 0;}
 #sideMenu .menu>ul>.menu1:hover{background-position: -155px 0;}
