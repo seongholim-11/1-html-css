@@ -15,10 +15,13 @@
 .nav>ul>li>a{display: block; font-size: 24px; font-weight: bold; padding: 29px 50px; position: relative;}
 .nav>ul>li:not(:last-child)>a:after{position: absolute; top: 38px; right: 0; width: 1px; height: 20px; background: #b8b8b8; content: "";}
 
-.nav>ul>li>.width100{position: absolute; top: 94px; left: 0; width: 100%; height: 300px; background: orange; display: none;}
-.nav>ul>li:hover>.width100{position: absolute; top: 94px; left: 0; width: 100%; height: 300px; background: orange; display: block;}
+.nav>ul>li>.width100{position: absolute; top: 94px; left: 0; width: 100%; height: auto; background: orange; display: block; padding: 20px 0;}
+/* width:100%는 relative가 있는 조상에 상속 */
+.nav>ul>li:hover>.width100{position: absolute; top: 94px; left: 0; width: 100%; height: auto; background: orange; display: block;}
 .nav>ul>li>.width100>ul{width: 1440px; margin: 0 auto;}
-.nav>ul>li>.width100>ul>li{float: left;}
+.nav>ul>li>.width100>ul>li{float: left; width: 288px;}
+.nav>ul>li>.width100>ul>li>h2{text-align: center; font-size: 1.8em; color: #e95a65; font-weight: bold;}
+.nav>ul>li>.width100>ul>li>h3>a{font-size: 1.5em; font-weight: bold; display: block; padding-top: 5px; color: #097a83;}
 .nav>ul>li>.width100>ul>li>a{}
 
 
