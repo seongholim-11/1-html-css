@@ -30,20 +30,6 @@
 	<script src='js/lib/prefixfree.min.js'></script>
 	<script src='js/lib/modernizr-custom.js'></script>
 
-
-	<!--[if (lte IE 9)]>
-		<script src='js/lib/IE9.js'></script>
-	<![endif]-->
-
-	<!--[if (lte IE 8)]>
-		<script src='js/lib/html5shiv.min.js'></script>
-		<link rel='stylesheet' href='#'>
-	<![endif]-->
-
-	<!--[if (lte IE 7)]>
-		<link rel='stylesheet' href='#'>
-	<![endif]-->
-
 </head>
 <body>
 	<div id="skip">
@@ -55,9 +41,51 @@
     </div>
 
     <div id="wrap" class="main-wrap">
-        <header>
-            <div class="header-top"></div>
-            <div id="gnb" class="gnb"></div>
+        <header id="header">
+            <div class="header-top">
+				<div class="container">
+					<div class="align_items_center">
+						<span class="logo"><a href="./index.html"><img src="./img/logo/logo_new.png" alt="logo"></a></span>
+						<ul class="header_top_right">
+							<li class="eng_center">
+								<a href="#" title="새창으로 열림" target="_blank" class="eng">ENG</a>
+								<a href="#" title="인증센터" target="_blank" class="btn_yellow">인증센터</a>
+							</li>
+							<li class="all_menu">
+								<label for="allMenuCheck" class="allmenu_btn">
+									<input type="checkbox" id="allMenuCheck">
+									<div class="allmenu_icon">
+										<span></span>
+										<span></span>
+										<span></span>
+									</div>
+									<p class="state">전체보기</p>
+								</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+            <div id="gnb" class="gnb">
+				<ul class="container">
+					<li class="dep1"><a href="#" title="금융상품">금융상품</a>
+						<ul>
+							<li><a href="#" title="서민금융 알아보기"></a></li>
+							<li><a href="#" title="생활안정자금"></a></li>
+							<li><a href="#" title="고금리대안자금"></a></li>
+							<li><a href="#" title=""></a></li>
+							<li><a href="#" title=""></a></li>
+							<li><a href="#" title=""></a></li>
+						</ul>
+					</li>
+					<li class="dep1"><a href="#" title="금융생활">금융생활</a></li>
+					<li class="dep1"><a href="#" title="상담지원">상담지원</a></li>
+					<li class="dep1"><a href="#" title="국민참여">국민참여</a></li>
+					<li class="dep1"><a href="#" title="알림홍보">알림홍보</a></li>
+					<li class="dep1"><a href="#" title="협업사업">협업사업</a></li>
+					<li class="dep1"><a href="#" title="기관소개">기관소개</a></li>
+				</ul>
+			</div>
         </header>
         <main>
             <div class="main_visual_wrap"></div>
