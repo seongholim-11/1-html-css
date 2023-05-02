@@ -38,6 +38,6 @@ img{width: 180px;}
 
 .nav > ul > li > .width100 > ul > li > dl{}
 .nav > ul > li > .width100 > ul > li > dl > dt > a{font-size: 1.2em; font-weight: bold; color: #333; line-height: 180%;}
-.nav > ul > li > .width100 > ul > li > dl > dd > a{color: #097a84; font-weight: bold; line-height: 200%; margin-bottom: 3px;}
+.nav > ul > li > .width100 > ul > li > dl > dd > a{color: #888; font-weight: bold; line-height: 200%; margin-bottom: 3px;}
 /* 내용없는 dd 숨기기 */
 .nav > ul > li > .width100 > ul > li > dl > .display{display: none;}
