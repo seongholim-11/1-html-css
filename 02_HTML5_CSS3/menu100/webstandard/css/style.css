@@ -25,7 +25,6 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 .cont-nav .nav > div{float: left; width: 40%;}
 .cont-nav .nav > div:last-child{width: 20%;}
 .cont-nav .nav > div h3{margin-bottom: 10px;}
-.cont-nav .nav > div ul{}
 .cont-nav .nav > div ul li{float: left; width: 50%;}
 .cont-nav .nav > div:last-child ul li{width: 100%;}
 .cont-nav .nav > div ul li a:hover{text-decoration: underline;}
