@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset='utf-8'>
-	<meta name='Viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.6'>
-	<meta name='Title' content=''>
-	<meta name='Subject' content=''>
-	<meta name='Keywords' content='웹표준, 웹접근성'>
-	<meta name='Author' content='seongho'>
-	<meta name='Publisher' content=''>
-	<meta name='Description' content='웹표준 사이트 만들기 샘플'>
-	<meta name='Author-Date' content=''>
-	<meta name='Copyright' content=''>
-	<meta name='Robots' content='index,follow'>
+    <meta name='Viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.6'>
+    <meta name='Title' content=''>
+    <meta name='Subject' content=''>
+    <meta name='Keywords' content='웹표준, 웹접근성'>
+    <meta name='Author' content='seongho'>
+    <meta name='Publisher' content=''>
+    <meta name='Description' content='웹표준 사이트 만들기 샘플'>
+    <meta name='Author-Date' content=''>
+    <meta name='Copyright' content=''>
+    <meta name='Robots' content='index,follow'>
 
 
     <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
     <link rel="stylesheet" href="./css/style.css">
-    
-    <!-- fontawesome -->
-    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    
+    <!-- fontawesome -->
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css'
+        integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
     <!-- favicon -->
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-    <!-- jquery -->
+    <!-- js -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./js/slick.min.js"></script>
 
     <title>웹표준</title>
 </head>
+
 <body>
     <ul id="skip">
         <li><a href="#header">머릿말 바로가기</a></li>
@@ -118,24 +124,65 @@
             </div>
             <div class="cont-banner">
                 <div class="container">
-                    <div class="banner">
-                        <a href="#" class="prev"><span class="ir_pm">이전 이미지</span></a>
-                        <ul>
-                            <li class="banner-img1"><a href="#"><img src="./img/banner_link1.jpg" alt="웹표준 지침서"></a></li>
-                            <li class="banner-img2"><a href="#"><img src="./img/banner_link2.jpg" alt="웹표준 지침서"></a></li>
-                            <li class="banner-img3"><a href="#"><img src="./img/banner_link3.jpg" alt="웹표준 지침서"></a></li>
-                        </ul>
-                        <a href="#" class="next"><span class="ir_pm">다음 이미지</span></a>
+                    <div class="banner autoplay">
+                        <div><a href="#"><img src="./img/banner_link1.jpg" alt="웹표준 지침서"></a></div>
+                        <div><a href="#"><img src="./img/banner_link2.jpg" alt="웹표준 지침서"></a></div>
+                        <div><a href="#"><img src="./img/banner_link3.jpg" alt="웹표준 지침서"></a></div>
+                        <div><a href="#"><img src="./img/banner_link1.jpg" alt="웹표준 지침서"></a></div>
+                        <div><a href="#"><img src="./img/banner_link2.jpg" alt="웹표준 지침서"></a></div>
+                        <div><a href="#"><img src="./img/banner_link3.jpg" alt="웹표준 지침서"></a></div>
+                        <div><a href="#"><img src="./img/banner_link1.jpg" alt="웹표준 지침서"></a></div>
+                        <div><a href="#"><img src="./img/banner_link2.jpg" alt="웹표준 지침서"></a></div>
+                        <div><a href="#"><img src="./img/banner_link3.jpg" alt="웹표준 지침서"></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont-content">
+                <div class="container">
+                    <div class="content">
+                        <div class="column col1">
+                            <h3><span class="ico-img ir_pm">아이콘1</span><em class="ico-tit">Notice</em></h3>
+                            <p class="ico-desc">가장 웹 페이지에서 기본이 되는 게시판 유형</p>
+                        </div>
+                        <div class="column col2">
+                            <h3><span class="ico-img ir_pm">아이콘2</span><em class="ico-tit">Notice</em></h3>
+                            <p class="ico-desc">가장 웹 페이지에서 기본이 되는 게시판 유형</p>
+                        </div>
+                        <div class="column col3">
+                            <h3><span class="ico-img ir_pm">아이콘3</span><em class="ico-tit">Notice</em></h3>
+                            <p class="ico-desc">가장 웹 페이지에서 기본이 되는 게시판 유형</p>
+                        </div>
+                        <div class="column col4">
+                            <h3><span class="ico-img ir_pm">아이콘4</span><em class="ico-tit">Notice</em></h3>
+                            <p class="ico-desc">가장 웹 페이지에서 기본이 되는 게시판 유형</p>
+                        </div>
+                        <div class="column col5">
+                            <h3><span class="ico-img ir_pm">아이콘5</span><em class="ico-tit">Notice</em></h3>
+                            <p class="ico-desc">가장 웹 페이지에서 기본이 되는 게시판 유형</p>
+                        </div>
+                        <div class="column col6">
+                            <h3><span class="ico-img ir_pm">아이콘6</span><em class="ico-tit">Notice</em></h3>
+                            <p class="ico-desc">가장 웹 페이지에서 기본이 되는 게시판 유형</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </main>
     </div>
     <script>
-        $('.tit .btn').click(function(){
+        $('.tit .btn').click(function () {
             $('.cont-nav').slideToggle();
             $(this).toggleClass("on");
         });
+        // 이미지배너슬라이드
+        $('.autoplay').slick({
+            dots: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1500,
+        });
     </script>
 </body>
+
 </html>
