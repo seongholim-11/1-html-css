@@ -123,3 +123,31 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 h4{font-size: 14px; color: #0093bd; font-weight: bold; padding-bottom: 5px; margin-top: 30px;}
 .col3 ul>li{display: inline-block; margin-right: 3px;}
 .col3 ul>li>a>img{width: 90px;}
+
+
+/* column5 */
+
+.notice_123{width: 275px; height: 80px; border: 1px solid #ddd; padding: 10px;}
+.notice_123 input {display: none;}  
+.notice_123 label{border: 1px solid #ddd; padding: 5px;}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+  display: block;
+}
+.tab-content {width: 100%; display: none;}
+.tab-content ul{margin-top: 5px;}
+.tab-content ul li{ padding-left: 8px; background: url(../img/dot.gif) no-repeat left center; line-height: 160%;overflow: hidden;}
+
+.new_notice{border: 1px solid #ddd;}
+.new_notice .top{overflow: hidden; border-bottom: 1px solid #ddd; padding: 10px 10px 5px 10px;}
+.new_notice .top h4{margin: 0; float: left;}
+.new_notice .top h4 span{color: red;}
+.new_notice .top em{float: right;}
+.new_notice .bottom{padding: 10px;}
+.new_notice .bottom ul{clear: both;}
+.new_notice .bottom ul li{padding-left: 8px; background: url(../img/dot.gif) no-repeat left center; line-height: 160%; }
+.new_notice .bottom ul li a{display: inline-block; width: 65%; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; vertical-align: middle;}
+.new_notice .bottom ul li span{float: right;}
