@@ -85,7 +85,7 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 .content>.column h3 .ico-tit{padding-left: 70px;}
 .content>.column .ico-desc{padding-left: 70px; padding-bottom: 10px; margin-bottom: 10px; border-bottom: 1px solid #d0d0d0;}
 
-/* column1,2,3 */
+/* column1,2 */
 .notice{ position: relative;}
 .notice h4{font-size: 14px; color: #0093bd; font-weight: bold; padding-bottom: 5px;}
 .notice .more{ position: absolute; top: 0; right: 0; display: block; width: 17px; height: 17px; background: url(../img/icon.png) -150px -90px;}
@@ -95,14 +95,37 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 /* column1 */
 .notice1{margin-bottom: 12px;}
 .notice1 ul li{ white-space: nowrap; text-overflow: ellipsis; }
-
-/* column2 */
 .notice2 ul li a{float: left; width: 65%;white-space: nowrap; text-overflow: ellipsis; overflow: hidden;font-size: 12px; }
 .notice2 ul li span{float: right;}
 
-/* column3 */
+/* column2 */
 .notice3 ul li{padding: 8px 0 14px 60px; background: none; position: relative;}
 .notice3 ul li a img{position: absolute; left: 0; top: 0; width: 50px; border: 1px solid #0093bd;}
 .notice3 ul li a strong{display: block;}
 .notice3 ul li a span{display: block; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
-.notice3{}
+
+
+/* column3(로그인) */
+.login_wrap{background: #f2f4f5;}
+.login_wrap .login-header{overflow: hidden; margin-bottom: 10px; padding: 5px 10px;}
+.login_wrap .login-header .lh_check{float: left; padding-right: 15px;}
+.login_wrap .login-header .lh_check input{vertical-align: middle;}
+.login_wrap .login-header .lh_ip{float: left;}
+.login_wrap .login-header .lh_ip em{color: #0093bd; text-decoration: underline;}
+
+.login_wrap .login-content{margin-bottom: 10px; overflow: hidden;}
+.login_wrap .login-content .lc_text{width: 70%; float: left;}
+.login_wrap .login-content .lc_text input{width: 92%; margin-bottom: 5px; padding: 2px 5px; border: 1px solid #bebebe; background: #fff;}
+.login_wrap .login-content .lc_btn{width: 30%; float: left;}
+.login_wrap .login-content .lc_btn .lc_button{width: 100%; height: 56px; background: #fff; border: 1px solid #bebebe;}
+
+.login_wrap .login-footer{clear: both;}
+.login_wrap .login-footer ul{overflow: hidden;}
+.login_wrap .login-footer ul li{float: left;}
+.login_wrap .login-footer ul li:nth-child(2){margin-left: 5px;}
+
+.popup h4{margin-top: 20px;}
+.popup ul{overflow: hidden; }
+.popup ul li{padding-left: 0; background: none; float: left; width: 92px; margin-right: 3px;}
+.popup ul li a{display: block;}
+.popup ul li a img{width: 100%;}
