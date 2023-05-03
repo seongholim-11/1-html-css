@@ -110,9 +110,9 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 /* column3 */
 #login{ padding: 10px; overflow: hidden;}
 #login .one{margin-bottom: 10px;}
-#login .one #login_State{accent-color: gray; position: relative; top: 2px;}
+#login .one #login_State{accent-color: gray; position: relative; top: 2px; color: rgb(206, 206, 206);}
 #login .one label{margin-right: 10px;}
-#login .one a{text-decoration: underline; color: blue;}
+#login .one a{text-decoration: underline; color: #0093bd;}
 #login .id_pw{float: left; width: 200px; margin-right: 7px;}
 #login .id_pw input{width: 200px;}
 #login .id_pw #userId{margin-bottom: 5px;}
