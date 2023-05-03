@@ -106,3 +106,20 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 .html_reference .html_content h5{float: left; padding-top: 8px;  font-weight: 800;}
 .html_reference .html_content a{width: 225px; display: inline-block; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; font-size: 12px; float: left;}
 .html_reference .html_content img{width: 50px; height: 50px; float: left; clear: both; margin-right: 5px; border: 1px solid #0093bd;}
+
+/* column3 */
+#login{ padding: 10px; overflow: hidden;}
+#login .one{margin-bottom: 10px;}
+#login .one #login_State{accent-color: gray; position: relative; top: 2px;}
+#login .one label{margin-right: 10px;}
+#login .one a{text-decoration: underline; color: blue;}
+#login .id_pw{float: left; width: 200px; margin-right: 7px;}
+#login .id_pw input{width: 200px;}
+#login .id_pw #userId{margin-bottom: 5px;}
+#login .login_btn{float: left; width: 60px; height: 48px; background: #fff;}
+#login .signup_findId{clear: both; margin-top: 10px; float: left;}
+#login .signup_findId .signup{font-weight: bold;}
+
+h4{font-size: 14px; color: #0093bd; font-weight: bold; padding-bottom: 5px; margin-top: 30px;}
+.col3 ul>li{display: inline-block; margin-right: 3px;}
+.col3 ul>li>a>img{width: 90px;}
