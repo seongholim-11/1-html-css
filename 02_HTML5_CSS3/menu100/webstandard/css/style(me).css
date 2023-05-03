@@ -124,6 +124,29 @@ h4{font-size: 14px; color: #0093bd; font-weight: bold; padding-bottom: 5px; marg
 .col3 ul>li{display: inline-block; margin-right: 3px;}
 .col3 ul>li>a>img{width: 90px;}
 
+/* column4 */
+.mouse_hover1{}
+.mouse_hover1 h4{}
+.mouse_hover1 ul{overflow: hidden;}
+.mouse_hover1 li{float: left; width: 92px; margin-right: 3px; text-align: center;}
+.mouse_hover1 li span{position: relative; width: 92px; height: 92px; display: block;}
+.mouse_hover1 li span a{}
+.mouse_hover1 li span a img{width: 100%;}
+.mouse_hover1 li span a em{position: absolute; top: 0; left: 0; line-height: 92px; display: block; width: 100%; background: rgba(0, 0, 0, 0.8); color: #fff; opacity: 0; transition: 0.5s;}
+.mouse_hover1 li:hover span a em{opacity: 1;}
+.mouse_hover1 li strong{}
+
+.mouse_hover2{margin-top: 10px;}
+.mouse_hover2 h4{}
+.mouse_hover2 ul{}
+.mouse_hover2 li{float: left; width: 92px; margin-right: 3px; text-align: center; vertical-align: middle; }
+.mouse_hover2 li span{position: relative; width: 92px; height: 92px; display: block; overflow: hidden; }
+.mouse_hover2 li span a{}
+.mouse_hover2 li span a img{width: 100%;}
+.mouse_hover2 li span a em{position: absolute; bottom: -100px; left: 0; display: block; width: 100%; height: 30%; background: rgba(0, 0, 0, 0.8); color: #fff; transition: 0.5s;}
+.mouse_hover2 li:hover span a em{bottom: 0px;}
+.mouse_hover2 li strong{}
+
 
 /* column5 */
 

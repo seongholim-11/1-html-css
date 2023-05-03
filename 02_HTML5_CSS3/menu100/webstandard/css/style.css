@@ -160,7 +160,6 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 .tab-menu>ul>li>ul{position: absolute; top: 45px; left: 10px; width: 270px; display: none;}
 .tab-menu>ul>li:first-child>ul{display: block;}
 .tab-menu>ul>li>ul>li{line-height: 180%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; padding-left: 8px; background: url(../img/dot.gif) no-repeat left center;}
-.tab-menu>ul>li>ul>li>a{}
 
 .notice4{border: 1px solid #ccc; margin-top: 10px; position: relative; height: 130px;}
 .notice4 h4{border-bottom: 1px solid #ccc; padding: 10px 0 8px 11px; color: #0093bd;}
