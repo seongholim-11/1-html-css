@@ -151,10 +151,22 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 .hover2 ul li:hover a strong{color: #0093bd;}
 
 /* column5(tab) */
-.tab-menu{border: 1px solid #ccc;}
-.tab-menu>ul{}
-.tab-menu>ul>li{}
-.tab-menu>ul>li>a{}
-.tab-menu>ul>li>ul{}
-.tab-menu>ul>li>ul>li{}
+.tab-menu{border: 1px solid #ccc; padding: 8px; position: relative; height: 105px;}
+.tab-menu>ul{overflow: hidden; border-bottom: 1px solid #ccc;}
+.tab-menu>ul>li{float: left; border: 1px solid #ccc; margin-right: -1px; margin-bottom: -1px;}
+.tab-menu>ul>li.active{background: #0093bd;}
+.tab-menu>ul>li.active>a{color: #fff;}
+.tab-menu>ul>li>a{display: block; padding: 5px 10px;}
+.tab-menu>ul>li>ul{position: absolute; top: 45px; left: 10px; width: 270px; display: none;}
+.tab-menu>ul>li:first-child>ul{display: block;}
+.tab-menu>ul>li>ul>li{line-height: 180%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; padding-left: 8px; background: url(../img/dot.gif) no-repeat left center;}
 .tab-menu>ul>li>ul>li>a{}
+
+.notice4{border: 1px solid #ccc; margin-top: 10px; position: relative; height: 130px;}
+.notice4 h4{border-bottom: 1px solid #ccc; padding: 10px 0 8px 11px; color: #0093bd;}
+.notice4 h4 em{color: #cf3292;}
+.notice4 ul{padding: 10px;}
+.notice4 ul li{padding-left: 8px; background: url(../img/dot.gif) no-repeat left center; line-height: 180%;}
+.notice4 ul li a{width: 65%; float: left; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+.notice4 ul li span{width: 30%; float: right;}
+.notice4 .more{position: absolute; top: 10px; right: 10px;}

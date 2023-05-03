@@ -327,9 +327,9 @@
                                 <ul>
                                     <li class="active"><a href="#">공지사항1</a>
                                         <ul>
-                                            <li><a href="#">첫번째 공지사항 탭입니다. 공지사항 공지사항</a></li>
-                                            <li><a href="#">첫번째 공지사항 탭입니다. 공지사항 공지사항</a></li>
-                                            <li><a href="#">첫번째 공지사항 탭입니다. 공지사항 공지사항</a></li>
+                                            <li><a href="#">첫번째 공지사항 탭입니다. 공지사항 공지사항 공지사항</a></li>
+                                            <li><a href="#">첫번째 공지사항 탭입니다. 공지사항 공지사항 공지사항</a></li>
+                                            <li><a href="#">첫번째 공지사항 탭입니다. 공지사항 공지사항 공지사항</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">공지사항2</a>
@@ -347,6 +347,15 @@
                                         </ul>
                                     </li>
                                 </ul>
+                            </div>
+                            <div class="notice4">
+                                <h4>최신 <em>공지사항</em></h4>
+                                <ul>
+                                    <li><a href="#">웹 디자이너와 웹 퍼블리셔의 차이점은 무엇인가?</a><span>2023.05.03</span></li>
+                                    <li><a href="#">웹 디자이너와 웹 퍼블리셔의 차이점은 무엇인가?</a><span>2023.05.03</span></li>
+                                    <li><a href="#">웹 디자이너와 웹 퍼블리셔의 차이점은 무엇인가?</a><span>2023.05.03</span></li>
+                                </ul>
+                                <a href="#" class="more">더 보기</a>
                             </div>
                         </div>
                         <div class="column col6">
@@ -371,6 +380,17 @@
             autoplay: true,
             autoplaySpeed: 1500,
         });
+        // 탭
+        let tab=$('.tab-menu');
+
+        function tabMenu(e){
+            e.preventDefault();
+            let $this=$(this);
+            $this.next('ul').show().parent('li').addClass('active').siblings('li').removeClass('active').find('ul').hide();
+
+        }
+
+        tab.find('>ul>li>a').click(tabMenu).focus(tabMenu)
     </script>
 </body>
 
