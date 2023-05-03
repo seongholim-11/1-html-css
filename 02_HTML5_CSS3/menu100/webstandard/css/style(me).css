@@ -104,11 +104,11 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 .html_reference .more{position: absolute; top: 0; right: 0; display: block; width: 17px; height: 17px; background: url(../img/icon.png) -150px -90px;}
 .html_reference .html_content{overflow: hidden; margin-bottom: 10px;}
 .html_reference .html_content h5{float: left; padding-top: 8px;  font-weight: 800;}
-.html_reference .html_content a{width: 225px; display: inline-block; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; font-size: 12px; float: left;}
+.html_reference .html_content a{width: 225px; display: inline-block; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; font-size: 12px;}
 .html_reference .html_content img{width: 50px; height: 50px; float: left; clear: both; margin-right: 5px; border: 1px solid #0093bd;}
 
 /* column3 */
-#login{ padding: 10px; overflow: hidden;}
+#login{padding: 10px; overflow: hidden;}
 #login .one{margin-bottom: 10px;}
 #login .one #login_State{accent-color: gray; position: relative; top: 2px; color: rgb(206, 206, 206);}
 #login .one label{margin-right: 10px;}
