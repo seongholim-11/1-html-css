@@ -85,8 +85,7 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 .content>.column h3 .ico-tit{padding-left: 70px;}
 .content>.column .ico-desc{padding-left: 70px; padding-bottom: 10px; margin-bottom: 10px; border-bottom: 1px solid #d0d0d0;}
 
-
-.notice_content{}
+/* column1 */
 .notice_content_tit{color: blue;}
 .notice_content .notice_content_tit{margin-bottom: 5px;}
 .notice_content .notice_content_tit h4{display: inline-block;}
@@ -96,7 +95,14 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 .notice_content ul{margin-bottom: 10px;}
 .notice_content ul>li{width: 290px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
 .notice_content_01>ul>li{width: 170px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
-.notice_content ul>li>a{}
-.notice_content_01>ul>li>a{}
 
 .notice_content ul>li::before, .notice_content_01>ul>li::before{content: ""; background: url(../img/dot.gif) no-repeat center center; width: 10px; height: 10px; display: inline-block; }
+
+/* column2 */
+.html_reference{position: relative;}
+.html_reference h4{font-size: 14px; color: #0093bd; font-weight: bold; padding-bottom: 5px;}
+.html_reference .more{position: absolute; top: 0; right: 0; display: block; width: 17px; height: 17px; background: url(../img/icon.png) -150px -90px;}
+.html_reference .html_content{overflow: hidden; margin-bottom: 10px;}
+.html_reference .html_content h5{float: left; padding-top: 8px;  font-weight: 800;}
+.html_reference .html_content a{width: 225px; display: inline-block; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; font-size: 12px; float: left;}
+.html_reference .html_content img{width: 50px; height: 50px; float: left; clear: both; margin-right: 5px; border: 1px solid #0093bd;}
