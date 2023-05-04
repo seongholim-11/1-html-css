@@ -168,3 +168,21 @@ h4{font-size: 14px; color: #0093bd; font-weight: bold; padding-bottom: 5px; marg
 .new_notice .bottom ul li{padding-left: 8px; background: url(../img/dot.gif) no-repeat left center; line-height: 160%; }
 .new_notice .bottom ul li a{display: inline-block; width: 65%; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; vertical-align: middle;}
 .new_notice .bottom ul li span{float: right;}
+
+/* column6 (슬라이더) */
+.gallery_wrap{border: 1px solid #ccc; position: relative; height: 255px; overflow: hidden;}
+.gallery_wrap h4{margin: 0; padding: 10px 0 10px 10px;}
+.gallery_wrap .gallery_btn{position: absolute; top: 0; right: 0; padding: 10px 5px 0 0;}
+.gallery_wrap .gallery_btn button{float: left; background: url(../img/icon.png) no-repeat; display: block; width: 23px; height: 23px; margin-right: 3px; cursor: pointer;}
+.gallery_wrap .gallery_btn .icon1{background-position: -150px -120px;}
+.gallery_wrap .gallery_btn .icon2{background-position: -150px -143px;}
+.gallery_wrap .gallery_btn .icon3{background-position: -150px -166px;}
+.gallery_wrap .gallery_btn .icon4{background-position: -150px -189px;}
+.gallery_wrap .gallery_btn .icon1:hover{background-position: -173px -120px;}
+.gallery_wrap .gallery_btn .icon2:hover{background-position: -173px -143px;}
+.gallery_wrap .gallery_btn .icon3:hover{background-position: -173px -166px;}
+.gallery_wrap .gallery_btn .icon4:hover{background-position: -173px -189px;}
+.gallery_wrap .gallery_slide{}
+.gallery_wrap .gallery_slide div{}
+.gallery_wrap .gallery_slide div a{}
+.gallery_wrap .gallery_slide div a img{width: 100%;}
