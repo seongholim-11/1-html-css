@@ -183,7 +183,4 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 .gallery .gallery_btn .pause:hover{background-position: -173px -143px;}
 .gallery .gallery_btn .prev:hover{background-position: -173px -166px;}
 .gallery .gallery_btn .next:hover{background-position: -173px -189px;}
-.gallery .gallery_img{}
-.gallery .gallery_img div{}
-.gallery .gallery_img div a{}
 .gallery .gallery_img div a img{width: 100%; display: block;}
