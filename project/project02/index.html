@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html lang='ko'>
+
+<head>
+    <title> </title>
+    <meta charset='utf-8'>
+    <meta name='Viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.6'>
+    <meta name='Title' content='국립중앙도서관'>
+    <meta name='Subject' content='클론코딩'>
+    <meta name='Keywords' content='국립중앙도서관, 도서관'>
+    <meta name='Author' content='seongho'>
+    <meta name='Publisher' content='seongho'>
+    <meta name='Description' content='국립중앙도서관에 오신것을 환영합니다.'>
+    <meta name='Author-Date' content='20230504'>
+    <meta name='Robots' content='index,follow'>
+
+
+    <link rel='stylesheet' href='css/reset.css'>
+    <link rel='stylesheet' href='css/style.css'>
+
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css'
+        integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <ul id="skip">
+        <li><a href="#header">헤더 바로가기</a></li>
+        <li><a href="#nav">메뉴 바로가기</a></li>
+        <li><a href="#content">내용 바로가기</a></li>
+        <li><a href="#footer">푸터 바로가기</a></li>
+    </ul>
+
+    <div id="wrap">
+        <div id="header-utils-wrap">
+            <div class="inner">
+                <div class="server-list">
+                    <ul>
+                        <li><a href="#" title="사서지원서비스">사서지원서비스</a></li>
+                        <li><a href="#" title="공공도서관지원서비스">공공도서관지원서비스</a></li>
+                    </ul>
+                </div>
+                <div class="header-utils">
+                    <ul>
+                        <li><a href="#" title="로그인">로그인</a></li>
+                        <li><a href="#" title="회원가입">회원가입</a></li>
+                        <li><a href="#" title="내서재">내서재</a></li>
+                        <li><a href="#" title="바구니">바구니</a></li>
+                        <li><a href="#" title="ENGLISH">ENGLISH</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <header id="header">
+            <div class="inner">
+                <h1 class="logo">
+                    <a href="#">
+                        <span class="logoImg ir_pm">문화체육관광부국립중앙도서관</span>
+                    </a>
+                </h1>
+                <div class="search-form-wrap">
+                    <form action="#" name="searForm" id="searForm">
+                        <input type="hidden" name="searchTarget" value="total">
+                        <input type="hidden" name="pageNum" value="1">
+                        <input type="hidden" name="pageSize" value="10">
+                        <input type="hidden" name="insitesecStr" value="total">
+                        <select name="mainSearchField" id="mainSearchField">
+                            <option value="1">소장자료</option>
+                            <option value="2">홈페이지</option>
+                        </select>
+                        <div class="search-text-wrap">
+                            <div class="input-text-wrap">
+                                <label for="inp" style="display: none;">검색어를 입력해주세요</label>
+                                <input type="text" id="inp" placeholder="검색어를 입력해주세요.">
+                            </div>
+                        </div>
+                        <div class="search-btn-wrap">
+                            <a href="#" class="btn-arrow" title="자동 완성 열기"><span class="ir_pm">자동완성열기</span></a>
+                            <div class="btn-worldword-wrap">
+                                <button type="button" class="btn-wolrdword">
+                                    <span class="worldword-text">다국어 입력기</span>
+                                </button>
+                                <button type="button" class="btn-search">
+                                    <span>검색</span>
+                                </button>
+                            </div>
+                        </div>
+                        <button type="button" class="detail-btn"><span>상세검색</span></button>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <nav id="nav">
+            <div class="inner"></div>
+        </nav>
+        <main id="contents">
+            <div class="inner">
+                <div class="banner"></div>
+                <div class="library-info"></div>
+                <div class="main_book"></div>
+                <div class="main-section"></div>
+                <div class="main-inform-wrap"></div>
+                <div class="notice"></div>
+                <div class="site"></div>
+            </div>
+        </main>
+        <div id="mainBannerWrap">
+            <div class="inner"></div>
+        </div>
+        <footer id="footer">
+            <div class="footer-top">
+                <div class="inner"></div>
+            </div>
+            <div class="footer-bottom">
+                <div class="inner"></div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

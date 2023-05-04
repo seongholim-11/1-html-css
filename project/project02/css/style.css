@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+/* 공통속성 */
+body{font-family: 'Noto Sans KR', sans-serif;}
+.inner{width: 1240px; height: inherit; margin: 0 auto; background: rgba(0, 0, 0, 0.5);}
+
+/* 레이아웃 */
+#wrap{width: 100%;}
+#header-utils-wrap{height: 43px; background: #f0f0f0;}
+#header{height: 72px; padding: 8px 0; border-bottom: 1px solid #ddd;}
+#nav{height: 61px; background: yellow;}
+.banner{height: 428px;}
+.library-info{height: 45px; padding: 15px 0; background: rebeccapurple;}
+.main_book{height: 443px; background: yellowgreen;}
+.main-section{height: 102px; padding: 20px 0;}
+.mian-inform-wrap{height: 291px; padding: 20px 0; background: blue;}
+.notice{height: 303px; padding: 40px 0 20px 0;}
+.site{height: 246px; padding: 30px 0; background: blanchedalmond;}
+#mainBannerWrap{height: 108px; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; background: white;}
+#footer{height: 237px;}
+.footer-top{height: 54px; background: #4a5862;}
+.footer-bottom{height: 182px; background: #4a5862;}
+
+/* #header-utils-wrap */
+.server-list{float: left;}
+.server-list ul{overflow: hidden;}
+.server-list ul li{float: left;}
+.server-list ul li a{font-size: 15px; display: block; padding: 10px 10px 10px 0;}
+
+.header-utils{float: right;}
+.header-utils ul{overflow: hidden;}
+.header-utils ul li{float: left;}
+.header-utils ul li:not(:last-child){margin-right: 20px;}
+.header-utils ul li a{font-size: 15px; display: block; padding: 10px 0;}
+
+/* header */
+.logo{width: 360px; height: 72px; background: url(../img/revise_logo_main2.png) no-repeat left center/cover; float: left;}
+.search-form-wrap{float: right;}
