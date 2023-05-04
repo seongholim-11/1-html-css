@@ -1,0 +1,8 @@
+    <svg id="page">
+        <circle cx="75" cy='75' r="10" />
+
+        <style>
+        #page{width: 150px; height: 150px;}
+        #page circle{stroke-width: 10px; stroke: blue; fill: none;}
+    </style>
+    </svg>

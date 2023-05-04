@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #page {
+            width: 150px;
+            height: 150px;
+        }
+
+        #page circle {
+            stroke-width: 10px;
+            fill: none;
+            stroke-linecap: round;
+            animation: loader 4s infinite ease-in-out;
+            transform-origin: 50% 50%;
+        }
+        #page circle:nth-child(1) {
+            stroke: rgb(255, 230, 0);
+            stroke-dasharray: 30;
+            animation-delay: 0.4s;
+        }
+        #page circle:nth-child(2) {
+            stroke: rgb(255, 145, 0);
+            stroke-dasharray: 100;
+            animation-delay: -0.4s;
+        }
+        #page circle:nth-child(3) {
+            stroke: rgb(255, 60, 0);
+            stroke-dasharray: 200;
+            animation-delay: -0.8s;
+        }
+
+        @keyframes loader {
+            0%{transform: rotate(0deg);}
+            50%{transform: rotate(360deg);}
+            100%{transform: rotate(0deg);}
+            
+        }
+    </style>
+</head>
+
+<body>
+    <svg id="page">
+        <circle cx="75" cy='75' r="10" />
+        <circle cx="75" cy='75' r="30" />
+        <circle cx="75" cy='75' r="50" />
+    </svg>
+</body>
+
+</html>
