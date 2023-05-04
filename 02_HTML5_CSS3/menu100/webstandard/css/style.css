@@ -169,3 +169,21 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 .notice4 ul li a{width: 65%; float: left; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
 .notice4 ul li span{width: 30%; float: right;}
 .notice4 .more{position: absolute; top: 10px; right: 10px;}
+
+/* gallery */
+.gallery{border: 1px solid #ccc; position: relative; height: 255px; overflow: hidden;}
+.gallery h4{color: #0093bd; border-bottom: 1px solid #ccc; padding: 10px 0 8px 11px;}
+.gallery .gallery_btn{position: absolute; right: 5px; top: 7px;}
+.gallery .gallery_btn button{float: left; display: block; width: 23px; height: 23px; background: url(../img/icon.png) no-repeat; margin: 1px 2px;}
+.gallery .gallery_btn .play{background-position: -150px -120px;}
+.gallery .gallery_btn .pause{background-position: -150px -143px;}
+.gallery .gallery_btn .prev{background-position: -150px -166px;}
+.gallery .gallery_btn .next{background-position: -150px -189px;}
+.gallery .gallery_btn .play:hover{background-position: -173px -120px;}
+.gallery .gallery_btn .pause:hover{background-position: -173px -143px;}
+.gallery .gallery_btn .prev:hover{background-position: -173px -166px;}
+.gallery .gallery_btn .next:hover{background-position: -173px -189px;}
+.gallery .gallery_img{}
+.gallery .gallery_img div{}
+.gallery .gallery_img div a{}
+.gallery .gallery_img div a img{width: 100%; display: block;}

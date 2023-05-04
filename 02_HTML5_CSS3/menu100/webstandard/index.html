@@ -361,6 +361,30 @@
                         <div class="column col6">
                             <h3><span class="ico-img ir_pm">아이콘6</span><em class="ico-tit">Notice</em></h3>
                             <p class="ico-desc">가장 웹 페이지에서 기본이 되는 게시판 유형</p>
+                            <div class="gallery">
+                                <h4>포트폴리오</h4>
+                                <div class="gallery_btn">
+                                    <button class="icon1 play">
+                                        <span class="ir_pm">play</span>
+                                    </button>
+                                    <button class="icon2 pause">
+                                        <span class="ir_pm">pause</span>
+                                    </button>
+                                    <button class="icon3 prev">
+                                        <span class="ir_pm">prev</span>
+                                    </button>
+                                    <button class="icon4 next">
+                                        <span class="ir_pm">next</span>
+                                    </button>
+                                </div>
+                                <div class="gallery_img">
+                                    <div><a href="#"><img src="./img/gallery01.jpg" alt="gallery01"></a></div>
+                                    <div><a href="#"><img src="./img/gallery02.jpg" alt="gallery02"></a></div>
+                                    <div><a href="#"><img src="./img/gallery03.jpg" alt="gallery03"></a></div>
+                                    <div><a href="#"><img src="./img/gallery04.jpg" alt="gallery04"></a></div>
+                                    <div><a href="#"><img src="./img/gallery05.jpg" alt="gallery05"></a></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -373,6 +397,7 @@
             $(this).toggleClass("on");
         });
         // 이미지배너슬라이드
+        // https://kenwheeler.github.io/slick/
         $('.autoplay').slick({
             dots: true,
             slidesToShow: 3,
@@ -380,16 +405,35 @@
             autoplay: true,
             autoplaySpeed: 1500,
         });
+        $('.gallery_img').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear',
+            autoplay: true,
+            autoplaySpeed: 2000
+        });
+        $('.play').click(function () {
+            $('.gallery_img').slick('slickPlay');
+        });
+        $('.pause').click(function () {
+            $('.gallery_img').slick('slickPause');
+        });
+        $('.prev').click(function () {
+            $('.gallery_img').slick('slickPrev');
+        });
+        $('.next').click(function () {
+            $('.gallery_img').slick('slickNext');
+        });
+        
         // 탭
-        let tab=$('.tab-menu');
-
-        function tabMenu(e){
+        let tab = $('.tab-menu');
+        function tabMenu(e) {
             e.preventDefault();
-            let $this=$(this);
+            let $this = $(this);
             $this.next('ul').show().parent('li').addClass('active').siblings('li').removeClass('active').find('ul').hide();
-
         }
-
         tab.find('>ul>li>a').click(tabMenu).focus(tabMenu)
     </script>
 </body>
