@@ -1,0 +1,51 @@
+/* 공통 설정 */
+.container{width: 1140px; height: inherit; margin: 0 auto;}
+.align_items_center{ align-items: center !important;}
+li{list-style: none}
+a{text-decoration: none;}
+
+/* Layout */
+body{font-family: 'Noto Sans KR', sans-serif;}
+#wrap{width: 100%;}
+/* header */
+#header{width: 100%; height: 140px; position: relative;}
+/* main */
+.main_visual_wrap{width: 100%; height: 968px; background: rgb(255, 192, 192);}
+.kinfa_product_wrap{width: 100%; height: 133px; padding: 32px 0; background: rgb(255, 208, 160);}
+.kinfa_contents_wrap{width: 100%; height: 1280px; margin-top: 64px; background: rgb(255, 255, 181)}
+.kinfa_sns_wrap{width: 100%; height:1018px; margin-top: 48px; background: rgb(185, 255, 185);}
+.kinfa_link_wrap{width: 100%; height: 345px; padding: 64px; background: rgb(194, 194, 255);}
+/* footer */
+.menus{width: 100%; height: 55px; border-bottom: 2px solid black; background: rgb(149, 142, 190);}
+.footer{width: 100%; height: 152px; padding: 16px 0; background: rgb(107, 80, 107);}
+
+
+/* header */
+/* header-top */
+.header-top{width: 100%; height: 78px; border-bottom: 1px solid #d9d9d9; }
+.header-top>.container>.align_items_center>.logo>a>img{width: 196px; height: 49px; position: absolute; top: 15px;}
+.header_top_right{float: right;}
+.header_top_right>li{float: left;}
+.header_top_right>.eng_center{display: block; position: relative; top: 20px; right: 5px;}
+.header_top_right>li>a{float: left;}
+.header_top_right>li>.eng{display: block; width: 32px; height: 24px; padding: 8px 12px; font-size: 1.2em;}
+.header_top_right>li>.btn_yellow{display: block; width: 59px; height: 28px; font-size: 1.2em; background: #fee000 url(../img/icon/icon-key.png) no-repeat 0.5rem center; padding: 6px 12px 6px 40px; border-radius: 10px;}
+
+.all_menu{width: 90px; height: 78px; margin-left: 1em; border-right: 1px solid #d9d9d9; border-left: 1px solid #d9d9d9; justify-content: center;}
+.all_menu>.allmenu_btn{display: block; padding-left: 3px;}
+.all_menu>.allmenu_btn>#allMenuCheck{opacity: 0;}
+.all_menu>.allmenu_btn>.allmenu_icon{padding: 0px 30px}
+.all_menu>.allmenu_btn>.allmenu_icon>span{display: block; width: 25px; height: 1px; margin: 5px 0; background: #333; border-radius: 5px; text-align: center;}
+.all_menu>.allmenu_btn>p{text-align: center;}
+
+/* header-bottom */
+#gnb{width: 100%; height: 60px; border-bottom: 1px solid #d9d9d9; position: fixed; top: 78px; left: 0;}
+nav>.menu>ul>li{display: block; float: left; width: 14.2%; height: 60px; line-height: 60px; text-align: center; position: relative;}
+nav>.menu>ul>li:hover>a{color: #00244b;}
+#nav>.menu>ul>li>a{display: block; width: 100%; height: 100%; font-size: 1.2rem; font-weight: 500;}
+#nav>.menu>ul>li>ul{display: none; border-right: 1px solid #d9d9d9; padding-top: 30px;}
+#nav>.menu>ul>li:hover>ul{background: rgba(210, 228, 255, 0.311);}
+#nav>.menu>ul:hover>li>ul{display: block; min-height: 540px; height: auto;}
+#nav>.menu>ul>li>ul>li{text-align: left; padding: 0.4rem 1.5rem; line-height: 1.3rem;}
+#nav>.menu>ul>li>ul>li>a{display: block; width: 100%; height: 100%; font-size: 1.1rem; text-align: left; line-height: 1.7rem; padding: .2rem 0; color: #5c5c5c;}
+#nav>.menu>ul>li>ul>li:hover>a{color: #00244b;}
