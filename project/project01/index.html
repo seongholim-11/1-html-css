@@ -238,6 +238,7 @@
 		<main>
 			<div class="main_visual_wrap">
 				<div class="main_visual">
+					<button type="button" class="main_visual_prev"></button>
 					<div class="slick_track">
 						<div class="slick_slide">
 							<div class=visual_background><img src="./img/main/main-14.png" alt=""></div>
@@ -273,9 +274,39 @@
 							</div>
 						</div>
 					</div>
+					<button type="button" class="main_visual_next"></button>
 				  </div>
 			</div>
-			<div class="kinfa_product_wrap"></div>
+			<div class="kinfa_product_wrap">
+				<div class="container">
+					<div class="kinfa_product">
+						<div class="kinfa_product_left">
+							<div class="left_tit">
+								<div class="left_tit_icon"><img src="./img/logo/product-logo.png" alt="product-logo"></div>
+								<div class="left_title">서민금융 알아보기</div>
+							</div>
+							<div class="left_text">
+								필요 목적에 맞는 <br>
+								다양한 서민금융상품을 알아보세요.
+							</div>
+							<div class="fade_arrow">
+								<span>></span>
+								<span>></span>
+								<span>></span>
+								<span>></span>
+							</div>
+						</div>
+						<div class="kinfa_product_right">
+							<ul>
+								<li><a href="#" title="생활안정자금">생활안정자금</a></li>
+								<li><a href="#" title="고금리 대안상품">고금리 대안상품</a></li>
+								<li><a href="#" title="창업&middot;운영자금">창업&middot;운영자금</a></li>
+								<li><a href="#" title="자산형성">자산형성</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="kinfa_contents_wrap"></div>
 			<div class="kinfa_sns_wrap"></div>
 			<div class="kinfa_link_wrap"></div>
@@ -318,7 +349,10 @@
 		infinite: true,
 		speed: 500,
 		fade: true,
-		cssEase: 'linear'
+		cssEase: 'linear',
+		prevArrow : $('.main_visual_prev'), 
+  		nextArrow : $('.main_visual_next'), 
+		autoplay: false
 	  });
 	  </script>
 </body>
