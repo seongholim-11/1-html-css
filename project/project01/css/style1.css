@@ -39,13 +39,19 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .all_menu>.allmenu_btn>p{text-align: center;}
 
 /* header-bottom */
-#gnb{width: 100%; height: 60px; border-bottom: 1px solid #d9d9d9; position: fixed; top: 78px; left: 0;}
-nav>.menu>ul>li{display: block; float: left; width: 14.2%; height: 60px; line-height: 60px; text-align: center; position: relative;}
-nav>.menu>ul>li:hover>a{color: #00244b;}
-#nav>.menu>ul>li>a{display: block; width: 100%; height: 100%; font-size: 1.2rem; font-weight: 500;}
-#nav>.menu>ul>li>ul{display: none; border-right: 1px solid #d9d9d9; padding-top: 30px;}
-#nav>.menu>ul>li:hover>ul{background: rgba(210, 228, 255, 0.311);}
-#nav>.menu>ul:hover>li>ul{display: block; min-height: 540px; height: auto;}
-#nav>.menu>ul>li>ul>li{text-align: left; padding: 0.4rem 1.5rem; line-height: 1.3rem;}
-#nav>.menu>ul>li>ul>li>a{display: block; width: 100%; height: 100%; font-size: 1.1rem; text-align: left; line-height: 1.7rem; padding: .2rem 0; color: #5c5c5c;}
-#nav>.menu>ul>li>ul>li:hover>a{color: #00244b;}
+#gnb{width: 100%; height: 60px; border-bottom: 1px solid #d9d9d9; position: relative; top: 0px; left: 0;}
+#nav>.bg{width: 100%; height: 0px; background: rgb(255, 255, 255); position: absolute; top: 60px; left: 0; float: left;}
+#nav .menu>ul>li{display: block; float: left; width: 14.2%; height: 60px; line-height: 60px; text-align: center; position: relative;}
+#nav .menu>ul>li:hover>a{color: #00244b;}
+#nav .menu>ul>li>a{display: block; width: 100%; height: 100%; font-size: 1.2rem; font-weight: 500;}
+#nav .menu>ul>li>ul{display: none; border-right: 1px solid #d9d9d9; padding-top: 30px;}
+#nav .menu>ul>li:hover>ul{background: rgba(210, 228, 255, 0.311); padding-bottom: 10px;}
+#nav .menu>ul:hover>li>ul{display: block; min-height: 540px; height: auto;}
+#nav .menu>ul>li>ul>li{text-align: left; padding: 0.4rem 1.5rem; line-height: 1.3rem;}
+#nav .menu>ul>li>ul>li>a{display: block; width: 100%; height: 100%; font-size: 1.1rem; text-align: left; line-height: 1.7rem; padding: .2rem 0; color: #5c5c5c;}
+#nav .menu>ul>li>ul>li:hover>a{color: #00244b;}
+
+#nav .menu>ul>li>ul>li>ul{display: none; position:relative;}
+#nav .menu>ul>li>ul>li.active>ul{display: block;}
+#nav .menu>ul>li>ul>li.dep2:hover>ul{border-top: 1px solid black;}
+#nav .menu>ul>li>ul>li>ul>li>a{display: block; width: 100%; height: 100%; font-size: 1rem; text-align: left; line-height: 1.6rem; padding: .2rem 0; color: #5c5c5c;}
