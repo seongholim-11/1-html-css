@@ -153,3 +153,28 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .kinfa_contents_left .new_wrap ul>li>div>a .new_text{}
 .kinfa_contents_left .new_wrap ul>li>div>a .new_text .new_tit{width: 100%; height: 6rem; font-size: 1.3rem; line-height: 1.8rem; font-weight: 700; margin: 0.5rem 0 1rem 0;}
 .kinfa_contents_left .new_wrap ul>li>div>a .new_text .new_date{font-size: 1.2rem; color: #999;}
+
+/* notice */
+.notice_wrap{}
+.notice_wrap_title{}
+.notice_wrap_title h2{}
+.notice_wrap_title h2 span{}
+.notice_wrap_title a{}
+.first_list{}
+.first_list_flex{}
+.first_list_date{}
+.first_list_date>div{}
+.first_list_date>div>.first_list_day{}
+.first_list_date>div>.first_list_month{}
+.first_list_date>.first_list_tit{}
+.first_list_date>.first_list_tit>a{}
+.first_list_date>.first_list_tit>a>dl{}
+.first_list_date>.first_list_tit>a>dl>dt{}
+.first_list_date>.first_list_tit>a>dl>dt>dd{}
+.first_list>ul{}
+.first_list>ul>li{}
+.first_list>ul>li>.notice_title_width{}
+.first_list>ul>li>.notice_title_width .notice_tit{}
+.first_list>ul>li>.notice_title_width .notice_tit a{}
+.first_list>ul>li>.notice_date_width{}
+.first_list>ul>li>.notice_date_width .notice_date{}
