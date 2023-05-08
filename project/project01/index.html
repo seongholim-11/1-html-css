@@ -1,3 +1,14 @@
+<!-- 
+	수정할 것
+	1. 전체보기
+	2. 3depth 유지
+	3. 3depth 선 만들기
+	4. 메인 배너 크기
+	5. 메인 배너 글씨 애니메이션
+	6. 보도자료 사진 크기
+	7. 서금원 소식 현재 페이지
+ -->
+
 <!DOCTYPE HTML>
 <html lang='ko'>
 
@@ -546,22 +557,26 @@
 												<div class="banner_slide_track">
 													<div class="banner_slide_box">
 														<a href="#">
-															<div class="img_wrap"><img src="./img/news/banner-02.png" alt=""></div>
+															<div class="img_wrap"><img src="./img/news/banner-02.png"
+																	alt=""></div>
 														</a>
 													</div>
 													<div class="banner_slide_box">
 														<a href="#">
-															<div class="img_wrap"><img src="./img/news/banner-03.png" alt=""></div>
+															<div class="img_wrap"><img src="./img/news/banner-03.png"
+																	alt=""></div>
 														</a>
 													</div>
 													<div class="banner_slide_box">
 														<a href="#">
-															<div class="img_wrap"><img src="./img/news/banner-04.png" alt=""></div>
+															<div class="img_wrap"><img src="./img/news/banner-04.png"
+																	alt=""></div>
 														</a>
 													</div>
 													<div class="banner_slide_box">
 														<a href="#">
-															<div class="img_wrap"><img src="./img/news/banner-06.png" alt=""></div>
+															<div class="img_wrap"><img src="./img/news/banner-06.png"
+																	alt=""></div>
 														</a>
 													</div>
 												</div>
@@ -574,7 +589,54 @@
 					</div>
 				</div>
 			</div>
-			<div class="kinfa_sns_wrap"></div>
+			<div class="kinfa_sns_wrap">
+				<div class="sns_top">
+					<div class="comtainer">
+						<div class="sns_top_tit">대국민 소통</div>
+					</div>
+					<div class="sns_quick_wrap">
+						<div class="container">
+							<ul>
+								<li>
+									<a href="#">
+										<div class="sns_quick_img sns_quick_naver"></div>
+										<div class="sns_quick_tit sns_quick_green"></div>
+										<div class="sns_quick_arrow sns_quick_green"></div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="sns_quick_img sns_quick_insta"></div>
+										<div class="sns_quick_tit sns_quick_red"></div>
+										<div class="sns_quick_arrow sns_quick_red"></div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="sns_quick_img sns_quick_face"></div>
+										<div class="sns_quick_tit sns_quick_blue"></div>
+										<div class="sns_quick_arrow sns_quick_blue"></div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="sns_quick_img sns_quick_web"></div>
+										<div class="sns_quick_tit sns_quick_blue2"></div>
+										<div class="sns_quick_arrow sns_quick_blue2"></div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="sns_bottom">
+					<div class="container">
+						<div class="sns_bottom_width">
+
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="kinfa_link_wrap"></div>
 		</main>
 		<footer id="foot" class="footer-wrap">
@@ -638,6 +700,28 @@
 				$('.popup_slick_btn').removeClass('popup_slick_play');
 				$('.popup_slick_btn').addClass('popup_slick_pause');
 				$('.popup_slick_track').slick('slickPause')
+				sw = 0;
+			}
+		});
+		$('.banner_slide_track').slick({
+			infinite: true,
+			speed: 500,
+			fade: true,
+			cssEase: 'linear',
+			prevArrow: $('.kinfa_contents_banner_slick_prev'),
+			nextArrow: $('.kinfa_contents_banner_slick_next'),
+			autoplay: true
+		});
+		$('.kinfa_contents_banner_slick_btn').click(function () {
+			if (sw == 0) {
+				$('.kinfa_contents_banner_slick_btn').removeClass('kinfa_contents_banner_slick_play');
+				$('.kinfa_contents_banner_slick_btn').addClass('kinfa_contents_banner_slick_pause');
+				$('.banner_slide_track').slick('slickPlay')
+				sw = 1;
+			} else {
+				$('.kinfa_contents_banner_slick_btn').removeClass('kinfa_contents_banner_slick_pause');
+				$('.kinfa_contents_banner_slick_btn').addClass('kinfa_contents_banner_slick_play');
+				$('.banner_slide_track').slick('slickPause')
 				sw = 0;
 			}
 		});
