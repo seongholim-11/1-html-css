@@ -2,7 +2,7 @@
 
 /* 공통속성 */
 body{font-family: 'Noto Sans KR', sans-serif;}
-.inner{width: 1240px; height: inherit; margin: 0 auto; background: rgba(0, 0, 0, 0.5);}
+.inner{width: 1240px; height: inherit; margin: 0 auto; /* background: rgba(0, 0, 0, 0.5); */}
 
 /* 레이아웃 */
 #wrap{width: 100%;}
@@ -36,3 +36,20 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 /* header */
 .logo{width: 360px; height: 72px; background: url(../img/revise_logo_main2.png) no-repeat left center/cover; float: left;}
 .search-form-wrap{float: right;}
+
+.searForm{overflow: hidden; padding: 10px 0;}
+.searForm .mainSearchField{float: left; height: 45px; border: 1px solid #dfdfdf; -webkit-appearance: none; padding: 0 25px 0 10px; background: url(../img/ic_main_arrow_b.png) no-repeat right 10px center;}
+.searForm .mainSearchField:focus{outline: none;}
+.searForm .mainSearchField option{}
+.searForm .search-text-wrap{float: left;}
+.searForm .search-text-wrap .input-text-wrap{}
+.searForm .search-text-wrap .input-text-wrap>input{width: 200px; height: 45px; border: 1px solid #dfdfdf; box-sizing: border-box; display: block; margin-left: -1px; padding: 0 10px; border-right: none;}
+.searForm .search-btn-wrap{float: left;}
+.searForm .search-btn-wrap .btn-arrow{display: block; width: 20px; height: 45px; background: url(../img/ic_main_arrow_b2.png) no-repeat center center; border: 1px solid #dfdfdf; border-left: none; box-sizing: border-box; float: left;}
+.searForm .search-btn-wrap .btn-worldword-wrap{float: left;}
+.searForm .search-btn-wrap .btn-worldword-wrap .worldword-text{}
+.searForm .search-btn-wrap .btn-worldword-wrap button{background: none; margin-left: -1px; width: 40px; height: 45px; border: 1px solid #dfdfdf; box-sizing: border-box; float: left}
+.searForm .search-btn-wrap .btn-worldword-wrap .btn-wolrdword{background: url(../img/ic_lang.png) no-repeat center center;}
+.searForm .search-btn-wrap .btn-worldword-wrap .btn-search{background: url(../img/mgf-glass_b.png) no-repeat center center;}
+.searForm .detail-btn{float: left; width: 100px; height: 45px; border: 1px solid #5692bc; margin-left: 5px; background: none;}
+.searForm .detail-btn span{color: #5692bc; font-size: 15px;}
