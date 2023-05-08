@@ -8,7 +8,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 #wrap{width: 100%;}
 #header-utils-wrap{height: 43px; background: #f0f0f0;}
 #header{height: 72px; padding: 8px 0; border-bottom: 1px solid #ddd;}
-#nav{height: 61px; background: yellow;}
+#nav{height: 61px; position: relative;}
 .banner{height: 428px;}
 .library-info{height: 45px; padding: 15px 0; background: rebeccapurple;}
 .main_book{height: 443px; background: yellowgreen;}
@@ -53,3 +53,20 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .searForm .search-btn-wrap .btn-worldword-wrap .btn-search{background: url(../img/mgf-glass_b.png) no-repeat center center;}
 .searForm .detail-btn{float: left; width: 100px; height: 45px; border: 1px solid #5692bc; margin-left: 5px; background: none;}
 .searForm .detail-btn span{color: #5692bc; font-size: 15px;}
+
+/* nav */
+.nav{}
+.bg{position: absolute; width: 100%; height: 0px; background: rgb(255, 255, 255); top: 61px; left: 0; transition: 0.3s; border-bottom: 1px solid #ddd; box-sizing: border-box;}
+.nav:hover .bg{height: 521px; border-bottom: 1px solid #ddd; border-top: 1px solid #ddd;  box-sizing: border-box;}
+.nav>ul{}
+.nav>ul>li{float: left; width: 248px; padding: 10px 0 12px 0;}
+.nav>ul>li>a{font-size: 22px; color: #303030; font-weight: bold; padding: 5px 0px 5px 20px; display: inline-block; margin-left: 10px; width: 200px;}
+.nav>ul>li:hover>a{background: rgb(66, 66, 167); color: #fff;}
+.nav>ul>li>ul{display: block; position: absolute; top: 61px; padding-left: 20px; width: 248px; box-sizing: border-box; border-right: 1px solid #ddd; height: 0px; overflow: hidden; transition: 0.3s;}
+.nav:hover>ul>li>ul{height: 519px;}
+.nav>ul>li:first-child>ul{border-left: 1px solid #ddd;}
+.nav>ul>li>ul>li{height: 36px;}
+.nav>ul>li>ul>li>a{display: inline-block; padding: 10px 0; position: relative;}
+.nav>ul>li>ul>li>a:hover{color: rgb(21, 21, 156); font-weight: bold;}
+.nav>ul>li>ul>li>a:after{content: ""; position: absolute; width: 0%; height: 1px; background: rgb(21, 21, 156); bottom: 8px; left: 50%; transition: 0.3s;}
+.nav>ul>li>ul>li>a:hover::after{width: 100%; left: 0%;}
