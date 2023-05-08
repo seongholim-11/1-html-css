@@ -40,14 +40,11 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .searForm{overflow: hidden; padding: 10px 0;}
 .searForm .mainSearchField{float: left; height: 45px; border: 1px solid #dfdfdf; -webkit-appearance: none; padding: 0 25px 0 10px; background: url(../img/ic_main_arrow_b.png) no-repeat right 10px center;}
 .searForm .mainSearchField:focus{outline: none;}
-.searForm .mainSearchField option{}
 .searForm .search-text-wrap{float: left;}
-.searForm .search-text-wrap .input-text-wrap{}
 .searForm .search-text-wrap .input-text-wrap>input{width: 200px; height: 45px; border: 1px solid #dfdfdf; box-sizing: border-box; display: block; margin-left: -1px; padding: 0 10px; border-right: none;}
 .searForm .search-btn-wrap{float: left;}
 .searForm .search-btn-wrap .btn-arrow{display: block; width: 20px; height: 45px; background: url(../img/ic_main_arrow_b2.png) no-repeat center center; border: 1px solid #dfdfdf; border-left: none; box-sizing: border-box; float: left;}
 .searForm .search-btn-wrap .btn-worldword-wrap{float: left;}
-.searForm .search-btn-wrap .btn-worldword-wrap .worldword-text{}
 .searForm .search-btn-wrap .btn-worldword-wrap button{background: none; margin-left: -1px; width: 40px; height: 45px; border: 1px solid #dfdfdf; box-sizing: border-box; float: left}
 .searForm .search-btn-wrap .btn-worldword-wrap .btn-wolrdword{background: url(../img/ic_lang.png) no-repeat center center;}
 .searForm .search-btn-wrap .btn-worldword-wrap .btn-search{background: url(../img/mgf-glass_b.png) no-repeat center center;}
@@ -55,10 +52,8 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .searForm .detail-btn span{color: #5692bc; font-size: 15px;}
 
 /* nav */
-.nav{}
 .bg{position: absolute; width: 100%; height: 0px; background: rgb(255, 255, 255); top: 61px; left: 0; transition: 0.3s; border-bottom: 1px solid #ddd; box-sizing: border-box;}
 .nav:hover .bg{height: 521px; border-bottom: 1px solid #ddd; border-top: 1px solid #ddd;  box-sizing: border-box;}
-.nav>ul{}
 .nav>ul>li{float: left; width: 248px; padding: 10px 0 12px 0;}
 .nav>ul>li>a{font-size: 22px; color: #303030; font-weight: bold; padding: 5px 0px 5px 20px; display: inline-block; margin-left: 10px; width: 200px;}
 .nav>ul>li:hover>a{background: rgb(66, 66, 167); color: #fff;}
