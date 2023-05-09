@@ -591,7 +591,7 @@
 			</div>
 			<div class="kinfa_sns_wrap">
 				<div class="sns_top">
-					<div class="comtainer">
+					<div class="container">
 						<div class="sns_top_tit">대국민 소통</div>
 					</div>
 					<div class="sns_quick_wrap">
@@ -600,29 +600,29 @@
 								<li>
 									<a href="#">
 										<div class="sns_quick_img sns_quick_naver"></div>
-										<div class="sns_quick_tit sns_quick_green"></div>
-										<div class="sns_quick_arrow sns_quick_green"></div>
+										<div class="sns_quick_tit sns_quick_green">블로그 바로가기</div>
+										<div class="sns_quick_arrow"><span class="arrow sns_quick_green"></span></div>
 									</a>
 								</li>
 								<li>
 									<a href="#">
 										<div class="sns_quick_img sns_quick_insta"></div>
-										<div class="sns_quick_tit sns_quick_red"></div>
-										<div class="sns_quick_arrow sns_quick_red"></div>
+										<div class="sns_quick_tit sns_quick_red">인스타그램 바로가기</div>
+										<div class="sns_quick_arrow"><span class="arrow sns_quick_red"></span></div>
 									</a>
 								</li>
 								<li>
 									<a href="#">
 										<div class="sns_quick_img sns_quick_face"></div>
-										<div class="sns_quick_tit sns_quick_blue"></div>
-										<div class="sns_quick_arrow sns_quick_blue"></div>
+										<div class="sns_quick_tit sns_quick_blue">페이스북 바로가기</div>
+										<div class="sns_quick_arrow "><span class="arrow sns_quick_blue"></span></div>
 									</a>
 								</li>
 								<li>
 									<a href="#">
 										<div class="sns_quick_img sns_quick_web"></div>
-										<div class="sns_quick_tit sns_quick_blue2"></div>
-										<div class="sns_quick_arrow sns_quick_blue2"></div>
+										<div class="sns_quick_tit sns_quick_blue2">웹진 바로가기</div>
+										<div class="sns_quick_arrow "><span class="arrow sns_quick_blue2"></span></div>
 									</a>
 								</li>
 							</ul>
@@ -631,8 +631,74 @@
 				</div>
 				<div class="sns_bottom">
 					<div class="container">
-						<div class="sns_bottom_width">
-
+						<div class="sns_bottom_wrap">
+							<div class="sns_bottom_width">
+								<div class="sns_bottom_top">
+									<div class="sns_bottom_header">
+										<div class="sns_bottom_tit">유튜브</div>
+										<a href="#">
+											<div class="sns_bottom_more sns_bottom_you">유튜브 바로가기 +</div>
+										</a>
+									</div>
+								</div>
+								<div class="sns_slide_wrap">
+									<div class="sns_slide">
+										<div class="img_box border_box">
+											<a href="#">
+												<img src="./img/youtube/20230227-youtube.jpg
+											" alt="">
+											</a>
+											<div class="sns_slide_tit">서민금융진흥원 박세리 홍보대사</div>
+										</div>
+										<div>
+											<a href="#">
+												<img src="./img/youtube/20230313-1-youtube.jpg
+												" alt="">
+											</a>
+											<div class="sns_slide_tit">몰못써 청년희망적금 똑똑하게 활용하기</div>
+										</div>
+										<div>
+											<a href="#">
+												<img src="./img/youtube/20230313-2-youtube.jpg
+													" alt="">
+											</a>
+											<div class="sns_slide_tit">슬금생 신용점수가 낮아도 신용점수 관리하는 방법</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="sns_bottom_width">
+								<div class="sns_bottom_top">
+									<div class="sns_bottom_header">
+										<div class="sns_bottom_tit">카드뉴스</div>
+										<a href="#">
+											<div class="sns_bottom_more sns_bottom_plus">+ 더보기</div>
+										</a>
+									</div>
+								</div>
+								<div class="sns_slide_wrap">
+									<div class="sns_slide card_slide">
+										<div class="img_box">
+											<a href="#">
+												<img src="./img/card_news/1.png" alt="">
+											</a>
+											<div class="sns_slide_tit">미니 금융게임 -청년편-</div>
+										</div>
+										<div>
+											<a href="#">
+												<img src="./img/card_news/2.png" alt="">
+											</a>
+											<div class="sns_slide_tit">QUIZ 이벤트 정답:1397송</div>
+										</div>
+										<div>
+											<a href="#">
+												<img src="./img/card_news/3.png" alt="">
+											</a>
+											<div class="sns_slide_tit">미니 금융게임 -금융꿀팁편-</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -724,6 +790,16 @@
 				$('.banner_slide_track').slick('slickPause')
 				sw = 0;
 			}
+		});
+		$('.sns_slide').slick({
+			dots: true,
+			infinite: true,
+			speed: 500,
+			fade: true,
+			cssEase: 'linear',
+			autoplay: false,
+			autoplaySpeed: 1000,
+			arrows : false 
 		});
 	</script>
 </body>

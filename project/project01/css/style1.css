@@ -13,7 +13,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .main_visual_wrap{width: 100%; height: calc(100vh - 310px);}
 .kinfa_product_wrap{width: 100%; height: 133px; padding: 32px 0; background: #f5f5f5;}
 .kinfa_contents_wrap{width: 100%; height: 1280px; margin-top: 64px;}
-.kinfa_sns_wrap{width: 100%; height:1018px; margin-top: 48px; background: rgb(185, 255, 185);}
+.kinfa_sns_wrap{width: 100%; height:1018px; margin-top: 48px; background: #DCE9F8;}
 .kinfa_link_wrap{width: 100%; height: 345px; padding: 64px; background: rgb(194, 194, 255); box-sizing: border-box;}
 /* footer */
 .menus{width: 100%; height: 55px; border-bottom: 2px solid black; background: rgb(149, 142, 190);}
@@ -221,11 +221,49 @@ body{font-family: 'Noto Sans KR', sans-serif;}
  .kinfa_contents_banner_slick_play{background: #c2c2c2 url(../img/icon/play.png) no-repeat center; background-size: 10px;}
  .kinfa_contents_banner_slick_pause{background: #c2c2c2 url(../img/icon/stop.png) no-repeat center; background-size: 10px;}
  .kinfa_contents_banner_slick_next{background: #c2c2c2 url(../img/icon/arrow-next.png) no-repeat center; background-size: 25px;}
-
  .kinfa_contents_banner_slide{flex: 0 0 75%; max-width: 75%;}
- .banner_slide_wrap{}
- .banner_slide_list{}
- .banner_slide_track{}
- .banner_slide_box{}
- .banner_slide_box a{}
- .banner_slide_box a .img_wrap{}
+
+ /* sns wrap */
+ .sns_top{background: #053982; padding: 2rem 0 4rem 0;}
+ .sns_top .sns_top_tit{padding: 1rem 0; font-size: 2.2rem; font-weight: 700; color: #fff; text-align: center;}
+.sns_quick_wrap{position: relative; top: 30px;}
+.sns_quick_wrap ul{width: 100%;}
+.sns_quick_wrap ul li{width: 25%; float: left; position: relative; padding: 1rem 2rem; background: #fff; box-sizing: border-box;}
+.sns_quick_wrap ul li:not(:nth-child(4)):after{content: ""; width: 1px; height: 35px; background: #ddd; position: absolute; top: 20px; right: 2px;}
+.sns_quick_wrap ul li a div{float: left;}
+.sns_quick_wrap ul li a .sns_quick_img{width: 45px; height: 45px; margin-right: 8px; background-size: 45px;}
+.sns_quick_wrap ul li a .sns_quick_tit{font-size: 1.3rem; font-weight: 500; padding: 5px;}
+.sns_quick_wrap ul li a .sns_quick_arrow{position: absolute; top: 30px; right: 30px;}
+.arrow{display: block; width: 10px; height: 10px; border-top: 2px solid #333; border-right: 2px solid #333; transform: rotate(45deg);}
+.sns_quick_naver{background: url(../img/sns/sns-01.png) no-repeat left center;}
+.sns_quick_insta{background: url(../img/sns/sns-02.png) no-repeat left center;}
+.sns_quick_face{background: url(../img/sns/sns-03.png) no-repeat left center;}
+.sns_quick_web{background: url(../img/sns/sns-04.png) no-repeat left center;}
+.sns_quick_green{color: #0DC73C; border-color: #0DC73C;}
+.sns_quick_red{color: #C5297C; border-color: #C5297C;}
+.sns_quick_blue{color: #3566A5; border-color: #3566A5;}
+.sns_quick_blue2{color: #053982; border-color: #053982;}
+
+.sns_bottom{}
+.sns_bottom_wrap{width: 100%; height: 677px; margin-top: 112px;}
+.sns_bottom_width{width: 49%; height: 677px; float: left;}
+.sns_bottom_width:nth-child(1){margin-right: 28px;}
+.sns_bottom_top{}
+.sns_bottom_top .sns_bottom_header{}
+.sns_bottom_top .sns_bottom_header .sns_bottom_tit{font-size: 1.6rem; color: #3351a7; font-weight: 700; float: left;}
+.sns_bottom_top .sns_bottom_header .sns_bottom_more{float: right; font-size: 1.4rem; font-weight: 300; text-align: center;}
+.sns_bottom_you{background: url(../img/sns/sns-05.png) no-repeat left center; padding-left: 50px; color: #ff0000; position: relative;}
+.sns_bottom_plus{color: #999;}
+.sns_slide_wrap{float: left;}
+
+.sns_slide_wrap{width: 100%; max-height: 450px; margin-top: 20px;}
+.card_slide_wrap{padding: 0;}
+/* .sns_slide{}
+.slick-dots{position: relative; top: 0; left: 0; display: inline-block; border-radius: 10px;}
+.card_slide{position: relative;}
+.card_slide ul{position: absolute; top: 510px; left: 0;} */
+.img_box{}
+.img_box a{height: 450px; background: #000;}
+.img_box a img{width: 100%; max-height: 450px;}
+.border_box>a>img{width: 100%; max-height: 450px; padding: 30px 0; background: #000;}
+.sns_slide_tit{min-height: 55px; margin-top: 1rem; font-size: 1.3rem; font-weight: 700; line-height: 1.7rem;}
