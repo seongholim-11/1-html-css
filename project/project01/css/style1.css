@@ -14,7 +14,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .kinfa_product_wrap{width: 100%; height: 133px; padding: 32px 0; background: #f5f5f5;}
 .kinfa_contents_wrap{width: 100%; height: 1280px; margin-top: 64px;}
 .kinfa_sns_wrap{width: 100%; height:1018px; margin-top: 48px; background: #DCE9F8;}
-.kinfa_link_wrap{width: 100%; height: 345px; padding: 64px; background: rgb(194, 194, 255); box-sizing: border-box;}
+.kinfa_link_wrap{width: 100%; height: 345px; padding: 64px 0; background: #f3f6fb;}
 /* footer */
 .menus{width: 100%; height: 55px; border-bottom: 2px solid black; background: rgb(149, 142, 190);}
 .footer{width: 100%; height: 152px; padding: 16px 0; background: rgb(107, 80, 107);}
@@ -246,7 +246,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 
 .sns_bottom{}
 .sns_bottom_wrap{width: 100%; height: 677px; margin-top: 112px;}
-.sns_bottom_width{width: 49%; height: 677px; float: left;}
+.sns_bottom_width{width: 49%; height: 677px; float: left; position: relative;}
 .sns_bottom_width:nth-child(1){margin-right: 28px;}
 .sns_bottom_top{}
 .sns_bottom_top .sns_bottom_header{}
@@ -262,8 +262,49 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .slick-dots{position: relative; top: 0; left: 0; display: inline-block; border-radius: 10px;}
 .card_slide{position: relative;}
 .card_slide ul{position: absolute; top: 510px; left: 0;}
+.card_slide ul:nth-child(2){position: absolute; top: 517px; left: 0;}
 .img_box{}
 .img_box a{height: 450px; background: #000; overflow: hidden;}
 .img_box a img{width: 100%; max-height: 450px;}
 .border_box a img{width: 100%; max-height: 450px; padding: 30px 0; background: #000;}
 .sns_slide_tit{min-height: 55px; margin-top: 1rem; font-size: 1.3rem; font-weight: 700; line-height: 1.7rem;}
+
+.sns_slick_button{position: absolute; bottom: 25px; left: 271px;}
+.sns_slick_button button{width: 39px; height: 39px; position: relative; margin-right: 15px; cursor: pointer;}
+.sns_slick_prev{background: url(../img/icon/arrow-prev.png) no-repeat center center;}
+.sns_slick_btn{background: url(../img/icon/stop.png) no-repeat center center;}
+.sns_slick_next{background: url(../img/icon/arrow-next.png) no-repeat center center;}
+
+/* kinfa_link_wrap */
+.kinfa_link_wrap{position: relative;}
+.back1, .back2{width: 366px; height: 373px;  display: inline-block;}
+.back1{background: url(../img/financial_life/decal-back-01.png) no-repeat left bottom; position: absolute; left: 2rem; bottom: 0;}
+.back2{background: url(../img/financial_life/decal-back-02.png) no-repeat right bottom; position: absolute; right: 2rem; bottom: 0;}
+.kinfa_link{position: relative;}
+.kinfa_link_wrap h3{margin-bottom: 1.5rem; font-size: 1.75rem; font-weight: 500; line-height: 1.2;}
+.kinfa_link_wrap h3 img{width: 30px; height: 30px; position: relative; top: 5px;}
+.kinfa_family_wrap{width: 100%; position: absolute; top: 50px; left: 0;}
+.kinfa_family_wrap ul{width: 100%; background: rebeccapurple;}
+.kinfa_family_wrap ul li{float: left; width: 210px; padding: 0 15px; text-align: center;}
+.kinfa_family_wrap ul li:first-child{padding-left: 0;}
+.kinfa_family_wrap ul li:last-child{padding-right: 0;}
+.kinfa_family_wrap ul li .family_box{width: 100%; background: #fff;}
+.kinfa_family_wrap ul li a{display: block; padding: 1rem 0; color: #333; height: 130px;}
+.kinfa_family_wrap ul li a .family_img img{width: 60px; height: 60px;}
+.kinfa_family_wrap ul li a .family_text{margin-top: 0.5rem; padding: 15px 0; font-size: 1rem;}
+
+/* kinfa_decal_wrap */
+.kinfa_decal_wrap{position: relative;}
+.kinfa_decal{width: 100%; padding: 3px 0; background: #fff; position: absolute; top: 165px; left: 0; box-sizing: border-box;}
+.kinfa_decal_tit{width: 16%; height: 61px; float: left; color: #3351a7; font-size: 1.5rem; text-align: center; padding: 0 15px; line-height: 86px; box-sizing: border-box; font-weight: bold;}
+.kinfa_decal_rgb{float: left; width: 84%;}
+.kinfa_decal_rgb ul{width: 100%;}
+.kinfa_decal_rgb ul li{float: left; width: 33.3333%; padding: 15px; box-sizing: border-box;}
+.kinfa_decal_rgb ul li .kinfa_decal_box{background: #eaeaea; padding: 5px; box-sizing: border-box; border-radius: 10px;}
+.kinfa_decal_rgb ul li a{display: block; text-align: center;}
+.kinfa_decal_red
+.kinfa_decal_green
+.kinfa_decal_blue
+.kinfa_decal_rgb ul li a .img_box{width: 45px; height: 45px; border-radius: 45px; background: #fff; margin-left: 50px;}
+.img_box span{display: inline-block; color: #333; font-size: 1rem; position: relative; bottom: 10px;}
+.kinfa_decal_rgb ul li a .img_box img{width: 25px; padding: 5px 5px 5px 10px;}
