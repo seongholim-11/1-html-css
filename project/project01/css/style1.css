@@ -258,12 +258,12 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 
 .sns_slide_wrap{width: 100%; max-height: 450px; margin-top: 20px;}
 .card_slide_wrap{padding: 0;}
-/* .sns_slide{}
+.sns_slide{}
 .slick-dots{position: relative; top: 0; left: 0; display: inline-block; border-radius: 10px;}
 .card_slide{position: relative;}
-.card_slide ul{position: absolute; top: 510px; left: 0;} */
+.card_slide ul{position: absolute; top: 510px; left: 0;}
 .img_box{}
-.img_box a{height: 450px; background: #000;}
+.img_box a{height: 450px; background: #000; overflow: hidden;}
 .img_box a img{width: 100%; max-height: 450px;}
-.border_box>a>img{width: 100%; max-height: 450px; padding: 30px 0; background: #000;}
+.border_box a img{width: 100%; max-height: 450px; padding: 30px 0; background: #000;}
 .sns_slide_tit{min-height: 55px; margin-top: 1rem; font-size: 1.3rem; font-weight: 700; line-height: 1.7rem;}
