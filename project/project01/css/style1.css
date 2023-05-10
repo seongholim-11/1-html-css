@@ -16,8 +16,9 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .kinfa_sns_wrap{width: 100%; height:1018px; margin-top: 48px; background: #DCE9F8;}
 .kinfa_link_wrap{width: 100%; height: 345px; padding: 64px 0; background: #f3f6fb;}
 /* footer */
-.menus{width: 100%; height: 55px; border-bottom: 2px solid black; background: rgb(149, 142, 190);}
-.footer{width: 100%; height: 152px; padding: 16px 0; background: rgb(107, 80, 107);}
+.footer_wrap{width: 100%; background: #f2f2f2;}
+.menus{width: 100%; height: 55px; border-bottom: 2px solid #d5d5d5; border-top: 2px solid #d5d5d5; background: #f2f2f2;}
+.footer{width: 100%; height: 152px; padding: 16px 0; background: #f2f2f2;}
 
 
 /* header */
@@ -278,8 +279,8 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 /* kinfa_link_wrap */
 .kinfa_link_wrap{position: relative;}
 .back1, .back2{width: 366px; height: 373px;  display: inline-block;}
-.back1{background: url(../img/financial_life/decal-back-01.png) no-repeat left bottom; position: absolute; left: 2rem; bottom: 0;}
-.back2{background: url(../img/financial_life/decal-back-02.png) no-repeat right bottom; position: absolute; right: 2rem; bottom: 0;}
+.back1{background: url(../img/financial_life/decal-back-01.png) no-repeat left bottom; position: absolute; left: 2rem; bottom: -3px;}
+.back2{background: url(../img/financial_life/decal-back-02.png) no-repeat right bottom; position: absolute; right: 2rem; bottom: -3px;}
 .kinfa_link{position: relative;}
 .kinfa_link_wrap h3{margin-bottom: 1.5rem; font-size: 1.75rem; font-weight: 500; line-height: 1.2;}
 .kinfa_link_wrap h3 img{width: 30px; height: 30px; position: relative; top: 5px;}
@@ -308,3 +309,36 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .kinfa_decal_rgb ul li a .img_box{width: 45px; height: 45px; border-radius: 45px; background: #fff; margin-left: 50px;}
 .img_box span{display: inline-block; color: #333; font-size: 1rem; position: relative; bottom: 10px;}
 .kinfa_decal_rgb ul li a .img_box img{width: 25px; padding: 5px 5px 5px 10px;}
+
+/* footer */
+/* menus */
+.footer_select{width: 50%; float: left; height: 55px; position: relative;}
+.footer_select label{}
+.footer_select select{width: 88%; height: 100%; border: none; color: #333; padding: 0 1rem; font-size: 1rem; font-weight: bold;
+    background: #f2f2f2 url(../img/icon/icon_small_down.png) no-repeat 94% center; 
+    -webkit-appearance:none; /* 크롬 화살표 없애기 */
+    -moz-appearance:none; /* 파이어폭스 화살표 없애기 */
+    appearance:none /* 화살표 없애기 */
+}
+.footer_select select option{padding: 0 1rem; font-size: 1rem; font-weight: bold;  line-height: 1.5;}
+.footer_select button{width: 12%; height: 56px; background: #606060; color: #fff; font-weight: bold; position: absolute; bottom: 0; right: 0;}
+.footer_btn_02{margin-left: 4px;}
+
+/* footer */
+.footer_left{width: 50%; float: left;}
+.footer_left p{margin-bottom: 1rem; font-size: 1rem; font-weight: 300;}
+.footer_left p a{padding: 0 10px 0 0;}
+.a_blue{color: #3351A7; text-decoration: underline;display: inline-block;}
+.address{font-size: 1rem; font-weight: 300;}
+
+.footer_right{width: 50%; height: 100%; float: left; position: relative;}
+.footer_right_wrap{}
+.footer_right_wrap div{float: left;}
+.footer_right_wrap div:nth-child(2){margin-bottom: 10px;}
+.footer_right_wrap .footer_wa{float: left; position: absolute; bottom: 30px; right: 340px;}
+.footer_right_wrap .footer_wa a{}
+.footer_right_wrap .footer_wa a img{width: 80px; height: 57px;}
+.footer_right_wrap .footer_isms{float: left; position: absolute; bottom: 23px; right: 0px;}
+.footer_right_wrap .footer_isms a{}
+.footer_right_wrap .footer_isms a img{width: 80px; height: 80px; float: left; margin-right: 0.5rem;}
+.footer_right_wrap .footer_isms a span{float: left; display: block; padding-top: 18px; text-align: right; font-size: 0.9rem;}
