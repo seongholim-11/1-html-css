@@ -822,9 +822,9 @@
 		});
 
 		jQuery(function ($) {
-			$(".dep1").on("mouseover focus", function () {
+			$(".menu>ul>li").on("mouseover focus", function () {
 				let a = 0;
-				a = $(".menu>ul>li>.dep_height").innerHeight();
+				a = $(".menu ul .dep1 .dep_height").innerHeight();
 				console.log(a);
 				$('.bg').height(a);
 			});

@@ -74,9 +74,10 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 #nav .menu>ul>li>ul>li>a{display: block; width: 100%; height: 100%; font-size: 1.1rem; text-align: left; line-height: 1.7rem; padding: .2rem 0; color: #5c5c5c;}
 #nav .menu>ul>li>ul>li:hover>a{color: #00244b;}
 
-#nav .menu>ul>li>ul>li>ul{display: none; position:relative;}
+#nav .menu>ul>li>ul>li>ul{display: none; position:relative; background: #f3f3f3;}
 #nav .menu>ul>li>ul>li.active>ul{display: block;}
-#nav .menu>ul>li>ul>li.dep2:hover>ul{border-top: 1px solid black;}
+#nav .menu>ul>li>ul>li.dep2{position: relative;}
+#nav .menu>ul>li>ul>li.dep2:hover>ul::before{content: ""; width: 200px; height: 1px; background: #000; top: 0; left: -23px; position: absolute;}
 #nav .menu>ul>li>ul>li>ul>li>a{display: block; width: 100%; height: 100%; font-size: 1rem; text-align: left; line-height: 1.6rem; padding: .2rem 0; color: #5c5c5c;}
 
 /* 메인 배너 */
