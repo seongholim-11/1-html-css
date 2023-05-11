@@ -86,8 +86,8 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .main_visual_wrap .main_visual .slick_track .slick_slide .visual_background img{width: 100%; height: 100%;}
 .main_visual_wrap .main_visual .slick_track .slick_slide .visual_text_box .container .visual_text{text-shadow: 0 0 20px #333; font-size: 4.3rem; line-height: 5.3rem; font-weight: 700; color: white; position: absolute; bottom: 100px; left: 160px;}
 
-.main_visual_wrap .main_visual_prev{width: 151px; height: 151px; position: absolute; background: url(../img/icon/arrow-big-prev.png) no-repeat;  top: 285px; left: 0; z-index: 9;}
-.main_visual_wrap .main_visual_next{width: 151px; height: 151px; position: absolute; background: url(../img/icon/arrow-big-next.png) no-repeat;  top: 285px; right: 0; z-index: 3;}
+.main_visual_wrap .main_visual_prev{width: 151px; height: 151px; position: absolute; background: url(../img/icon/arrow-big-prev.png) no-repeat;  top: 285px; left: 0; z-index: 9; cursor: pointer;}
+.main_visual_wrap .main_visual_next{width: 151px; height: 151px; position: absolute; background: url(../img/icon/arrow-big-next.png) no-repeat;  top: 285px; right: 0; z-index: 3; cursor: pointer;}
 .slick-dots li{margin: 0 10px;}
 .slick-dots li button::before{font-size: 25px;}
 .slick-dots li button:hover{color: red;}
@@ -267,12 +267,9 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .sns_quick_blue{color: #3566A5; border-color: #3566A5;}
 .sns_quick_blue2{color: #053982; border-color: #053982;}
 
-.sns_bottom{}
 .sns_bottom_wrap{width: 100%; height: 677px; margin-top: 112px;}
 .sns_bottom_width{width: 49%; height: 677px; float: left; position: relative;}
 .sns_bottom_width:nth-child(1){margin-right: 28px;}
-.sns_bottom_top{}
-.sns_bottom_top .sns_bottom_header{}
 .sns_bottom_top .sns_bottom_header .sns_bottom_tit{font-size: 1.6rem; color: #3351a7; font-weight: 700; float: left;}
 .sns_bottom_top .sns_bottom_header .sns_bottom_more{float: right; font-size: 1.4rem; font-weight: 300; text-align: center;}
 .sns_bottom_you{background: url(../img/sns/sns-05.png) no-repeat left center; padding-left: 50px; color: #ff0000; position: relative;}
@@ -281,12 +278,10 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 
 .sns_slide_wrap{width: 100%; max-height: 450px; margin-top: 20px;}
 .card_slide_wrap{padding: 0;}
-.sns_slide{}
 .slick-dots{position: relative; top: 0; left: 0; display: inline-block; border-radius: 10px;}
 .card_slide{position: relative;}
 .card_slide ul{position: absolute; top: 510px; left: 0;}
 .card_slide ul:nth-child(2){position: absolute; top: 517px; left: 0;}
-.img_box{}
 .img_box a{height: 450px; background: #000; overflow: hidden;}
 .img_box a img{width: 100%; max-height: 450px;}
 .border_box a img{width: 100%; max-height: 450px; padding: 30px 0; background: #000;}
@@ -325,9 +320,6 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .kinfa_decal_rgb ul li{float: left; width: 33.3333%; padding: 15px; box-sizing: border-box;}
 .kinfa_decal_rgb ul li .kinfa_decal_box{background: #eaeaea; padding: 5px; box-sizing: border-box; border-radius: 10px;}
 .kinfa_decal_rgb ul li a{display: block; text-align: center;}
-.kinfa_decal_red
-.kinfa_decal_green
-.kinfa_decal_blue
 .kinfa_decal_rgb ul li a .img_box{width: 45px; height: 45px; border-radius: 45px; background: #fff; margin-left: 50px;}
 .img_box span{display: inline-block; color: #333; font-size: 1rem; position: relative; bottom: 10px;}
 .kinfa_decal_rgb ul li a .img_box img{width: 25px; padding: 5px 5px 5px 10px;}
@@ -335,7 +327,6 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 /* footer */
 /* menus */
 .footer_select{width: 50%; float: left; height: 55px; position: relative;}
-.footer_select label{}
 .footer_select select{width: 88%; height: 100%; border: none; color: #333; padding: 0 1rem; font-size: 1rem; font-weight: bold;
     background: #f2f2f2 url(../img/icon/icon_small_down.png) no-repeat 94% center; 
     -webkit-appearance:none; /* 크롬 화살표 없애기 */
@@ -343,7 +334,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     appearance:none /* 화살표 없애기 */
 }
 .footer_select select option{padding: 0 1rem; font-size: 1rem; font-weight: bold;  line-height: 1.5;}
-.footer_select button{width: 12%; height: 56px; background: #606060; color: #fff; font-weight: bold; position: absolute; bottom: 0; right: 0;}
+.footer_select button{width: 12%; height: 56px; background: #606060; color: #fff; font-weight: bold; position: absolute; bottom: 0; right: 0; cursor: pointer;}
 .footer_btn_02{margin-left: 4px;}
 
 /* footer */
@@ -354,13 +345,10 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .address{font-size: 1rem; font-weight: 300;}
 
 .footer_right{width: 50%; height: 100%; float: left; position: relative;}
-.footer_right_wrap{}
 .footer_right_wrap div{float: left;}
 .footer_right_wrap div:nth-child(2){margin-bottom: 10px;}
 .footer_right_wrap .footer_wa{float: left; position: absolute; bottom: 30px; right: 340px;}
-.footer_right_wrap .footer_wa a{}
 .footer_right_wrap .footer_wa a img{width: 80px; height: 57px;}
 .footer_right_wrap .footer_isms{float: left; position: absolute; bottom: 23px; right: 0px;}
-.footer_right_wrap .footer_isms a{}
 .footer_right_wrap .footer_isms a img{width: 80px; height: 80px; float: left; margin-right: 0.5rem;}
 .footer_right_wrap .footer_isms a span{float: left; display: block; padding-top: 18px; text-align: right; font-size: 0.9rem;}
