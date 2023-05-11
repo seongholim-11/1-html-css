@@ -71,6 +71,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 #nav .menu>ul>li:hover>ul{background: rgba(210, 228, 255, 0.311); padding-bottom: 10px; z-index: 999;}
 #nav .menu>ul:hover>li>ul{display: block; min-height: 540px; height: auto;}
 #nav .menu>ul>li>ul>li{text-align: left; padding: 0.4rem 1.5rem; line-height: 1.3rem;}
+#nav .menu>ul>li>ul>li.dep2>a{background: url(../img/icon/icon_small_down.png) no-repeat right center;}
 #nav .menu>ul>li>ul>li>a{display: block; width: 100%; height: 100%; font-size: 1.1rem; text-align: left; line-height: 1.7rem; padding: .2rem 0; color: #5c5c5c;}
 #nav .menu>ul>li>ul>li:hover>a{color: #00244b;}
 
@@ -310,6 +311,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .kinfa_family_wrap ul li a{display: block; padding: 1rem 0; color: #333; height: 130px;}
 .kinfa_family_wrap ul li a .family_img img{width: 60px; height: 60px;}
 .kinfa_family_wrap ul li a .family_text{margin-top: 0.5rem; padding: 15px 0; font-size: 1rem;}
+.kinfa_family_wrap ul li a:hover .family_text{transform: scale(1.2); color: #19306e; font-weight: bold;}
 
 /* kinfa_decal_wrap */
 .kinfa_decal_wrap{position: relative;}
@@ -318,8 +320,11 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .kinfa_decal_rgb{float: left; width: 84%;}
 .kinfa_decal_rgb ul{width: 100%;}
 .kinfa_decal_rgb ul li{float: left; width: 33.3333%; padding: 15px; box-sizing: border-box;}
-.kinfa_decal_rgb ul li .kinfa_decal_box{background: #eaeaea; padding: 5px; box-sizing: border-box; border-radius: 10px;}
+.kinfa_decal_rgb ul li .kinfa_decal_box{background: #eaeaea; box-sizing: border-box; border-radius: 10px;}
 .kinfa_decal_rgb ul li a{display: block; text-align: center;}
+.kinfa_decal_box a{padding: 5px;  box-sizing: border-box; border-radius: 10px;}
+.kinfa_decal_box a:hover{background: #3351a7; transition: all 0.5s;}
+.kinfa_decal_box a:hover span{color: #fff; transition: all 0.5s;}
 .kinfa_decal_red
 .kinfa_decal_green
 .kinfa_decal_blue
@@ -344,6 +349,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .footer_left{width: 50%; float: left;}
 .footer_left p{margin-bottom: 1rem; font-size: 1rem; font-weight: 300;}
 .footer_left p a{padding: 0 10px 0 0;}
+.footer_left p a:hover{text-decoration: underline;}
 .a_blue{color: #3351A7; text-decoration: underline;display: inline-block;}
 .address{font-size: 1rem; font-weight: 300;}
 
