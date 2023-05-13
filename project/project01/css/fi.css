@@ -1,6 +1,6 @@
 /* 공통 설정 */
-.container{width: 1410px; height: inherit; margin: 0 auto; padding: 0 15px;}
-.sub_container{width: 1410px; height: inherit; margin: 0 auto; margin-top: 16px; min-height: 500px; margin-bottom: 5rem; padding: 1rem 0 5rem 0; position: relative; overflow: hidden;}
+.container{width: 1410px; height: inherit; margin: 0 auto; padding: 0 15px; box-sizing: border-box;}
+.sub_container{width: 1410px; height: inherit; margin: 0 auto; margin-top: 16px; min-height: 500px; margin-bottom: 5rem; padding: 1rem 0 5rem 0; position: relative; overflow: hidden; box-sizing: border-box;}
 li{list-style: none}
 a{text-decoration: none;}
 
@@ -102,8 +102,10 @@ section{width: 75%; float: left; padding-left: 2rem; box-sizing: border-box;}
 .section_top_right .icon_link>li>a>img{width: 20px; padding: 5px 0 0 6px;}
 .section_top_right .icon_link>li>a>img.share{padding: 5px 0 0 5px;}
 .section_top_right .path_link{clear: both;}
-.section_top_right .path_link>li{}
-.section_top_right .path_link>li>a{color: #898989;}
+.section_top_right .path_link>li{float: left; margin:0 10px;}
+.section_top_right .path_link>li:last-child{margin-right: 0;}
+.section_top_right .path_link>li a{color: #898989; position: relative;}
+.section_top_right .path_link>li:not(:last-child) a:after{content: ""; position: absolute; right: -1rem; top: 52%; transform: translateY(-50%); display: block; border-bottom: 0.3rem solid transparent; border-top: 0.3rem solid transparent; border-left: 0.3rem solid #ddd; border-right: 0.3rem solid transparent;}
 
 /* section_tab */
 .section_tab{width: 100%; height: 128px;}
