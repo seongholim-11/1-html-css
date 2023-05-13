@@ -87,6 +87,8 @@ aside.side_menu{width: 22%; float: left; padding-right: 2rem;}
 .side_menu nav ul>li>a .arrow_wrap span{position: absolute; content: ""; display: block; width: 8px; height: 2px; background: #333; border-radius: 2px;}
 .side_menu nav ul>li>a .arrow_wrap span:first-child{transform: rotate(45deg); top: 35%; left: 35%;}
 .side_menu nav ul>li>a .arrow_wrap span:last-child{transform: rotate(-45deg); top: 55%; left: 35%;}
+.side_menu nav ul>li.active>a>.arrow_wrap{width: 20px; height: 20px; border-radius: 20px; background: #3351A7; position: relative;}
+.side_menu nav ul>li.active>a>.arrow_wrap span{background: #fff;}
 .side_menu nav ul>li.active>a{color: #3351A7; font-weight: 500; border-bottom: 2px solid #3351A7;}
 
 /* section */

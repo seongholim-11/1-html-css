@@ -1039,24 +1039,13 @@
 			$(".dep1").on("mouseover focus", function () {
 				let a = 0;
 				a = $(".menu>ul>li>.dep_height").innerHeight();
-				console.log(a);
 				$('.bg').height(a);
 			});
-			$(".menu>ul>li").on("mouseout", function () {
+			$(".dep1").on("mouseout", function () {
 				$('.bg').height(0);
 			});
 		});
 		sw = 0;
-		$('.allmenu_icon').click(function () {
-			if (sw == 0) {
-				$('.plus_menu').addClass('plus_menu_active');
-				sw = 1;
-			} else {
-				$('.plus_menu').removeClass('plus_menu_active');
-				sw = 0;
-			}
-		});
-
 		$('.allmenu_icon').click(function () {
 			if (sw == 0) {
 				$('.plus_menu').addClass('plus_menu_active');
