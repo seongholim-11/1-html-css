@@ -129,7 +129,6 @@ section{width: 75%; float: left; padding-left: 2rem; box-sizing: border-box;}
 .wrap_210{height: 210px;}
 .product_info_content{height: calc( 100% - 30px - 1rem );}
 .product_info_content dt{font-size: 1.3rem; color: #3351a7; font-weight: 700; margin-bottom: 0.5rem;}
-.product_info_content dd{}
 .product_info_content dd span{font-size: 1.2rem; margin-bottom: 0.5rem; font-weight: 500; display: inline-block;}
 .product_info_content dd p{color: #333; font-weight: 300; font-size: 1rem; line-height: 1.5; letter-spacing: -0.5px;}
 .product_info_detail{margin-top: 1rem; height: 30px; line-height: 30px; display: block;}
