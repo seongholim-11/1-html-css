@@ -93,7 +93,7 @@ aside.side_menu{width: 306px; float: left; padding-right: 2rem;}
 
 /* section */
 section{width: 1033px; float: left; padding-left: 2rem; box-sizing: border-box;}
-.section_top{width: 100%; height: 62px; margin: 0 0 3rem 0; border-bottom: 1px solid #ccc; padding-bottom: 0.5rem;}
+.section_top{width: 100%; height: 62px; margin: 0 0 1.5rem 0; border-bottom: 1px solid #ccc; padding-bottom: 0.5rem;}
 .section_top_left{float: left;}
 .section_top_left h1{font-size: 1.8rem; font-weight: 700; margin-top: 0.5rem;}
 .section_top_right{float: right;}
@@ -109,6 +109,34 @@ section{width: 1033px; float: left; padding-left: 2rem; box-sizing: border-box;}
 .section_top_right .path_link>li a{color: #898989; position: relative;}
 .section_top_right .path_link>li:not(:last-child) a:after{content: ""; position: absolute; right: -1rem; top: 52%; transform: translateY(-50%); display: block; border-bottom: 0.3rem solid transparent; border-top: 0.3rem solid transparent; border-left: 0.3rem solid #ddd; border-right: 0.3rem solid transparent;}
 
+.section_bottom{width: 100%; max-width: 1200px; text-align: center; overflow: hidden; border-radius: 0.8rem;}
+.section_bottom_top{border-radius: 0.8rem;}
+.top_con{padding: 2rem 0 18rem; background: #cfffc5 url(../img/2.FL/edu-back.png) no-repeat center 2rem;}
+.top_con h2 img{vertical-align: top; width: 197px; height: 48px;}
+.bottom_con{padding: 2rem; background: #246735; color: #fff; border-radius: 0 0 0.8rem 0.8rem;}
+.bottom_con ul{overflow: hidden;}
+.bottom_con ul li{width: 50%; float: left; padding: 0 15px; box-sizing: border-box;}
+.bottom_con ul li:nth-child(3){margin-top: 3rem;}
+.bottom_con ul li:nth-child(4){margin-top: 3rem;}
+.bottom_con ul li dl dt{font-size: 1.1rem; border: 1px solid #fff; background: #fff; padding: 0.7rem 2.5rem; border-radius: 0.8rem; color: #3351a7; font-weight: 700; display: inline-block;}
+.bottom_con ul li dl dd{text-align: left; margin-top: 0.5rem; color: #fff; word-break: keep-all; font-weight: 300; line-height: 1.5; font-size: 1rem;}
+.bottom_con ul li dl dd span{display: block; margin-bottom: 0.5rem;}
+
+.section_bottom_bottom{width: 100%; margin-top: 5rem; }
+.section_bottom_bottom>h2{font-size: 1.8rem; line-height: 2.3rem; font-weight: 600; margin-bottom: 0.5rem; text-align: center; color: #4d4f5b;}
+.section_bottom_bottom h2>span{font-weight: 500; display: inline-block; font-style: 1.8rem; line-height: 2.3rem;}
+.section_bottom_bottom ul{margin-top: 1.5rem; overflow: hidden;}
+.section_bottom_bottom ul li{width: 33.3333%; float: left; padding: 0 15px; box-sizing: border-box;}
+.section_bottom_bottom ul li a{color: #333; background-color: transparent;}
+.border_gray_box{border: 1px solid #e5e5e8; border-radius: 0.8rem; padding: 1rem; height: 62px; overflow: hidden;}
+.text_left{text-align: left; float: left;}
+.text_left h3{font-size: 1rem; color: #3351A7; margin-bottom: 0.5rem; font-weight: 500; line-height: 1.2;}
+.text_left p{color: #545454;}
+.img_right{float: right;}
+.img_right img{vertical-align: top;}
+.icon_1{width: 70px; height: 47px;}
+.icon_2{width: 72px; height: 58px;}
+.icon_3{width: 53px; height: 62px;}
 
 
 /* footer */
