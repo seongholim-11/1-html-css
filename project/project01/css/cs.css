@@ -109,7 +109,6 @@ section{width: 1033px; float: left; padding-left: 2rem;}
 .section_top_right .path_link>li a{color: #898989; position: relative; font-size: 1rem;}
 .section_top_right .path_link>li:not(:last-child) a:after{content: ""; position: absolute; right: -1rem; top: 52%; transform: translateY(-50%); display: block; border-bottom: 0.3rem solid transparent; border-top: 0.3rem solid transparent; border-left: 0.3rem solid #ddd; border-right: 0.3rem solid transparent;}
 
-.section_content_box{}
 .section_content_box h2{font-size: 1.5rem; font-weight: 600; line-height: 2rem;}
 .section_content_box p{margin-top: 1rem; font-size: 1rem; font-weight: 300;}
 .section_content_box dl{width: 100%; font-size: 1rem;}
@@ -128,11 +127,7 @@ section{width: 1033px; float: left; padding-left: 2rem;}
 .content_information>dl dd:nth-child(2){margin-top: 0.5rem;}
 .section_content_box dl dd{}
 .min_blue_box{border: 1px solid #def6ff; background: #def6ff; padding: 1.5rem; border-radius: 0.8rem;}
-.min_blue_box dl{}
-.min_blue_box dl dt{}
-.min_blue_box dl dd{}
 .border_gray_box{text-align: center; border: 1px solid #e5e5e8; border-radius: 0.8rem; padding: 3rem; max-width: 50%; box-sizing: border-box;}
-.border_gray_box img{}
 
 /* footer */
 /* menus */
