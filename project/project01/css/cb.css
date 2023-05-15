@@ -81,7 +81,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 aside.side_menu{width: 306px; float: left; padding-right: 2rem;}
 .aside_tit{width: 100%; height: 140px; font-size: 1.6rem; font-weight: 500; text-align: center; color: #fff; background: #3351A7 url(../img/1.FI/leftmenu_back.png) no-repeat 0 -3rem; background-size: 200px; border-radius: 1.5rem; margin-bottom: 1rem; line-height: 110px;}
 .side_menu nav{padding: 1.5rem 1.2rem; border: 1px solid #d8d8d8; border-radius: 1.5rem; background: #fff; margin-top: -3rem;}
-.side_menu nav ul>li>a{display: block; font-size: 1rem; padding: 0.8rem 0; border-bottom: 1px solid #ebebeb; height: 24px;}
+.side_menu nav ul>li>a{display: block; font-size: 1.1rem; padding: 0.8rem 0; border-bottom: 1px solid #ebebeb; height: 24px;}
 .side_menu nav ul>li>a .text{float: left;}
 .side_menu nav ul>li>a .arrow_wrap{float: right; position: relative; width: 20px; height: 20px; border-radius: 20px; background: #fff; display: inline-block;}
 .side_menu nav ul>li>a .arrow_wrap span{position: absolute; content: ""; display: block; width: 8px; height: 2px; background: #333; border-radius: 2px;}
@@ -92,7 +92,7 @@ aside.side_menu{width: 306px; float: left; padding-right: 2rem;}
 .side_menu nav ul>li.active>a{color: #3351A7; font-weight: 500; border-bottom: 2px solid #3351A7;}
 
 /* section */
-section{width: 1033px; float: left; padding-left: 2rem; box-sizing: border-box;}
+section{width: 1033px; float: left; padding-left: 2rem;;}
 .section_top{width: 100%; height: 62px; margin: 0 0 3rem 0; border-bottom: 1px solid #ccc; padding-bottom: 0.5rem;}
 .section_top_left{float: left;}
 .section_top_left h1{font-size: 1.8rem; font-weight: 700; margin-top: 0.5rem;}
@@ -106,7 +106,7 @@ section{width: 1033px; float: left; padding-left: 2rem; box-sizing: border-box;}
 .section_top_right .path_link{clear: both;}
 .section_top_right .path_link>li{float: left; margin:0 10px;}
 .section_top_right .path_link>li:last-child{margin-right: 0;}
-.section_top_right .path_link>li a{color: #898989; position: relative;}
+.section_top_right .path_link>li a{color: #898989; position: relative; font-style: 1rem;}
 .section_top_right .path_link>li:not(:last-child) a:after{content: ""; position: absolute; right: -1rem; top: 52%; transform: translateY(-50%); display: block; border-bottom: 0.3rem solid transparent; border-top: 0.3rem solid transparent; border-left: 0.3rem solid #ddd; border-right: 0.3rem solid transparent;}
 
 
