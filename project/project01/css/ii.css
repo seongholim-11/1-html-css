@@ -99,7 +99,7 @@ aside.side_menu{width: 306px; float: left; padding-right: 2rem;}
 
 /* section */
 section{width: 1033px; float: left; padding-left: 2rem;}
-.section_top{width: 100%; height: 62px; margin: 0 0 3rem 0; border-bottom: 1px solid #ccc; padding-bottom: 0.5rem;}
+.section_top{width: 100%; height: 62px; margin: 0 0 1.5rem 0; border-bottom: 1px solid #ccc; padding-bottom: 0.5rem;}
 .section_top_left{float: left;}
 .section_top_left h1{font-size: 1.8rem; font-weight: 700; margin-top: 0.5rem;}
 .section_top_right{float: right;}
@@ -115,7 +115,42 @@ section{width: 1033px; float: left; padding-left: 2rem;}
 .section_top_right .path_link>li a{color: #898989; position: relative; font-size: 1rem;}
 .section_top_right .path_link>li:not(:last-child) a:after{content: ""; position: absolute; right: -1rem; top: 52%; transform: translateY(-50%); display: block; border-bottom: 0.3rem solid transparent; border-top: 0.3rem solid transparent; border-left: 0.3rem solid #ddd; border-right: 0.3rem solid transparent;}
 
+.section_bottom{}
+.gray_box{background: #f5f5f5; border-radius: 0.8rem;}
+.kinfa_object_top{position: relative; text-align: center;}
+.kinfa_object_top ul{position: absolute; width: 100%; height: 100%;}
+.img_back{position: absolute;}
+.img_back img{vertical-align: top;}
+.first>img, .second>img, .third>img, .fourth>img{width: 80px;}
+.five>img, .six>img{width: 100px;}
+.first{animation: cloud1 5s linear infinite; top: 1rem; left: 8rem;}
+.second{animation: cloud2 7s linear infinite; top: 4rem; left: 3rem;}
+.third{animation: cloud2 7s linear infinite; top: 1rem; right: 8rem;}
+.fourth{animation: cloud2 7s linear infinite; top: 4rem; right: 3rem;}
+.five{animation: fade-up-2 2s linear; bottom: -0.5rem; left: 3rem;}
+.six{animation: fade-up-2 2s linear; bottom: -0.5rem; right: 3rem;}
+.kinfa_object_top .title{position: relative; z-index: 0; padding: 3rem 0; color: #333; font-size: 2.4rem;}
+.text-ani{opacity: 0;}
+.text_first{animation: opacity-ani 1s forwards;}
+.text_first span{font-weight: 700;}
+.text_second{animation: opacity-ani 1s forwards; animation-delay: 0.5s;}
 
+@keyframes cloud1 {
+    0%{transform: rotate(0deg) translateX(-5px) rotate(0deg);}
+    100%{ transform: rotate(360deg) translateX(-5px) rotate(-360deg); }
+}
+@keyframes cloud2 {
+    0%{ transform: rotate(0deg) translateX(5px) rotate(0deg); }
+    100%{ transform: rotate(360deg) translateX(5px) rotate(-360deg); }
+}
+@keyframes fade-up-2 {
+    0%{bottom: -30rem;}
+    100%{bottom: -0.5rem;}
+}
+@keyframes opacity-ani {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
 
 /* footer */
 /* menus */
