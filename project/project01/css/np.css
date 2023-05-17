@@ -146,6 +146,7 @@ thead th{height: 44px; font-size: 15px; color: #333; background: #f8f8f8; border
 thead th ~ th{border-left: 1px solid #d5d5d5;}
 tbody td{padding: 10px 3px; font-size: 14px; font-weight: 400; color: #323232; border-bottom: 1px solid #d5d5d5; text-align: center;}
 tbody td ~ td{border-left: 1px solid #d5d5d5;}
+tbody td a img{width: 14px; height: 16px;}
 tbody td:nth-child(2){text-align: left; padding: 1rem;}
 
 .pagination{text-align: center;}
