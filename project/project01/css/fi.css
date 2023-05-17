@@ -1,5 +1,5 @@
 /* 공통 설정 */
-.container{width: 1410px; height: inherit; margin: 0 auto; padding: 0 15px; box-sizing: border-box;}
+.container{width: 1410px; height: inherit; margin: 0 auto;}
 .sub_container{width: 1410px; height: inherit; margin: 0 auto; margin-top: 16px; min-height: 500px; margin-bottom: 5rem; padding: 1rem 0 5rem 0; position: relative; overflow: hidden; box-sizing: border-box;}
 li{list-style: none}
 a{text-decoration: none;}
@@ -27,16 +27,18 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .header_top_right>li>.btn_yellow{display: block; width: 59px; height: 28px; font-size: 1.2em; background: #fee000 url(../img/icon/icon-key.png) no-repeat 0.5rem center; padding: 6px 12px 6px 40px; border-radius: 10px;}
 
 /* all_menu */
-.all_menu{width: 90px; height: 78px; margin-left: 1em; border-right: 1px solid #d9d9d9; border-left: 1px solid #d9d9d9; justify-content: center;}
-.all_menu>.allmenu_btn{display: block; padding-left: 3px;}
+.all_menu{width: 76px; height: 78px; margin-left: 1em; border-right: 1px solid #d9d9d9; border-left: 1px solid #d9d9d9; justify-content: center;}
+.all_menu>.allmenu_btn{display: block;}
 .all_menu>.allmenu_btn>#allMenuCheck{opacity: 0;}
-.all_menu>.allmenu_btn>.allmenu_icon{padding: 0px 30px; cursor: pointer;}
-.all_menu>.allmenu_btn>.allmenu_icon>span{display: block; width: 25px; height: 1px; margin: 5px 0; background: #333; border-radius: 5px; text-align: center;}
+.all_menu>.allmenu_btn>.allmenu_icon{padding: 0px 25px; cursor: pointer; text-align: center;}
+.all_menu>.allmenu_btn>.allmenu_icon>span{display: block; width: 25px; height: 1px; margin-bottom: 7px; background: #333; border-radius: 5px; text-align: center;}
+.all_menu>.allmenu_btn>.allmenu_icon>span:last-child{ margin-bottom: 3px;}
 .all_menu>.allmenu_btn>p{text-align: center;}
 
 /* plus_menu */
 .plus_menu{width: 100%; position: absolute; top: 78px; left: 0; background: rgb(255, 255, 255); z-index: 99; border-top: 1px solid #ddd; display: none;}
 .plus_menu_active{display: block;}
+.plus_menu_ul{padding-left: 18px;}
 .plus_menu ul>li.dep1{display: block; float: left; width: 14.2%; text-align: center; padding: 1rem; box-sizing: border-box; min-height: 840px;}
 .plus_menu ul>li.dep1:not(:last-child){border-right: 1px solid #ddd;}
 .plus_menu ul>li.dep1>a{display: block; font-size: 1.2rem; font-weight: 700; text-align: center; margin-bottom: 1rem;}
@@ -44,7 +46,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .plus_menu ul>li.dep1>ul{width: 100%; text-align: left;}
 .plus_menu ul>li.dep1>ul>li.dep2{width: 100%; font-style: 1rem; line-height: 1.3rem; padding: 0.2rem 0;}
 .plus_menu ul>li.dep1>ul>li>a{font-size: 1rem; padding: 0.2rem 0; display: inline-block;}
-.plus_menu ul>li.dep1>ul>li.dep2>ul{background: #f3f3f3;}
+.plus_menu ul>li.dep1>ul>li.dep2>ul{background: #f3f3f3; margin: 0 -1rem; padding: 0 1rem;}
 .plus_menu ul>li.dep1>ul>li.dep2>ul>li:first-child{padding-top: 0.7rem;}
 .plus_menu ul>li.dep1>ul>li.dep2>ul>li:last-child{padding-bottom: 0.7rem;}
 .plus_menu ul>li.dep1>ul>li.dep2>ul>li>a{font-size: 1rem; padding: 0.3rem 0.5rem 0.3rem 0.7rem; text-indent: -0.5rem; display: block;}
@@ -58,7 +60,8 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 /* header-bottom */
 #gnb{width: 100%; height: 60px; border-bottom: 1px solid #d9d9d9; position: relative; top: 0px; left: 0;}
 #nav>.bg{width: 100%; height: 0px; background: rgb(255, 255, 255); position: absolute; top: 60px; left: 0; float: left; z-index: 9;}
-#nav .menu>ul>li{display: block; float: left; width: 14.2%; height: 60px; line-height: 60px; text-align: center; position: relative;}
+#nav .menu>ul{}
+#nav .menu>ul>li{display: block; float: left; width: 14.2%; height: 60px; line-height: 60px; text-align: center; position: relative; padding-left: 18px; box-sizing: border-box;}
 #nav .menu>ul>li:hover>a{color: #00244b;}
 #nav .menu>ul>li>a{display: block; width: 100%; height: 100%; font-size: 1.2rem; font-weight: 500;}
 #nav .menu>ul>li>ul{width: 100%; display: none; border-right: 1px solid #d9d9d9; padding-top: 30px; z-index: 999; position: absolute;}
