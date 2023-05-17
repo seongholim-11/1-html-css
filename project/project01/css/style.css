@@ -171,7 +171,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .kinfa_contents_left .new_wrap ul>li>div>a .new_text .new_date{font-size: 1.2rem; color: #999;}
 
 /* notice */
-.notice_wrap{margin-top: 5rem;}
+.notice_wrap{margin-top: 3rem;}
 .first_list{position: relative; padding: 1rem 0; border-bottom: 1px dashed #939393; }
 .first_list_flex{display: flex;}
 .first_list_date{margin-right: 0.5rem; width: 70px; height: 70px; text-align: center; background: #eaeaea; align-items: center; justify-content: center; display: flex;}
