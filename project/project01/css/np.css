@@ -135,7 +135,6 @@ section{width: 1033px; float: left; padding-left: 2rem;}
 .search_btn{float: left; padding: 0 5px;}
 .search_btn button{cursor: pointer; border: 1px solid #333; background: #333; color: #fff; border-radius: 0.8rem; width: 126px; height: 40px; padding: 6px 12px;}
 
-.table{}
 .board_head{font-size: 1rem; font-weight: 400; line-height: 1.5; color: #4d4f5b;}
 .board_table{border-top: 2px solid #3351a0;}
 table{width: 100%; border-collapse: collapse;}
