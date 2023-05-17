@@ -117,8 +117,6 @@ section{width: 1033px; float: left; padding-left: 2rem;}
 .tab li.active a{display: block; background: #3351A7; color: #fff; }
 .tab li a{height: 100%; line-height: 61px; font-size: 1rem;}
 
-#listForm{}
-.content_box{}
 .gray_box{padding: 2rem; background: #f5f5f5; border-radius: 0.8rem; overflow: hidden;}
 .register{overflow: hidden;}
 .register_tit{float: left;}
@@ -142,18 +140,15 @@ section{width: 1033px; float: left; padding-left: 2rem;}
 .board_table{border-top: 2px solid #3351a0;}
 table{width: 100%; border-collapse: collapse;}
 table colgroup col:nth-child(1){width: 50px;}
-table colgroup col:nth-child(2){}
 table colgroup col:nth-child(3){width: 90px;}
 table colgroup col:nth-child(4){width: 100px;}
 table colgroup col:nth-child(5){width: 100px;}
-thead{}
 thead th{height: 44px; font-size: 15px; color: #333; background: #f8f8f8; border-bottom: 1px solid #d5d5d5; font-weight: 400;}
 thead th ~ th{border-left: 1px solid #d5d5d5;}
 tbody td{padding: 10px 3px; font-size: 14px; font-weight: 400; color: #323232; border-bottom: 1px solid #d5d5d5; text-align: center;}
 tbody td ~ td{border-left: 1px solid #d5d5d5;}
 tbody td:nth-child(2){text-align: left; padding: 1rem;}
 
-.num{}
 .pagination{text-align: center;}
 .pagination a{color: #656565; border-radius: 3px; font-size: 13px; line-height: 1.5;}
 .pagination a{display: inline-block; padding: 6px 11px 5px 11px; vertical-align: middle;}
