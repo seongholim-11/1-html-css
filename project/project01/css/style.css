@@ -44,7 +44,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 /* plus_menu */
 .plus_menu{width: 100%; position: absolute; top: 78px; left: 0; background: rgb(255, 255, 255); z-index: 99; border-top: 1px solid #ddd; display: none;}
 .plus_menu_active{display: block;}
-.plus_menu ul>li.dep1{display: block; float: left; width: 14.2%; text-align: center; padding: 1rem; box-sizing: border-box; min-height: 840px;}
+.plus_menu ul>li.dep1{display: block; float: left; width: 14.2%; text-align: center; padding-left: 18px; padding-top: 1rem; box-sizing: border-box; min-height: 840px;}
 .plus_menu ul>li.dep1:not(:last-child){border-right: 1px solid #ddd;}
 .plus_menu ul>li.dep1>a{display: block; font-size: 1.2rem; font-weight: 700; text-align: center; margin-bottom: 1rem;}
 .plus_menu ul>li.dep1:hover>a{color: #3351a7;}
