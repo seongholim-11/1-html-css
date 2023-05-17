@@ -44,14 +44,15 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 /* plus_menu */
 .plus_menu{width: 100%; position: absolute; top: 78px; left: 0; background: rgb(255, 255, 255); z-index: 99; border-top: 1px solid #ddd; display: none;}
 .plus_menu_active{display: block;}
-.plus_menu ul>li.dep1{display: block; float: left; width: 14.2%; text-align: center; padding-left: 18px; padding-top: 1rem; box-sizing: border-box; min-height: 840px;}
+.plus_menu_ul{padding-left: 18px;}
+.plus_menu ul>li.dep1{display: block; float: left; width: 14.2%; text-align: center; padding: 1rem; box-sizing: border-box; min-height: 840px;}
 .plus_menu ul>li.dep1:not(:last-child){border-right: 1px solid #ddd;}
 .plus_menu ul>li.dep1>a{display: block; font-size: 1.2rem; font-weight: 700; text-align: center; margin-bottom: 1rem;}
 .plus_menu ul>li.dep1:hover>a{color: #3351a7;}
 .plus_menu ul>li.dep1>ul{width: 100%; text-align: left;}
 .plus_menu ul>li.dep1>ul>li.dep2{width: 100%; font-style: 1rem; line-height: 1.3rem; padding: 0.2rem 0;}
 .plus_menu ul>li.dep1>ul>li>a{font-size: 1rem; padding: 0.2rem 0; display: inline-block;}
-.plus_menu ul>li.dep1>ul>li.dep2>ul{background: #f3f3f3;}
+.plus_menu ul>li.dep1>ul>li.dep2>ul{background: #f3f3f3; margin: 0 -1rem; padding: 0 1rem;}
 .plus_menu ul>li.dep1>ul>li.dep2>ul>li:first-child{padding-top: 0.7rem;}
 .plus_menu ul>li.dep1>ul>li.dep2>ul>li:last-child{padding-bottom: 0.7rem;}
 .plus_menu ul>li.dep1>ul>li.dep2>ul>li>a{font-size: 1rem; padding: 0.3rem 0.5rem 0.3rem 0.7rem; text-indent: -0.5rem; display: block;}
@@ -77,10 +78,10 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 #nav .menu>ul>li>ul>li>a{display: block; width: 100%; height: 100%; font-size: 1.1rem; text-align: left; line-height: 1.7rem; padding: .2rem 0; color: #5c5c5c;}
 #nav .menu>ul>li>ul>li:hover>a{color: #00244b;}
 
-#nav .menu>ul>li>ul>li>ul{display: none; position:relative; background: #f3f3f3;}
+#nav .menu>ul>li>ul>li>ul{display: none; position:relative; background: #f3f3f3; margin: 0 -22px; padding: 0 22px;}
 #nav .menu>ul>li>ul>li.active>ul{display: block;}
 #nav .menu>ul>li>ul>li.dep2{position: relative;}
-#nav .menu>ul>li>ul>li.dep2:hover>ul::before{content: ""; width: 200px; height: 1px; background: #000; top: 0; left: -23px; position: absolute;}
+#nav .menu>ul>li>ul>li.dep2:hover>ul::before{content: ""; width: 200px; height: 1px; background: #000; top: 0; left: -1px; position: absolute;}
 #nav .menu>ul>li>ul>li>ul>li>a{display: block; width: 100%; height: 100%; font-size: 1rem; text-align: left; line-height: 1.6rem; padding: .2rem 0; color: #5c5c5c;}
 
 /* 메인 배너 */
