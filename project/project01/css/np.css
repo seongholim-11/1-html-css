@@ -110,10 +110,59 @@ section{width: 1033px; float: left; padding-left: 2rem;}
 .section_top_right .path_link>li:not(:last-child) a:after{content: ""; position: absolute; right: -1rem; top: 52%; transform: translateY(-50%); display: block; border-bottom: 0.3rem solid transparent; border-top: 0.3rem solid transparent; border-left: 0.3rem solid #ddd; border-right: 0.3rem solid transparent;}
 
 .mt_1{margin-top: 1rem;}
+.mt_3{margin-top: 3rem;}
+.mt_h{margin-top: 0.5rem;}
 .tab{width: 100%;}
-.tab li{width: 33%; margin-left: -1px; border: 1px solid #e5e5e8; text-align: center; height: 61px; float: left;}
+.tab li{width: 33%; margin-left: -1px; border: 1px solid #e5e5e8; text-align: center; height: 61px; float: left; box-sizing: border-box;}
 .tab li.active a{display: block; background: #3351A7; color: #fff; }
 .tab li a{height: 100%; line-height: 61px; font-size: 1rem;}
+
+#listForm{}
+.content_box{}
+.gray_box{padding: 2rem; background: #f5f5f5; border-radius: 0.8rem; overflow: hidden;}
+.register{overflow: hidden;}
+.register_tit{float: left;}
+.register_tit span{font-size: 1rem; line-height: 37px; color: #4d4f5b; font-weight: 500;}
+.register_cal{float: right;}
+.cal{float: left; padding: 0 5px;}
+.cal input{width: 370px; height: 22px; padding: 6px 12px; border: 1px solid #ced4da; font-size: 1rem; font-weight: 400; color: #495057;}
+.search{overflow: hidden;}
+.search_tit{float: left; padding: 0 5px 0 0;}
+.search_tit span{font-size: 1rem; line-height: 37px; color: #4d4f5b; font-weight: 500;}
+.search_box_btn{float: right; overflow: hidden;}
+.select_box{float: left; padding: 0 5px;}
+.select{width: 130px; height: 38px; padding: 6px 12px; border: 1px solid #ced4da; font-size: 1rem; font-weight: 400; color: #495057;}
+.search_box{float: left; padding: 0 5px;}
+.search_box input{width: 503px; height: 22px; padding: 6px 12px; border: 1px solid #ced4da;}
+.search_btn{float: left; padding: 0 5px;}
+.search_btn button{cursor: pointer; border: 1px solid #333; background: #333; color: #fff; border-radius: 0.8rem; width: 126px; height: 40px; padding: 6px 12px;}
+
+.table{}
+.board_head{font-size: 1rem; font-weight: 400; line-height: 1.5; color: #4d4f5b;}
+.board_table{border-top: 2px solid #3351a0;}
+table{width: 100%; border-collapse: collapse;}
+table colgroup col:nth-child(1){width: 50px;}
+table colgroup col:nth-child(2){}
+table colgroup col:nth-child(3){width: 90px;}
+table colgroup col:nth-child(4){width: 100px;}
+table colgroup col:nth-child(5){width: 100px;}
+thead{}
+thead th{height: 44px; font-size: 15px; color: #333; background: #f8f8f8; border-bottom: 1px solid #d5d5d5; font-weight: 400;}
+thead th ~ th{border-left: 1px solid #d5d5d5;}
+tbody td{padding: 10px 3px; font-size: 14px; font-weight: 400; color: #323232; border-bottom: 1px solid #d5d5d5; text-align: center;}
+tbody td ~ td{border-left: 1px solid #d5d5d5;}
+tbody td:nth-child(2){text-align: left; padding: 1rem;}
+
+.num{}
+.pagination{text-align: center;}
+.pagination a{color: #656565; border-radius: 3px; font-size: 13px; line-height: 1.5;}
+.pagination a{display: inline-block; padding: 6px 11px 5px 11px; vertical-align: middle;}
+.pagination strong{color: #fff; border: 1px solid #5590d9; background: #5590d9; border-radius: 3px; display: inline-block; padding: 3px 11px 5px 11px; vertical-align: middle;}
+.pagination a.btn{width: 31px; height: 32px; border: 1px solid #d3d3d3; overflow: hidden; text-indent: -9999em; box-sizing: border-box;}
+.prev2{background: url(../img/5.np/icon_pg-prev2.png) no-repeat center center;}
+.prev{background: url(../img/5.np/icon_pg-prev.png) no-repeat center center;}
+.next{background: url(../img/5.np/icon_pg-next.png) no-repeat center center;}
+.next2{background: url(../img/5.np/icon_pg-next2.png) no-repeat center center;}
 
 /* footer */
 /* menus */
