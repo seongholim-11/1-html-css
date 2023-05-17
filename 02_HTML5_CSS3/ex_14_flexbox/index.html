@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-box</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="box">
+            <h2>1. flex-box</h2>
+            <div class="flexbox">
+                <div>flex-item</div>
+                <div>flex-item</div>
+                <div>flex-item</div>
+            </div>
+        </div>
+        <div class="box">
+            <h2>2. flex-box 배치 방향</h2>
+            <table>
+                <tr>
+                    <th>속성명</th>
+                    <th>속성값</th>
+                </tr>
+                <tr>
+                    <td>flex-direction: row(기본값)</td>
+                    <td>기본값, 박스를 왼쪽에서 오른쪽으로 배치, 주축은 가로, 교차축은 세로가 된다.</td>
+                </tr>
+                <tr>
+                    <td>flex-direction: row-reverse</td>
+                    <td>가로로 배치하되 역방향으로 배치</td>
+                </tr>
+                <tr>
+                    <td>flex-direction: column</td>
+                    <td>박스를 위에서 아래로 배치, 주축은 세로 교차축은 가로</td>
+                </tr>
+                <tr>
+                    <td>flex-direction: column-reverse</td>
+                    <td>세로로 배치하되 역방향으로 배치, 아래에서 위로 배치, 주축 세로 교차축 가로</td>
+                </tr>
+            </table>
+            <h3>flex-direction: row(기본값)</h3>
+            <div class="flexbox1">
+                <div>flex-item1</div>
+                <div>flex-item2</div>
+                <div>flex-item3</div>
+            </div>
+            <h3>flex-direction: row-reverse</h3>
+            <div class="flexbox2">
+                <div>flex-item1</div>
+                <div>flex-item2</div>
+                <div>flex-item3</div>
+            </div>
+            <h3>flex-direction: column</h3>
+            <div class="flexbox3">
+                <div>flex-item1</div>
+                <div>flex-item2</div>
+                <div>flex-item3</div>
+            </div>
+            <h3>flex-direction: column-reverse</h3>
+            <div class="flexbox4">
+                <div>flex-item1</div>
+                <div>flex-item2</div>
+                <div>flex-item3</div>
+            </div>
+            <h3>반응형예시</h3>
+            <div class="flexbox5">
+                <div>flex-item1</div>
+                <div>flex-item2</div>
+                <div>flex-item3</div>
+            </div>
+            <h3>아이템의 방향과 배치를 한 번에 설정</h3>
+            <div class="flexbox6">
+                <div>flex-item1</div>
+                <div>flex-item2</div>
+                <div>flex-item3</div>
+            </div>
+        </div>
+        <div class="box">
+            <h2>주축 방향으로 배치하기</h2>
+            <h3>justify-content: flex-start</h3>
+            <div class="container container1">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+            <h3>justify-content: flex-end</h3>
+            <div class="container container2">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+            <h3>justify-content: center</h3>
+            <div class="container container3">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+            <h3>justify-content: space-between</h3>
+            <div class="container container4">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+            <h3>justify-content: space-around</h3>
+            <div class="container container5">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+            <h3>justify-content: space-evenly</h3>
+            <div class="container container6">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+        </div>
+        <div class="box">
+            <h2>교차축방향으로 아이템 배치</h2>
+            <h3>align-item: stretch(기본값)</h3>
+            <div class="display display1">
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+                <div>D</div>
+            </div>
+            <h3>align-item: flex-start</h3>
+            <div class="display display2">
+                <div>A</div>
+                <div>B Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum hic nam earum cupiditate minus
+                    provident expedita quisquam modi illo at. Itaque, nesciunt eos consequuntur quia amet beatae
+                    exercitationem vitae! Aperiam.</div>
+                <div>C Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos doloremque veritatis
+                    minus eos ratione reiciendis sint aspernatur, architecto asperiores incidunt dolores debitis,
+                    deserunt quo? Sequi odio ducimus reprehenderit nulla.</div>
+                <div>D Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos doloremque veritatis
+                    minus eos ratione </div>
+            </div>
+            <h3>align-item: flex-end</h3>
+            <div class="display display3">
+                <div>A</div>
+                <div>B Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum hic nam earum cupiditate minus
+                    provident expedita quisquam modi illo at. Itaque, nesciunt eos consequuntur quia amet beatae
+                    exercitationem vitae! Aperiam.</div>
+                <div>C Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos doloremque veritatis
+                    minus eos ratione reiciendis sint aspernatur, architecto asperiores incidunt dolores debitis,
+                    deserunt quo? Sequi odio ducimus reprehenderit nulla.</div>
+                <div>D Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos doloremque veritatis
+                    minus eos ratione </div>
+            </div>
+            <h3>align-item: center</h3>
+            <div class="display display4">
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+                <div>D</div>
+            </div>
+            <h3>align-item: baseline</h3>
+            <div class="display display5">
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+                <div>D</div>
+            </div>
+        </div>
+        <div class="box">
+            <h2>교차축 방향으로 개별 배치</h2>
+            <h3></h3>
+            <div class="align">
+                <div>가</div>
+                <div>나</div>
+                <div>다</div>
+            </div>
+        </div>
+        <div class="box">
+            <h2>아이템의 배치 순서 바꾸기</h2>
+            <p>
+                정수값: 입력한 정수값에 따라 박스가 배치된다 <br>
+                정수값으로 양수값, 음수값을 사용할 수 있다. <br>
+                입력된 값에 따라 배치가 되는데, 동일한 양수값일 때는 HTML 태그 순서 뒤에 작성된 태그가 적용,<br>
+                음수 값을 입력하면 기본값이 0이 된다.
+            </p>
+            <div class="order">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+        </div>
+        <div class="box">
+            <h2>아이템의 크기 변경</h2>
+            <h3>flex-grow, flex-shrink, flex-basis</h3>
+            <h3>0 1 auto(0 1 auto 기본값)</h3>
+            <h3>0 auto(0 1 auto 와 같음)</h3>
+            <h3>initial(0 1 auto 와 같음)</h3>
+            <h3>auto(1 1 auto 와 같음)</h3>
+            <h3>none(0 0 auto 와 같음)</h3>
+            <p>flex-grow: 플렉스박스에 여백이 있을 때 플렉스 아이템의 크기를 늘릴 수 있는 속성 <br>
+                속성값을 비율로 설정, width, flex-basis 속성값에 따라 늘어나는 크기가 변할 수 있다. <br>
+                ex) 플렉스박스에 자식이 3개 있는 상황일 때 각각 flex-grow 속성값을 1,1,2로 설정하게 되면 남은 공간을 4등분하여 각각 1/4, 1/4, 2/4 크기만큼을 기본 크기에
+                더한다.</p>
+            <p>
+                flex-shrink: 플렉스박스 안의 아이템의 크기가 넘칠 때 크기를 줄일 수 있는 속성 <br>
+                ex) 플렉스박스에 자식이 3개 있는 상황일 때 각각 flex-shrink 속성값을 1,1,2로 설정하게 되면 넘치는 공간을 4등분하여 각각 1/4, 1/4, 2/4 크기만큼을 기본 크기에
+                뺀다.
+            </p>
+            <p>
+                flex-basis: 플렉스박스의 기본 크기를 설정하는 속성
+            </p>
+            <div class="flex">
+                <div>box1</div>
+                <div>box2</div>
+                <div>box3</div>
+            </div>
+        </div>
+    </div>
+</body>
+1395
+465
+93
+</html>
