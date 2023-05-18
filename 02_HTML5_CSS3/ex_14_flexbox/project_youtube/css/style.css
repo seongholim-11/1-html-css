@@ -9,6 +9,8 @@
 }
 
 *{margin: 0; padding: 0;}
+ul{list-style: none;}
+button, button:focus{background: none; cursor: pointer; outline: none; border: none;}
 
 .header{width: 100%; display: flex; justify-content: space-between; background: var(--black-color); color: var(--white-color); padding: var(--padding16); box-sizing: border-box;}
 .logo{font-size: 18px;}
@@ -19,7 +21,29 @@
 .player video{width: 100%; height: 100%; max-width: 1000px;}
 
 .info-upnext-wrap{display: flex;}
-.info{width: 60%; height: 500px; background: rebeccapurple;}
+.info{width: 60%; height: 500px; padding: var(--padding16);}
+.hashtags{display: flex; color: var(--blue-color); font-size: 12px;}
+.hashtags li{margin-right: var(--padding12);}
+.title-and-button{display: flex; justify-content: space-between;}
+.title{font-size: 14px; text-overflow: ellipsis; overflow: hidden; margin-right: var(--padding12); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
+.title.add{font-size: 14px; text-overflow: ellipsis; overflow: hidden; margin-right: var(--padding12); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;}
+.more-btn{height: 100%; transition: transform .3s ease-in-out;}
+.more-btn.clicked{transform: rotate(180deg);}
+.views .view{color: var(--black50-color); font-size: 12px;}
+
+.action{display: flex; justify-content: space-around; margin-top: var(--padding16);}
+.action li{}
+.action li button{display: flex; flex-direction: column; font-size: 12px; color: var(--black50-color);}
+.action li button>.fa-thumbs-up,
+.action li button>.fa-thumbs-down,
+.action li button>.fa-share-alt,
+.action li button>.fa-save,
+.action li button>.fa-flag{font-size: 16px; margin: 0 auto; margin-bottom: calc(var(--padding12)/2);}
+.action li button>.fa-thumbs-up{color: var(--blue-color);}
+.action li button>span{color: #4d4d4d; align-self: center;}
+
+
+
 .upnext{width: 40%; height: 500px; background: rgb(51, 153, 127)}
 
 
