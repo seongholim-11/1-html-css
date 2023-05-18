@@ -96,7 +96,6 @@ aside.side_menu{width: 306px; float: left; padding-right: 2rem;}
 .aside_dep2>li{position: relative; padding: 0.3rem 0.3rem 0.3rem 2rem;}
 .aside_dep2>li::before{content: ""; width: 0.5rem; height: 2px; display: block; top: 1rem; left: 1rem; position: absolute; background: #777;}
 .dep2 li a{font-size: 1rem;}
-.dep2 li a span{}
 .kinfa_blue{color: #3351A7;}
 
 /* section */
