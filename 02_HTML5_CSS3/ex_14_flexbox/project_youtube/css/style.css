@@ -8,7 +8,7 @@
     --padding12: 12px;
 }
 
-*{margin: 0; padding: 0;}
+*{margin: 0; padding: 0; box-sizing: border-box;}
 ul{list-style: none;}
 button, button:focus{background: none; cursor: pointer; outline: none; border: none;}
 
@@ -21,7 +21,7 @@ button, button:focus{background: none; cursor: pointer; outline: none; border: n
 .player video{width: 100%; height: 100%; max-width: 1000px;}
 
 .info-upnext-wrap{display: flex;}
-.info{width: 60%; height: 500px; padding: var(--padding16);}
+.info{width: 60%; padding: var(--padding16);}
 .hashtags{display: flex; color: var(--blue-color); font-size: 12px;}
 .hashtags li{margin-right: var(--padding12);}
 .title-and-button{display: flex; justify-content: space-between;}
@@ -42,11 +42,31 @@ button, button:focus{background: none; cursor: pointer; outline: none; border: n
 .action li button>.fa-thumbs-up{color: var(--blue-color);}
 .action li button>span{color: #4d4d4d; align-self: center;}
 
+.channel{display: flex; justify-content: space-between; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; padding: var(--padding12) 0; margin-top: 10px;}
+.metadata-avata{display: flex; align-items: center;}
+.metadata-avata img{border-radius: 50%; margin-right: var(--padding12);}
+.metadata-avata .info1{display: flex; flex-direction: column; font-size: 14px;}
+.metadata-avata .info1 .name{color: var(--black-color);}
+.metadata-avata .info1 .subs{color: var(--black50-color)}
+.subscribe{background: var(--red-color); padding: 0 20px; border-radius: 5px; color: var(--white-color);}
 
+.upnext{width: 40%; padding: var(--padding16);}
+.upnext h2{font-size: 14px; color: var(--black50-color); margin-bottom: var(--padding12);}
+.upnext ul{color: #4d4d4d;}
+.upnext ul>li.item{display: flex;}
+.img-wrap{flex-basis: 35%;}
+.img-wrap img{width: 95%;}
+.infos{display: flex; flex-direction: column; flex-basis: 60%;}
+.info-title{font-size: 12px;  margin-bottom: 5px;}
+.info-name{font-size: 10px; margin-bottom: 5px;}
+.info-views{font-size: 10px;}
+.item>.more-btn{flex-basis: 5%; height: 100%;}
 
-.upnext{width: 40%; height: 500px; background: rgb(51, 153, 127)}
+footer{border-top: 1px solid #ddd; position: fixed; bottom: 0; width: 100%; background: var(--white-color);}
+.footer-wrap{display: flex; justify-content: space-between; padding: var(--padding16);}
 
-
-@media screen and (max-width: 780px) {
-    
+@media screen and (max-width: 1000px) {
+    .info-upnext-wrap{flex-direction: column;}
+    .info{width: 100%;}
+    .upnext{width: 100%;}
 }
