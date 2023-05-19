@@ -83,6 +83,37 @@ add(1,2);
 
 //number(숫자 타입)
 const count = 17;
-const size = 17.7;
-console.log(`value: ${count}, type: ${typeof size}`);
-console.log("value: " + count + ", type: " + typeof size);
+const size = true;
+console.log(`value: ${count}, type: ${typeof count}`);
+console.log("value: " + size + ", type: " + typeof size);
+console.log("value: " + size + ", type: " + typeof size);
+
+//string(문자타입) 문자열 + 숫자가 합쳐지면 문자열이다.
+const char = 'c';
+const ho = 1 + 'seongho';
+const seong = 'hello '+ ho;
+console.log(`value: ${seong} type: ${typeof seong}`)
+console.log(`value: ${ho} type: ${typeof ho}`)
+
+//boolean(참, 거짓)
+// 참: true(1 false 값 이외의 것들)
+// 거짓: false(0, null, undifined, Nan, ' ')
+
+const home = Boolean();
+const test = (3 < 1) || (5 > 4);
+console.log("value: " + home + ", type: " + typeof home);
+console.log("value: " + test + ", type: " + typeof test);
+
+//null(빈값)
+let nothing = null;
+console.log("value: " + nothing + ", type: " + typeof nothing);
+
+//undefined(정의되지 않은 값)
+let x;
+console.log("value: " + x + ", type: " + typeof x);
+
+//symbol(고유한 값)
+const symbol1 = Symbol('id');
+const symbol2 = Symbol('id');
+console.log(symbol1===symbol2);
+console.log(`value: ${symbol1.description}, type: ${typeof symbol1}`);
