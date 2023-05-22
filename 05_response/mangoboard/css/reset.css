@@ -9,7 +9,7 @@ body,div,ul,li,dl,dd,dt,ol,h1,h2,h3,h4,h5,h6,input,fieldset,legend,p,select,tabl
 a {color: #222; text-decoration: none;}
 
 /* 폰트 초기화 */
-body, input, textarea, select, button, table {font-family:'Noto Sans KR', 'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; color: #222; font-size: 13px; line-height: 1.5;}
+/* body, input, textarea, select, button, table {font-family:'Noto Sans KR', 'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; color: #222; font-size: 13px; line-height: 1.5;} */
 
 /* 폰트 스타일 초기화 */
 em,address {font-style: normal;}
@@ -27,7 +27,7 @@ img,fieldset {border:0 none;}
 button {border: 0;}
 
 /* 반응형 */
-/* video,img {width: 100%;} */
+/* video,img {width: 100%;}  */
 
 /* clearfix */
 .cf{*zoom:1;}

@@ -1,11 +1,43 @@
 html{font-size: 10px;}
 body{font-family: Arial, Helvetica, sans-serif;}
-.container{width: 116rem; height: inherit; margin: 0 auto; background: rgba(0, 0, 0, 0.3);}
+.container{width: 116rem; height: inherit; margin: 0 auto; background: rgba(255, 255, 255, 0.3);}
 
-#header{width: 100%; height: 8rem; background: rebeccapurple;}
-.desktop{display: block;}
+#header{width: 100%; height: 8rem; background: rgb(255, 255, 255, 0.3);}
+/* desktop */
+.desktop{display: flex; justify-content: space-between; align-items: center; height: 8rem;}
+.desktop h1{}
+.nav{}
+.nav ul{display: flex;}
+.nav ul li{}
+.nav ul li a{display: block; color: #333; font-size: 1.8rem; font-weight: bold; padding: 1rem 1.2rem;}
+.gnb{display: flex;}
+.gnb ul{display: flex; align-items: center;}
+.gnb>ul>li{margin-left: 1rem;}
+.gnb>ul>li>a{}
+.gnb>.sns{}
+.gnb>.sns li{margin-left: 1rem;}
+.gnb>.sns li a{display: block; padding: 1rem 0;}
 
+
+
+/* mobile */
 .mobile{display: none;}
+.mobile>ul{display: flex; justify-content: space-between; align-items: center; height: 6rem;}
+.mobile>ul>li{}
+
+.mobile>ul>li:first-child{width: 2.6rem; height: 1.6rem;}
+.mobile>ul>li:first-child .mobile-nav{position: absolute; top: 60px; left: 0; width: 100%; background: rgba(0, 0, 0, 0.8);}
+.mobile>ul>li:first-child .mobile-nav>li{width: 100%; height: 7rem; border-bottom: 1px solid #ddd; line-height: 7rem; text-align: center;}
+.mobile>ul>li:first-child .mobile-nav>li>a{color: #fff;}
+
+.mobile>ul>li>a{display: block; width: 100%; height: 100%; position: relative;}
+.mobile>ul>li>a>.bar{width: 100%; height: .2rem; background: #555; display: block; position: absolute; top: 0; left: 0; transition: 0.3s;}
+.mobile>ul>li>a>.bar1{top: 0;}
+.mobile>ul>li>a>.bar1.add-app-btn{top: 50%; margin-top: -1px; transform: rotate(45deg);}
+.mobile>ul>li>a>.bar2{top: 50%;}
+.mobile>ul>li>a>.bar2.add-app-btn{opacity: 0;}
+.mobile>ul>li>a>.bar3{top: 100%;}
+.mobile>ul>li>a>.bar3.add-app-btn{top: 50%; margin-top: -1px; transform: rotate(-45deg);}
 
 
 
@@ -15,12 +47,22 @@ body{font-family: Arial, Helvetica, sans-serif;}
 
 
 
+@media screen and (max-width: 1200px) {
+    .container{width: 100%; padding: 0 2rem; box-sizing: border-box;}
+}
 
+@media screen and (max-width: 1050px) {
+    .gnb>.sns{display: none;}
+}
 
+@media screen and (max-width: 920px) {
+    .container{position: relative;}
+    .gnb{position: absolute; right: 3.2rem; top: 0.8rem;}
+    .nav ul{position: relative; top: 1rem;}
+}
 
-
-
-@media screen and (max-width: 72rem) {
+@media screen and (max-width: 720px) {
+    #header{height: 6rem; background: #f6e3b6;}
     .desktop{display: none;}
     .mobile{display: block;}
 }
