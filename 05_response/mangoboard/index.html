@@ -1,16 +1,16 @@
 <!DOCTYPE HTML>
 <html lang='ko'>
+
 <head>
 	<title> </title>
 	<meta charset='utf-8'>
 	<meta name='Viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.6'>
-	<meta name='Title' content=''>
-	<meta name='Subject' content=''>
-	<meta name='Keywords' content=''>
-	<meta name='Author' content=''>
-	<meta name='Publisher' content=''>
-	<meta name='Description' content=''>
-	<meta name='Author-Date' content=''>
+	<meta name='Title' content='망고보드'>
+	<meta name='Subject' content='망고보드 반응형 페이지 클론코딩'>
+	<meta name='Keywords' content='망고보드, 반응형 망고보드, 디자인툴'>
+	<meta name='Publisher' content='seong'>
+	<meta name='Description' content='디자인툴'>
+	<meta name='Author-Date' content='2023-05-22'>
 	<meta name='Copyright' content=''>
 	<meta name='Robots' content='index,follow'>
 
@@ -18,36 +18,74 @@
 	<link rel='stylesheet' href='css/reset.css'>
 	<link rel='stylesheet' href='css/style.css'>
 
-	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css'
+		integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+	<link rel="apple-touch-icon" sizes="57x57" href="./img/favi/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="./img/favi/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="./img/favi/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="./img/favi/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="./img/favi/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="./img/favi/apple-icon-152x152.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="./img/favi/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./img/favi/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="./img/favi/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./img/favi/favicon-16x16.png">
 
 	<script src='js/lib/jquery-1.12.4.min.js'></script>
-	<script src='js/lib/jquery.easing.1.3.js'></script>
-	<script src='js/lib/prefixfree.min.js'></script>
-	<script src='js/lib/modernizr-custom.js'></script>
-
-
-	<!--[if (lte IE 9)]>
-		<script src='js/lib/IE9.js'></script>
-	<![endif]-->
-
-	<!--[if (lte IE 8)]>
-		<script src='js/lib/html5shiv.min.js'></script>
-		<link rel='stylesheet' href='#'>
-	<![endif]-->
-
-	<!--[if (lte IE 7)]>
-		<link rel='stylesheet' href='#'>
-	<![endif]-->
+	<script src='js/script.js' defer></script>
 
 </head>
+
 <body>
 	<ul id="skip">
 		<li><a href="#header">헤더 바로가기</a></li>
 		<li><a href="#nav">메뉴 바로가기</a></li>
 		<li><a href="#content">내용 바로가기</a></li>
 	</ul>
-</div>
+
+	<div id="wrap">
+		<header id="header">
+			<div class="container">
+				<div class="desktop">
+					<h1><a href="index.html"><img src="./img/logo.png" alt="logo"></a></h1>
+					<nav id="nav" class="nav">
+						<ul>
+							<li><a href="sub/sub1.html">템플릿</a></li>
+							<li><a href="sub/sub2.html">사용가이드</a></li>
+							<li><a href="sub/sub3.html">사용자갤러리</a></li>
+							<li><a href="sub/sub4.html">요금제/저작권</a></li>
+						</ul>
+					</nav>
+					<div class="gnb">
+						<ul>
+							<li><a href="login.html">로그인</a></li>
+							<li><a href="sign-up.html">회원가입</a></li>
+							<li><a href="service.html">고객센터</a></li>
+							<li><a href="lab.html">실험실</a></li>
+						</ul>
+						<ul class="sns">
+							<li><a href="#"><img src="./img/blog_ico.png" alt="blog"></a></li>
+							<li><a href="#"><img src="./img/facebook_ico.png" alt="facebook"></a></li>
+							<li><a href="#"><img src="./img/youtube_ico.png" alt="youtube"></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="mobile">
+					<ul>
+						<li><a href="#" class="app-btn">
+								<span class="bar bar1"></span>
+								<span class="bar bar2"></span>
+								<span class="bar bar3"></span>
+							</a></li>
+						<li><a href="index.html"><img src="./img/logo.png" alt="mobilelogo"></a></li>
+						<li><a href="#" class="mobile-find-btn"><i class="fas fa-search"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+	</div>
 </body>
+
 </html>
