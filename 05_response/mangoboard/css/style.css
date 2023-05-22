@@ -13,8 +13,6 @@ body{font-family: Arial, Helvetica, sans-serif;}
 .gnb{display: flex;}
 .gnb ul{display: flex; align-items: center;}
 .gnb>ul>li{margin-left: 1rem;}
-.gnb>ul>li>a{}
-.gnb>.sns{}
 .gnb>.sns li{margin-left: 1rem;}
 .gnb>.sns li a{display: block; padding: 1rem 0;}
 
@@ -23,7 +21,6 @@ body{font-family: Arial, Helvetica, sans-serif;}
 /* mobile */
 .mobile{display: none;}
 .mobile>ul{display: flex; justify-content: space-between; align-items: center; height: 6rem;}
-.mobile>ul>li{}
 
 .mobile>ul>li:first-child{width: 2.6rem; height: 1.6rem;}
 .mobile>ul>li:first-child .mobile-nav{position: absolute; top: 60px; left: 0; width: 100%; background: rgba(0, 0, 0, 0.8);}
@@ -38,11 +35,6 @@ body{font-family: Arial, Helvetica, sans-serif;}
 .mobile>ul>li>a>.bar2.add-app-btn{opacity: 0;}
 .mobile>ul>li>a>.bar3{top: 100%;}
 .mobile>ul>li>a>.bar3.add-app-btn{top: 50%; margin-top: -1px; transform: rotate(-45deg);}
-
-
-
-
-
 
 
 
