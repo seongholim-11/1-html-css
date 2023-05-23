@@ -9,7 +9,7 @@
 // 3항 연산자는 ? 앞 비교값이 참이면 : 앞의 값을 반환, 거짓이면 뒤의 값을 반환
 
 // 산술연산자(Numberic Operators) +, -, *, /, %, **
-console.log(1+1);
+/* console.log(1+1);
 console.log(1-1);
 console.log(1/1);
 console.log(1*1);
@@ -22,10 +22,10 @@ const add = x + y;
 document.write('국어점수: ' + x + "<br />")
 document.write('영어점수: ' + y + "<br />")
 document.write('합계: ' + add + "<br />")
-document.write('평균: ' + (add/2) + "<br /> <hr />")
+document.write('평균: ' + (add/2) + "<br /> <hr />") */
 
 // 대입연산자(Assignment operators)
-let a = 10;
+/* let a = 10;
 let b = 20;
 a += b; // (a와 b를 더한 값을 a에 할당) a = a+b;
 a -= b; // a = a- b
@@ -33,10 +33,10 @@ a *= b; // a = a * b
 a /= b; // a = a / b
 a %= b; // a = a % b
 a **= b; // a = a ** b
-console.log("🚀 ~ file: script.js:30 ~ x:", a)
+console.log("🚀 ~ file: script.js:30 ~ x:", a) */
 
 // 증감연산자(increament, decreament operators)
-let j = 10;
+/* let j = 10;
 console.log("🚀 ~ file: script.js:41 ~ j:", j--);
 
 let k = 10;
@@ -54,10 +54,10 @@ console.log("🚀 ~ file: script.js:53 ~ a <= b:", a <= b)
 a > b; // a는 b보다 크다.
 console.log("🚀 ~ file: script.js:55 ~ a > b:", a > b)
 a >= b; // a는 b보다 크거나 같다.
-console.log("🚀 ~ file: script.js:57 ~ a >= b:", a >= b)
+console.log("🚀 ~ file: script.js:57 ~ a >= b:", a >= b) */
 
 // 논리연산자(logical operator) || (or), && (and) , !(not)
-const value1 = false;
+/* const value1 = false;
 const value2 = 4>2;
 
 function check(){
@@ -75,7 +75,7 @@ console.log("🚀 ~ file: script.js:74 ~ q:", q)
 const w = ((7>6) || (1>8));
 console.log("🚀 ~ file: script.js:76 ~ w:", w)
 const e = !(7>6);
-console.log("🚀 ~ file: script.js:78 ~ e:", e)
+console.log("🚀 ~ file: script.js:78 ~ e:", e) */
 
 /* let age = prompt("나이가 어떻게 됩니까?", "20")
 console.log("🚀 ~ file: script.js:81 ~ age:", age) */
@@ -119,8 +119,89 @@ console.log("🚀 ~ file: script.js:118 ~ result1:", result1) */
 
 // 신장과 몸무게 받기, 적정 몸무게 이상인지 아닌지, 적정 몸무게=(신장-100)*0.9
 
-const sin = prompt("신장?")
+/* const sin = prompt("신장?")
 const mom = prompt("몸무게?")
 const joek = (sin-100)*0.9;
 const result2 = (mom > joek ? "적정 몸무게 이상" : "적정 몸무게 이하");
-console.log("🚀 ~ file: script.js:126 ~ result2:", "적정 몸무게: " + joek + " / " + result2)
+console.log("🚀 ~ file: script.js:126 ~ result2:", "적정 몸무게: " + joek + " / " + result2) */
+
+//alert() 경고창
+/* let num1 = 30;
+let num2 = 20;
+
+num1 >= num2 ? alert('true') : alert('false') */
+
+//confirm() - 확인 취소 창
+// 확인은 참, 취소는 false
+/* let result = confirm("자바스크립트 좋아해?")
+let theText = result ? "good" : "no good"
+console.log("🚀 ~ file: script.js:137 ~ theText:", theText) */
+
+// 연산자 우선순위
+// 괄호 > 단항연산자 > 산술연산자 > 비교연산자 > 논리연산자 > 대입연산자
+/* const x = 10;
+const y = 20;
+
+console.log(x+y/2);
+console.log((x+y)/2); */
+
+// 조건문(if elseif else)
+/* const gender = '남자';
+console.log(`당신은 ${gender}이므로`)
+
+if(gender == '남자') console.log('반바지를 입으세요')
+if(gender == '여자') console.log('긴바지를 입으세요') */
+
+/* let num1 = prompt('점수를 입력해주세요')
+if(num1 >= 70){ 
+    console.log('합격')
+} else{
+    console.log('불합격')
+} */
+
+/* let score = 74;
+document.write("당신이 취득한 점수는 " + score + "점이므로 ")
+
+if(score>=90){
+    document.write("A학점");
+}
+else if(score>=80){
+    document.write("B학점");
+}
+else if(score>=70){
+    document.write("C학점");
+}
+else if(score>=60){
+    document.write("D학점");
+}
+else{
+    document.write("F학점");
+}
+document.write("<hr />")
+
+//swich
+const day = "화";
+document.write(`${day}요일에는`)
+switch(day){
+    case "월" : 
+    case "수" : document.write(`오전 10시에 수업 시작`)
+    break
+    case "화" : 
+    case "목" : document.write(`오후 2시에 수업 시작`)
+    break
+    case "금" : document.write(`오후 1시에 수업 시작`)
+    break
+    default: document.write(`월요일에서 금요일까지만 입력하세요`)
+}
+
+let current = new Date();
+let day_time = current.getHours(); 
+// console.log("🚀 ~ file: script.js:199 ~ day_time:", day_time)
+
+if(day_time < 18){
+    document.write("낮")
+}else{
+    document.write("밤")
+}
+ */
+

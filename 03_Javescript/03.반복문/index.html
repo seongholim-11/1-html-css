@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문</title>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <h1>반복문</h1>
+    <h2>for</h2>
+    <ul id="for">
+        
+    </ul>
+
+    <hr>
+
+    <h2>forEach</h2>
+    <ul id="foreach">
+        
+    </ul>
+
+    <hr>
+
+    <h2>forOf</h2>
+    <ul id="forof">
+        
+    </ul>
+
+    <hr>
+
+    <h2>forIn</h2>
+    <ul id="forin">
+        
+    </ul>
+
+    <hr>
+
+    <h2>doWhile</h2>
+    <ul id="dowhile">
+        
+    </ul>
+
+    <script>
+        let fruits = ["cherry", "apple", "banana", "melon"]
+        for(let i = 0; i < fruits.length; i++){
+            let a = document.getElementById('for').innerHTML += (`<li> ${fruits[i]} </li>`);
+        }
+
+        //foreach 무조건 배열
+        fruits.forEach(function(fruit, i, array) {
+            let a = document.getElementById('foreach').innerHTML += (`<li> ${fruits[i]} </li>`)
+            // let a = document.getElementById('foreach').innerHTML += (`<li> ${fruit} </li>`)
+        });
+
+        //for of
+        for(let item of fruits){
+            let a = document.getElementById('forof').innerHTML += (`<li> ${item} </li>`)
+        }
+
+        //forin 객체 내의 값들마다 할 일 (property + method)
+        let person = {pname: "seong", page: "25", pgender: "남자"};
+        let x;
+        for(x in person){
+            let a = document.getElementById('forin').innerHTML += (`<li> ${x} : ${person[x]} </li>`)
+        }
+
+        let z = 0;
+        do{
+            let a = document.getElementById('dowhile').innerHTML += (`<li> ${fruits[z]} </li>`);
+            z++;
+        }while(z<fruits.length)
+    </script>
+</body>
+</html>
