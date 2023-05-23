@@ -13,7 +13,6 @@
     <ul id="for">
         
     </ul>
-
     <hr>
 
     <h2>forEach</h2>
@@ -71,6 +70,27 @@
             let a = document.getElementById('dowhile').innerHTML += (`<li> ${fruits[z]} </li>`);
             z++;
         }while(z<fruits.length)
+
+        const $for = document.querySelectorAll("#for > li")
+        /* for(let i = 0; $for.length>i; i++){
+            $for[i].style.color="red"
+        } */
+        for(let i = 0; $for.length>i; i++){
+            $for[i].style.color="black"
+            $for[i].addEventListener('click', function(){
+                this.style.color="red"
+            })
+        }
+        const q = document.querySelectorAll("#forof li")
+        for(let p of q){
+            p.style.color = "red";
+            p.addEventListener('mouseover', function(){
+                this.style.color="yellow"
+            })
+            p.addEventListener('mouseout', function(){
+                this.style.color="blue"
+            })
+        }
     </script>
 </body>
 </html>
