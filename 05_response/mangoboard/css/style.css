@@ -50,29 +50,16 @@ body{font-family: Arial, Helvetica, sans-serif;}
 .template-area h2{text-align: center; font-size: 4rem; color: #121212; font-weight: bold;}
 .template-area p{text-align: center; color: #777; font-size: 1.8rem; margin-top: 2.7rem;}
 .template-line-wrap{margin-top: 8rem;}
-.title{}
-.title::after{content: ""; display: block; clear: both;}
-.title>li{position: relative; float: left;}
+.title{display: flex; justify-content: space-around;}
+.title>li{position: relative; width: 100%; text-align: center; letter-spacing: -1px;}
 .title>li:nth-child(2n){top: 7rem;}
-.title>li:nth-child(1){left: 15px;}
-.title>li:nth-child(2){left: 42px;}
-.title>li:nth-child(3){left: 77px;}
-.title>li:nth-child(4){left: 104px;}
-.title>li:nth-child(5){left: 131px;}
-.title>li:nth-child(6){left: 158px;}
-.title>li:nth-child(7){left: 185px;}
-.title>li:nth-child(8){left: 500px;}
-.title>li:nth-child(9){left: 500px;}
-.title>li:nth-child(10){left: 5px;}
-.title>li:nth-child(11){left: 5px;}
-.title>li:nth-child(12){left: 5px;}
-.title>li:nth-child(13){left: 5px;}
-.title>li:nth-child(14){left: 5px;}
-.title>li:nth-child(15){left: 5px;}
-.title li.on{}
-.title li.on .template-text{}
-.title li a{}
-.title li .template-text{display: none;}
+.title li.on .template-text{display: block;}
+.title li a{display: block; font-size: 1rem;}
+.title li .template-text{display: none; top: -3.5rem; position: absolute; width: 300px; background: #ccc; padding: 0.5rem 0; border-radius: 5px;}
+.title>li:nth-child(2n) .template-text{top: 3rem;}
+.title>li:nth-child(13) .template-text{right: -17rem;}
+.title>li:nth-child(14) .template-text{right: -9rem;}
+.title>li:nth-child(15) .template-text{right: 0;}
 .btn{display: flex; justify-content: space-around; position: relative; margin-top: 2rem;}
 .btn li{width: 14px; height: 14px; border-radius: 50%; border: 1px solid #757575;}
 .btn li.on{background: #757575;}
@@ -104,6 +91,7 @@ body{font-family: Arial, Helvetica, sans-serif;}
     .inner{width: 100%; padding: 0 2rem; box-sizing: border-box;}
     .banner-title .inner{padding: 2rem;}
     .b-title-left p.text-bold{font-size: 5.5rem;}
+    .template-line-wrap{display: none;}
 }
 
 @media screen and (max-width: 1050px) {
@@ -121,6 +109,8 @@ body{font-family: Arial, Helvetica, sans-serif;}
 
     #bannerMain{height: 50rem;}
     .banner-main-area{background-size: 80%;}
+
+    .template-area h2{font-size: 3rem;}
 }
 
 @media screen and (max-width: 720px) {
