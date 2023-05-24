@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,43 @@
     <title>for문</title>
     <script src="js/script1.js"></script>
 </head>
-<body>
 
+<body>
+    <!-- <script>
+        let bodyTag = document.getElementsByTagName('body')[0];
+        for (let i = 6; i > 0; i--) {
+            bodyTag.innerHTML += "<h"+ i + "> h" + i + " 재미있는 자바스크립트 </h" + i + ">";
+        }
+    </script> -->
+    <script>
+        /* let bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.innerHTML = '<table class="table1"></table>'; */
+       
+        /* let num = 1;
+        let q = "<table border='1'/>"
+
+        for(let w = 1; w<6; w++){
+            q += "<tr>";
+                for(let r=1; r<6; r++){
+                    q += "<td>" + num + "</td>";
+                    num++
+                }
+            q += "</tr>";
+        }
+
+        q += "</table>"
+        document.write(q); */
+
+        let result = 0;
+        for(let i = 1; i <= 10; i++){
+            document.write(i)
+            if(i<10){
+            document.write("+")
+            }
+            result = result + i
+        }
+        document.write(" = " + result)
+    </script>
 </body>
+
 </html>
