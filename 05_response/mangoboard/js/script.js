@@ -42,3 +42,15 @@ document.querySelector('.news-wraps').addEventListener('mouseout', () => {
 }); */
 
 newsSlide()
+
+//button
+let buttonRadius= $('.btn li');
+let line = $('.template-line-wrap .title li')
+
+buttonRadius.click(function(){
+    buttonRadius.removeClass('on');
+    $(this).addClass('on');
+    let lines = $(this).index()
+    line.removeClass('on');
+    line.eq(lines).addClass('on');
+})
