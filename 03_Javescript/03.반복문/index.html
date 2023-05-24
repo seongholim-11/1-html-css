@@ -8,6 +8,8 @@
     <script src="js/script.js"></script>
 </head>
 <body>
+
+    <button onclick="colorBg()">배경색 바꾸기 클릭</button>
     <h1>반복문</h1>
     <h2>for</h2>
     <ul id="for">
@@ -42,6 +44,20 @@
     </ul>
 
     <script>
+        let color = ["yellow", 'green', 'aqua', "pink"]
+        let n = 0;
+        function colorBg(){
+            if(n >= color.length){
+                n = 0;
+            }
+            // 0번째 바디
+            const bodyTag=document.getElementsByTagName("body")[0];
+            bodyTag.style.backgroundColor=color[n];
+            n++;
+        }
+
+
+
         let fruits = ["cherry", "apple", "banana", "melon"]
         for(let i = 0; i < fruits.length; i++){
             let a = document.getElementById('for').innerHTML += (`<li> ${fruits[i]} </li>`);
@@ -91,6 +107,18 @@
                 this.style.color="blue"
             })
         }
+
+        const l = document.querySelectorAll("#dowhile li")
+        let k = 0;
+        do{
+            l[k].addEventListener('mouseover', function(){
+                this.style.color="yellow"
+            })
+            l[k].addEventListener('mouseout', function(){
+                this.style.color="blue"
+            })
+            k++;
+        }while(k < l.length);
     </script>
 </body>
 </html>
