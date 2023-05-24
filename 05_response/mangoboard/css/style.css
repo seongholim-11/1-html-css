@@ -3,6 +3,11 @@ body{font-family: Arial, Helvetica, sans-serif;}
 .inner{width: 116rem; height: inherit; margin: 0 auto; background: rgba(255, 255, 255, 0.3);}
 
 #header{width: 100%; height: 8rem; background: rgb(255, 255, 255, 0.3);}
+#bannerMain{width: 100%; height: 61.1rem;}
+
+
+
+
 /* desktop */
 .desktop{display: flex; justify-content: space-between; align-items: center; height: 8rem;}
 .nav ul{display: flex;}
@@ -29,6 +34,15 @@ body{font-family: Arial, Helvetica, sans-serif;}
 .news-wrap p .text{font-size: 17px; display: block; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; width: 100%;}
 .news-wrap p .data{font-size: 15px;}
 
+/* banner-main-area */
+.banner-main-area{background: #fcce01 url(../img/mango_player3.png) no-repeat center center; position: relative;}
+.playBtn{ position: absolute; top: 50%; left: 50%; margin-top: -57px; margin-left: -57px; animation: ani 1s infinite alternate;}
+
+@keyframes ani {
+    0%{transform: scale(1);}
+    100%{transform: scale(1.2);}
+}
+.playBtn img{}
 
 /* mobile */
 .mobile{display: none;}
@@ -52,7 +66,8 @@ body{font-family: Arial, Helvetica, sans-serif;}
 
 
 @media screen and (max-width: 1200px) {
-    .banner-title .inner{width: 100%; padding: 0 2rem; box-sizing: border-box;}
+    .inner{width: 100%; padding: 0 2rem; box-sizing: border-box;}
+    .banner-title .inner{padding: 2rem;}
     .b-title-left p.text-bold{font-size: 5.5rem;}
 }
 
@@ -63,16 +78,20 @@ body{font-family: Arial, Helvetica, sans-serif;}
 }
 
 @media screen and (max-width: 920px) {
-    .inner{position: relative;}
     .gnb{position: absolute; right: 3.2rem; top: 0.8rem;}
     .nav ul{position: relative; top: 1rem;}
-    .banner-title .inner{display: flex; flex-wrap: wrap;}
+    .banner-title .inner{flex-wrap: wrap;}
     .b-title-left{flex: 0 1 100%; height: auto; border-right: none; padding: 0 2rem 3rem 2rem; text-align: center;}
     .b-title-right{flex: 0 1 100%; height: 20rem; background: skyblue;}
+
+    #bannerMain{height: 50rem;}
+    .banner-main-area{background-size: 80%;}
 }
 
 @media screen and (max-width: 720px) {
     #header{height: 6rem; background: #f6e3b6;}
     .desktop{display: none;}
     .mobile{display: block;}
+    #bannerMain{height: 40rem;}
+    .banner-main-area{background-size: 90%;}
 }
