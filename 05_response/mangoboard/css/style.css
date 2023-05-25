@@ -5,6 +5,7 @@ body{font-family: Arial, Helvetica, sans-serif;}
 #header{width: 100%; height: 8rem; background: rgb(255, 255, 255, 0.3);}
 #bannerMain{width: 100%; height: 61.1rem;}
 #template{width: 100%; height: auto;}
+#banner{width: 100%; height: auto; background: #f6f6f6; padding: 6rem 0;}
 
 
 
@@ -46,7 +47,7 @@ body{font-family: Arial, Helvetica, sans-serif;}
 
 
 /* template-area */
-.template-area{padding: 6rem 0; box-sizing: border-box; background: yellowgreen;}
+.template-area{padding: 6rem 0 7.2rem 0; box-sizing: border-box; background: yellowgreen;}
 .template-area h2{text-align: center; font-size: 4rem; color: #121212; font-weight: bold;}
 .template-area p{text-align: center; color: #777; font-size: 1.8rem; margin-top: 2.7rem;}
 .template-line-wrap{margin-top: 8rem;}
@@ -63,6 +64,51 @@ body{font-family: Arial, Helvetica, sans-serif;}
 .btn{display: flex; justify-content: space-around; position: relative; margin-top: 2rem;}
 .btn li{width: 14px; height: 14px; border-radius: 50%; border: 1px solid #757575;}
 .btn li.on{background: #757575;}
+
+
+/* banner-area */
+.banner-area .inner{position: relative;}
+.banner-left-btn{position: absolute; top: 50%; transform: translateY(-50%); left: -70px; transition: all 0.3s;}
+.banner-right-btn{position: absolute; top: 50%; transform: translateY(-50%); right: -70px; transition: all 0.3s;}
+.banner-area{width: 1160px; overflow: hidden;}
+.banner-area>ul{display: flex; width: 2350px; position: relative; left: 0;}
+.banner-area>ul>li{width: 22rem; margin-right: 15px;}
+.banner-area>ul>li>a>img{width: 100%; display: block;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -85,13 +131,18 @@ body{font-family: Arial, Helvetica, sans-serif;}
 .mobile>ul>li>a>.bar3.add-app-btn{top: 50%; margin-top: -1px; transform: rotate(-45deg);}
 
 
-
+@media screen and (max-width: 1320px) {
+    .banner-left-btn{left: 10px; z-index: 999;}
+    .banner-right-btn{right: 10px; z-index: 999;}
+}
 
 @media screen and (max-width: 1200px) {
     .inner{width: 100%; padding: 0 2rem; box-sizing: border-box;}
     .banner-title .inner{padding: 2rem;}
     .b-title-left p.text-bold{font-size: 5.5rem;}
     .template-line-wrap{display: none;}
+    .banner-area{width: 100%; overflow: hidden;}
+    /* .banner-area>ul>li{width: 20rem;} */
 }
 
 @media screen and (max-width: 1050px) {

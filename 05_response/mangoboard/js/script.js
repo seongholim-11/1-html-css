@@ -54,3 +54,24 @@ buttonRadius.click(function(){
     line.removeClass('on');
     line.eq(lines).addClass('on');
 })
+
+// 슬라이드
+const slideBanner = $('#banner .banner-area .area');
+const slideList = $('#banner .banner-area .area li');
+const prevBtn = $('.banner-left-btn')
+const nextBtn = $('.banner-right-btn')
+
+let slideWidth = slideList.width();
+let setIntervalId;
+// console.log("🚀 ~ file: script.js:63 ~ slideWidth:", slideWidth)
+function bannerSlide(){
+
+}
+
+function rightBtn(){
+
+}
+
+function leftBtn(){
+
+}
