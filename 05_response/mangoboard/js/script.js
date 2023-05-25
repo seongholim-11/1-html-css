@@ -64,14 +64,43 @@ const nextBtn = $('.banner-right-btn')
 let slideWidth = slideList.width();
 let setIntervalId;
 // console.log("🚀 ~ file: script.js:63 ~ slideWidth:", slideWidth)
+bannerSlide()
 function bannerSlide(){
-
+    setIntervalId = setInterval(()=>{
+        slideBanner.stop().animate({left: -(slideWidth+15)},500,
+        function(){
+            $('#banner .banner-area .area li:first').insertAfter('#banner .banner-area .area li:last');
+            slideBanner.css({left:0})
+        })
+    }, 2000)
 }
 
-function rightBtn(){
+$('.banner-left-btn, .banner-right-btn, .banner-area').on('mouseover focus', function(){
+    clearInterval(setIntervalId)
+})
+$('.banner-left-btn, .banner-right-btn, .banner-area').on('mouseout leave', function(){
+    bannerSlide()
+})
 
+function rightBtn(){
+    slideBanner.animate({
+        left: -(slideWidth+15)
+    },500, 
+    function(){
+        $('#banner .banner-area .area li:first').insertAfter('#banner .banner-area .area li:last');
+        slideBanner.css({left:0})
+    })
 }
 
 function leftBtn(){
-
+    $('#banner .banner-area .area li:last').insertBefore('#banner .banner-area .area li:first');
+    slideBanner.css({left: -(slideWidth+15)}).stop().animate({left:0},500)
 }
+
+nextBtn.click(function(){
+    rightBtn();
+})
+
+prevBtn.click(function(){
+    leftBtn();
+})
