@@ -73,7 +73,7 @@ body{font-family: Arial, Helvetica, sans-serif;}
 .banner-area{width: 1160px; overflow: hidden;}
 .banner-area>ul{display: flex; width: 2350px; position: relative; left: 0;}
 .banner-area>ul>li{width: 22rem; margin-right: 15px;}
-.banner-area>ul>li>a>img:n{width: 100%; display: block;}
+.banner-area>ul>li>a>img{width: 100%; display: block;}
 
 
 

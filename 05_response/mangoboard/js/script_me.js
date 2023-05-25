@@ -64,22 +64,39 @@ const prevBtn = $('.banner-left-btn');
 const nextBtn = $('.banner-right-btn');
 
 let liWidth = slideLi.width();
+let setIntervalId;
 
 bannerSlide()
 
 function bannerSlide() {
-    let setIntervalId = setInterval(function () {
-        /* slideUl.stop().animate({ left: -(liWidth + 15) }, 500,
-            function(){ $('.area li:first').insertAfter('.area li:last')
-            slideUl.css({ left: 0 })
-        }) */
-        slideUl.stop().animate({ left: -(liWidth + 15) }, 500, a())
-        
-        function a() {
-            $('.area li:first').insertAfter('.area li:last')
-            slideUl.css({ left: 0 })
-
-        }
-
+    setIntervalId = setInterval(function () {
+        slideUl.stop().animate({ left: -(liWidth + 15) }, 500,
+            function () {
+                $('.area li:first').insertAfter('.area li:last')
+                slideUl.css({ left: 0 })
+            })
     }, 2000)
 }
+
+$('.banner-left-btn, .banner-right-btn, .area li').on('mouseover focus', function(){
+    clearInterval(setIntervalId);
+});
+
+$('.banner-left-btn, .banner-right-btn, .area li').on('mouseout leave', function(){
+    bannerSlide()
+});
+
+
+prevBtn.click(function () {
+    $('.area li:last').insertBefore('.area li:first')
+    slideUl.css({left: -(liWidth + 15)}).animate({left:0}, 500)
+
+})
+
+nextBtn.click(function () {
+    slideUl.stop().animate({ left: -(liWidth + 15) }, 500,
+    function () {
+        $('.area li:first').insertAfter('.area li:last')
+        slideUl.css({ left: 0 })
+    })
+})
