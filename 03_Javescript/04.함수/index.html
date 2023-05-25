@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>함수</title>
     <script src="./js/script.js"></script>
+
+    <style>
+        #galleryWrap{text-align: center;}
+        #galleryWrap p{display: flex; align-items: center; justify-content: center;}
+        a{text-decoration: none; font-size: 50px;}
+    </style>
 </head>
 <body>
     <h2>함수 정의하기</h2>
@@ -15,5 +21,30 @@
             문장
         }
     </pre>
+
+    <div id="galleryWrap">
+        <p>
+            <a href="#" onclick="prevGallery()">&lt;</a>
+            <img src="./img/img1.jpg" alt="갤러리" width="300" height="200" id="gallery">
+            <a href="#" onclick="nextGallery()">&gt;</a>
+        </p>
+    </div>
+    <script>
+        let num = 1;
+        function nextGallery(){
+            num++;
+            if(num>7){num = 1;}
+            document.getElementById('gallery').src = "./img/img"+num+".jpg";
+            return false
+        }
+        function prevGallery(){
+            num--;
+            if(num<1){num = 7;}
+            document.getElementById('gallery').src = "./img/img"+num+".jpg";
+            return false
+        }
+
+        
+    </script>
 </body>
 </html>
