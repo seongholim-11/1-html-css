@@ -67,13 +67,13 @@ body{font-family: Arial, Helvetica, sans-serif;}
 
 
 /* banner-area */
-.banner-area .inner{position: relative;}
+.banner-area-wrap .inner{position: relative;}
 .banner-left-btn{position: absolute; top: 50%; transform: translateY(-50%); left: -70px; transition: all 0.3s;}
 .banner-right-btn{position: absolute; top: 50%; transform: translateY(-50%); right: -70px; transition: all 0.3s;}
 .banner-area{width: 1160px; overflow: hidden;}
 .banner-area>ul{display: flex; width: 2350px; position: relative; left: 0;}
 .banner-area>ul>li{width: 22rem; margin-right: 15px;}
-.banner-area>ul>li>a>img{width: 100%; display: block;}
+.banner-area>ul>li>a>img:n{width: 100%; display: block;}
 
 
 
