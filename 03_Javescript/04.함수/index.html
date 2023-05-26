@@ -120,10 +120,12 @@
             let time = hours + ":" + minutes + ":" + seconds;
             document.time_form.clock.value = time;
 
+            setTimeout('startClock()', 100)
         }
-        setInterval(() => {
-            startClock()
-        }, 100);
+        // setInterval(() => {
+        //     startClock()
+        // }, 100);
+        startClock()
 
         var childWindow = window.open('', '', 'width=200px, height=200px');
 
