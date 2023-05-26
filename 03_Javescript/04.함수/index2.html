@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,17 +9,32 @@
     <script>
         /* let x = prompt("수식을 입력하세요")
         let y = eval(x) */
-        let z = isNaN(123456)
-        let c = isNaN("123")
+        /* let z = isNaN(123456)
+        let c = isNaN("123") */
 
         /* document.write("<p style = 'text-align:center'>")
         document.write(x, "=", y)
         document.write("</p>") */
 
-        document.write(z, "<br>", c)
+        // document.write(z, "<br>", c)
+
+        let x = prompt("암호를 입력해 주세요")
+        let y = isNaN(x)
+        if (y == true) {
+            function password() {
+                document.write("<p'>")
+                document.write("숫자만 입력이 가능합니다.")
+                document.write("</p>")
+            }
+        } else {
+            window.open("./index.html")
+        }
+        password()
     </script>
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
