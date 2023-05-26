@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +9,28 @@
     <script src="./js/script.js"></script>
 
     <style>
-        #galleryWrap{text-align: center;}
-        #galleryWrap p{display: flex; align-items: center; justify-content: center;}
-        a{text-decoration: none; font-size: 50px;}
+        #galleryWrap {
+            text-align: center;
+        }
+
+        #galleryWrap p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 50px;
+        }
     </style>
 </head>
+
 <body>
+    <input type="button" value="인쇄하기" onclick="window.print()">
+    <input type="button" value="취소하기" onclick="childWindow.resizeBy(-50, -50)">
+    <input type="button" value="오른쪽으로 이동" onclick="childWindow.moveBy(200, 0)">
+
     <h2>함수 정의하기</h2>
     <p>함수를 실행하려면 함수를 정의하고 정의된 함수를 실행해야 하며, 함수는 불러줘야 실행한다.</p>
     <pre>
@@ -21,6 +38,43 @@
             문장
         }
     </pre>
+
+    <h2>내장함수</h2>
+    <ul>
+        <li>perseInt() - 문자형 데이터를 정수형 데이터로 바꿈(소수점 없이)</li>
+        <li>perseFloat() - 문자형 데이터를 실수형 데이터로 바꿈(소수점 있이)</li>
+        <li>String() - 문자형 데이터로 바꿈</li>
+        <li>Number() - 숫자형 데이터로 바꿈</li>
+        <li>Boolean() - 논리형 데이터로 바꿈</li>
+        <li>IsNanN() - 'Not a Nuber' 숫자가 아닌 문자가 표현하면 true 값을 반환</li>
+        <li>eval("5+6+9+6") - 문자형 데이터를 큰따옴표가 없는 스크립트 코드로 처리하고 산술연산 해줌</li>
+        <li>alert() - 경고창</li>
+        <li>comfirm() - 확인(true) / 취소(false)</li>
+        <li>prompt - 입력 대화상자를 만들어 줌(묻고 답하기)</li>
+    </ul>
+
+    <h2>시간에 따른 메소드</h2>
+    <ul>
+        <li>
+            <p>시간에 따라 명령을 수행하게 해주는 메소드</p>
+            setTimeout(a, b) - a: 함수/명령어, b: 지연시간(1/1000초) <br>
+            clearTimeout(a) - setTimeout() 설정한 내용을 중지 시킴
+        </li>
+        <li>
+            <p>시간에 따라 반복하여 명령을 수행하게 해주는 메소드</p>
+            변수 = setInterval(a, b, ) - a: 함수/명령어, b: 지연시간(1/1000초) <br>
+            clearInterval(a) - 변수에 정의된 setInterval() 의 실행을 중지 시킴
+        </li>
+    </ul>
+
+    <hr>
+
+    <form name="time_form">
+        <input type="text" name="clock" size="12" value="TIME">
+
+    </form>
+
+    <hr>
 
     <div id="galleryWrap">
         <p>
@@ -30,21 +84,53 @@
         </p>
     </div>
     <script>
+        // 이미지 넘기기
         let num = 1;
-        function nextGallery(){
+        function nextGallery() {
             num++;
-            if(num>7){num = 1;}
-            document.getElementById('gallery').src = "./img/img"+num+".jpg";
+            if (num > 7) { num = 1; }
+            document.getElementById('gallery').src = "./img/img" + num + ".jpg";
             return false
         }
-        function prevGallery(){
+        function prevGallery() {
             num--;
-            if(num<1){num = 7;}
-            document.getElementById('gallery').src = "./img/img"+num+".jpg";
+            if (num < 1) { num = 7; }
+            document.getElementById('gallery').src = "./img/img" + num + ".jpg";
             return false
         }
 
-        
+        console.clear()
+
+        // 시계 만들기
+        function startClock() {
+            let now = new Date();
+            let hours = now.getHours();
+            let minutes = now.getMinutes();
+            let seconds = now.getSeconds();
+            let date = now.getDate();
+
+            if (seconds < 10) { seconds = "0" + seconds; };
+            if (minutes < 10) { minutes = "0" + minutes; };
+            if (date < 10) { date = "0" + date; };
+            if (hours < 12) { seconds = seconds + " A.M"; }
+            else if (hours >= 12) { seconds = seconds + " P.M"; };
+            if (hours == 0) { hours = hours + 12; }
+            else if (hours > 12) { hours = hours - 12; }
+
+            let time = hours + ":" + minutes + ":" + seconds;
+            document.time_form.clock.value = time;
+
+        }
+        setInterval(() => {
+            startClock()
+        }, 100);
+
+        var childWindow = window.open('', '', 'width=200px, height=200px');
+
+        childWindow.document.write('window resize');
+
+
     </script>
 </body>
+
 </html>
