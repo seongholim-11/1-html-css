@@ -149,3 +149,11 @@ nextBtn.click(function(){
 prevBtn.click(function(){
     leftBtn();
 })
+
+//bxslide
+$(function(){
+    $('.bxslider').bxSlider({
+      mode: 'fade',
+      captions: false
+    });
+  });

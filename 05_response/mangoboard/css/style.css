@@ -1,11 +1,14 @@
 html{font-size: 10px;}
 body{font-family: Arial, Helvetica, sans-serif;}
-.inner{width: 116rem; height: inherit; margin: 0 auto; background: rgba(255, 255, 255, 0.3);}
+.inner{width: 116rem; height: inherit; margin: 0 auto; /* background: rgba(255, 255, 255, 0.3); */}
 
 #header{width: 100%; height: 8rem; background: rgb(255, 255, 255, 0.3);}
 #bannerMain{width: 100%; height: 61.1rem;}
 #template{width: 100%; height: auto;}
 #banner{width: 100%; height: auto; background: #f6f6f6; padding: 6rem 0;}
+#textBox{width: 100%; height: auto;}
+#bxBanner{width: 100%; height: 70rem; background: #555; position: relative;}
+#dynamic{width: 100%; height: auto; background: #fcce01;}
 
 
 
@@ -68,19 +71,51 @@ body{font-family: Arial, Helvetica, sans-serif;}
 
 /* banner-area */
 .banner-area-wrap .inner{position: relative;}
-.banner-left-btn{position: absolute; top: 50%; transform: translateY(-50%); left: -70px; transition: all 0.3s;}
-.banner-right-btn{position: absolute; top: 50%; transform: translateY(-50%); right: -70px; transition: all 0.3s;}
+.banner-left-btn{position: absolute; top: 50%; transform: translateY(-50%); left: -60px; transition: all 0.3s;}
+.banner-right-btn{position: absolute; top: 50%; transform: translateY(-50%); right: -60px; transition: all 0.3s;}
 .banner-area{width: 1160px; overflow: hidden;}
 .banner-area>ul{display: flex; width: 2350px; position: relative; left: 0;}
 .banner-area>ul>li{width: 22rem; margin-right: 15px;}
 .banner-area>ul>li>a>img{width: 100%; display: block;}
 
 
+/* text-box-area */
+.text-box-area{padding: 6rem 0; background: #fff;}
+.text-box-area h2{text-align: center; font-size: 4rem; color: #1e1e1e; margin-bottom: 3rem; font-weight: 700;}
+.text-box-area p{text-align: center; font-size: 1.8rem; color: #777; font-weight: 500;}
 
 
+/* bx-banner-area */
+.bx-wrapper {-moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; border: none; background:transparent;}
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{bottom: 80px;}
+.bx-wrapper .bx-pager.bx-default-pager a.active{background: #fcce01;}
+
+.bx-wrapper .bx-controls-direction a{margin-top: -34px; width: 35px; height: 68px;}
+
+.bx-wrapper .bx-prev:hover,
+.bx-wrapper .bx-prev:focus,
+.bx-wrapper .bx-next:hover,
+.bx-wrapper .bx-next:focus {
+  background-position: 0 0;
+}
+
+.bx-wrapper .bx-prev {
+    transition: 0.2s;
+    left: -100px;
+    background: url(../img/left_btn.png) no-repeat;
+}
+.bx-wrapper .bx-next {
+    transition: 0.2s;
+    right: -100px;
+    background: url(../img/right_btn.png) no-repeat;
+}
 
 
-
+/* dynamic-area */
+.dynamic-area{padding: 6rem 0; box-sizing: border-box; }
+.dynamic-area h2{text-align: center; margin-bottom: 4rem; line-height: 1;}
+.dynamic-area h3{text-align: center; font-size: 5rem; color: #fff; margin-bottom: 2.2rem; line-height: 1;}
+.dynamic-area h4{text-align: center; font-size: 2.5rem; color: #555; font-weight: 600; line-height: 1;}
 
 
 
@@ -130,14 +165,19 @@ body{font-family: Arial, Helvetica, sans-serif;}
 .mobile>ul>li>a>.bar3{top: 100%;}
 .mobile>ul>li>a>.bar3.add-app-btn{top: 50%; margin-top: -1px; transform: rotate(-45deg);}
 
+@media screen and (max-width: 1390px) {
+    .bx-wrapper .bx-prev {left: 30px;}
+    .bx-wrapper .bx-next {right: 30px;}
+}
 
 @media screen and (max-width: 1320px) {
-    .banner-left-btn{left: 10px; z-index: 999;}
-    .banner-right-btn{right: 10px; z-index: 999;}
+    .banner-left-btn{left: 30px; z-index: 999;}
+    .banner-right-btn{right: 30px; z-index: 999;}
 }
 
 @media screen and (max-width: 1200px) {
     .inner{width: 100%; padding: 0 2rem; box-sizing: border-box;}
+    #bxBanner{height: auto;}
     .banner-title .inner{padding: 2rem;}
     .b-title-left p.text-bold{font-size: 5.5rem;}
     .template-line-wrap{display: none;}
@@ -162,6 +202,9 @@ body{font-family: Arial, Helvetica, sans-serif;}
     .banner-main-area{background-size: 80%;}
 
     .template-area h2{font-size: 3rem;}
+
+    .text-box-area h2{font-size: 3rem;}
+    .text-box-area p{font-size: 1.6rem;}
 }
 
 @media screen and (max-width: 720px) {
