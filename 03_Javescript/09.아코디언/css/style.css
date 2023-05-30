@@ -1,10 +1,10 @@
 body{background: #ddd;}
 
-.container{width: 80%; margin: 50px auto; position: relative;}
-#btn, #btn1{position: absolute; right: 0; background: #846258; color: #fff; border: none; cursor: pointer; padding: 10px;}
+.container{width: 80%; margin: 50px auto; position: relative; overflow: hidden;}
+#btn, #btn1{width: 65px; position: absolute; right: 0; background: #846258; color: #fff; border: none; cursor: pointer; padding: 10px;}
 #btn1{top: 40px;}
 h2{color: #846258; font-size: 30px;}
-#faq{}
+#faq{margin-top: 30px;}
 .question{margin-bottom: 20px; background: #fff;}
 .question.active{}
 .heading{background: black; color: #fff; padding: 5px; cursor: pointer; font-weight: bold;}
