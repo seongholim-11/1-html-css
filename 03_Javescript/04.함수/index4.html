@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체 생성자 함수의 활용</title>
+    <script>
+        function CheckWeight(name, height, weight){
+            this.userName = name;
+            this.userWeight = weight;
+            this.userHeight = height;
+            this.minWeight;
+            this.maxWeight;
+            
+            this.getInfo = function(){
+                let str = '';
+                str += "이름: "+this.userName+", ";
+                str += "키: "+this.userWeight+", ";
+                str += "몸무게: "+this.userHeight+"<br>";
+                return str;
+            }
+            this.getResult = function(){
+                this.minWeight = ((this.userHeight-100)*0.9)-5;
+                this.maxWeight = ((this.userHeight-100)*0.9)+5;
+                if(this.userWeight >= this.minWeight && this.userWeight <= this.maxWeight){
+                    return "정상몸무게입니다."
+                }else if(this.userWeight < this.minWeight){
+                    return "미달몸무게입니다."
+                }else{
+                    return "초과몸무게입니다."
+                }
+            }
+        }
+
+        let ho = new CheckWeight("123", 178, 70);
+
+        document.write(ho.getInfo())
+        document.write(ho.getResult())
+    </script>
+</head>
+<body>
+    <h2>생성자 함수 기본형</h2>
+    <pre>
+        // 객체 생성자 함수
+        function 함수명(매개변수1, 매개변수2,...매개변수n){
+            this.속성명 = 새로운 값;
+            this.함수명 = function(){
+                자바스크립트 코드;
+            }
+        }
+
+        let 참조 변수(인스턴트 네임) = new 함수명();
+        let 참조 변수 = {속성: 값, 함수명 : function(){.....}}
+
+    </pre>
+</body>
+</html>
