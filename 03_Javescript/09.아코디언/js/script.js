@@ -1,4 +1,4 @@
-const btn = document.getElementById('btn')
+/* const btn = document.getElementById('btn')
 const btn1 = document.getElementById('btn1')
 const question = document.getElementsByClassName('question')
 const heading = document.getElementsByClassName('heading')
@@ -34,4 +34,21 @@ btn1.addEventListener('click', function(){
     for(let k = 0; k<question.length; k++){
         body[k].style.display = 'block'
     }
-})
+}) */
+
+const heading = document.getElementsByClassName('heading');
+const body = document.getElementsByClassName('body');
+const question = document.getElementsByClassName('question');
+
+
+function open(){
+    for(let i = 0; i < heading.length; i++){
+        heading[i].addEventListener('click', function(e){
+            for(let j = 0; j< question.length; i++){
+                question[j].classList.remove('active');
+            }
+        })
+    }
+}
+
+open()
