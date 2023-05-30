@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자</title>
+    <script></script>
+</head>
+<body>
+    <h1 id="title">JavaScript selector</h1>
+    <div class="container">
+        <ul id="list1" class="list">
+            <li>li 1</li>
+            <li>li 2</li>
+            <li>li 3</li>
+            <li>li 4</li>
+            <li>li 5</li>
+        </ul>
+    </div>
+    <div class="container">
+        <ul id="list2" class="list">
+            <li>li 1</li>
+            <li>li 2</li>
+            <li>li 3</li>
+            <li>li 4</li>
+            <li>li 5</li>
+        </ul>
+    </div>
+    <div class="container">
+        <ul id="list3" class="list">
+            <li class="red">li 1</li>
+            <li>li 2</li>
+            <li>li 3</li>
+            <li id="list3-4">li 4</li>
+            <li>li 5</li>
+        </ul>
+    </div>
+    <div class="container">
+        <div id="box">
+            box level1
+            <div class="red">
+                box level2
+                <div>
+                    box level3
+                </div>
+            </div>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus architecto vero rem quam quisquam quo porro ipsam. Ipsum culpa neque ea necessitatibus reiciendis, enim officiis non minima earum perferendis! Repellat!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus architecto vero rem quam quisquam quo porro ipsam. Ipsum culpa neque ea necessitatibus reiciendis, enim officiis non minima earum perferendis! Repellat!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus architecto vero rem quam quisquam quo porro ipsam. Ipsum culpa neque ea necessitatibus reiciendis, enim officiis non minima earum perferendis! Repellat!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus architecto vero rem quam quisquam quo porro ipsam. Ipsum culpa neque ea necessitatibus reiciendis, enim officiis non minima earum perferendis! Repellat!</p>
+
+    <script>
+        const firstTitle = document.getElementById('title');
+        document.getElementById('title').style.color = 'green'
+        firstTitle.style.color = 'red';
+
+        const myList = document.querySelectorAll('.list');
+        const myList1 = document.getElementsByClassName('list');
+        const paragraphs = document.getElementsByTagName('p');
+        const red = document.querySelector('.list .red');
+        console.log("🚀 ~ file: index.html:63 ~ paragraphs:", paragraphs)
+        // myList[0].style.color = 'orange';
+
+        /* myList.forEach(item => {
+            item.style.color = 'orange';
+        }); */
+
+        /* for(let i = 0; i < myList.length; i++){
+            myList[i].style.color = 'orange';
+        } */
+
+        red.style.color = 'red'
+    
+    </script>
+</body>
+</html>
