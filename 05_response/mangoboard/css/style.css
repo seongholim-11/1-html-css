@@ -269,6 +269,7 @@ ul.user-text li span{display: block; color: #1e1e1e; margin-top: 2.6rem; }
     .Reference_area{display: none;}
 
     .footer-inner{flex-direction: column;}
+    .footer-inner>ul>li{padding-bottom: 2rem;}
     .sns-wrap ul{justify-content: start;}
     .sns-wrap ul li{margin-right: 2rem;}
 }
@@ -294,5 +295,5 @@ ul.user-text li span{display: block; color: #1e1e1e; margin-top: 2.6rem; }
 
 
     .footer-inner>ul{flex-direction: column;}
-    .footer-inner>ul>li{padding-bottom: 1rem; margin-bottom: 2rem; border-bottom: 1px solid #ddd;}
+    .footer-inner>ul>li{margin-bottom: 2rem; border-bottom: 1px solid #ddd;}
 }
