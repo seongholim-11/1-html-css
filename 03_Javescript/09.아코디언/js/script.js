@@ -40,15 +40,3 @@ const heading = document.getElementsByClassName('heading');
 const body = document.getElementsByClassName('body');
 const question = document.getElementsByClassName('question');
 
-
-function open(){
-    for(let i = 0; i < heading.length; i++){
-        heading[i].addEventListener('click', function(e){
-            for(let j = 0; j< question.length; i++){
-                question[j].classList.remove('active');
-            }
-        })
-    }
-}
-
-open()
