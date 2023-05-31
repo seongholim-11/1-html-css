@@ -12,7 +12,8 @@ body{font-family: Arial, Helvetica, sans-serif;}
 #movie{width: 100%; height: 70rem; background: #8c816e;}
 #muser{width: 100%; padding: 60px 0;}
 #Reference{width: 100%; padding: 6rem 0; background: #f7f7f7;}
-
+#etc{width: 100%; height: 16.3rem; background: #1e1e1e;}
+#footer{width: 100%; height: auto; padding: 3.4rem 0;}
 
 
 /* desktop */
@@ -140,11 +141,30 @@ ul.user-text{display: flex; justify-content: space-between;}
 ul.user-text li{padding: 0 2rem; font-size: 1.8rem; color: #777;}
 ul.user-text li span{display: block; color: #1e1e1e; margin-top: 2.6rem; }
 
+/* etc_box_area */
+.etc_box_area{}
+.etc_box_area ul{display: flex; border-left: 1px solid #2e2e2e;}
+.etc_box_area ul li{flex-basis: 20%; border-right: 1px solid #2e2e2e; height: 16.3rem; text-align: center; padding-top: 10rem; box-sizing: border-box;}
+.etc_box_area ul li:nth-child(1){background: url(../img/MA_manual.png) no-repeat center 5rem;}
+.etc_box_area ul li:nth-child(2){background: url(../img/MA_introduction.png) no-repeat center 5rem;}
+.etc_box_area ul li:nth-child(3){background: url(../img/MA_license.png) no-repeat center 5rem;}
+.etc_box_area ul li:nth-child(4){background: url(../img/MA_qna.png) no-repeat center 5rem;}
+.etc_box_area ul li:nth-child(5){background: url(../img/MA_news.png) no-repeat center 5rem;}
+.etc_box_area ul li a{color: #f6f6f6;}
 
+/* footer-area */
+.footer-inner{display: flex; justify-content: space-between;}
+.footer-inner>ul{display: flex; flex-basis: 75%;}
+.footer-inner>ul>li{flex-basis: 33.3%; margin-right: 4rem;}
+.footer-inner>ul>li>.tit{font-size: 1.4rem; margin-bottom: 2.5rem; font-weight: bold;}
+.footer-inner>ul>li>.txt{font-size: 1.2rem; color: #666; font-weight: bold;}
 
+.sns-wrap{flex-basis: 25%;}
+.sns-wrap ul{display: flex; justify-content: space-between;}
+.sns-wrap ul li{}
+.sns-wrap ul a{}
 
-
-
+.copy{font-size: 1.4rem; color: #666; padding-top: 3rem;}
 
 
 
@@ -247,6 +267,10 @@ ul.user-text li span{display: block; color: #1e1e1e; margin-top: 2.6rem; }
     ul.user-text li span{margin: 0.5rem 0;}
 
     .Reference_area{display: none;}
+
+    .footer-inner{flex-direction: column;}
+    .sns-wrap ul{justify-content: start;}
+    .sns-wrap ul li{margin-right: 2rem;}
 }
 
 @media screen and (max-width: 720px) {
@@ -267,4 +291,8 @@ ul.user-text li span{display: block; color: #1e1e1e; margin-top: 2.6rem; }
 
     .muser_area h2{font-size: 4.2rem;}
     .muser_area h3{font-size: 3.8rem;}
+
+
+    .footer-inner>ul{flex-direction: column;}
+    .footer-inner>ul>li{padding-bottom: 1rem; margin-bottom: 2rem; border-bottom: 1px solid #ddd;}
 }
