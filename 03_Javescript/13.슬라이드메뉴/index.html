@@ -2,13 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>슬라이드메뉴</title>
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/script.js"></script>
+    <script src="./js/script.js" defer></script>
 </head>
 <body>
-    
+    <div class="container">
+        <ul class="slider-container" id="slider">
+            <li class="slide">
+                <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum fuga vitae quam adipisci placeat, dicta labore amet at hic quibusdam qui error</blockquote>
+                <cite> - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque temporibus debitis facilis excepturi quaerat ea id</cite>
+            </li>
+            <li class="slide">
+                <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</blockquote>
+                <cite> - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque temporibus debitis facilis excepturi quaerat ea id</cite>
+            </li>
+            <li class="slide">
+                <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum fuga vitae quam </blockquote>
+                <cite> - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque temporibus debitis facilis excepturi quaerat ea id</cite>
+            </li>
+            <li class="slide">
+                <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum fuga vitae quam adipisci placeat, dicta labore amet at hic quibusdam qui error, cumque ducimu</blockquote>
+                <cite> - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque temporibus debitis facilis excepturi quaerat ea id</cite>
+            </li>
+            <li class="slide">
+                <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum fuga vitae quam adipisci placeat, dicta labore amet at hic quibusdam </blockquote>
+                <cite> - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque temporibus debitis facilis excepturi quaerat ea id</cite>
+            </li>
+        </ul>
+        <p class="pager">
+            <span data-idx="0">1</span>
+            <span data-idx="1">2</span>
+            <span data-idx="2">3</span>
+            <span data-idx="3">4</span>
+            <span data-idx="4">5</span>
+        </p>
+        <a href="#" id="prev"></a>
+        <a href="#" id="next"></a>
+    </div>
 </body>
 </html>
