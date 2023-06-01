@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카운터</title>
+    <style>
+        .num-animation {
+            width: 100px;
+            padding: 20px;
+            font-size: 3rem;
+            margin: 0 auto;
+            border: 1px solid #000;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="num-animation" data-index="90">0</div>
+    <div class="num-animation" data-index="60">0</div>
+    <div class="num-animation" data-index="40">0</div>
+    <script>
+/*         let numAnimation = document.querySelectorAll('.num-animation')
+        let targetNum = 0;
+        
+        
+        for (let i = 0; i < numAnimation.length; i++) {
+            let num = 0;
+            let targetNum = numAnimation[i].getAttribute('data-index')
+            let timer = setInterval(function () {
+                ++num;
+                numAnimation[i].innerText = num;
+                if (num == targetNum) {
+                    clearInterval(timer)
+                }
+            }, 10)
+        } */
+
+        let numAnimation = document.querySelectorAll('.num-animation')
+        let targetNum = [];
+
+        for(let j = 0; j < numAnimation.length; j++)
+        targetNum = numAnimation[j].getAttribute('data-index')
+        
+        
+        for (let i = 0; i < numAnimation.length; i++) {
+            let num = 0;
+            let a = targetNum[i]
+            let timer = setInterval(function () {
+                ++num;
+                numAnimation[i].innerText = num;
+                if (num == Number(a)) {
+                    clearInterval(timer)
+                }
+            }, 10)
+        }
+    </script>
+</body>
+
+</html>
