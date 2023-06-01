@@ -1,0 +1,50 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>02.위치 탐색 선택자_:last 필터셀렉트 .last() 메서드</title>
+	<script type="text/javascript" src="js/lib/jquery-1.12.4.min.js"></script>
+	<link rel="stylesheet" href="css/style.css"/>
+	<script type="text/javascript">
+		$(function(){
+			
+		});
+	</script>
+</head>
+<body>
+	<span>01_아이디가 el인 ul태그의 자식 엘리먼트인 li태그를 선택하고 :last 필터 셀렉터를 사용하여 마지막번째 엘리먼트만 선택해 주세요.</span>
+	<span>02_아이디가 method인 ul태그의 자식 엘리먼트인 li태그를 선택하고 .last() 메서드를 사용하여 마지막번째 엘리먼트만 선택해 주세요.</span>
+	<div>
+		1
+		<div>
+			1-1
+		</div>
+	</div>
+	<div>
+		2
+		<div>
+			2-1
+			<div>
+				2-1-1
+				<ul id="el">
+					<li>2-1-1-1</li>
+					<li>2-1-1-2</li>
+					<li>2-1-1-3</li>
+					<li>2-1-1-4</li>
+					<li>2-1-1-5 (여기에 글자색을 바꿔주세요)</li>
+				</ul>
+			</div>
+		</div>
+		<div>
+			2-2
+			<ul id="method">
+				<li>2-2-1</li>
+				<li>2-2-2</li>
+				<li>2-2-3</li>
+				<li>2-2-4</li>
+				<li>2-2-5 (여기에 글자색을 바꿔주세요)</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

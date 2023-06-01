@@ -1,0 +1,42 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>03.not 메소드</title>
+	<script type="text/javascript" src="js/lib/jquery-1.12.4.min.js"></script>
+	<link rel="stylesheet" href="css/style.css"/>
+	<script type="text/javascript">
+		$(function(){
+			
+		});
+	</script>
+</head>
+<body>
+	<span>아이디가 el인 엘리먼트의 자식엘리먼트중 class값이 not인 엘리먼트를 제외하여 선택해주고 선택된 엘리먼트의 글자색을 변경해 주세요.</span>
+	<div>
+		<ul id="el">
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li class="not">4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+			<li>9</li>
+		</ul>
+	</div>
+	
+	<span>ul의 자식 엘리먼트중 클래스값이 el이 아닌 엘리먼트만 글자색을 변경해 주세요.</span>
+	<div id="wrap">
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li class="el">4</li>
+			<li>5</li>
+			<li>6</li>
+		</ul>
+	</div>
+</body>
+</html>

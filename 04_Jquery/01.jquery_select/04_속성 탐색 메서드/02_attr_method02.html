@@ -1,0 +1,53 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>02.속성선택자 02</title>
+	<script type="text/javascript" src="js/lib/jquery-1.12.4.min.js"></script>
+	<link rel="stylesheet" href="css/style.css"/>
+	<script type="text/javascript">
+		$(function(){
+			
+		});
+	</script>
+</head>
+<body>
+	<span class="left">
+		1. target 속성을 포함하는 요소를 선택하여 글자색을 빨간색으로 바꾸세요 <br/>
+		2. href 속성값이 "https"로 시작하는 요소를 선택하여 글자색을 그린색으로 바꾸세요 <br/>
+		3. href 속성값이 "net"로 끝나는 요소를 선택하여 글자색을 파란색으로 바꾸세요 <br/>
+		4. href 속성값이 "google"이 포함된 요소를 선택하여 글자색을 보라색으로 바꾸세요 <br/>
+		5. input 요소중 type속성값이 "text"인 요소를 선택하여 글자색을 하늘색으로 바꾸세요 <br/>
+		6. input 요소중 type속성값이 "password"인 요소를 선택하여 배경색을 회색으로 바꾸세요
+	</span>
+	<div id="wrap">
+		<p>
+			<a href="http://cjh7652.dothome.co.kr/sRoom">hyunroom</a>
+		</p>
+		<p>
+			<a href="https://www.naver.com" target="_blank">naver</a>
+		</p>
+		<p>
+			<a href="https://www.daum.net" >daum</a>
+		</p>
+		<p>
+			<a href="https://www.google" >google</a>
+		</p>
+		<p>
+			<a href="https://www.nate.com" >nate</a>
+		</p>
+		
+		<form action="#" method="post" id="menber_f">
+			<p>
+				<label for="user_id">아이디</label>
+				<input type="text" name="user_id" id="user_id"/>
+			</p>
+			<p>
+				<label for="user_pw">비밀번호</label>
+				<input type="password" name="user_pw" id="user_pw"/>
+			</p>
+		</form>
+	</div>
+	
+</body>
+</html>

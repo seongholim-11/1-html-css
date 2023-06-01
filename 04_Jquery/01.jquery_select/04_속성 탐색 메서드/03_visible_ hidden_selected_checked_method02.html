@@ -1,0 +1,48 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>03.속성상태에 따른 탐색 선택자</title>
+	<script type="text/javascript" src="js/lib/jquery-1.12.4.min.js"></script>
+	<link rel="stylesheet" href="css/style.css"/>
+	<script type="text/javascript">
+		$(function(){
+			
+		});
+	</script>
+</head>
+<body>
+	<span class="left">
+		1. content의 숨겨져 있는 내용2를 보이게 해주세요 <br/>
+		2. zone1의 선택되어있는 옵션2의 색상을 바꿔 주세요 <br/>
+		3. zone2의 체크되어있는  등산의 색상을 바꿔 주세요<br/>
+		4. zone3의 체크되어있는  등산의 색상을 바꿔 주세요 <br/>
+	</span>
+	<div id="wrap">
+		<div class="content">
+			<p>내용1</p>
+			<p style="display:none">내용2</p>
+			<p>내용3</p>
+		</div>
+		<form action="#">
+			<p id="zone1">
+				<select name="course" id="course">
+					<option value="opt1">옵션1</option>
+					<option value="opt2" selected>옵션2</option>
+					<option value="opt3">옵션3</option>
+				</select>
+			</p>
+			<p id="zone2">
+				<input type="checkbox" name="hobby1" value="독서"/> 독서
+				<input type="checkbox" name="hobby2" value="자전거"/> 자전거
+				<input type="checkbox" name="hobby3" value="등산" checked /> 등산
+			</p>
+			<p id="zone3">
+				<input type="radio" name="gender" value="male"/> 남성
+				<input type="radio" name="gender" value="female"  checked /> 여성
+			</p>
+		</form>
+	</div>
+	
+</body>
+</html>
