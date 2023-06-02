@@ -1,0 +1,7 @@
+body{background: #123;}
+#wrap{margin: 20px 50px; }
+.box{width: 1000px; margin: 10px auto; box-sizing: border-box; background: #fff; padding: 10px;}
+
+.box3 div{padding: 10px; margin: 0 0 10px;}
+.add{border: 3px solid #000}
+.remove{border: 3px solid #f00}
