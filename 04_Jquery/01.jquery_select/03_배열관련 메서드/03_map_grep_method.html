@@ -7,8 +7,24 @@
 	<link rel="stylesheet" href="css/style.css"/>
 	<script type="text/javascript">
 		$(function(){
-			
+			let arr1 = [{"area": "서울", "name": "조사장"}, {"area": "부산", "name": "박사장"}, {"area": "광주", "name": "윤사장"}, {"area": "강릉", "name": "신사장"}]
+			let arr2 = $.map(arr1, function(a, b){
+				if(a.area == "서울"){
+					return a;
+				}
+			})
+			console.log("🚀 ~ file: 03_map_grep_method.html:16 ~ arr2 ~ arr2:", arr2)
+			let arr3 = $.grep(arr1, function(a, b){
+				if(a.area == "서울"){
+					return true;
+				}else{
+					return false;
+				}
+			})
+			console.log(arr3)
 		});
+
+
 	</script>
 </head>
 <body>

@@ -7,7 +7,10 @@
 	<link rel="stylesheet" href="css/style.css"/>
 	<script type="text/javascript">
 		$(function(){
-			
+			/* $('#el1 li:eq(3)').nextAll().css({color: 'red'})
+			$('#el2 li:eq(3)').prevAll().css({color: 'red'}) */
+			$('#el1 li:gt(3)').css({color: 'red'})
+			$('#el2 li:lt(3)').css({color: 'red'})
 		});
 	</script>
 </head>

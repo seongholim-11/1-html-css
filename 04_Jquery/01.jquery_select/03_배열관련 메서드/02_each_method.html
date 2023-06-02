@@ -7,7 +7,16 @@
 	<link rel="stylesheet" href="css/style.css"/>
 	<script type="text/javascript">
 		$(function(){
-			
+			const obj = [{"area": "서울"}, {"area": "부산"}, {"area": "대전"}]
+			$(obj).each(function(i, o){
+				console.log(i+ ":",o)
+			})
+			$.each($('#menu1 li'), function(i, o){
+				console.log(i+':',o)
+			})
+			$.each($('#menu2 li'), function(i){
+				console.log(i+':', $(this))
+			})
 		});
 	</script>
 </head>

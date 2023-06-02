@@ -7,13 +7,13 @@
 	<link rel="stylesheet" href="css/style.css"/>
 	<script type="text/javascript">
 		$(function(){
-			
+			$('#wrap li').slice(2,5).css({color: 'red'})
 		});
 	</script>
 </head>
 <body>
 	<span>slice() 메서드를 이용하여 해당 위치에 색을 바꿔주세요.</span>
-	<p>인자값 2개 slice(start index, end index)</p>
+	<p>인자값 2개 slice(start index, end index 전)</p>
 	<div id="wrap">
 		<ul>
 			<li>1</li>

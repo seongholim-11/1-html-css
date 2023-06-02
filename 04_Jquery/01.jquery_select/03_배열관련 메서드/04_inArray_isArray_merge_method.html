@@ -7,7 +7,17 @@
 	<link rel="stylesheet" href="css/style.css"/>
 	<script type="text/javascript">
 		$(function(){
-			
+			const arr1 = ["한국", "중국", "미국", "일본"]
+			const arr2 = ["서울", "대전", "부산", "광주"]
+
+			let idexNum= $.inArray('중국', arr1);
+			console.log("🚀 ~ file: 04_inArray_isArray_merge_method.html:14 ~ idexNum:", idexNum)
+
+			let ok = $.isArray(arr1)
+			console.log("🚀 ~ file: 04_inArray_isArray_merge_method.html:17 ~ ok:", ok)
+
+			$.merge(arr2, arr1)
+			console.log("🚀 ~ file: 04_inArray_isArray_merge_method.html:22 ~ arr2:", arr2)
 		});
 	</script>
 </head>
