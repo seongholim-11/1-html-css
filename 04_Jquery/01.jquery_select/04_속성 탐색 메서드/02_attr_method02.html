@@ -7,8 +7,15 @@
 	<link rel="stylesheet" href="css/style.css"/>
 	<script type="text/javascript">
 		$(function(){
-			
+			$('#wrap a[target]').css({color: 'red'})
+			$('#wrap a[href^=https]').css({color: 'green'})
+			$('#wrap a[href$=net]').css({color: 'blue'})
+			$('#wrap a[href*=google]').css({color: 'purple'})
+			$('#user_id[type=text]').css({color: 'skyblue'})
+			$('#user_id[type=password]').css({color: 'gray'})
+
 		});
+
 	</script>
 </head>
 <body>
@@ -31,7 +38,7 @@
 			<a href="https://www.daum.net" >daum</a>
 		</p>
 		<p>
-			<a href="https://www.google" >google</a>
+			<a href="https://www.google.com" >google</a>
 		</p>
 		<p>
 			<a href="https://www.nate.com" >nate</a>

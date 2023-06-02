@@ -7,7 +7,8 @@
 	<link rel="stylesheet" href="css/style.css"/>
 	<script type="text/javascript">
 		$(function(){
-			
+			$('#el li').not('.not').css({color: 'red'})
+			$('#wrap li:not(.el)').css({color: 'red'})
 		});
 	</script>
 </head>
