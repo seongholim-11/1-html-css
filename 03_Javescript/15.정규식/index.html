@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정규식(Regular Expression)</title>
+</head>
+<body>
+    <script>
+        //[0-9] \d 숫자
+        const str = "123abc45678kkks";
+        const test = /[0-9]/g;
+        let result = str.match(test);
+        console.log("🚀 ~ file: index.html:15 ~ result:", result)
+
+        // (red | green)
+        const str1 = "re, green, red, ogange, gen, red, blue, yellow, orange"
+        const test1 = /(red|green)/g;
+        let result1 = str1.match(test1);
+        console.log("🚀 ~ file: index.html:21 ~ result1:", result1)
+
+        //n+ 최소 한 개 이상
+        const str2 = "hellooo"
+        const test2 = /o+/g;
+        let result2 = str2.match(test2);
+        console.log("🚀 ~ file: index.html:27 ~ result2:", result2)
+
+        //n* 0개 혹은 n개
+        const str3 = "hellooo world"
+        const test3 = /lo*/g;
+        let result3 = str3.match(test3);
+        console.log("🚀 ~ file: index.html:33 ~ result3:", result3)
+
+        //n? 0개 혹은 1개
+        const str4 = "1, 100 or 1000"
+        const test4 = /10?/g;
+        let result4 = str4.match(test4);
+        console.log("🚀 ~ file: index.html:39 ~ result4:", result4)
+
+        // 우편번호 5자리
+        // 32545
+        let str5 = /^\d{5}$/;
+        let test5 = "32545";
+        let result5 = str5.test(test5);
+        console.log("🚀 ~ file: index.html:46 ~ result5:", result5)
+
+        // 전화번호
+        // 010-234-5566
+        // 017-2345-2396
+        const str6 = /^(010)-\d{3,4}-\d{4}$/;
+        let test6 = "010-234-5566";
+        let result6 = str6.test(test6);
+        console.log("🚀 ~ file: index.html:54 ~ result6:", result6)
+
+        // 이메일
+        // abc456@naver.com
+        // abc_456@naver.com
+        let str7 = /^\w+([\.-]?\w+)*@\w+(\.\w{2,3})+$/;
+        let test7 = "456@naver.com";
+        let result7 = str7.test(test7);
+        console.log("🚀 ~ file: index.html:62 ~ result7:", result7)
+
+
+    </script>
+</body>
+</html>
