@@ -21,6 +21,7 @@ $('#changeThis').hover(function(){
     $('#changeThis').attr('src', './img/img1.gif')
 })
 
+//box3 클래스 추가 삭제
 $('#box3-1').addClass('add')
 $('#box3-2').removeClass('add')
 $('#box3-3').addClass('remove')
