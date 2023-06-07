@@ -26,3 +26,14 @@ $('#box3-1').addClass('add')
 $('#box3-2').removeClass('add')
 $('#box3-3').addClass('remove')
 $('#box3-4').removeClass('remove')
+
+//toggle
+$('.click').click(function(){
+    $('#imgs img').toggleClass('transi')
+})
+
+let a = $('#input1').val("김가은 바보");
+let b = $('#textarea1').val("김가은 헬스 성공");
+let c = $('#select1').val('city1');
+let d = $('#select2').val(['town2','town3']);
+console.log("🚀 ~ file: script.js:39 ~ d:", d)
