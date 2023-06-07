@@ -4,7 +4,7 @@ let  pwArea = document.getElementById('pwArea')
 let  pwMes = document.getElementById('pwMes')
 let  pwArea2 = document.getElementById('pwArea2')
 let  pwMes2 = document.getElementById('pwMes2')
-let  name = document.getElementById('name')
+let  $name = document.getElementById('name')
 let  nameMes = document.getElementById('nameMes')
 let  phone = document.getElementById('phone')
 let  phMes = document.getElementById('phMes')
@@ -17,6 +17,10 @@ let  gMes = document.getElementById('gMes')
 let regid = /^[a-zA-z0-9]{4,}$/
 let regpw = /^.*(?=^.{8,16}$)(?=.*\d)(?=.*[!@#$%^&*()_+])/
 // let regpw = /^.*(?=^.{8,16})$/
+let regname = /^[a-zA-Z가-힣]{2,20}$/
+let regphone = /(^010)([0-9]{3,4})([0-9]{4})$/
+// let regemail = /^\w\@([a-zA-z])\.[a-zA-z]{2,3}?\.?([a-zA-z])$/
+let regemail=/^[a-zA-Z0-9]([-_.]?\w+)*@[a-zA-Z0-9]([-_.]?[a-zA-Z0-9])*\.[a-zA-Z]{2,3}$/g;
 
 // ? 없거나 있거나(최대 하나)
 // ?= 앞쪽과 일치(/ab(?=c)/)
@@ -55,6 +59,46 @@ pwArea2.addEventListener('blur', function(){
             pwMes2.style.color = "red"
             pwArea2.value = '';
             pwArea2.focus();
+        }
+    }
+})
+
+$name.addEventListener('blur', function(){
+    if(regname.test($name.value)){
+        nameMes.innerHTML = "사용가능한 이름입니다."
+        nameMes.style.color = "green"
+    }else{
+        nameMes.innerHTML = "이름은 한글 또는 영어로 2자 이상 20자 이하가 가능합니다."
+        nameMes.style.color = "red"
+        $name.value = '';
+        $name.focus();
+    }
+})
+
+phone.addEventListener('blur', function(){
+    if(regphone.test(phone.value)){
+        phMes.innerHTML = "사용가능한 번호입니다."
+        phMes.style.color = "green"
+    }else{
+        phMes.innerHTML = "'010'으로 시작하여 '-' 구분없이 번호를 입력해주세요"
+        phMes.style.color = "red"
+        phone.value = '';
+        phone.focus();
+    }
+})
+
+email.addEventListener('blur', function(){
+    if(regemail.test(email.value)){
+        eMes.innerHTML = "사용가능한 이메일입니다."
+        eMes.style.color = "green"
+    }else{
+        if(email.value == ""){
+            eMes.innerHTML = ""
+        }else{
+        eMes.innerHTML = "다시 입력해주세요"
+        eMes.style.color = "red"
+        email.value = '';
+        email.focus();
         }
     }
 })
