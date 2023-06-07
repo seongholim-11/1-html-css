@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+    <div class="form">
+        <h3>회원가입</h3>
+        <fieldset>
+            <legend class="ir_so">회원가입</legend>
+            <form action="./login.html" method="post" name="signup" id="signup">
+                <ul>
+                    <li class="id-section">
+                        <label for="idArea">아이디</label>
+                        <span id="idMes" class="message"></span>
+                        <input type="text" id="idArea" class="line" required size="30" placeholder="아이디" value="">
+                        <button>중복확인</button>
+                    </li>
+                    <li>
+                        <label for="pwArea">비밀번호</label>
+                        <span id="pwMes" class="message"></span>
+                        <input type="password" id="pwArea" class="line" required size="30" placeholder="비밀번호">
+                    </li>
+                    <li>
+                        <label for="pwArea2">비밀번호확인</label>
+                        <span id="pwMes2" class="message"></span>
+                        <input type="password" id="pwArea2" class="line" required size="30" placeholder="비밀번호확인">
+                    </li>
+                    <li>
+                        <label for="name">이름</label>
+                        <span id="nameMes" class="message"></span>
+                        <input type="text" id="name" class="line" required size="30" placeholder="이름">
+                    </li>
+                    <li>
+                        <label for="phone">휴대전화</label>
+                        <span id="phMes" class="message"></span>
+                        <input type="text" id="phone" class="line" required size="30" placeholder="'-' 구분없이 입력">
+                    </li>
+                    <li>
+                        <label for="email">이메일</label>
+                        <span id="eMes" class="message"></span>
+                        <input type="text" id="email" class="line" required size="30" placeholder="이메일">
+                    </li>
+                    <li>
+                        <label for="born">생년월일</label>
+                        <span id="bMes" class="message"></span>
+                        <input type="text" id="born" class="line" required size="8" placeholder="생년월일">
+                    </li>
+                    <li>
+                        <span class="gnederArea">성별</span>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female" class="gender female">여성</label>
+                        <input type="radio" name="gender" id="male">
+                        <label for="male" class="gender male">남성</label>
+                        <span id="gMes" class="gendermessage"></span>
+                    </li>
+                    <li>
+                        <input type="button" value="회원가입" class="btn" id="submit">
+                    </li>
+                </ul>
+            </form>
+        </fieldset>
+    </div>
+</body>
+
+</html>

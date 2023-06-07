@@ -1,0 +1,17 @@
+.form{width: 1000px; margin: 50px auto;}
+.form h3{font-weight: bold; color: #222; font-size: 40px; text-align: center; padding: 20px 0 35px 0; border-bottom: 1px solid #999;}
+fieldset{}
+fieldset #signup{padding-top: 70px; width: 600px; margin: 0 auto;}
+fieldset #signup ul .id-section{position: relative;}
+fieldset #signup ul .id-section button{position: absolute; display: block; background: #aaa; color: #fff; right: 10px; bottom: 45px; padding: 5px 8px; cursor: pointer; font-size: 15px; border-radius: 5px;}
+fieldset #signup ul li{padding: 10px 0; }
+fieldset #signup ul li:nth-child(8){border-bottom: none}
+fieldset #signup ul li:nth-child(9){border-bottom: none}
+fieldset #signup ul label{font-size: 20px; color: #222; margin-right: 10px;}
+fieldset #signup ul span{display: block;}
+fieldset #signup ul span.message{display: inline-block; height: 100%;}
+fieldset #signup ul input{margin: 5px 0 25px 0;}
+fieldset #signup ul input.line{width: 100%; padding: 16px 10px; box-sizing: border-box; border: none; border-bottom: 1px solid #999; outline: none; }
+fieldset #signup ul li .gnederArea{font-size: 20px; color: #222;}
+fieldset #signup ul li #male{margin-left: 20px;}
+fieldset #signup ul .btn{border: none; background: #d2232a; color: #fff; padding: 16px; width: 100%; font-size: 24px; cursor: pointer; display: block; text-align: center; border-radius: 5px; box-sizing: border-box;}
