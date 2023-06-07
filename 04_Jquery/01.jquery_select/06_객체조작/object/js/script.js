@@ -37,3 +37,32 @@ let b = $('#textarea1').val("김가은 헬스 성공");
 let c = $('#select1').val('city1');
 let d = $('#select2').val(['town2','town3']);
 console.log("🚀 ~ file: script.js:39 ~ d:", d)
+
+//empty
+$('.empty').empty();
+
+// 1.수치조작
+const wid1 = $('#p1').width();
+const wid2 = $('#p2').innerWidth();
+const wid3 = $('#p2').outerWidth();
+
+$('#p2').outerWidth('300px').height('400px');
+
+// 2. 위치 조작
+let txt1 = $('.txt-1 span')
+let txt2 = $('.txt-2 span')
+let box1 = $('#wrap1>.box1')
+
+let off_t = box1.offset().top;
+let pos_t = box1.position().top;
+txt1.text(off_t)
+txt2.text(pos_t)
+
+// 3. 스크롤 위치
+let topNum = $('.bar').offset().top;
+console.log("🚀 ~ file: script.js:63 ~ topNum:", topNum)
+
+$(window).scrollTop(topNum);
+
+let sct = $(window).scrollTop();
+console.log("🚀 ~ file: script.js:68 ~ sct:", sct)
