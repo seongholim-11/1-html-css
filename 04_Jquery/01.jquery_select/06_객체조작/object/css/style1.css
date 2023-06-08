@@ -1,0 +1,14 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{background: #123;}
+#wrap{margin: 20px 50px; }
+.box{width: 1000px; margin: 10px auto; box-sizing: border-box; background: #fff; padding: 10px;}
+
+
+h2{text-align: center;}
+#beforeAfter{padding: 20px;}
+#beforeAfter p{margin-bottom: 5px; border: 1px solid #ddd; padding: 5px 10px; text-align: center;}
+
+#basket{background: brown; padding: 20px;}
+#apple{background: red; padding: 10px; margin: 5px;}
+#banana{background: yellow; padding: 10px; margin: 5px;}
+#orange{background: orange; padding: 10px; margin: 5px;}
