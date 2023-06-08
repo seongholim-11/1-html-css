@@ -3,36 +3,6 @@ body{background: #123;}
 #wrap{margin: 20px 50px; }
 .box{width: 1000px; margin: 10px auto; box-sizing: border-box; background: #fff; padding: 10px;}
 
-
-h2{text-align: center;}
-#beforeAfter{padding: 20px;}
-#beforeAfter p{margin-bottom: 5px; border: 1px solid #ddd; padding: 5px 10px; text-align: center;}
-
-#basket{background: brown; padding: 20px;}
-#apple{background: red; padding: 10px; margin: 5px;}
-#banana{background: yellow; padding: 10px; margin: 5px;}
-#orange{background: orange; padding: 10px; margin: 5px;}
-
-.clone{width: 500px; margin: 10px auto; border: 2px solid yellowgreen; text-align: center; padding: 10px;}
-.clone p{padding: 10px; border: 2px solid royalblue; margin-bottom: 5px;}
-
-section h3{text-align: center;}
-section div{border: 1px solid gold; padding: 10px; margin: 10px;}
-section p{border: 1px solid silver; padding: 10px; margin: 10px;}
-
-.show-hide{border: 2px solid darkturquoise; margin-bottom: 10px; padding: 20px;} 
-#show{display: none;}
-
-.container{font-size: 5em; height: 160px;}
-#fadeIn{background: pink; padding: 20px; display: none;}
-#fadeOut{background: rgb(196, 192, 255); padding: 20px}
-#fadeTo{background: rgb(192, 255, 208); padding: 20px}
-
-#slideDown{background: #008d62; padding: 20px; display: none;}
-#slideUp{background: aquamarine; padding: 20px}
-#slide{background: #ffb27f; padding: 20px; display: none;}
-.hover{background: #ddd;}
-
 #animate1{width: 100%; height: 500px; background: rgba(255, 0, 0, 0.349); position: relative;}
 .ani1{padding: 50px; color: #fff; background: rgba(43, 255, 0, 0.349); position: absolute; left: 0; top: 0;}
 .ani2{width: 50px; height: 50px; border-radius: 50%; color: #fff; background: rgba(255, 238, 0, 0.349); position: absolute; right: 0; bottom: 0;}
