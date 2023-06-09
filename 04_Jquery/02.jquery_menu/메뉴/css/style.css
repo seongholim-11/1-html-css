@@ -3,7 +3,6 @@ ul, li{list-style: none;}
 a{text-decoration: none;}
 
 #wrap{margin: 100px;}
-#nav{}
 #nav{display: flex;}
 #nav li{display: flex; margin-right: 10px;}
 #nav li .menu-image{width: 0px; height: 95px; overflow: hidden; cursor: pointer;}
