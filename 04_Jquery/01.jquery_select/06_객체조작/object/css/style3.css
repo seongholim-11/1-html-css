@@ -9,3 +9,13 @@ body{background: #123;}
 .btn3-2{background: pink; color: #fff; padding: 10px 20px; border: none; cursor: pointer;}
 .btn4{background: rgb(192, 255, 206); color: #000; padding: 10px 20px; border: none; cursor: pointer;}
 .btn5{background: rgb(255, 192, 239); color: #000; padding: 10px 20px; border: none; cursor: pointer;}
+.btn6{background: rgb(192, 255, 226); color: #000; padding: 10px 20px; border: none; cursor: pointer;}
+.btn7{background: rgb(209, 192, 255); color: #000; padding: 10px 20px; border: none; cursor: pointer;}
+.btn8{background: rgb(255, 246, 192); color: #000; padding: 10px 20px; border: none; cursor: pointer;}
+
+p{margin: 20px 0;}
+
+.click-wrap{width: 700px; margin: 10px auto;}
+.clickTest{background: pink; padding: 10px; margin-bottom: 5px;}
+
+#div1{width: 200px; height: 100px; font-size: 20px; background: orange;}
