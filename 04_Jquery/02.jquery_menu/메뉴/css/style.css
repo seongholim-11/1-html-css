@@ -3,9 +3,9 @@ ul, li{list-style: none;}
 a{text-decoration: none;}
 
 #wrap{margin: 100px;}
-#nav{display: flex;}
-#nav li{display: flex; margin-right: 10px;}
-#nav li .menu-image{width: 0px; height: 95px; overflow: hidden; cursor: pointer;}
+#nav{display: flex; justify-content: space-between;}
+#nav li{display: flex;}
+#nav li .menu-image{width: 0px; overflow: hidden; cursor: pointer; margin-right: 10px;}
 #nav li .menu-image a img{width: 97px; height: 97px;}
-#nav li .menuText-image{text-align: center; padding-top: 10px; display: flex; align-items: center;}
+#nav li .menuText-image{text-align: center; display: flex; align-items: center;}
 #nav li .menuText-image .on{display: none;}
