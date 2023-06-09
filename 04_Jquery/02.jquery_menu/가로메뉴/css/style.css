@@ -1,0 +1,13 @@
+*{margin: 0; padding: 0;}
+ul, li{list-style: none;}
+a{text-decoration: none;}
+
+.container{}
+.container nav{background: #ddd;}
+.container nav>ul{display: flex;}
+.container nav>ul>li{flex-basis: 20%; position: relative;}
+.container nav>ul>li>a{display: block; padding: 10px 40px; font-weight: bold; text-align: center;}
+.container nav>ul>li>ul{display: block; position: absolute; box-shadow: 0 0 2px #000;  width: 100%; display: none;}
+.container nav>ul>li>ul>li{position: relative;}
+.container nav>ul>li>ul>li>a{display: block; padding: 0 35px 0 40px; line-height: 38px; background: #fff; text-align: center;}
+.contents{width: 100%; height: 500px; background: goldenrod;}
