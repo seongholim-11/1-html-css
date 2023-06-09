@@ -5,10 +5,11 @@ a:focus{color: red;}
 
 .container nav{position: absolute; width: 100%; background: #fff; height: 40px; z-index: 100;}
 .container nav>ul{display: flex; height: 40px; justify-content: center; overflow: hidden; transition: height 0.4s;}
-.container nav>ul>li>a{display: block; padding: 10px 40px; font-weight: bold; text-align: center;}
-.container nav>ul>li>ul>li>a{display: block; padding: 0 35px 0 40px; line-height: 38px;}
+.container nav>ul>li>a{display: block; padding: 9px 40px; font-weight: bold; text-align: center;}
+.container nav>ul>li>ul>li>a{display: block; padding: 0 35px 0 40px; line-height: 38px; transition: all 1s;}
 .sub-shadow{position: absolute; width: 100%; height: 0px; background: rebeccapurple; z-index: 10; transition: height 0.4s; top: 40px; left: 0;}
-.sub-shadow.active{height: 250px;}
+.sub-shadow.active{height: 190px;}
 .container nav>ul.active{height: 250px;}
-.container nav>ul>li.active>ul{background: #0f52ba;}
+.container nav>ul>li>ul{transition: height 0.4s; height: 0px;}
+.container nav>ul>li:hover>ul{background: #0f52ba; height: 190px;}
 .contents{width: 100%; height: 500px; background: goldenrod; }
