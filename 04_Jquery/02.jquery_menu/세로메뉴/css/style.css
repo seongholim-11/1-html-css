@@ -1,0 +1,11 @@
+*{margin: 0; padding: 0;}
+ul,ol,li{list-style: none;}
+a{text-decoration: none;}
+
+#nav{width: 200px; margin: 50px auto; text-align: center;}
+#nav>li{margin-bottom: 1px;}
+#nav>li>a{display: block; height: 35px;background: aquamarine; line-height: 2; color: #fff}
+#nav>li>.sub.on{display: block;}
+#nav>li>.sub{display: none;}
+#nav>li>.sub>li{height: 35px; background: gold; line-height: 2; margin-bottom: 2px;}
+#nav>li>.sub>li>a{color: #000;}
