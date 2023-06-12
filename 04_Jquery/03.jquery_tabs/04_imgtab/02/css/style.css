@@ -4,8 +4,12 @@ ul, li{list-style: none;}
 a{text-decoration: none; color: #222;}
 
 .thumbs-wrap{display: flex;}
+.thumbs{width: 110px;}
+.thumbs>a{display: block;}
 .thumbs>a>img{border: 1px solid #ccc; padding: 5px; margin-bottom: 3px;}
 .thumbs>a>img:hover{border-color: goldenrod;}
 
-.largeImg{border: 1px solid #ccc; padding: 4px; height: 280px;}
+.largeImg{border: 1px solid #ccc; padding: 4px; height: 280px; overflow: hidden; width: 500px;}
 .largeImg>img{display: block;}
+
+#caption{border: 1px solid #ccc; padding: 10px; position: relative; color: #fff; background: rgba(0, 0, 0, 0.5);}
