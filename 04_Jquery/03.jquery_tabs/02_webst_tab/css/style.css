@@ -1,0 +1,16 @@
+*{margin: 0; padding: 0;}
+body{padding: 2em;}
+ul, li{list-style: none;}
+a{text-decoration: none; color: #222;}
+
+.tab-menu{border: 1px solid #ccc; padding: 10px; height: 200px; width: 400px; margin: 0 auto; position: relative;}
+.tab-menu>ul{display: flex;} 
+.tab-menu>ul>li{border: 1px solid #ccc; margin-right: -1px;}
+.tab-menu>ul>li>a{display: block; padding: 5px 10px;}
+.tab-menu>ul>li.active{background: plum;}
+.tab-menu>ul>li.active>a{color: #fff;}
+.tab-menu>ul>li>ul{position: absolute; top: 60px; left: 10px; display: none; width: 350px;}
+.tab-menu>ul>li:first-child>ul{display: block;}
+.tab-menu>ul>li>ul>li{overflow: hidden; white-space: nowrap; text-overflow: ellipsis; width: 100%; line-height: 2.5;}
+
+
