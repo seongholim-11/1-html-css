@@ -1,0 +1,13 @@
+*{margin: 0; padding: 0;}
+body{padding: 2em;}
+ul, li{list-style: none;}
+a{text-decoration: none;}
+
+.tab-set{width: 610px; padding: 3px; border: 2px solid #666; margin-bottom: 5px;}
+ul{padding: 12px 12px 2px 12px; display: flex;}
+ul>li{margin-right: 2px;}
+ul>li>a{padding: 5px 20px; background: #aaa; color: #fff; border-radius: 4px 4px 0 0; display: block;}
+ul>li>a.on{background: darkolivegreen; color: #fff;}
+
+.panel{padding: 20px; background: #ddd;} 
+
