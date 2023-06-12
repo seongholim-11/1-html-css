@@ -1,0 +1,15 @@
+*{margin: 0; padding: 0;}
+ul, li{list-style: none;}
+a{text-decoration: none; color: #222;}
+
+#wrap{width: 487px; position: absolute; top: 50px; left: 50%; transform: translateX(-50%);}
+#wrap ul{display: flex;}
+#wrap ul li{height: 25px; overflow: hidden;}
+#wrap ul li a{display: block;}
+#wrap ul li a img{margin-top: 0px;}
+#wrap ul li a.on img{margin-top: -25px;}
+
+.content{width: 487px; height: 323px; position: relative;}
+.content>div{position: absolute; top: 0; left: 0; width: 455px; padding: 6px; background: goldenrod; display: none;}
+.content>div:first-child{display: block;}
+.content>div img.on{opacity: 0.5; cursor: pointer;}
