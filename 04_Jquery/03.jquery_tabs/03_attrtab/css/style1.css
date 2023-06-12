@@ -1,0 +1,14 @@
+*{margin: 0; padding: 0;}
+body{padding: 2em;}
+ul, li{list-style: none;}
+a{text-decoration: none; color: #222;}
+
+#wrap{width: 522px; margin: 30px auto;}
+#wrap #nav ul{display: flex;}
+#wrap #nav ul li:not(:last-child){margin-right: 10px;}
+#wrap #nav ul li a{display: block;}
+#wrap #image{width: 522px; height: 400px;}
+#wrap #image.spring{background: url(../images/spring.jpg);}
+#wrap #image.summer{background: url(../images/summer.jpg);}
+#wrap #image.fall{background: url(../images/fall.jpg);}
+#wrap #image.winter{background: url(../images/winter.jpg);}
