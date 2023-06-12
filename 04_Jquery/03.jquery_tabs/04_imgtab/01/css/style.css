@@ -1,0 +1,11 @@
+*{margin: 0; padding: 0;}
+body{background: #192939; width: 620px; margin: 20px auto;}
+ul, li{list-style: none;}
+a{text-decoration: none; color: #222;}
+
+.thumbs-wrap{display: flex;}
+.thumbs>a>img{border: 1px solid #ccc; padding: 5px; margin-bottom: 3px;}
+.thumbs>a>img:hover{border-color: goldenrod;}
+
+.largeImg{border: 1px solid #ccc; padding: 4px; height: 280px;}
+.largeImg>img{display: block;}
