@@ -1,0 +1,17 @@
+*{margin: 0; padding: 0;}
+h1{text-align: center; margin-top: 20px;}
+
+.animation-canvas{width: 600px; position: relative; height: 400px; overflow: hidden; margin: 50px auto;}
+.slider-panel{width: 1800px; position: relative;}
+.slider-panel img{width: 600px; height: 400px; float: left;}
+
+.slider-text-panel{position: absolute; top: 100px; left: 65px;}
+.slider-text-panel .slider-text{color: #fff; width: 350px; height: 180px; font-weight: bold; position: absolute; text-align: justify; background: rgba(0, 0, 0, 0.5); padding: 10px;}
+
+.control-panel{width: 45px; height: 30px; position: absolute; top: 350px; left: 50%; transform: translateX(-50%); overflow: hidden;}
+.control-panel .control-button{width: 15px; height: 15px; position: relative; float: left; cursor: pointer; background: url(../images/point_button.png) no-repeat;}
+.control-button:hover{background: url(../images/point_button.png) no-repeat center -15px;;}
+.control-button.active{background: url(../images/point_button.png) no-repeat center -30px;}
+
+.left{position: absolute; top: 180px; left: 0; z-index: 2;}
+.right{position: absolute; top: 180px; right: 0;}
