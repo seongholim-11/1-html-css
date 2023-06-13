@@ -1,0 +1,13 @@
+*{margin: 0; padding: 0;}
+ul, li{list-style: none;}
+a{text-decoration: none; color: #222;}
+
+#wrap ul{width: 280px; height: 390px; border: 2px solid #000; position: relative; margin: 20px; float: left; overflow: hidden;}
+#wrap ul.num1 li{position: absolute; top: 100%; cursor: pointer;}
+#wrap ul.num2 li{position: absolute; bottom: 100%; cursor: pointer;}
+#wrap ul.num3 li{position: absolute; right: 100%; cursor: pointer;}
+#wrap ul.num4 li{position: absolute; left: 100%; cursor: pointer;}
+#wrap ul.num1 li:first-child{position: absolute; top: 0%; }
+#wrap ul.num2 li:first-child{position: absolute; bottom: 0%; }
+#wrap ul.num3 li:first-child{position: absolute; right: 0%; }
+#wrap ul.num4 li:first-child{position: absolute; left: 0%; }
