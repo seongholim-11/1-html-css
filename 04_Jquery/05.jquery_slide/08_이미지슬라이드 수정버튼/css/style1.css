@@ -1,0 +1,42 @@
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: #222;}
+.hidden{display: block; overflow: hidden; width: 0; height: 0; line-height: 0; text-indent: -9999px;}
+.slide{width: 100%; height: 500px; background: #ddd; position: relative; overflow: hidden;}
+.slide>ul.slideUl{width: 100%; height: 500px; position: relative; top: 0; left: 0;}
+.slide>ul.slideUl>li{height: 500px; width: 100%; position: absolute; left: 0; top: 0;}
+
+.slide>ul.slideUl>.slide01{background:url(../img/0.png) 50% 0 no-repeat; left: 0; }
+.slide>ul.slideUl>.slide02{background:url(../img/1.png) 50% 0 no-repeat; left: 100%; }
+.slide>ul.slideUl>.slide03{background:url(../img/2.png) 50% 0 no-repeat; left: 200%; }
+
+.btnImg{position: relative; top: -275px; width: 100%;}
+.btnImg .prev{position: absolute; left: 100px;}
+.btnImg .next{position: absolute; right: 100px;}
+
+.buttonList:after{content:""; display: block; clear: both;}
+.buttonList>li{  background: url(../img/btnVisual.png) no-repeat 0 -16px; width: 14px; height: 15px; overflow: hidden; margin: 0 5px; cursor: pointer; position: relative; top: -135px; left: 50%; float: left;}
+.buttonList li.on{background-position: 0 0}
+.buttonList li a{display: block; }
+
+.progress_bar{
+	width: 100%;
+	height: 10px;
+	margin: 3em auto;
+	position: relative;
+	bottom:70px;
+	z-index: 99999;
+}
+.progress_bar .bar{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	background: #008c69;
+	width:0;
+}
+
+
+
+
+

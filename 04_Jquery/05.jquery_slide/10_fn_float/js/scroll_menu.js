@@ -1,0 +1,109 @@
+﻿
+
+
+
+/* 둥실둥실 */
+jQuery(document).ready(function(){	
+	$('').DB_springMove({
+		key:'c65806',               
+		dir:'x',              
+		mirror:1,              
+		radius:5,             
+		motionSpeed:0.07      
+	})
+	$('.dd2').DB_springMove({
+		key:'c65806',                
+		dir:'y',              
+		mirror:1,             
+		radius:5,             
+		motionSpeed:0.07       
+	})
+	$('.dd3').DB_springMove({
+		key:'c65806',               
+		dir:'y',              
+		mirror:1,              
+		radius:5,            
+		motionSpeed:0.07       
+	})
+	$('.dd4').DB_springMove({
+		key:'c65806',                
+		dir:'y',              
+		mirror:1,              
+		radius:5,             
+		motionSpeed:0.1      
+	})
+	$('').DB_springMove({
+		key:'c65806',                
+		dir:'y',               
+		mirror:1,              
+		radius:5,            
+		motionSpeed:0.09    
+	})
+    $('.dd6').DB_springMove({
+        key:'c65806',                
+        dir:'y',               
+        mirror:1,              
+        radius:5,            
+        motionSpeed:0.09  
+    })
+     $('.dd7').DB_springMove({
+        key:'c65806',                
+        dir:'y',               
+        mirror:1,              
+        radius:5,             
+        motionSpeed:0.09    
+    })
+     $('.dd5').DB_springMove({
+        key:'c65806',               
+        dir:'y',              
+        mirror:1,             
+        radius:5,           
+        motionSpeed:0.07      
+    })
+     $('.dd9').DB_springMove({
+        key:'c65806',                
+        dir:'y',               
+        mirror:1,              
+        radius:5,             
+        motionSpeed:0.07   
+    })
+     $('').DB_springMove({
+        key:'c65806',                
+        dir:'x',               
+        mirror:1,              
+        radius:5,             
+        motionSpeed:0.1    
+    })
+    $('').DB_springMove({
+        key:'c65806',               
+        dir:'x',               
+        mirror:1,             
+        radius:5,            
+        motionSpeed:0.07   
+    })
+    $('').DB_springMove({
+        key:'c65806',                
+        dir:'x',              
+        mirror:1,              
+        radius:5,             
+        motionSpeed:0.07      
+    })
+    $('').DB_springMove({
+        key:'c65806',                
+        dir:'x',               
+        mirror:1,              
+        radius:5,             
+        motionSpeed:0.07      
+    })
+    $('').DB_springMove({
+        key:'c65806',                
+        dir:'x',               
+        mirror:1,             
+        radius:5,             
+        motionSpeed:0.07      
+    })
+});
+
+
+
+
