@@ -12,7 +12,7 @@ const rightLine = $('.right-line')
     rightLine.css('top', '-100%').animate({top: '0'})
 },1500) */
 
-// 마우스 올리면
+// 각각의 animate에 마우스 올리면
 animate.each(function () {
     let tg = $(this)
     tg.hover(function () {
@@ -21,9 +21,9 @@ animate.each(function () {
         tg.find('.left-line').css('top', '100%').animate({ top: '0' })
         tg.find('.right-line').css('top', '-100%').animate({ top: '0' })
     }, function () {
-        tg.find('.top-line').css('left', '-100%')
-        tg.find('.bottom-line').css('left', '100%')
-        tg.find('.left-line').css('top', '100%')
-        tg.find('.right-line').css('top', '-100%')
+        tg.find('.top-line').css('left', '0').animate({ left: '-100%' })
+        tg.find('.bottom-line').css('left', '0').animate({ left: '100%' })
+        tg.find('.left-line').css('top', '0').animate({ top: '100%' })
+        tg.find('.right-line').css('top', '0').animate({ top: '-100%' })
     })
 })
