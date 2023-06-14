@@ -1,0 +1,14 @@
+﻿#ground{width: 500px; height: 800px; background: #00661A; margin: 50px auto; position: relative; border: 3px solid #ffaaaa;}
+#stick{width: 20px; height: 100px; background: #8C4600; position: absolute; top: 730px; left: 240px;}
+.ball{width: 20px; height: 20px; border-radius: 50%;}
+.b0{background:#ffffff; position: absolute; left: 240px; bottom: 80px;}
+.b1{background:#000000; position: absolute; top: 200px; left: 210px;}
+.b2{background:#FF2626; position: absolute; top: 200px; left: 230px;}
+.b3{background:#FFA64C; position: absolute; top: 200px; left: 250px;}
+.b4{background:#FFFF4C; position: absolute; top: 200px; left: 270px;}
+.b5{background:#5CFF26; position: absolute; top: 220px; left: 220px;}
+.b6{background:#00FFFF; position: absolute; top: 220px; left: 240px;}
+.b7{background:#0040FF; position: absolute; top: 220px; left: 260px;}
+.b8{background:#A64CFF; position: absolute; top: 240px; left: 230px;}
+.b9{background:#FF99FF; position: absolute; top: 240px; left: 250px;}
+.b10{background:#660066; position: absolute; top: 260px; left: 240px;}

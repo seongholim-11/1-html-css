@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>역동적 오버효과</title>
+<!-- jQuery library -->
+<script src="jquery-1.7.2.min.js"></script>
+<style>
+
+body {
+	margin:20px auto;
+	padding:0;	
+	width: 620px;
+	background:#192839;
+} 
+  
+ul#navigation {	list-style: none;	}  
+  
+ul#navigation li a  
+{  
+	display:block;  
+	width:150px; 
+	height:30px; 
+	margin-bottom: 5px;  
+	color:#000;     
+	border:1px solid #FC0;  
+	text-decoration: none;	
+}  
+    
+ul#navigation li a:hover {	color: #ffff66;	} 
+
+</style>
+</head>
+
+<body>
+
+<ul id="navigation">         
+    <li><a href="#" data-img="images/bg1.jpg">Menu 1</a></li>  
+    <li><a href="#" data-img="images/bg2.jpg">Menu 2</a></li>  
+    <li><a href="#" data-img="images/bg3.jpg">Menu 3</a></li>  
+    <li><a href="#" data-img="images/bg4.jpg">Menu 4</a></li>   
+</ul>  
+    
+
+<!------------------------ jQuery 코드 ----------------------->
+
+<script>
+
+$("li a").each(function(index, element) {
+	var bgimg = $(this).attr("data-img");
+	$(this).css("background-image", "url(" + bgimg + ")");
+});
+
+
+
+$("li a").hover( 
+	function(){
+		$(this).stop().animate({ marginLeft:"15px",height:120},200);
+	}, 	 
+	function(){
+		$(this).stop().animate({ marginLeft:"0px",height:30},200);
+	}
+);  
+   
+</script>
+
+</body>
+</html>

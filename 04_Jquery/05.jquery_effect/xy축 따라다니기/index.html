@@ -1,0 +1,42 @@
+
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/jquery-1.7.2.min.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="home">HOME</div>
+		<ul id="menu">
+			<li><img src="images/th_bg1.jpg" alt="" /></li>
+			<li><img src="images/th_bg2.jpg" alt="" /></li>
+			<li><img src="images/th_bg3.jpg" alt="" /></li>
+		</ul>
+	</div>
+	
+	<script>
+		$('#home').toggle(function(){
+			$('ul').stop().animate({left:"50px"},500);
+		},function(){
+			$('ul').stop().animate({left:"-600px"},500)
+		}); //1.9버전에서 안됨 이친구도.
+		
+		$('li').hover(function(){
+			$(this).stop().animate({opacity:"1"},500);
+		},function(){
+			$(this).stop().animate({opacity:"0.7"},500);
+		});
+		
+		$('#home').mousemove(function(e){
+			var pos=e.pageY-parseInt($('#container').css('height'))/2+'px';
+			$('#container').css({'top':pos});
+			
+			var posx=e.pageX-parseInt($('#home').css('width'))/2+'px';
+			$('#container').css({'left':posx});
+		});
+	</script>
+</body>
+</html>

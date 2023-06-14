@@ -1,0 +1,24 @@
+*{margin: 0; padding: 0;}
+#gallery{position: absolute; left: 50%; top: 50%;  width: 806px; height:400px; margin: -200px 0 0 -401px; overflow: hidden; }
+/* 가운데 이미지 500+ 양옆150+ margin-left:3px씩 두개 합 806  */
+
+
+
+#thumbnail{position: relative; width:1506px; height: 400px;  overflow: hidden; left: 50%; margin-left: -751px; background: #0000ff;}
+/* width:1506px= 각각 500px씩 3개의 이미지와 마진 3px씩2개 값 */
+#thumbnail div{float: left;}
+#thumbnail .left{position: absolute; left:400px; top: 180px; width: 33px; height: 95px; padding-top: 30px; text-align: center; cursor: pointer; z-index: 100;}
+#thumbnail .right{position: absolute; right:400px; top: 180px; width: 33px; height: 95px; padding-top: 30px; text-align: center; cursor: pointer;  z-index: 100;}
+
+#thumbnail .container{width:806px; height: 400px; overflow: hidden; margin-left:400px;}
+#thumbnail .container ul{position: absolute; width:7545px; left: 0;}
+/* 이미지 갯수 넓이 */
+#thumbnail .container .thumb{float: left; width: 500px; height: 400px;  list-style: none; margin-left:3px;}
+
+
+
+
+
+
+
+

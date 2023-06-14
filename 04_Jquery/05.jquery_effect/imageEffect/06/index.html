@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title> Pixastic 라이브러리를 활용한  다양한 이미지 효과 </title>
+
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="pixastic.core.js"></script>
+<script type="text/javascript" src="pixastic.custom.js"></script>
+
+<!-- 
+<script type="text/javascript" src="pixastic.core.js"></script>
+<script type="text/javascript" src="pixastic.jquery.js"></script>
+<script type="text/javascript" src="actions/desaturate.js"></script>
+개별적으로 효과를 적용하고 싶다면 -->
+
+<style>
+div {
+	display:inline;
+	margin-right:10px;
+	width:200px;
+	height:150px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div data-img="desaturate">
+	<img src="img/effect1.jpg" id="desaturate" alt=""/>
+</div>
+<div data-img="sepia">
+	<img src="img/effect2.jpg" id="sepia" alt=""/>
+</div>
+<div data-img="edges2">
+	<img src="img/effect3.jpg" id="edges2" alt=""/>
+</div>	
+<div data-img="flipv">
+	<img src="img/effect4.jpg" id="flipv" alt=""/>
+</div>
+
+      
+<!------------------------ jQuery 코드 ----------------------->
+<script>
+
+
+
+
+
+$("div").hover( 
+	function(){
+		$(this).find("img").pixastic( $(this).find("img").attr("id"));
+	}, function(){
+		var org = $("#"+$(this).attr("data-img")).get(0);
+		Pixastic.revert(org);
+	}
+);
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

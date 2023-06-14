@@ -1,0 +1,30 @@
+﻿<!DOCTYPE HTML>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+	#rhdv{width: 700px; margin: 30px auto;}
+	.sns{border: 10px solid #ff0000; width: 680px; overflow:hidden;}
+	img{width: 700px;}
+	</style>
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script>
+	jQuery(document).ready(function(){
+		 $('.sns a').hover(
+	function(){
+		$(this).find('img').css({'transform':'scale(1.3)','transition':'all 0.3s'})
+	},function(){
+		$(this).find('img').css('transform','scale(1)');
+	}
+); 
+
+	});
+	</script>
+</head>
+<body>
+	<div id="rhdv">
+		<div class="sns"><a href=""><img src="images/qq.jpg" alt="" /></a></div>
+	</div>
+</body>
+</html>
