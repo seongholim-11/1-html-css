@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c8b03a102e479a2c7f1bb067d22be8a6"></script>
+</head>
+<style>
+    ul,li{list-style: none;}
+</style>
+<body>
+    <div id="map" style="width:100%;height:1000px;"></div>
+    <ul>
+        <li onclick="kakaoLogin();">
+          <a href="javascript:void(0)">
+              <img src="./img/kakao.png" alt="login">
+          </a>
+        </li>
+        <li onclick="kakaoLogout();">
+          <a href="javascript:void(0)">
+              <span>카카오 로그아웃</span>
+          </a>
+        </li>
+    </ul>
+    <!-- 카카오 스크립트 -->
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script>
+var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+var options = { //지도를 생성할 때 필요한 기본 옵션
+	center: new kakao.maps.LatLng(37.267973, 127.005514), //지도의 중심좌표.
+	level: 3 //지도의 레벨(확대, 축소 정도)
+};
+
+var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+
+    Kakao.init('461e5864bb731879f011e79c939d4e25'); //발급받은 키 중 javascript키를 사용해준다.
+    console.log(Kakao.isInitialized()); // sdk초기화여부판단
+    //카카오로그인
+    function kakaoLogin() {
+        Kakao.Auth.login({
+          success: function (response) {
+            Kakao.API.request({
+              url: '/v2/user/me',
+              success: function (response) {
+                  console.log(response)
+              },
+              fail: function (error) {
+                console.log(error)
+              },
+            })
+          },
+          fail: function (error) {
+            console.log(error)
+          },
+        })
+      }
+    //카카오로그아웃  
+    function kakaoLogout() {
+        if (Kakao.Auth.getAccessToken()) {
+          Kakao.API.request({
+            url: '/v1/user/unlink',
+            success: function (response) {
+                console.log(response)
+            },
+            fail: function (error) {
+              console.log(error)
+            },
+          })
+          Kakao.Auth.setAccessToken(undefined)
+        }
+      }  
+    </script>
+</body>
+</html>
