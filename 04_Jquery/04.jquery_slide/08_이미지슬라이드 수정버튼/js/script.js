@@ -1,3 +1,9 @@
+// 1. eq()가 음수이면, 뒤에서 n번째 요소
+
+
+
+
+
 const banner = $('.slideUl li');
 const prev = $('.btnImg>.prev');
 const next = $('.btnImg>.next');
@@ -78,6 +84,8 @@ button.click(function () {
     button.removeClass('on');
     tg.addClass('on')
 
+    // cnt가 현재 보이는 것
+    // i가 앞으로 보일 것
     if (cnt > i) {
         if (cnt == i) return;
         let cntEl = banner.eq(cnt);
