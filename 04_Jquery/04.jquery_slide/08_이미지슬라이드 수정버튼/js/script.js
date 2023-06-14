@@ -1,9 +1,3 @@
-// 1. eq()가 음수이면, 뒤에서 n번째 요소
-
-
-
-
-
 const banner = $('.slideUl li');
 const prev = $('.btnImg>.prev');
 const next = $('.btnImg>.next');
@@ -15,6 +9,7 @@ let setIntervalId;
 // timer();
 function timer() {
     setIntervalId = setInterval(function () {
+        // eq()가 음수이면, 뒤에서 n번째 요소
         let prev = banner.eq(cnt);
         let prevBtn = button.eq(cnt);
         move(prev, 0, '-100%')
