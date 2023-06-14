@@ -6,9 +6,9 @@ a{text-decoration: none; color: #222;}
 .slide>ul.slideUl{width: 100%; height: 500px; position: relative; top: 0; left: 0;}
 .slide>ul.slideUl>li{height: 500px; width: 100%; position: absolute; left: 0; top: 0;}
 
-.slide>ul.slideUl>.slide01{background:url(../img/0.png) 50% 0 no-repeat; left: 0; }
-.slide>ul.slideUl>.slide02{background:url(../img/1.png) 50% 0 no-repeat; left: 100%; }
-.slide>ul.slideUl>.slide03{background:url(../img/2.png) 50% 0 no-repeat; left: 200%; }
+.slide>ul.slideUl>.slide01{background:url(../img/keyVisual_0.jpg) 50% 0 no-repeat; left: 0; }
+.slide>ul.slideUl>.slide02{background:url(../img/keyVisual_1.jpg) 50% 0 no-repeat; left: 100%; }
+.slide>ul.slideUl>.slide03{background:url(../img/keyVisual_2.jpg) 50% 0 no-repeat; left: 200%; }
 
 .btnImg{position: relative; top: -275px; width: 100%;}
 .btnImg .prev{position: absolute; left: 100px;}
