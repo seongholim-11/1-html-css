@@ -1,0 +1,31 @@
+﻿*{border:0; margin:0; padding:0;}
+html, body{overflow-y:hidden;}
+ul
+	{list-style:none;}
+
+.color_choice
+	{width:50px ; height:100%; position:absolute; z-index:5;  float:left; margin-left:-10%;  margin-top:2%}
+.color_choice .draggable
+	{width:100%; height:5.141%;  margin-top: 6%;  border-radius:999999px; position:relative; cursor:pointer; z-index:5;background:#CCCCFF}
+.color_choice li input
+	{display:none;  width:150px; height: 16px; text-align:left; float:left;  background:none; margin-left:150%; margin-top:35%;}
+
+
+
+#content_box
+	{width:1000px; height:800px; margin:2.5% auto; z-index:2;}
+#content_box>div
+	{ background:#757584;}
+.content1 
+	{width:100%; height:54%; float:left; overflow:hidden; position:relative;}
+.content1  .change_1
+	{width:50px; height:50px; position:absolute; border-radius:99999px; margin:0}
+.content2
+	{width:49.5%; height:45%; float:left; overflow:hidden; position:relative; margin-top:1%; margin-right:0.5%;}
+.content2  .change_2
+	{width:50px; height:50px; position:absolute; border-radius:99999px; margin:0}	
+
+.content3
+	{width:49.5%; height:45%; float:left; overflow:hidden; position:relative;  margin-top:1%; margin-left:0.5%;}
+.content3  .change_3
+	{width:50px; height:50px; position:absolute; border-radius:99999px; margin:0}

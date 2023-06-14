@@ -1,0 +1,21 @@
+*{margin: 0; padding: 0;}
+#gallery{position: absolute; left: 50%; top: 50%;  width: 202px; height:200px; margin: -297px 0 0 -412px; overflow: hidden;}
+
+
+
+#thumbnail{position: relative; width:362px; height: 95px; margin-top:30px;  left: 50%;  margin-left: -181px; overflow: hidden;}
+#thumbnail div{float: left;}
+#thumbnail .left{position: absolute; left:80px; top: 0; width: 33px; height: 95px; padding-top: 30px; text-align: center; cursor: pointer; z-index: 100;}
+#thumbnail .right{position: absolute; right:80px; top: 0; width: 33px; height: 95px; padding-top: 30px; text-align: center; cursor: pointer;  z-index: 100;}
+
+#thumbnail .container{  width:202px; height: 95px;margin-left: 80px; overflow: hidden;}
+#thumbnail .container ul{position: absolute; width: 2200px; left: 0;}
+#thumbnail .container .thumb{float: left; width: 120px; height: 95px;  list-style: none; margin-left: 1px;}
+
+
+
+
+
+
+
+

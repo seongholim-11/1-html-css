@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title> 이미지 이동을 사용한 pan 효과기 </title>
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+
+<style>
+body {
+	margin: 20px auto;
+	padding: 0;	
+	width: 800px;
+	background:#192839;
+} 
+div{ 
+	padding:0px; 
+	overflow:hidden; 
+	width:800px;
+	height:300px;
+	border:#999 thin solid;}
+	  
+img{	position:relative;	}
+</style>
+</head>
+
+<body>
+
+<div id="background">
+	<img src="img/bg.jpg" />
+</div>
+
+<!------------------------ jQuery 코드 ----------------------->
+<script>
+
+var imgw, imgh;
+$('img').load(function() {
+	imgw = $(this).width();
+	imgh = $(this).height();
+});
+
+function start() {
+	var posx =Math.ceil( Math.random()* (800-imgw) );
+	var posy =Math.ceil( Math.random()* (300-imgh) );
+	var delayTime =Math.ceil(Math.random()*5000+2000);
+	$("div#background img").delay(delayTime).animate({left:posx, top:posy}, 5000, replay);
+}
+
+function replay(){
+	var posx =Math.ceil( Math.random()* (800-imgw) );
+	var posy =Math.ceil( Math.random()* (300-imgh) );
+	var delayTime =Math.ceil(Math.random()*5000+2000);
+	$(this).delay(delayTime).animate({left:posx, top:posy}, 5000, replay);
+}
+
+start();
+
+</script>
+</body>
+</html>
+

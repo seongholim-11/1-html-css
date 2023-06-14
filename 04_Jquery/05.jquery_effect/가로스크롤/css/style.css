@@ -1,0 +1,24 @@
+html{overflow:hidden;}
+*{margin:0; padding:0; border:0;}
+.cf:after{content:""; display:block; clear:both;}
+.cb{clear:both;}
+.fl{float:left;}
+.fr{float:right;}
+li{list-style:none;}
+a{text-decoration:none;}
+html, body{width:100%; height:100%;} 
+#wrap{width:12000px; height:110%; overflow-x:scroll; position:relative; overflow-y:hidden;}
+
+.menu{width:200px; height:100%; background:#000; position:fixed; top:0; left:0; z-index:700;}
+.menu ul{width:200px; height:100%; box-sizing:border-box; padding-top:230px; background:url(../image/logosolbin5.png) no-repeat 71px 70px;}
+.menu ul li{width:100%; text-align:center;}
+.menu ul a{display:block; height:50px; line-height:50px; color:#fff; font-size:1.3em; padding:0 10px;}
+.menu ul li.on a{color:#bfefff;}
+.menu ul li:hover a{color:#bfefff;}
+
+.section01{width:2000px; height:100%; background:#ff0000; position:relative;}
+.section02{width:2000px; height:100%; background:#00ff00;  position:relative;}
+.section03{width:2000px; height:100%; background:#0000ff; position:relative;}
+.section04{width:2000px; height:100%; background:#ffff00; position:relative; overflow:hidden;}
+.section05{width:2000px; height:100%; background:#00ffff; position:relative;}
+.section06{width:2000px; height:100%; background:#ff00ff; position:relative;}

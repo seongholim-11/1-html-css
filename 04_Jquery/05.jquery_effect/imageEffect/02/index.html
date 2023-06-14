@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title> png 애니메이션 </title>
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+
+<style>
+div#ani {
+	width:320px;
+	height:240px;
+	position:relative;
+	background:url(img/bg.jpg); 
+}
+ 
+div#ani img{
+	position:absolute;
+	display:none; 
+}
+</style>
+</head>
+
+<body>
+
+<div id ="ani"></div>
+
+
+
+<!------------------------ jQuery 코드 ----------------------->
+<script>
+jQuery(document).ready(function(){
+var timerInterval;
+var count=0;
+function arrangeImg(){
+	for(var i=0;i<21;i++){
+		$("div#ani").append("<img src ='seq/seq"+i+".png' />");
+	}
+	$("div#ani img:first").show();
+}
+
+arrangeImg();
+  
+
+$("div#ani").hover( 
+	function() {
+		if(timerInterval) { clearInterval(timerInterval); }
+			timerInterval = setInterval(nextFrame,50)
+		}, 
+	function() {
+		if(timerInterval) { clearInterval(timerInterval); }
+		timerInterval = setInterval(prevFrame,50)
+	}
+);
+  
+function nextFrame(){
+	count=count+1;
+	if(count>20){
+		count = 20;	
+		clearInterval(timerInterval);
+	}
+	$("div#ani img:visible").hide();
+	$("div#ani img:eq("+count+")").css("display","inline");
+}
+function prevFrame(){
+	count=count-1;
+	if(count<0){
+		count = 0;	
+		clearInterval(timerInterval);
+	}
+	$("div#ani img:visible").hide();
+	$("div#ani img:eq("+count+")").css("display","inline");
+} 
+
+ 
+});  
+</script>
+</body>
+</html>

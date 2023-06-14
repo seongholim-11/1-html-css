@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Test 17</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <style>
+        div {
+            text-indent: -9999px;
+        }
+
+        #ground {
+            width: 500px;
+            height: 700px;
+            background-color: green;
+            margin: 30px auto;
+            border: 10px solid #faa;
+            position: relative;
+            z-index: -1;
+        }
+
+        #stick {
+            width: 20px;
+            height: 150px;
+            top: 650px;
+            left: 50%;
+            background-color: brown;
+            position: absolute;
+            transform: translateX(-50%);
+        }
+
+        div.ball {
+            width: 20px;
+            height: 20px;
+            top: 620px;
+            left: 240px;
+            background-color: white;
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        #ball01 {
+            left: 240px;
+            top: 240px;
+            background-color: yellow;
+        }
+
+        #ball02 {
+            left: 230px;
+            top: 220px;
+            background-color: blue;
+        }
+
+        #ball03 {
+            left: 250px;
+            top: 220px;
+            background-color: red;
+        }
+
+        #ball04 {
+            left: 220px;
+            top: 200px;
+            background-color: pink;
+        }
+
+        #ball05 {
+            left: 230px;
+            top: 180px;
+            background-color: orange;
+        }
+
+        #ball06 {
+            left: 260px;
+            top: 200px;
+            background-color: greenyellow;
+        }
+
+        #ball07 {
+            left: 210px;
+            top: 180px;
+            background-color: burlywood;
+        }
+
+        #ball08 {
+            left: 240px;
+            top: 200px;
+            background-color: black;
+        }
+
+        #ball09 {
+            left: 250px;
+            top: 180px;
+            background-color: yellow;
+        }
+
+        #ball10 {
+            left: 270px;
+            top: 180px;
+            background-color: blue;
+        }
+
+        #ball11 {
+            left: 200px;
+            top: 160px;
+            background-color: red;
+        }
+
+        #ball12 {
+            left: 220px;
+            top: 160px;
+            background-color: pink;
+        }
+
+        #ball13 {
+            left: 240px;
+            top: 160px;
+            background-color: orange;
+        }
+
+        #ball14 {
+            left: 260px;
+            top: 160px;
+            background-color: greenyellow;
+        }
+
+        #ball15 {
+            left: 280px;
+            top: 160px;
+            background-color: burlywood;
+        }
+    </style>
+    <script>
+        $(() => {
+            function rndInt(min, max) {
+                min = Math.ceil(min);
+                max = Math.floor(max);
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+
+            $("#stick").animate({
+                top: 720
+            }, 1000).animate({
+                top: 600
+            }, 300);
+            $("#ball00").delay(1130).animate({
+                top: 260
+            }, 400)
+
+
+
+            $("#ball01").delay(1500).animate({
+                top: rndInt(250, 270),
+                left: rndInt(310, 350)
+            }, 300)
+
+
+
+            $("#ball02").delay(1500).animate({
+                top: rndInt(220, 280),
+                left: rndInt(110, 170)
+            }, 300)
+
+            $("#ball03").delay(1500).animate({
+                top: rndInt(230, 270),
+                left: rndInt(360, 400)
+            }, 300)
+
+
+
+            $("#ball04").delay(1500).animate({
+                top: rndInt(180, 220),
+                left: rndInt(80, 120)
+            }, 300)
+
+            $("#ball08").delay(1500).animate({
+                top: rndInt(120, 180),
+                left: rndInt(225, 275)
+            }, 300)
+
+            $("#ball06").delay(1500).animate({
+                top: rndInt(140, 200),
+                left: rndInt(320, 370)
+            }, 300)
+
+
+
+            $("#ball07").delay(1500).animate({
+                top: rndInt(80, 120),
+                left: rndInt(50, 100)
+            }, 300)
+
+            $("#ball05").delay(1500).animate({
+                top: rndInt(60, 100),
+                left: rndInt(125, 180)
+            }, 300)
+
+            $("#ball09").delay(1500).animate({
+                top: rndInt(60, 100),
+                left: rndInt(300, 360)
+            }, 300)
+            $("#ball10").delay(1500).animate({
+                top: rndInt(80, 120),
+                left: rndInt(400, 450)
+            }, 300)
+
+
+
+            $("#ball11").delay(1500).animate({
+                top: rndInt(40, 80),
+                left: rndInt(0, 80)
+            }, 300)
+            $("#ball12").delay(1500).animate({
+                top: rndInt(20, 50),
+                left: rndInt(100, 180)
+            }, 300)
+            $("#ball13").delay(1500).animate({
+                top: rndInt(0, 50),
+                left: rndInt(200, 280)
+            }, 300)
+            $("#ball14").delay(1500).animate({
+                top: rndInt(20, 50),
+                left: rndInt(300, 380)
+            }, 300)
+            $("#ball15").delay(1500).animate({
+                top: rndInt(40, 80),
+                left: rndInt(400, 480)
+            }, 300)
+        })
+    </script>
+</head>
+
+<body>
+    <div id="ground">box
+        <div id="stick">box</div>
+        <div id="ball01" class="ball">box</div>
+        <div id="ball02" class="ball">box</div>
+        <div id="ball03" class="ball">box</div>
+        <div id="ball04" class="ball">box</div>
+        <div id="ball05" class="ball">box</div>
+        <div id="ball06" class="ball">box</div>
+        <div id="ball07" class="ball">box</div>
+        <div id="ball08" class="ball">box</div>
+        <div id="ball09" class="ball">box</div>
+        <div id="ball10" class="ball">box</div>
+        <div id="ball11" class="ball">box</div>
+        <div id="ball12" class="ball">box</div>
+        <div id="ball13" class="ball">box</div>
+        <div id="ball14" class="ball">box</div>
+        <div id="ball15" class="ball">box</div>
+        <div id="ball00" class="ball">box</div>
+    </div>
+
+</body>
+
+</html>
