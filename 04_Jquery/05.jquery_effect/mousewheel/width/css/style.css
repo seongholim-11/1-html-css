@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0;}
+
+html{overflow: hidden;}
+#wrap{width: calc(1920px*9);}
+.section{ position: relative; width: 100vw; max-width: 1920px; color: #fff; text-align: center; font-weight: bold; text-transform: uppercase; font-size: 100px; line-height: 969px; float: left;}
+#section1{background: yellowgreen;}
+#section2{background: rgb(205, 50, 50);}
+#section3{background: rgb(205, 112, 50);}
+#section4{background: rgb(63, 205, 50);}
+#section5{background: rgb(50, 205, 109);}
+#section6{background: rgb(50, 174, 205);}
+#section7{background: rgb(50, 99, 205);}
+#section8{background: rgb(135, 50, 205);}
+#section9{background: rgb(205, 50, 122);}
