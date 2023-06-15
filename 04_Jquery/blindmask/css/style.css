@@ -13,7 +13,7 @@ ul.slide-wrap li.slide{position: absolute; top: 0; left: 0; width: 100%;}
 ul.slide-wrap li.slide1{z-index: 3;}
 ul.slide-wrap li.slide2{z-index: 1;}
 ul.slide-wrap li.slide3{z-index: 1;}
-ul.slide-wrap li.slide4{z-index: 2;}
+ul.slide-wrap li.slide4{z-index: 1;}
 
 ul.slide-wrap li.slide ul.slide-img{width: 100%; position: relative; }
 ul.slide-wrap li.slide ul.slide-img li{height: 900px; position: absolute; width: 25%; top: 0; overflow: hidden; }

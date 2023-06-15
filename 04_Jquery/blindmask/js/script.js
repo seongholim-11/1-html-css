@@ -3,6 +3,7 @@ let n = jQuery('.slide').length - 1;
 let delta = 0; // 휠 델타값
 let t = 0; // 마우스 휠 토글 변수
 let z = 0; // cnt를 기준으로 이전 다음
+let setintervalID;
 
 $('.arrowNextBt').on('click', function(){
     nextCountfn()
@@ -12,10 +13,21 @@ $('.arrowPrevBt').on('click', function(){
     prevCountfn()
 })
 
+$('#section1').hover(function(){
+    clearInterval(setintervalID);
+}, function(){
+    autoplay();
+})
+
+autoplay();
+function autoplay(){
+    setintervalID = setInterval(nextCountfn,3000)
+}
+
 function nextCountfn() {
     cnt++;
     if (cnt > n) { cnt = 0; }
-    z = (cnt == 0 ? n : cnt + 1)
+    z = (cnt == 0 ? n : cnt - 1)
     console.log("🚀 ~ file: script.js:19 ~ nextCountfn ~ z:", z)
     mainNextSlidefn();
 }
@@ -25,6 +37,19 @@ function pageBtfn(){
     $('.pageBt').eq(cnt).addClass('addpageBt');
 }
 
+$('.pageBt').each(function(index){
+    $(this).on('click', function(){
+        if(cnt < index){
+            z = cnt
+            cnt = index
+            mainNextSlidefn()
+        }else if(cnt > index){
+            z = cnt
+            cnt = index
+            mainPrevSlidefn()
+        }
+    })
+})
 
 // 메인 슬라이드 다음슬라이드 함수
 function mainNextSlidefn() {
