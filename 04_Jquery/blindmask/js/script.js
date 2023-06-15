@@ -105,7 +105,7 @@ function mainNextSlidefn() {
         // 모든 .slide(li)의 z-index를 1로 변경하고, 그 아래 li(4개)들의 너비를 25%로 만듦
         $('.slide').css({ zIndex: 1 }).find('li').animate({ width: (25 * 1) + '%' }, 0)
 
-        $('.slide').eq(z).css({ zIndex: 2 }).find('li').animate({ width: (25 * 1) + '%' }, 0)
+        $('.slide').eq(z).css({ zIndex: 2 }).find('li').animate({ width: (25 * 1) + '%'}, 0)
         $('.slide').eq(cnt).css({ zIndex: 3 }).find('li').animate({ width: (25 * 0) + '%' }, 0).animate({ width: (25 * 1) + '%' }, 800)
     } else {
         return false
