@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0;}
+a{text-decoration: none; color: #333;}
+body{background: #edecec;}
+
+.issue{width: 100%; height: 550px; background: #fffafa; float: left;}
+.issue .container{width: 90%; margin: 25px auto; position: relative; height: 100%;}
+.imgBox{}
+
+.page{position: absolute; top: 0; left: 50%; width: 680px; height: 450px; background: #333; transform: translateX(-50%);}
+.view{width: 0%; height: 450px; overflow: hidden; position: absolute;}
+.right{right: 0}
+.view.on{width: 100%;}
+.view img{position: absolute; top: 0;}
+
+.btn{}
+.btn a{position: absolute; top: 40%; font-weight: bold;}
+.prev{left: 100px;}
+.next{right: 100px;}
+
+.page-bt{position: absolute; bottom: 50px; left: 50%; transform: translateX(-50%); text-align: center;}
+.page-bt a{display: block; width: 15px; height: 15px; float: left; margin-right: 20px; background: #d0d0d0; border-radius: 50%; text-indent: -999999em;}
+.page-bt a.on{background: #760b0b; border: 4px solid #dadada; box-sizing: border-box;}
