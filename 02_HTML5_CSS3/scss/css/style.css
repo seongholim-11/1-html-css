@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background: #ddd;
 }
@@ -122,5 +123,105 @@ div.string1 {
 }
 
 div.string1 {
-  border-top: 5px solid blue;
+  border-top: 5px solid red;
+}
+
+.list li {
+  background: no-repeat 0 0/20px 30px;
+  text-indent: 30px;
+  line-height: 50px;
+  border: 1px solid rebeccapurple;
+}
+
+/* .list li.ico1{background: url(../img/ico1.png) no-repeat;}
+.list li.ico2{background: url(../img/ico2.png) no-repeat;}
+.list li.ico3{background: url(../img/ico3.png) no-repeat;}
+.list li.ico4{background: url(../img/ico4.png) no-repeat;}
+.list li.ico5{background: url(../img/ico5.png) no-repeat;} */
+.list li.ico1 {
+  background-image: url(../img/ico1.png);
+}
+
+.list li:nth-child(1)::before {
+  content: "제목 1";
+}
+
+.list li.ico2 {
+  background-image: url(../img/ico2.png);
+}
+
+.list li:nth-child(2)::before {
+  content: "제목 2";
+}
+
+.list li.ico3 {
+  background-image: url(../img/ico3.png);
+}
+
+.list li:nth-child(3)::before {
+  content: "제목 3";
+}
+
+.list li.ico4 {
+  background-image: url(../img/ico4.png);
+}
+
+.list li:nth-child(4)::before {
+  content: "제목 4";
+}
+
+.list li.ico5 {
+  background-image: url(../img/ico5.png);
+}
+
+.list li:nth-child(5)::before {
+  content: "제목 5";
+}
+
+.ico_book {
+  background: url(../img/book.png) no-repeat;
+  text-indent: 80px;
+}
+
+.ico_zoom {
+  background: url(../img/zoom.png) no-repeat;
+  text-indent: 80px;
+}
+
+.ico_new {
+  background: url(../img/new.png) no-repeat;
+  text-indent: 80px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 15px;
+}
+
+.btn {
+  padding: 0 20px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: black;
+  color: #fff;
+  border: 1px solid red;
+}
+
+.if {
+  width: 300px;
+  height: 300px;
+  background: #666;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
 }/*# sourceMappingURL=style.css.map */

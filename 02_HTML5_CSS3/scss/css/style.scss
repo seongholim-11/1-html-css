@@ -148,5 +148,78 @@ div.#{$bx} {
     @include bx1(left, 5px, blue);
 }
 div.#{$bx} {
-    @include bx1(top, 5px, blue);
+    @include bx1(top, 5px, red);
 }
+
+// 6. for 반복문
+.list li {
+    background: no-repeat 0 0/20px 30px;
+    text-indent: 30px;
+    line-height: 50px;
+    border: 1px solid rebeccapurple;
+}
+/* .list li.ico1{background: url(../img/ico1.png) no-repeat;}
+.list li.ico2{background: url(../img/ico2.png) no-repeat;}
+.list li.ico3{background: url(../img/ico3.png) no-repeat;}
+.list li.ico4{background: url(../img/ico4.png) no-repeat;}
+.list li.ico5{background: url(../img/ico5.png) no-repeat;} */
+
+@for $i from 1 to 6 {
+    .list li.ico#{$i} {
+        background-image: url(../img/ico#{$i}.png);
+    }
+    .list li:nth-child(#{$i})::before {
+        content: "제목 #{$i}";
+    }
+}
+
+// 7. each문
+@each $var in book, zoom, new {
+    .ico_#{$var} {
+        background: url(../img/#{$var}.png) no-repeat;
+        text-indent: 80px;
+    }
+    
+}
+
+$heading:(h1:40px,h2:30px,h3:15px);
+
+@each $ele, $fs in $heading{
+    #{$ele}{
+        font-size: $fs;
+    }
+}
+
+// 조건문
+@mixin btn_radius($h, $radius:true){
+    padding: 0 20px;
+    height: $h;
+    line-height: $h;
+    text-align: center;
+    background: black;
+    color: $white;
+    @if $radius{
+        border-radius: $h/2;
+    }@else{
+        border: 1px solid $red;
+    }
+}
+
+.btn{@include btn_radius(30px, false)}
+
+@mixin position($x, $y, $z){
+    position: absolute;
+    left: $x;
+    top: $y;
+    z-index: $z;
+
+    @if $x == 50% and $y == 50%{
+        transform: translate(-50%, -50%);
+    }@else if $x == 50%{
+        transform: translateX(-50%);
+    }@else if $y == 50%{
+        transform: translateY(-50%);
+    }
+}
+
+.if{width: 300px; height: 300px; background: $gray; @include position(50%, 50%, 2);}
