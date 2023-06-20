@@ -1,0 +1,126 @@
+body {
+  background: #ddd;
+}
+
+#wrap {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.box {
+  margin-bottom: 5px;
+  background: #fff;
+}
+
+.btn1 {
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  color: #666;
+  background: #fff;
+  border: 1px solid #666;
+  text-align: center;
+  display: block;
+  margin-bottom: 30px;
+}
+.btn1:hover {
+  background: #666;
+  color: #fff;
+}
+
+.btn2 {
+  padding: 10px;
+  font-size: 24px;
+  border: 1px solid red;
+  background: blue;
+}
+.btn2:hover {
+  background: red;
+}
+
+.scss {
+  color: red;
+}
+.scss ul {
+  border: 1px solid red;
+}
+.scss ul li {
+  background: pink;
+  margin-bottom: 2px;
+}
+.scss ul li a {
+  text-decoration: none;
+  display: block;
+}
+.scss ul li a:hover {
+  color: red;
+}
+.scss ul li a.bbb {
+  font-size: 12px;
+}
+.scss ul li .bbb {
+  text-decoration: underline;
+}
+.scss ul li:last-child {
+  border: 1px solid blue;
+}
+
+.test {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+}
+
+.clearfix {
+  border: 3px solid #999fe9;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.clearfix p {
+  float: left;
+}
+.clearfix p:first-child {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+}
+
+.var {
+  border: 1px solid blue;
+}
+
+.red {
+  border: 1px solid red;
+}
+
+.green {
+  border: 1px solid green;
+}
+
+.var2 {
+  width: 300px;
+  height: 100px;
+  background: yellow;
+}
+
+.var3 {
+  width: 200px;
+  height: 100px;
+  background: gold;
+}
+
+div.string1 {
+  border: 1px solid red;
+}
+
+.string2 {
+  border-left: 5px solid blue;
+}
+
+div.string1 {
+  border-top: 5px solid blue;
+}/*# sourceMappingURL=style.css.map */
