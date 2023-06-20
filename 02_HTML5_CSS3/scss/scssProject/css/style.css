@@ -18,7 +18,7 @@ body {
   display: none;
 }
 .nav-button {
-  background: #c4e3ff;
+  background: #b9b9b9;
   width: 7rem;
   height: 6rem;
   position: fixed;
@@ -131,7 +131,7 @@ body {
 header {
   width: 100%;
   height: 90vh;
-  background-image: linear-gradient(to right, #285a91 0%, #1f9cfd 100%), url(../images/header-image.jpg);
+  background-image: linear-gradient(to right, #b9b9b9 0%, #474747 100%), url(../images/header-image.jpg);
   background-blend-mode: multiply;
   background-size: cover;
   position: relative;
@@ -144,4 +144,57 @@ header #logo-text {
   text-transform: uppercase;
   color: #fff;
   font-family: "lato", sans-serif;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+}
+header #header-text {
+  position: absolute;
+  left: 7rem;
+  bottom: 23%;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: -0.1rem;
+}
+header #header-text-main {
+  font-size: 7.2rem;
+  line-height: 7.2rem;
+  animation-name: moveInRight;
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
+  animation-delay: 1s;
+}
+header #header-text-sub {
+  font-size: 2.4rem;
+  margin-top: 3rem;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0.1;
+    transform: translateX(-8rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0.1;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
 }/*# sourceMappingURL=style.css.map */
