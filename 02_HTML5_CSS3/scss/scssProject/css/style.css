@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Nanum+Gothic:wght@400;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 3rem;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.nav-checkbox {
+  display: none;
+}
+.nav-button {
+  background: #c4e3ff;
+  width: 7rem;
+  height: 6rem;
+  position: fixed;
+  top: 7rem;
+  right: 8rem;
+  z-index: 2000;
+  cursor: pointer;
+  border-radius: 2px;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.nav-bg {
+  background-image: radial-gradient(#285a91, #1f9cfd);
+  width: 7rem;
+  height: 6rem;
+  position: fixed;
+  top: 7rem;
+  right: 8rem;
+  z-index: 1000;
+  border-radius: 2px;
+  transition: 0.8s;
+}
+.nav-checkbox:checked ~ .nav-bg {
+  transform: scale(80);
+}
+.nav-icon {
+  position: relative;
+  margin-top: 3rem;
+}
+.nav-icon::before {
+  top: -0.8rem;
+}
+.nav-icon::after {
+  top: 0.8rem;
+}
+.nav-icon::before, .nav-icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: 0.2s;
+}
+.nav-icon, .nav-icon::before, .nav-icon::after {
+  width: 3rem;
+  height: 2px;
+  background: #333;
+  display: inline-block;
+}
+.nav-icon-button:hover, .nav-icon-icon::before {
+  top: -1rem;
+}
+.nav-icon-button:hover, .nav-icon-icon::after {
+  top: 1rem;
+}
+.nav-checkbox:checked ~ .nav-button .nav-icon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+.nav-checkbox:checked ~ .nav-button .nav-icon {
+  background-color: transparent;
+}
+.nav-checkbox:checked ~ .nav-button .nav-icon::after {
+  top: 0;
+  transform: rotate(-135deg);
+}/*# sourceMappingURL=style.css.map */
