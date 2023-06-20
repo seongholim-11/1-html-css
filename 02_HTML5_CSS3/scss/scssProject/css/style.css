@@ -66,11 +66,11 @@ body {
   background: #333;
   display: inline-block;
 }
-.nav-icon-button:hover, .nav-icon-icon::before {
-  top: -1rem;
-}
-.nav-icon-button:hover, .nav-icon-icon::after {
+.nav-button:hover .nav-icon::after {
   top: 1rem;
+}
+.nav-button:hover .nav-icon::before {
+  top: -1rem;
 }
 .nav-checkbox:checked ~ .nav-button .nav-icon::before {
   top: 0;
