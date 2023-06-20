@@ -82,4 +82,19 @@ body {
     &-checkbox:checked ~ &-button &-icon::before{top: 0; transform: rotate(135deg);}
     &-checkbox:checked ~ &-button &-icon{background-color: transparent;}
     &-checkbox:checked ~ &-button &-icon::after{top: 0; transform: rotate(-135deg);}
+
+    &-body{position: fixed; top: 0; left: -120%; width: 100vw; height: 100vh;z-index: 1500; opacity: 0; transition: 0.8s;}
+
+    &-list{position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); list-style: none; width: 100%; text-align: center;}
+
+    &-link{display: inline-block; font-size: 3rem; font-weight: 300; padding: 1rem 2rem; color: $color-white; text-transform: uppercase; text-decoration: none; transition: 0.4s; background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white); background-size: 220%; 
+        &:hover{color: $color-primary; background-position: 100%; transform: translateX(1rem);}
+        span{display: inline-block; margin-right: 1.5rem}
+    }
+    &-checkbox:checked ~ &-body{opacity: 1; left: 0;}
+}
+header{
+    width: 100%; height: 90vh; background-image: linear-gradient(to right, $color-primary 0%, $color-secondary 100%), url(../images/header-image.jpg); background-blend-mode: multiply; background-size: cover; position: relative;
+
+    #logo-text{position: absolute; top: 4rem; left: 7rem; font-size: 5.6rem; text-transform: uppercase; color: $color-white; font-family: 'lato', sans-serif;}
 }
