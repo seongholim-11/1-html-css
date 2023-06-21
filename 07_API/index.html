@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $.getJSON('https://api.openweathermap.org/data/2.5/weather?id=1835848&appid=90dda4a9ad533db48bad866d3d27fbea&units=metric', function(data){
+                const $temp = data.main.temp;
+                const $hightemp = data.main.temp_max;
+                const $lowtemp = data.main.temp_min;
+                const $icon = data.weather[0].icon;
+                const $dt = data.dt;
+                
+                $('.ctemp').append($temp);
+                $('.chightemp').append($hightemp);
+                $('.clowtemp').append($lowtemp);
+                $('.cicon').append('<img src="https://openweathermap.org/img/wn/'+$icon+'@2x.png"></img>');
+                $('h2').prepend($dt);
+
+            })
+        })
+    </script>
+</head>
+<body>
+    <!-- https://api.openweathermap.org/data/2.5/forecast?id=1835848&appid=90dda4a9ad533db48bad866d3d27fbea&units=metric -->
+    <!-- https://api.openweathermap.org/data/2.5/weather?id=1835848&appid=90dda4a9ad533db48bad866d3d27fbea&units=metric -->
+    <h1>weather API</h1>
+    <h2> 날씨 예보 </h2>
+    <div class="ctemp">현재 온도: </div>
+    <div class="clowtemp">최저 온도: </div>
+    <div class="chightemp">최고 온도: </div>
+    <div class="cicon">아이콘: </div>
+</body>
+</html>
