@@ -11,20 +11,68 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/485509e1ae.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=z2tv3cv252"></script>
     <link rel="canonical" href="https://getbootstrap.kr/docs/5.2/examples/navbars/">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <style>
+        .carousel-item img {
+            animation-name: up;
+            animation-duration: 4s;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+        }
+
+        .card:hover img {
+            transform: scale(1.3);
+        }
+
+        @keyframes up {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(1.3);
+            }
+        }
+
+        .wicon {
+            width: 80px;
+            height: 80px;
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+            border-radius: 50%;
+            background: #ccc;
+            cursor: pointer;
+        }
+
+        .wicon img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .modal-body{padding: 20px;}
+    </style>
 </head>
 
-<body>
-    <div class="container-lg">
+<body style="background: #ddd;">
+    <div class="container-lg" style="background: #fff; position: relative;">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Third navbar example">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="./images/pngegg.png" alt="logo"
                         style="width: 50px; height: 50px;"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03"
-                    aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-    
+
                 <div class="collapse navbar-collapse" id="navbarsExample03">
                     <ul class="navbar-nav me-auto mb-2 mb-sm-0">
                         <li class="nav-item">
@@ -53,7 +101,7 @@
                         <div class="input-group">
                             <input type="search" class="form-control" placeholder="Search" aria-label="Search"
                                 aria-describedby="search-addon" />
-                            <span class="input-group-text border-0" id="search-addon">
+                            <span class="input-group-text border-0" id="search-addon" style="cursor: pointer;">
                                 <i class="fas fa-search"></i>
                             </span>
                         </div>
@@ -63,8 +111,8 @@
         </nav>
         <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
-                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
@@ -120,13 +168,14 @@
         </div>
         <div class="album py-5 bg-light">
             <div class="container">
-    
+
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <div class="col">
                         <div class="card shadow-sm">
                             <img src="./images/yellow.png" alt="yellow" style="min-height: 150px;">
                             <div class="card-body">
-                                <p class="card-text">스포츠 카의 대명사 같은 브랜드이며, "일반적인 차들은 시간이 흐르면 폐차장으로 가지만 포르쉐는 박물관으로 간다"라는 말이 있을
+                                <p class="card-text">스포츠 카의 대명사 같은 브랜드이며, "일반적인 차들은 시간이 흐르면 폐차장으로 가지만 포르쉐는 박물관으로 간다"라는
+                                    말이 있을
                                     정도로 기계적 완성도가 뛰어나다는 평가를 받고있다. 또한 "데일리 카처럼 탈 수 있다"는 장점이 있다.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                 </div>
@@ -137,7 +186,8 @@
                         <div class="card shadow-sm">
                             <img src="./images/gray.png" alt="gray" style="min-height: 150px;">
                             <div class="card-body">
-                                <p class="card-text">세계에서 유일하게 슈퍼카를 기계생산으로 양산하는 업체이며, 또한 순수익을 따졌을 때 세계에서 가장 높은 수익률을 자랑하는 자동차
+                                <p class="card-text">세계에서 유일하게 슈퍼카를 기계생산으로 양산하는 업체이며, 또한 순수익을 따졌을 때 세계에서 가장 높은 수익률을 자랑하는
+                                    자동차
                                     회사이기도 하다.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                 </div>
@@ -148,7 +198,8 @@
                         <div class="card shadow-sm">
                             <img src="./images/gray2.png" alt="gray2" style="min-height: 150px;">
                             <div class="card-body">
-                                <p class="card-text">디자인에 있어서는 디자인 콘셉트를 911을 기본 베이스로 하며, "911 디자이너들은 죄다 똑같이 개구리같은 스포츠카만 하루
+                                <p class="card-text">디자인에 있어서는 디자인 콘셉트를 911을 기본 베이스로 하며, "911 디자이너들은 죄다 똑같이 개구리같은 스포츠카만
+                                    하루
                                     종일 그리다가 퇴근한다"라는 우스갯소리가 있을 정도로 전통을 고수한다.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                 </div>
@@ -166,13 +217,20 @@
                 </div>
                 <div class="col-lg-6">
                     <h1 class="display-5 fw-bold lh-1 mb-3">Porsche Taycan</h1>
-                    <p class="lead">타이칸 터보, 타이칸 터보 S의 두 가지 트림으로 출시되며 각각 670마력/86.5kgm 토크, 750마력/107kgm 토크로 세팅된다. 2.5초 동안 스펙
-                        이상의 출력을 내게 해 주는 오버부스트 기능을 탑재하였다고 하고, 공식 0-60마일, 1/4마일 가속 성능은 3.0초/11.1초와 2.6초/10.8초이다. 고속 크루징을 위해 양산
-                        전기차중에서는 유일하게 후륜에 2단 변속기를 사용한다. 또한 전후면 액슬에 각각 모터를 달고 있으며 0-200km까지 걸리는 시간은 9.8초에 불과하다. 4륜조향, 16.5인치
-                        카본 세라믹 디스크 브레이크, 토크 벡터링, 에어 서스펜션, 일렉트릭 스포츠 사운드 [15] 등 다양한 기능들이 제공된다. 최대 270kW의 충전속도를 지원한다.</p>
+                    <p class="lead">타이칸 터보, 타이칸 터보 S의 두 가지 트림으로 출시되며 각각 670마력/86.5kgm 토크, 750마력/107kgm 토크로 세팅된다. 2.5초 동안
+                        스펙
+                        이상의 출력을 내게 해 주는 오버부스트 기능을 탑재하였다고 하고, 공식 0-60마일, 1/4마일 가속 성능은 3.0초/11.1초와 2.6초/10.8초이다. 고속 크루징을
+                        위해 양산
+                        전기차중에서는 유일하게 후륜에 2단 변속기를 사용한다. 또한 전후면 액슬에 각각 모터를 달고 있으며 0-200km까지 걸리는 시간은 9.8초에 불과하다. 4륜조향,
+                        16.5인치
+                        카본 세라믹 디스크 브레이크, 토크 벡터링, 에어 서스펜션, 일렉트릭 스포츠 사운드 등 다양한 기능들이 제공된다. 최대 270kW의 충전속도를 지원한다.</p>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
                             더보기
+                        </button>
+                        <button type="button" class="btn btn-primary tts1">
+                            읽어주기
                         </button>
                     </div>
                 </div>
@@ -193,9 +251,16 @@
                             data-bs-target="#exampleModal2">
                             더보기
                         </button>
+                        <button type="button" class="btn btn-primary tts2">
+                            읽어주기
+                        </button>
                     </div>
                 </div>
             </div>
+        </div>
+        <div id="nMap">
+            <h2 style="margin-bottom: 30px; font-weight: bold; padding-left: 225px;">포르쉐 코리아 위치</h2>
+            <div id="map" style="width:65%;height:400px; margin: 0 auto;"></div>
         </div>
         <div class="container">
             <footer class="py-3 my-4">
@@ -210,9 +275,33 @@
             </footer>
         </div>
     </div>
+    <button type="button" class="wicon" data-bs-toggle="modal" data-bs-target="#weather">
+        <img src="./images/sunny_FILL0_wght400_GRAD0_opsz48.png" alt="">
+    </button>
 
     <!-- 모달 -->
     <!-- Vertically centered modal -->
+    <div class="modal fade" id="weather" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog .modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">weather</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="margin: 0 auto; text-align: center;">
+                    <div class="weather">
+                        <h1 class="w-icon"></h1>
+                        <div class="ctemp" style="font-size: 20px;">현재 온도: </div>
+                        <div class="clowtemp" style="font-size: 20px;">최저 온도: </div>
+                        <div class="chightemp" style="font-size: 20px;">최고 온도: </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog .modal-dialog-centered">
             <div class="modal-content">
@@ -465,6 +554,75 @@
             </div>
         </div>
     </div>
+
+    <script>
+        /* 글 읽어주기 */
+        const synth = window.speechSynthesis
+        let ourText1 = "타이칸 터보, 타이칸 터보 S의 두 가지 트림으로 출시되며 각각 670마력, 86.5kgm 토크, 750마력, 107kgm 토크로 세팅된다. 2.5초 동안 스펙 이상의 출력을 내게 해 주는 오버부스트 기능을 탑재하였다고 하고, 공식 0-60마일, 1, 4마일 가속 성능은 3.0초,11.1초와 2.6초,10.8초이다. 고속 크루징을 위해 양산 전기차중에서는 유일하게 후륜에 2단 변속기를 사용한다. 또한 전후면 액슬에 각각 모터를 달고 있으며 0-200km까지 걸리는 시간은 9.8초에 불과하다. 4륜조향, 16.5인치 카본 세라믹 디스크 브레이크, 토크 벡터링, 에어 서스펜션, 일렉트릭 스포츠 사운드 등 다양한 기능들이 제공된다. 최대 270kW의 충전속도를 지원한다."
+        let ourText2 = "독일의 스포츠카 브랜드인 포르쉐에서 2009년부터 생산 중인 앞엔진 후륜구동 기반 5인승 4도어 고성능 대형 패스트백. 파나메라는 고성능의 주행 성능을 가지면서 보다 안락한 스포츠 세단이다. 내장이 꽤나 호사스러우면서도 전체적인 성능은 과연 포르쉐라고 할 수 있을 만큼 웬만한 스포츠 세단 이상의 성능을 발휘한다."
+        const utterThis1 = new SpeechSynthesisUtterance(ourText1)
+        const utterThis2 = new SpeechSynthesisUtterance(ourText2)
+
+        const tts1 = document.querySelector('.tts1')
+        const tts2 = document.querySelector('.tts2')
+
+        tts1.addEventListener('mouseover', function () {
+            synth.speak(utterThis1)
+        })
+        tts1.addEventListener('mouseout', function () {
+            synth.cancel();
+        })
+        tts2.addEventListener('mouseover', function () {
+            synth.speak(utterThis2)
+        })
+        tts2.addEventListener('mouseout', function () {
+            synth.cancel();
+        })
+
+        /* 네이버 지도 */
+
+        var HOME_PATH = window.HOME_PATH || '.';
+        var position = new naver.maps.LatLng(37.505221, 127.0645273);
+
+        var mapOptions = {
+            center: new naver.maps.LatLng(37.505221, 127.0645273),
+            scaleControl: false,
+            logoControl: false,
+            mapDataControl: false,
+            zoomControl: true,
+            minZoom: 6
+        };
+
+        var map = new naver.maps.Map('map', mapOptions);
+
+        var markerOptions = {
+            position: position.destinationPoint(0, 0),
+            map: map,
+            icon: {
+                url: HOME_PATH + '/images/porsche2.png',
+                size: new naver.maps.Size(100, 60),
+                origin: new naver.maps.Point(0, 0),
+                anchor: new naver.maps.Point(25, 26)
+            }
+        };
+
+        var marker = new naver.maps.Marker(markerOptions);
+
+        $(function () {
+            $.getJSON('https://api.openweathermap.org/data/2.5/weather?id=1835848&appid=90dda4a9ad533db48bad866d3d27fbea&units=metric', function (data) {
+                const $temp = data.main.temp;
+                const $hightemp = data.main.temp_max;
+                const $lowtemp = data.main.temp_min;
+                const $icon = data.weather[0].icon;
+
+                $('.ctemp').append($temp);
+                $('.chightemp').append($hightemp);
+                $('.clowtemp').append($lowtemp);
+                $('.w-icon').prepend('<img src="https://openweathermap.org/img/wn/' + $icon + '@2x.png"></img>');
+
+            })
+        })
+    </script>
 </body>
 
 </html>
