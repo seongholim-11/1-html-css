@@ -48,6 +48,8 @@ body {
     padding: 3rem;
     font-family: "Nanum Gothic", sans-serif;
 }
+h2{font-size: 2.4rem; text-transform: uppercase; padding: 1rem 0; font-weight: 800;}
+h3{padding: 0.5rem 0 ; font-size: 1.6rem; font-weight: 700; text-transform: uppercase; color: $color-gray-dark;}
 
 .nav {
     &-checkbox {
@@ -67,7 +69,7 @@ body {
         text-align: center;
     }
     &-bg {
-        background-image: radial-gradient($color-primary, $color-secondary);
+        background-image: radial-gradient($color-gray-light, $color-gray-dark);
         width: 7rem;
         height: 6rem;
         position: fixed;
@@ -128,6 +130,133 @@ header{
     &-sub{font-size: 2.4rem; margin-top: 3rem; animation-name: moveInLeft; animation-duration: 1s; animation-delay: 2s; animation-fill-mode: backwards;}
     }
 }
+main{
+    @include clearfix();
+    #section-about{
+        background-color: #ededed;
+        padding: 7rem 0 6.5rem 6rem;
+        width: 66.66666%;
+        min-height: 42rem;
+        float: left;
+        @include clearfix();
+        @include mq(small-screen-1){
+            width: 100%;
+        }
+        @include mq(small-screen-2){
+            width: 100%;
+            height: 54rem;
+            padding: 7rem 6rem 6.5rem 6rem;
+        }
+        @include mq(small-screen-3){
+            width: 100%;
+            height: 60rem;
+            padding: 7rem 6rem 6.5rem 6rem;
+        }
+        &-words{width: 65%; float: left; padding: 2rem 2rem 0 0;
+            @include mq(small-screen-2){
+                width: 100%;
+            }
+            @include mq(small-screen-3){
+                width: 100%;
+            }
+            p{font-size: 1.4rem; font-weight: bold; text-align: justify; padding: 1.5rem 0;}
+            .btn-text{font-size: 1.6rem; color: $color-primary; font-weight: bold; padding: 3px 3px; margin-right: 5px; display: inline-block; text-decoration: none; position: relative; transition: 0.5s;
+                &:hover{color: $color-white; background: $color-secondary;}
+                &::after{content: ""; position: absolute; bottom: 0; left: 3%; width: 95%; height: 1px; background: $color-primary;}
+        }
+            
+        }
+        &-photo{width: 35%; float: left; position: relative;
+            @include mq(small-screen-2){
+                width: 100%;
+            }
+            @include mq(small-screen-3){
+                width: 100%;
+            }
+            .photo{position: absolute; width: 18rem; height: 12rem; transition: 0.5s;
+                img{width: 100%; height: 100%; box-shadow: 3px 3px 9px 0px rgba($color: #000000, $alpha: 0.5);}
+                @include mq(small-screen-2){
+                    top: 3rem !important;
+                    left: 50% !important; 
+                }
+                @include mq(small-screen-3){
+                    top: 3rem !important;
+                    left: 50% !important; 
+                }
+                &:hover{transform: scale(1.1); padding: 1rem; border: 3px solid $color-primary; z-index: 10;}
+                &:nth-child(1){left: 1rem; top: 3rem;
+                    @include mq(small-screen-2){
+                        transform: translateX(-120%);
+                    }
+                    @include mq(small-screen-3){
+                        transform: translateX(-120%);
+                    }
+                }
+                &:nth-child(2){left: 6rem; top: 10rem;}
+            }
+                
+        }
+        
+    }
+    #section-etc{
+        width: 33.33333%;
+        float: left;
+        @include mq(small-screen-1){
+            width: 100%;
+        }
+        @include mq(small-screen-2){
+            width: 100%;
+        }
+        @include mq(small-screen-3){
+            width: 100%; 
+        }
+        [id^="etc-"]{height: 14rem;}
+        .etc{
+            @include clearfix();
+            @include mq(small-screen-1){
+                width: 33.3333%; 
+                height: 18rem;
+                float: left;
+            }
+            @include mq(small-screen-2){
+                width: 33.3333%; 
+                height: 22rem;
+                float: left;
+            }
+            &:nth-child(1){background: $color-blue-1;}
+            &:nth-child(2){background: $color-blue-2;}
+            &:nth-child(3){background: $color-blue-3;}
+            .etc-icon{float: left; width: 30%; text-align: center; padding-top: 3.5rem;
+                .material-symbols-outlined{font-size: 6rem;}
+        }
+            .etc-text{float: left; width: 70%; padding-top: 1rem; 
+                p{margin: 0.5rem 0; padding-right: 3.5rem; text-align: left; font-size: 1.4rem;}
+            }
+        }
+    }
+    
+}
+footer{
+    color: $color-gray-light; background: $color-blue-dark; padding: 9rem 7rem 3rem 7rem;
+    @include mq(small-screen-3){
+        padding: 9rem 2rem 3rem 7rem;
+    }
+    @include clearfix();
+    #logo-text-footer{width: 25%; float: left; font-size: 4rem; text-transform: uppercase; font-weight: 100; font-family: 'Lato', sans-serif;
+        @include mq(small-screen-3){
+            width: 20%;
+            margin-right: 6rem;
+        }
+    }
+    #copyright{width: 75%; float: left; font-size: 1.2rem;
+        @include mq(small-screen-3){
+            width: 60%;
+        }
+        p:nth-child(1){margin-bottom: 2rem; text-align: justify; word-break: break-all; column-count: 3; column-gap: 3rem; column-rule: 1px dashed #888;}
+    }
+}
+
+
 
 @keyframes moveInLeft {
     0%{opacity: 0.1; transform: translateX(-8rem);}
