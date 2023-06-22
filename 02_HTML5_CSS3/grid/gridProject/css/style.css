@@ -1,0 +1,21 @@
+body{background: rgb(245, 232, 216);}
+
+.grid1{
+    width: 1200px;
+    height: 960px;
+    display: grid; 
+    grid-template-columns: 95fr 190fr 32fr 160fr 315fr 65fr;
+    grid-template-rows: 40fr 80fr 12fr 135fr 137fr 30fr;}
+
+.img1{background: url('https://i.pinimg.com/originals/f0/5b/e3/f05be3aeb8cc26c6b00ee74831457428.gif') no-repeat left top/contain; grid-column: 1/3; grid-row: 2/5;}
+.img2{background: url('https://i.pinimg.com/originals/3f/c3/2b/3fc32b3699a73c4a172720cc51b24e19.gif') no-repeat left top/contain; grid-column: 2/4; grid-row: 3/6;}
+.img3{background: url('https://i.pinimg.com/originals/6a/d7/7f/6ad77ff330b21db2890f242a69f7089b.gif') no-repeat left top/contain; grid-column: 5/-1; grid-row: 4/6;}
+
+.line{grid-column: 3/-1; grid-row: 2/3; text-align: center; position: relative; padding: 0 16%;}
+.line::before{content: ""; width: 20%; height: 30px; background: url('https://static.vecteezy.com/system/resources/thumbnails/002/401/614/small/abstract-diagonal-straight-lines-pattern-background-free-vector.jpg') center; position: absolute; top: -25px; left: 50%; transform: translateX(-50%); background-size: 80%;}
+.line blockquote{}
+
+.wrapper{grid-column: 4/-1; grid-row: 4/span 2; padding: 100px 0 0 150px; box-sizing: border-box;}
+.wrapper h1{font-size: 6em;}
+.wrapper p{}
+.wrapper a{}
