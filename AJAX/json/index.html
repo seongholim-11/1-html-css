@@ -16,26 +16,34 @@
     </div>
     <script>
         $.ajax({
+            // 데이터 url
             url: "./MOCK_DATA.json",
+            // 데이터 type
             dataType: "json",
+            // 데이터 불러오기가 성공하면
             success: function(data){
-                console.log("🚀 ~ file: index.html:23 ~ data:", data)
                 if(data.length > 0){
+                    // table 태그 열고 닫기
                     let tb = $("<table />");
+                    // 
                     for(let i in data){
+                        // data: {id: 1, first_name: 'Katy', last_name: 'Sallenger', email: 'ksallenger0@cbslocal.com'}
                         let $id = data[i].id;
                         let $first_name = data[i].first_name;
                         let $last_name = data[i].last_name;
                         let $email = data[i].email;
+                        // tr 태그 열고 닫고 그 안에 내용 넣기
                         let row = $('<tr />').append(
                             $("<td/>").text($id),
                             $("<td/>").text($first_name),
                             $("<td/>").text($last_name),
                             $("<td/>").text($email),
                         )
+                        // 테이블 안에 행 넣기
                         tb.append(row);
-                        $('.wrapper').append(tb);
                     }
+                    // 완성된 테이블 html 테그안에 넣기
+                    $('.wrapper').append(tb);
                 }
             }
         })
