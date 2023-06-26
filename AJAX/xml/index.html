@@ -34,7 +34,9 @@
                 console.log("🚀 ~ file: index.html:34 ~  $data:", $data)
                 if ($data.length > 0) {
                     let tb = $("<table />");
+                    // i: index, o: item
                     $.each($data, function (i, o) {
+                        // o: <record><id>2</id><first_name>Haily</first_name><last_name>Ruppert</last_name><email>hruppert1@simplemachines.org</email></record>
                         let $id = $(o).find('id').text();
                         let $first_name = $(o).find('first_name').text();
                         let $last_name = $(o).find('last_name').text();
@@ -45,8 +47,8 @@
                             $("<td/>").text($last_name),
                             $("<td/>").text($email),
                         )
+                        tb.append(row);
                     })
-                    tb.append(row);
                     $('.wrap').append(tb);
                 }
             }
