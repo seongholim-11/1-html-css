@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비동기 xml</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <style>
+        table {
+            width: 800px;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid #ddd;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+
+    </div>
+    <script>
+        $.ajax({
+            url: "./dataset.xml",
+            dataType: "xml",
+            success: function (data) {
+                let $data = $(data).find('record')
+                console.log("🚀 ~ file: index.html:34 ~  $data:", $data)
+                if ($data.length > 0) {
+                    let tb = $("<table />");
+                    $.each($data, function (i, o) {
+                        let $id = $(o).find('id').text();
+                        let $first_name = $(o).find('first_name').text();
+                        let $last_name = $(o).find('last_name').text();
+                        let $email = $(o).find('email').text(); 
+                        let row = $('<tr />').append(
+                            $("<td/>").text($id),
+                            $("<td/>").text($first_name),
+                            $("<td/>").text($last_name),
+                            $("<td/>").text($email),
+                        )
+                    })
+                    tb.append(row);
+                    $('.wrap').append(tb);
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

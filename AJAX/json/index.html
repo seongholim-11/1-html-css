@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <style>
+        table{width: 800px; margin: 20px auto; border: 1px solid #ddd; border-collapse: collapse;}
+        td{border: 1px solid #ddd; padding: 5px 10px;}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+
+    </div>
+    <script>
+        $.ajax({
+            url: "./MOCK_DATA.json",
+            dataType: "json",
+            success: function(data){
+                console.log("🚀 ~ file: index.html:23 ~ data:", data)
+                if(data.length > 0){
+                    let tb = $("<table />");
+                    for(let i in data){
+                        let $id = data[i].id;
+                        let $first_name = data[i].first_name;
+                        let $last_name = data[i].last_name;
+                        let $email = data[i].email;
+                        let row = $('<tr />').append(
+                            $("<td/>").text($id),
+                            $("<td/>").text($first_name),
+                            $("<td/>").text($last_name),
+                            $("<td/>").text($email),
+                        )
+                        tb.append(row);
+                        $('.wrapper').append(tb);
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+</html>
