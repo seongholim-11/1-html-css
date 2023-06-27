@@ -29,11 +29,75 @@ a {
   height: 67px;
   background: #fff;
   text-align: center;
+  display: none;
+}
+#header > div .header-mobile-menu-bar h1.header-logo-wrap {
+  padding: 15px 0;
+  display: inline-block;
+}
+#header > div .header-mobile-menu-bar h1.header-logo-wrap a.logoBt {
+  display: block;
+}
+#header > div .header-mobile-menu-bar .header-appBar-wrap {
+  display: block;
+  position: absolute;
+  width: 22px;
+  height: 14px;
+  top: 26px;
+  left: 20;
+}
+#header > div .header-mobile-menu-bar .header-appBar-wrap a.appbarBt {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: block;
+}
+#header > div .header-mobile-menu-bar .header-appBar-wrap a.appbarBt .appbar-line {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  left: 0;
+}
+#header > div .header-mobile-menu-bar .header-appBar-wrap a.appbarBt .appbar-line1 {
+  top: 0%;
+}
+#header > div .header-mobile-menu-bar .header-appBar-wrap a.appbarBt .appbar-line2 {
+  top: 50%;
+}
+#header > div .header-mobile-menu-bar .header-appBar-wrap a.appbarBt .appbar-line3 {
+  top: 100%;
+}
+#header > div .header-mobile-menu-bar .header-search-wrap {
+  display: block;
+  position: absolute;
+  width: 22px;
+  top: 20px;
+  right: 20px;
+}
+#header > div .header-mobile-menu-bar .header-search-wrap a.appbarBt {
+  display: block;
+  font-size: 20px;
+}
+#header > div .header-mobile-menu-bar .header-search-wrap a.appbarBt i {
+  color: #000;
+}
+#header aside {
+  display: none;
 }
 #header aside span a {
   color: #fff;
 }
 #header aside span i {
   color: #fff;
+}
+#header .header-logoNav {
+  display: none;
+}
+@media screen and (max-width: 1090px) {
+  #header div .header-mobile-menu-bar {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */
