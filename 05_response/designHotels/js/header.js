@@ -1,5 +1,5 @@
-let t = 0;
-let winW = 0;
+/* let t = 0;
+let winW = 0; */
 const appbarBt = $('.appbarBt1')
 const mobileModalMenu = $('.mobile-modal-menu');
 const appbarCloseBt = $('.appbarCloseBt');
