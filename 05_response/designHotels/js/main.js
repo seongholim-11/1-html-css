@@ -10,9 +10,9 @@ function videoResize() {
     $('.m-video').css({width: '100%', height: winH})
 
     if(winH > vidH){
-        $('#mainVideo').css({width: 'auto', height: winH})
+        $('#mainVideo').css({width: 'auto', height: winH, objectFit: 'cover'})
     }
     if(winW > vidW){
-        $('#mainVideo').css({width: winW, height: 'auto'})
+        $('#mainVideo').css({width: winW, height: 'auto', objectFit: 'cover'})
     }
 };
