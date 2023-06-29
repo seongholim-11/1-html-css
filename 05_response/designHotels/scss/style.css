@@ -252,7 +252,6 @@ a {
 
 #main {
   width: 100%;
-  height: 100%;
 }
 
 #section1 {
@@ -409,14 +408,13 @@ a {
 
 #section3 {
   width: 100%;
-  height: 52px;
-  background: #2c3437;
 }
 #section3 > div > div.tabMenu > ul {
   display: flex;
   justify-content: center;
   height: 52px;
   align-items: center;
+  background: #2c3437;
 }
 #section3 > div > div.tabMenu > ul > li a {
   display: block;
@@ -540,6 +538,55 @@ a {
   font-weight: bold;
 }
 
+footer {
+  width: 100%;
+  padding: 50px 0;
+  background: #222;
+}
+footer > div {
+  width: 100%;
+  max-width: 1090px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+footer > div .f-sitemap {
+  width: 100%;
+  padding-bottom: 60px;
+}
+footer > div .f-sitemap > ul {
+  display: flex;
+}
+footer > div .f-sitemap > ul > li {
+  flex-basis: 16.6666%;
+}
+footer > div .f-sitemap > ul > li h4 {
+  padding-bottom: 5px;
+}
+footer > div .f-sitemap > ul > li h4 i {
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background: #373737;
+}
+footer > div .f-sitemap > ul > li a.mapNavBt {
+  font-size: 18px;
+  color: #fff;
+}
+footer > div .f-sitemap > ul > li .mapSub {
+  width: 100%;
+  padding-top: 15px;
+}
+footer > div .f-sitemap > ul > li .mapSub > ul > li {
+  padding: 5px 0;
+}
+footer > div .f-sitemap > ul > li .mapSub > ul > li a {
+  color: #888;
+}
+footer > div .f-copyright-sns {
+  display: flex;
+  justify-content: space-between;
+}
 @media screen and (max-width: 1090px) {
   #section1 .mobile-modal-menu {
     display: block;
@@ -552,6 +599,21 @@ a {
   }
   #section1 #header div .header-logoNav {
     display: none;
+  }
+  .f-copyright-sns {
+    flex-direction: column;
+  }
+  .f-sitemap > ul {
+    flex-direction: column;
+  }
+  .f-sitemap > ul > li {
+    flex-basis: 100%;
+  }
+  .mapSub > ul {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    padding: 0 5px;
   }
 }
 /*# sourceMappingURL=style.css.map */
