@@ -88,9 +88,9 @@ let setId = setInterval(() => {
 }, 1000);
 
 function videoTimeCountFn(){
-    console.log('비디오 진행 시간 :' + $('#mainVideo').get(0).currentTime)
+/*     console.log('비디오 진행 시간 :' + $('#mainVideo').get(0).currentTime)
     console.log('비디오 전체 시간 :' + $('#mainVideo').get(0).duration) // 37.44
-    console.log('정지여부 :' + $('#mainVideo').get(0).ended) // 37.44
+    console.log('정지여부 :' + $('#mainVideo').get(0).ended) // 37.44 */
     if($('#mainVideo').get(0).ended == true){
         $('.m-again').show();
         videoPlay = 'off'
