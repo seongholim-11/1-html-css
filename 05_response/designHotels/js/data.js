@@ -1,3 +1,10 @@
+// 1. json 파일 불러오기
+// 2. 불러온 데이터를 n개씩 잘라서 변수에 저장
+// 3. each를 통해 html 가공하기
+// 4. 가공한 html를 배열에 넣기
+// 5. 배열을 출력하기
+// 6. 출력된 동영상과 총 동영상의 개수가 같아지면 버튼 비활성화하기
+
 // jQuery
 let container = $('.gallery-wrap');
 let loadMoreBtn = $('.loadMoreBt');
@@ -40,6 +47,7 @@ function addItem(data) {
         `
         // $(ItemHTML).get(0)는 jQuery 객체의 첫 번째 요소를 가져옵니다. 
         element.push($(ItemHTML).get(0))
+
         if(added < allData.length){
             loadMoreBtn.text('Load More')
         }else{
@@ -69,7 +77,7 @@ fetch('./data/video.json')
 
 function addItem() {
   const element = [];
-  const slicedData = allData.slice(added, added + addItemCount);
+  const slicedData = allData.slice(added, added += addItemCount);
 
   slicedData.forEach(item => {
     ItemHTML = `
@@ -100,9 +108,8 @@ function addItem() {
     container.appendChild(item);
   });
 
-  added += addItemCount;
-
   if (added >= allData.length) {
     loadMoreBtn.style.display = 'none';
   }
-} */
+}
+ */
