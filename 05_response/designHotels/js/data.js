@@ -15,47 +15,47 @@ let allData = [];
 let ItemHTML;
 
 $.getJSON('./data/video.json', function (data) {
-    allData = data;
-    console.log("🚀 ~ file: data.js:14 ~ loadMoreBtn.click ~ addItemCount:", addItemCount)
-    addItem();
-    loadMoreBtn.click(addItem)
+  allData = data;
+  console.log("🚀 ~ file: data.js:14 ~ loadMoreBtn.click ~ addItemCount:", addItemCount)
+  addItem();
+  loadMoreBtn.click(addItem)
 })
 
 function addItem(data) {
-    let element = [];
-    let slicedData;
-    // .slice( start [, end ] )
-    slicedData = allData.slice(added, added += addItemCount)
+  let element = [];
+  let slicedData;
+  // .slice( start [, end ] )
+  slicedData = allData.slice(added, added += addItemCount)
 
-    $.each(slicedData, function (idx, item) {
-        ItemHTML = `
-        <li class = "Gallery-item">
-            <div>
-                <a href="javascript:" class="galleryBt">
-                    <span class="gallery-video">
-                        <video src="${item.video}" autoplay muted loop></video>
-                    </span>
-                    <span class="galleryCap"></span>
-                    <span class="gallery-title">
-                        <span><strong>${item.title}</strong></span>
-                        <span><b>${item.description}</b></span>
-                        <span><i class="exploreBt">Explore</i></span>
-                    </span>
-                </a>
-            </div>
-        </li>
-        `
-        // $(ItemHTML).get(0)는 jQuery 객체의 첫 번째 요소를 가져옵니다. 
-        element.push($(ItemHTML).get(0))
+  $.each(slicedData, function (idx, item) {
+      ItemHTML = `
+      <li class = "Gallery-item">
+      <div>
+      <a href="javascript:" class="galleryBt">
+      <span class="gallery-video">
+      <video src="${item.video}" autoplay muted loop></video>
+      </span>
+      <span class="galleryCap"></span>
+      <span class="gallery-title">
+      <span><strong>${item.title}</strong></span>
+      <span><b>${item.description}</b></span>
+      <span><i class="exploreBt">Explore</i></span>
+      </span>
+      </a>
+      </div>
+      </li>
+      `
+    // $(ItemHTML).get(0)는 jQuery 객체의 첫 번째 요소를 가져옵니다. 
+    element.push($(ItemHTML).get(0))
 
-        if(added < allData.length){
-            loadMoreBtn.text('Load More')
-        }else{
-            loadMoreBtn.text('End')  
-        }
-    })
-    
-    container.append(element)
+    if (added < allData.length) {
+      loadMoreBtn.text('Load More')
+    } else {
+      loadMoreBtn.text('End')
+    }
+  })
+
+  container.append(element)
 }
 
 // Javascript
