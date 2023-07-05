@@ -13,6 +13,7 @@ let addItemCount = 3;
 let added = 0;
 let allData = [];
 let ItemHTML;
+let selectedCategory = "ALL"; // 기본 선택 카테고리
 
 $.getJSON('./data/video.json', function (data) {
   allData = data;
@@ -21,11 +22,30 @@ $.getJSON('./data/video.json', function (data) {
   loadMoreBtn.click(addItem)
 })
 
+$(".tabMenu ul li a").click(function () {
+  // 탭 메뉴 클릭 이벤트 핸들러
+  $(".tabMenu ul li a").removeClass("addTab");
+  $(this).addClass("addTab");
+  let clickedCategory = $(this).text().toUpperCase();
+
+  selectedCategory = clickedCategory;
+
+
+  container.empty(); // 기존 아이템 제거
+  added = 0; // 추가된 아이템 수 초기화
+  addItem();
+});
+
 function addItem(data) {
   let element = [];
   let slicedData;
   // .slice( start [, end ] )
-  slicedData = allData.slice(added, added += addItemCount)
+  if (selectedCategory === "ALL") {
+    slicedData = allData.slice(added, added += addItemCount)
+  } else {
+    slicedData = allData.filter((item) => item.category.toUpperCase() === selectedCategory).slice(added, (added += addItemCount));
+  }
+  
 
   $.each(slicedData, function (idx, item) {
       ItemHTML = `
