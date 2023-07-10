@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트 버블링</title>
+    <style>
+        #box{border: 3px solid #e34d4d; background: pink; padding: 50px;}
+        #txt{width: 100%; height: 50px;}
+    </style>
+</head>
+<body>
+    <div id="box">
+        <input type="text" id="txt">
+    </div>
+
+
+    <script>
+        const box = document.getElementById('box');
+        const txt = document.getElementById('txt');
+
+        document.body.addEventListener('focusin', function(){
+            console.log('focusin-1. body')
+        })
+        box.addEventListener('focusin', function(){
+            console.log('focusin-2. div')
+        })
+        txt.addEventListener('focusin', function(event){
+            event.stopPropagation();
+            console.log('focusin-3. input')
+        })
+
+        document.body.addEventListener('focusout', function(){
+            console.log('focusout-1. body')
+        })
+        box.addEventListener('focusout', function(){
+            console.log('focusout-2. div')
+        })
+        txt.addEventListener('focusout', function(event){
+            event.stopPropagation();
+            console.log('focusout-3. input')
+        })
+    </script>
+</body>
+</html>
