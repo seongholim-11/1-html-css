@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부모자식형제 노드</title>
+    <script src="./js/main1.js" defer></script>
+    <style>
+        .txt-pink{color: pink;}
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <title>welcome</title>
+        </header>
+
+        <main>
+            <div id="box" class="box bg-green">box</div>
+            <ul id="color">
+                <li id="red">red</li>
+                <li id="blue">blue</li>
+                <li id="green">green</li>
+            </ul>
+
+            <button onclick="alert('click.........')">클릭1</button>
+            <br></br>
+            <button onclick="say()">클릭2</button>
+        </main>
+    </div>
+
+    <script>
+        const box = document.getElementById('box');
+        box.style.background = 'red'
+        box.style.width = 100 + 'px'
+        box.style.height = 100 + 'px'
+        box.style.textAlign = 'center';
+        box.style['margin-left'] = '50px'
+
+        const color = document.getElementById('color');
+        color.onclick = (e)=>{
+            const target = e.target;
+            
+            if(target.tagName !== "LI") return;
+            target.classList.toggle('txt-pink')
+        }
+
+        function say(){
+            alert('Hello')
+        }
+    </script>
+</body>
+
+</html>
