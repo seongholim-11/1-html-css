@@ -50,12 +50,18 @@ import React, { useState } from "react";
 
 const Counter = () => {
   const [message, setMessage] = useState("");
+  const [background, setBackground] = useState('yellow');
   const onClickEnter = () => setMessage('안녕하세요');
+  const onClickLeave = () => setMessage('바이~');
   return (
     <div>
       <button onClick={onClickEnter}>입장</button>
-      <button >퇴장</button>
-      <h1>{message}</h1>
+      <button onClick={onClickLeave}>퇴장</button>
+      {/* JSX에서 객체 리터럴 형태로 style 속성을 작성할 때, 속성명과 값이 동일한 경우에는 축약해서 표현할 수 있습니다. 따라서 style={{ background }}는 style={{ background: background }}와 동일한 의미입니다. */}
+      <h1 style={{background}}>{message}</h1>
+      <button style={{color: 'red'}} onClick={()=>setBackground('red')}>빨간색</button>
+      <button style={{color: 'green'}} onClick={()=>setBackground('blue')}>blue</button>
+      <button style={{color: 'blue'}} onClick={()=>setBackground('green')}>green</button>
     </div>
   );
 };
