@@ -1,23 +1,23 @@
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Dropdown } from 'react-bootstrap';
+import React from "react";
+import "./App.css";
+import Mycomponent from "./Mycomponent";
 
 function App() {
   return (
-    <div className="App">
-      <Dropdown>
-        <Dropdown.Toggle variant="success" id="dropdown-basic">
-          Dropdown Button
-        </Dropdown.Toggle>
-
-        <Dropdown.Menu>
-          <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-          <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-          <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-        </Dropdown.Menu>
-      </Dropdown>
+    <div>
+      <Mycomponent name="리액트" favoriteNumber={3}>리액트</Mycomponent>
     </div>
   );
 }
 
 export default App;
+
+/* class App extends Component {
+  render() {
+    const name = "react"
+    return (
+      <div>{name}</div>
+      )
+    } 
+  }
+  */
