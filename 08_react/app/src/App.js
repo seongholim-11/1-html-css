@@ -1,11 +1,11 @@
 import React from "react";
+import Counter from './Counter'
 import "./App.css";
-import Mycomponent from "./Mycomponent";
 
 function App() {
   return (
     <div>
-      <Mycomponent name="리액트" favoriteNumber={3}>리액트</Mycomponent>
+      <Counter></Counter>
     </div>
   );
 }
