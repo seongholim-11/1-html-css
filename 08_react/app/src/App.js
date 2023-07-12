@@ -1,11 +1,13 @@
 import React from "react";
-import Event from './Event'
+// import Event from './Event'
 import "./App.css";
+import Validation from "./Validation";
 
 function App() {
   return (
     <div>
-      <Event/>
+      {/* <Event/> */}
+      <Validation/>
     </div>
   );
 }
