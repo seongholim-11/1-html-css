@@ -1,11 +1,11 @@
 import React from "react";
-import Counter from './counter'
+import Event from './Event'
 import "./App.css";
 
 function App() {
   return (
     <div>
-      <Counter></Counter>
+      <Event/>
     </div>
   );
 }
