@@ -1,12 +1,12 @@
 import React from 'react'
-import TodoTemplate from './TodoTemplate'
+import TodoTemplate from './components/TodoTemplate'
+
 
 function App() {
   return (
-    <div>
-      ToDo App 만들자!
-      <TodoTemplate/>
-    </div>
+   <div>
+      <TodoTemplate ></TodoTemplate>
+   </div>
   )
 }
 
