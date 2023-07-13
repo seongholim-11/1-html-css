@@ -10,21 +10,43 @@ function App() {
         { id: 3, text: "일정 관리 앱 만들어보기", checked: false },
     ]);
     const nextId = useRef(4);
-    console.log("🚀 ~ file: App.js:13 ~ App ~ nextId:", nextId);
-    const onInsert = useCallback((text) => {
-        const todo = {
-            id: nextId.current,
-            text,
-            checked: false,
-        };
-        setTodos(todos.concat(todo));
-        nextId.current += 1;
-    }, [todos]);
+    const onInsert = useCallback(
+        (text) => {
+            const todo = {
+                id: nextId.current,
+                text,
+                checked: false,
+            };
+            setTodos(todos.concat(todo));
+            nextId.current += 1;
+        },
+        [todos]
+    );
+
+    const onRemove = useCallback(
+        (id) => {
+            setTodos(todos.filter((todo) => todo.id !== id));
+        },
+        [todos]
+    );
+
+    const onToggle = useCallback((id) => {
+        setTodos(
+            todos.map((todo) =>
+                todo.id === id ? { ...todo, checked: !todo.checked } : todo
+            )
+        );
+    });
+
     return (
         <div>
             <TodoTemplate>
-                <TodoInsert onInsert={onInsert}/>
-                <TodoList todos={todos} />
+                <TodoInsert onInsert={onInsert} />
+                <TodoList
+                    todos={todos}
+                    onRemove={onRemove}
+                    onToggle={onToggle}
+                />
             </TodoTemplate>
         </div>
     );
